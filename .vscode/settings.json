@@ -1,0 +1,13 @@
+{
+  "cSpell.words": ["compodoc", "genshin", "Mrlonis", "packagr", "prettierrc"],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".ts", ".tsx", ".html"]
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

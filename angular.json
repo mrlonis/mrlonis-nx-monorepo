@@ -2,6 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "ui-genshin-impact": "apps/ui-genshin-impact",
+    "ui-genshin-impact-e2e": "apps/ui-genshin-impact-e2e",
     "ui-mythic-heroes": "apps/ui-mythic-heroes",
     "ui-mythic-heroes-e2e": "apps/ui-mythic-heroes-e2e"
   }

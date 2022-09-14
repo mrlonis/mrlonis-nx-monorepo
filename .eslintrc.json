@@ -23,20 +23,20 @@
     },
     {
       "files": ["*.ts", "*.tsx"],
-      "extends": ["plugin:@nrwl/nx/typescript"],
-      "rules": {}
+      "extends": ["plugin:@nrwl/nx/typescript", "plugin:prettier/recommended"],
+      "rules": { "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }] }
     },
     {
       "files": ["*.js", "*.jsx"],
-      "extends": ["plugin:@nrwl/nx/javascript"],
-      "rules": {}
+      "extends": ["plugin:@nrwl/nx/javascript", "plugin:prettier/recommended"],
+      "rules": { "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }] }
     },
     {
-      "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
+      "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx", "plugin:prettier/recommended"],
       "env": {
         "jest": true
       },
-      "rules": {}
+      "rules": { "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }] }
     }
   ]
 }
