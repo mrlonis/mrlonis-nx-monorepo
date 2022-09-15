@@ -1,0 +1,14 @@
+{
+  "id": "861c6318-608c-4e02-b22d-6dad82989a8e",
+  "name": "UR",
+  "imageUrl": "rarities/UR.png",
+  "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/09/Rarity_Ur-1.png",
+  "_links": {
+    "self": {
+      "href": "http://localhost:9001/api/rarity/861c6318-608c-4e02-b22d-6dad82989a8e"
+    },
+    "item": {
+      "href": "http://localhost:9001/api/rarity/861c6318-608c-4e02-b22d-6dad82989a8e"
+    }
+  }
+}

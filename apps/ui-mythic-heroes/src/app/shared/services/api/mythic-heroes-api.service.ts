@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
-import { Faction, MythicHero, Rarity, Type } from '../../types';
-import { ApiConfigProvider, ApiService, API_CONFIG_TOKEN } from './base';
+import { ApiConfigProvider, ApiService, API_CONFIG_TOKEN } from '@mrlonis-nx-angular-monorepo/ngx-mrlonis-shared';
+import { Faction, MythicHero, Rarity, Type } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
 
 @Injectable({
   providedIn: 'root',

@@ -1,10 +1,10 @@
 import { HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { fakeAsync, TestBed, tick } from '@angular/core/testing';
+import { BaseResource, SpringDataRestResponse } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
 import { Observable, of, throwError } from 'rxjs';
 import { delay, map } from 'rxjs/operators';
-import { BaseResource, SpringDataRestResponse } from '../../../types';
-import { IApiService } from '../../api';
+import { IApiService } from '../api';
 import { AggressiveCacheInvalidator } from './aggressive-cache-invalidator.service';
 import { AggressiveCache } from './aggressive-cache.service';
 

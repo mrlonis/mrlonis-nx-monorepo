@@ -1,0 +1,79 @@
+{
+  "_embedded": {
+    "data": [
+      {
+        "id": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "name": "Fighter",
+        "imageUrl": "types/Fighter.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/HeroFilters_Button_Class_Damage.png",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/type/31ac95f4-ccb1-4039-bda8-59d89b3b3036"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/type/31ac95f4-ccb1-4039-bda8-59d89b3b3036"
+          }
+        }
+      },
+      {
+        "id": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "name": "Mage",
+        "imageUrl": "types/Mage.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/HeroFilters_Button_Class_Mage.png",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/type/4d7009ad-d57b-4dc0-8740-06a858ea5742"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/type/4d7009ad-d57b-4dc0-8740-06a858ea5742"
+          }
+        }
+      },
+      {
+        "id": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "name": "Support",
+        "imageUrl": "types/Support.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/HeroFilters_Button_Class_Support.png",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/type/894d831c-20fe-42ec-b7a1-c99b26ec6ef5"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/type/894d831c-20fe-42ec-b7a1-c99b26ec6ef5"
+          }
+        }
+      },
+      {
+        "id": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "name": "Tank",
+        "imageUrl": "types/Tank.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/HeroFilters_Button_Class_Tank.png",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/type/b3f6a57c-eac7-41c2-bd5c-9066d92319d4"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/type/b3f6a57c-eac7-41c2-bd5c-9066d92319d4"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:9001/api/type?page=0&size=50&sort=name"
+    },
+    "profile": {
+      "href": "http://localhost:9001/api/profile/type"
+    },
+    "search": {
+      "href": "http://localhost:9001/api/type/search"
+    }
+  },
+  "page": {
+    "size": 50,
+    "totalElements": 4,
+    "totalPages": 1,
+    "number": 0
+  }
+}

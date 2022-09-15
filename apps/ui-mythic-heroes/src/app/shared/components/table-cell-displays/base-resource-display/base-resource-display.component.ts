@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { RouterModule } from '@angular/router';
-import { BaseResource } from '../../..//types';
+import { BaseResource } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
 import { MythicHeroesApiService } from '../../../services';
 
 @Component({

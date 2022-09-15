@@ -1,7 +1,7 @@
 import { HttpParams } from '@angular/common/http';
+import { BaseResource, SpringDataRestResponse } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
 import { Observable, of } from 'rxjs';
 import { map, mergeMap, shareReplay, tap } from 'rxjs/operators';
-import { BaseResource, SpringDataRestResponse } from '../../../types';
 import { AggressiveCacheInvalidator } from './aggressive-cache-invalidator.service';
 import { CacheOccupant } from './cache-occupant';
 import { CacheSlot, CollectBySlot, GetBySlot } from './cache-slot';

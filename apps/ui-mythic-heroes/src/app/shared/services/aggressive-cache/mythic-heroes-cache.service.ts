@@ -1,9 +1,9 @@
 import { HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { AggressiveCache, AggressiveCacheInvalidator } from '@mrlonis-nx-angular-monorepo/ngx-mrlonis-shared';
+import { Faction, MythicHero, Rarity, Type } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
 import { map } from 'rxjs/operators';
-import { Faction, MythicHero, Rarity, Type } from '../../types';
 import { MythicHeroesApiService } from '../api';
-import { AggressiveCache, AggressiveCacheInvalidator } from './base';
 
 @Injectable({
   providedIn: 'root',

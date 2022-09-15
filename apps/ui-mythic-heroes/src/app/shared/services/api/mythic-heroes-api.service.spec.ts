@@ -1,8 +1,8 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
+import { ApiConfigProvider, API_CONFIG_TOKEN } from '@mrlonis-nx-angular-monorepo/ngx-mrlonis-shared';
+import { Faction, SpringDataRestResponse } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
 import * as allFactions from '../../../../assets/test-data/faction/All.json';
-import { Faction, SpringDataRestResponse } from '../../types';
-import { ApiConfigProvider, API_CONFIG_TOKEN } from './base';
 import { MythicHeroesApiService } from './mythic-heroes-api.service';
 
 const testApiUrl = 'http://fake-url.coms';

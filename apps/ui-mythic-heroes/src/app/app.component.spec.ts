@@ -2,8 +2,9 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
+import { ApiConfigProvider, API_CONFIG_TOKEN } from '@mrlonis-nx-angular-monorepo/ngx-mrlonis-shared';
 import { AppComponent } from './app.component';
-import { ApiConfigProvider, API_CONFIG_TOKEN, NavigationComponentComponent } from './shared';
+import { NavigationComponentComponent } from './shared';
 
 describe('AppComponent', () => {
   beforeEach(async () => {

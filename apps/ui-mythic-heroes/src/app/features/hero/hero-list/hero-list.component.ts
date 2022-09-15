@@ -13,17 +13,10 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSortModule, Sort } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { RouterModule } from '@angular/router';
+import { BaseResource, Faction, MythicHero, Rarity, Type } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
 import { TableVirtualScrollDataSource, TableVirtualScrollModule } from 'ng-table-virtual-scroll';
 import { forkJoin, Observable, of } from 'rxjs';
-import {
-  BaseResource,
-  BaseResourceDisplayComponent,
-  Faction,
-  MythicHero,
-  MythicHeroesAggressiveCache,
-  Rarity,
-  Type,
-} from '../../../shared';
+import { BaseResourceDisplayComponent, MythicHeroesAggressiveCache } from '../../../shared';
 
 @Component({
   standalone: true,
