@@ -2,7 +2,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "libs/ngx-mrlonis-shared/src",
-  "prefix": "mrlonis-nx-angular-monorepo",
+  "prefix": "mrlonis",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",

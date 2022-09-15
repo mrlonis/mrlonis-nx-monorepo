@@ -2,7 +2,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/ui-genshin-impact/src",
-  "prefix": "mrlonis-nx-angular-monorepo",
+  "prefix": "mrlonis",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",

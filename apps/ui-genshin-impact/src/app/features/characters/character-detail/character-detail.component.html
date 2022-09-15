@@ -1,0 +1,8 @@
+<mat-card class="character-detail-card">
+  <mat-card-content>
+    <div *ngIf="this.character !== undefined">
+      <img [alt]="this.character.imageUrl" [src]="this.imageApiService.getImageUrl(this.character.imageUrl)" />
+      <p>{{ this.character.name }}</p>
+    </div>
+  </mat-card-content>
+</mat-card>

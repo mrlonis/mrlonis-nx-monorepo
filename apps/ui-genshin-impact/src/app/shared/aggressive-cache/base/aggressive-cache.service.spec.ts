@@ -3,52 +3,58 @@ import { Injectable } from '@angular/core';
 import { fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { Observable, of, throwError } from 'rxjs';
 import { delay, map } from 'rxjs/operators';
-import { BaseResource, SpringDataRestResponse } from '../../../types';
-import { IApiService } from '../../api';
+import { BaseResource, SpringDataRestResponse } from '../../api/interfaces';
 import { AggressiveCacheInvalidator } from './aggressive-cache-invalidator.service';
 import { AggressiveCache } from './aggressive-cache.service';
 
 interface ExampleResource extends BaseResource {
-  id: string;
-  name: string;
-  imageUrl: string;
+  ident: string;
   version: string;
 }
 
-type ExampleServiceIndex = { example: ExampleResource };
-
 @Injectable()
-class ExampleService implements IApiService<ExampleServiceIndex> {
+class ExampleService {
   singleRequests = 0;
   collectionRequests = 0;
   total = 5; //imageUrl happens in this order: A, B, A, B, A; expected counts are A:3, B:2.
 
-  public get apiUrl(): string {
-    return 'http://fake-url.com';
-  }
-
-  public get baseUrl(): string {
-    return `${this.apiUrl}/example`;
-  }
-
-  getCollection<ATTR extends keyof ExampleServiceIndex>(
-    route: ATTR,
-    params: HttpParams = new HttpParams()
-  ): Observable<SpringDataRestResponse<ExampleServiceIndex[ATTR]>> {
-    const pageSizeParam = params.get('size');
-    let pageSize = 1;
-    if (pageSizeParam != null) {
-      pageSize = parseInt(pageSizeParam);
+  getSingle(params: HttpParams): Observable<ExampleResource> {
+    const id: string = params.get('id') ?? '';
+    if (id == '') {
+      return throwError(() => new Error('not found'));
     }
+    const ver = `single ${++this.singleRequests}`;
+    const almost: ExampleResource = {
+      id: id,
+      ident: id,
+      name: id + ' name',
+      imageUrl: ['A', 'B'][+id % 2],
+      version: ver,
+      _links: {
+        self: {
+          href: '',
+        },
+        item: {
+          href: '',
+        },
+      },
+    };
+    return of(almost).pipe(delay(300));
+  }
 
-    let collection: ExampleResource[] = [];
+  getCollection(
+    _index: number,
+    page: number,
+    params: HttpParams = new HttpParams()
+  ): Observable<SpringDataRestResponse<ExampleResource>> {
+    let collection: Array<ExampleResource> = [];
 
     const version = `collection ${++this.collectionRequests}`;
     for (let num = 0; num < this.total; num++) {
       const id = `${num}`;
 
-      const entityImageUrl = ['A', 'B'][num % 2];
-      const collectImageUrl = params.get('imageUrl');
+      const entityimageUrl = ['A', 'B'][num % 2];
+      const collectimageUrl = params.get('imageUrl');
 
       const entityName = id + ' name';
       const collectName = params.get('name');
@@ -56,15 +62,16 @@ class ExampleService implements IApiService<ExampleServiceIndex> {
       const collectVersion = params.get('version');
 
       if (
-        (collectImageUrl == undefined || collectImageUrl == entityImageUrl) &&
+        (collectimageUrl == undefined || collectimageUrl == entityimageUrl) &&
         (collectName == undefined || collectName == entityName) &&
         (collectVersion == undefined || collectVersion == version)
       ) {
         collection.push({
           id: id,
+          ident: id,
           name: entityName,
           version: version,
-          imageUrl: entityImageUrl,
+          imageUrl: entityimageUrl,
           _links: {
             self: {
               href: '',
@@ -78,7 +85,7 @@ class ExampleService implements IApiService<ExampleServiceIndex> {
     }
 
     const totalLength = collection.length;
-    collection = collection.slice(0, pageSize);
+    collection = collection.slice(0, page);
     const bundle: SpringDataRestResponse<ExampleResource> = {
       _embedded: {
         data: collection,
@@ -103,36 +110,6 @@ class ExampleService implements IApiService<ExampleServiceIndex> {
     };
     return of(bundle).pipe(delay(300));
   }
-
-  getSingle<ATTR extends keyof ExampleServiceIndex>(
-    route: ATTR,
-    httpParams: HttpParams
-  ): Observable<ExampleServiceIndex[ATTR]> {
-    const id = httpParams.get('id');
-    if (id == null || id == '') {
-      return throwError(() => new Error('not found'));
-    }
-    const ver = `single ${++this.singleRequests}`;
-    const almost: ExampleResource = {
-      id: id,
-      name: id + ' name',
-      imageUrl: ['A', 'B'][+id % 2],
-      version: ver,
-      _links: {
-        self: {
-          href: '',
-        },
-        item: {
-          href: '',
-        },
-      },
-    };
-    return of(almost).pipe(delay(300));
-  }
-
-  getImageUrl(imageUrlSuffix: string): string {
-    return `${this.apiUrl}/images/${imageUrlSuffix}`;
-  }
 }
 
 @Injectable()
@@ -143,22 +120,22 @@ class AggressiveCacheExample extends AggressiveCache<{
     super(
       {
         example: {
-          service: (params) => service.getCollection('example', params),
+          service: (index, page, params) => service.getCollection(index, page, params),
           getAll: true,
           getBy: {
             match: (entry: ExampleResource) => [
               new HttpParams().set('id', entry.id),
-              new HttpParams().set('ident', entry.id),
+              new HttpParams().set('ident', entry.ident),
               new HttpParams().set('name', entry.name),
             ],
-            directRequest: (httpParams: HttpParams) => service.getSingle('example', httpParams),
+            directRequest: (httpParams: HttpParams) => service.getSingle(httpParams),
           },
           countBy: {
             match: (entry: ExampleResource) => {
               return [new HttpParams().set('imageUrl', entry.imageUrl), new HttpParams().set('version', entry.version)];
             },
             directRequest: (httpParams: HttpParams) => {
-              return service.getCollection('example', httpParams.set('size', 1)).pipe(map((x) => x.page.totalElements ?? 0));
+              return service.getCollection(1, 1, httpParams).pipe(map((x) => x.page.totalElements ?? 0));
             },
           },
           collectBy: {
@@ -166,7 +143,7 @@ class AggressiveCacheExample extends AggressiveCache<{
               return [new HttpParams().set('imageUrl', entry.imageUrl), new HttpParams().set('version', entry.version)];
             },
             directRequest: (httpParams: HttpParams) =>
-              service.getCollection('example', httpParams.set('size', 100)).pipe(map((x) => x._embedded.data.map((y) => y))),
+              service.getCollection(1, 100, httpParams).pipe(map((x) => x._embedded.data.map((y) => y))),
           },
         },
       },
@@ -213,6 +190,7 @@ describe('AggressiveCache', () => {
       cache.getBy('example', new HttpParams().set('id', '4')).subscribe((data) => {
         expect(data).toEqual({
           id: '4',
+          ident: '4',
           name: '4 name',
           imageUrl: 'A',
           version: 'single 1',
@@ -230,6 +208,7 @@ describe('AggressiveCache', () => {
       cache.getBy('example', new HttpParams().set('id', '4')).subscribe((data) => {
         expect(data).toEqual({
           id: '4',
+          ident: '4',
           name: '4 name',
           imageUrl: 'A',
           version: 'single 1',
@@ -247,6 +226,7 @@ describe('AggressiveCache', () => {
       cache.getBy('example', new HttpParams().set('id', '3')).subscribe((data) => {
         expect(data).toEqual({
           id: '3',
+          ident: '3',
           name: '3 name',
           imageUrl: 'B',
           version: 'single 2',
@@ -264,6 +244,7 @@ describe('AggressiveCache', () => {
       cache.getBy('example', new HttpParams().set('id', '3')).subscribe((data) => {
         expect(data).toEqual({
           id: '3',
+          ident: '3',
           name: '3 name',
           imageUrl: 'B',
           version: 'single 2',
@@ -284,6 +265,7 @@ describe('AggressiveCache', () => {
       cache.getBy('example', new HttpParams().set('id', '4').set('ident', '4')).subscribe((data) => {
         expect(data).toEqual({
           id: '4',
+          ident: '4',
           name: '4 name',
           imageUrl: 'A',
           version: 'single 1',
@@ -305,6 +287,7 @@ describe('AggressiveCache', () => {
       cache.getBy('example', new HttpParams().set('id', '4')).subscribe((data) => {
         expect(data).toEqual({
           id: '4',
+          ident: '4',
           name: '4 name',
           imageUrl: 'A',
           version: 'single 1',
@@ -321,6 +304,7 @@ describe('AggressiveCache', () => {
       cache.getBy('example', new HttpParams().set('id', '4')).subscribe((data) => {
         expect(data).toEqual({
           id: '4',
+          ident: '4',
           name: '4 name',
           imageUrl: 'A',
           version: 'single 1',
@@ -334,12 +318,12 @@ describe('AggressiveCache', () => {
           },
         });
       });
-
       setTimeout(() => {
         //multiple requests come in after the response comes back from the server
         cache.getBy('example', new HttpParams().set('id', '4')).subscribe((data) => {
           expect(data).toEqual({
             id: '4',
+            ident: '4',
             name: '4 name',
             imageUrl: 'A',
             version: 'single 1',
@@ -353,10 +337,10 @@ describe('AggressiveCache', () => {
             },
           });
         });
-
         cache.getBy('example', new HttpParams().set('id', '4')).subscribe((data) => {
           expect(data).toEqual({
             id: '4',
+            ident: '4',
             name: '4 name',
             imageUrl: 'A',
             version: 'single 1',
@@ -385,25 +369,21 @@ describe('AggressiveCache', () => {
     }));
 
     it('should have cached getAll after it witnesses a complete getCollection', fakeAsync(() => {
-      cache
-        .informCacheOnResponse('example', service.getCollection('example', new HttpParams().set('size', 10)))
-        .subscribe(() => {
-          cache.getAll('example').subscribe((data) => {
-            expect(data[0].version).toEqual('collection 1');
-          });
+      cache.informCacheOnResponse('example', service.getCollection(1, 10)).subscribe(() => {
+        cache.getAll('example').subscribe((data) => {
+          expect(data[0].version).toEqual('collection 1');
         });
+      });
       tick(1200);
     }));
 
     it('should not have cached getAll after it witnesses an incomplete getCollection', fakeAsync(() => {
-      cache
-        .informCacheOnResponse('example', service.getCollection('example', new HttpParams().set('size', 3)))
-        .subscribe(() => {
-          cache.getAll('example').subscribe((data) => {
-            expect(data[0].version).toEqual('collection 2');
-            //collection 1 was the initial request; getAll remade it because not enough elements were retrieved.
-          });
+      cache.informCacheOnResponse('example', service.getCollection(1, 3)).subscribe(() => {
+        cache.getAll('example').subscribe((data) => {
+          expect(data[0].version).toEqual('collection 2');
+          //collection 1 was the initial request; getAll remade it because not enough elements were retrieved.
         });
+      });
       tick(1200);
     }));
   });
@@ -504,6 +484,7 @@ describe('AggressiveCache', () => {
       cache.getBy('example', new HttpParams().set('id', '4')).subscribe((data) => {
         expect(data).toEqual({
           id: '4',
+          ident: '4',
           name: '4 name',
           imageUrl: 'A',
           version: 'single 1',
@@ -521,6 +502,7 @@ describe('AggressiveCache', () => {
       cache.getBy('example', new HttpParams().set('id', '4')).subscribe((data) => {
         expect(data).toEqual({
           id: '4',
+          ident: '4',
           name: '4 name',
           imageUrl: 'A',
           version: 'single 2',
@@ -541,26 +523,32 @@ describe('AggressiveCache', () => {
   describe('informCacheOnResponse', () => {
     describe('getBy', () => {
       it('should have cached any values that it witnesses in a getCollection', fakeAsync(() => {
-        cache
-          .informCacheOnResponse('example', service.getCollection('example', new HttpParams().set('size', 3)))
-          .subscribe();
+        cache.informCacheOnResponse('example', service.getCollection(1, 3)).subscribe();
         setTimeout(() => {
           // 2 is cached by id
-          cache.getBy('example', new HttpParams().set('id', '2')).subscribe((data) => {
-            expect(data).toEqual({
-              id: '2',
-              name: '2 name',
-              imageUrl: 'A',
-              version: 'collection 1',
-              _links: {
-                self: {
-                  href: '',
+          cache.getBy('example', new HttpParams().set('id', '2')).subscribe({
+            next: (data) => {
+              expect(data).toEqual({
+                id: '2',
+                ident: '2',
+                name: '2 name',
+                imageUrl: 'A',
+                version: 'collection 1',
+                _links: {
+                  self: {
+                    href: '',
+                  },
+                  item: {
+                    href: '',
+                  },
                 },
-                item: {
-                  href: '',
-                },
-              },
-            });
+              });
+            },
+            error: (err: Error) => {
+              fail(
+                `Caught an error where there should be no error. Params = new HttpParams().set('id', '2') | Message = ${err.message}`
+              );
+            },
           });
           /**
            *  2 is cached by ident
@@ -568,38 +556,54 @@ describe('AggressiveCache', () => {
            * We know this is from informCacheOnResponse, because the service getSingle will throw
            * an error if the HttpParams doesn't have an id set
            */
-          cache.getBy('example', new HttpParams().set('ident', '2')).subscribe((data) => {
-            expect(data).toEqual({
-              id: '2',
-              name: '2 name',
-              imageUrl: 'A',
-              version: 'collection 1',
-              _links: {
-                self: {
-                  href: '',
+          cache.getBy('example', new HttpParams().set('ident', '2')).subscribe({
+            next: (data) => {
+              expect(data).toEqual({
+                id: '2',
+                ident: '2',
+                name: '2 name',
+                imageUrl: 'A',
+                version: 'collection 1',
+                _links: {
+                  self: {
+                    href: '',
+                  },
+                  item: {
+                    href: '',
+                  },
                 },
-                item: {
-                  href: '',
-                },
-              },
-            });
+              });
+            },
+            error: (err: Error) => {
+              fail(
+                `Caught an error where there should be no error. Params = new HttpParams().set('ident', '2') | Message = ${err.message}`
+              );
+            },
           });
           //4 is not cached
-          cache.getBy('example', new HttpParams().set('id', '4')).subscribe((data) => {
-            expect(data).toEqual({
-              id: '4',
-              name: '4 name',
-              imageUrl: 'A',
-              version: 'single 1',
-              _links: {
-                self: {
-                  href: '',
+          cache.getBy('example', new HttpParams().set('id', '4')).subscribe({
+            next: (data) => {
+              expect(data).toEqual({
+                id: '4',
+                ident: '4',
+                name: '4 name',
+                imageUrl: 'A',
+                version: 'single 1',
+                _links: {
+                  self: {
+                    href: '',
+                  },
+                  item: {
+                    href: '',
+                  },
                 },
-                item: {
-                  href: '',
-                },
-              },
-            });
+              });
+            },
+            error: (err: Error) => {
+              fail(
+                `Caught an error where there should be no error. Params = new HttpParams().set('id', '4') | Message = ${err.message}`
+              );
+            },
           });
           /**
            *  4 is NOT cached by ident
@@ -622,107 +626,99 @@ describe('AggressiveCache', () => {
 
     describe('countAll', () => {
       it('should have cached count after it witnesses a getCollection', fakeAsync(() => {
-        cache
-          .informCacheOnResponse('example', service.getCollection('example', new HttpParams().set('size', 3)))
-          .subscribe(() => {
-            cache.countAll('example').subscribe((data) => {
-              expect(data).toEqual(5);
-              service.getCollection('example', new HttpParams().set('size', 3)).subscribe((y) => {
-                expect(y._embedded.data[0].version).toEqual('collection 2');
-                //this is collection 2: collection 1 was the first innerservice.getCollection().
-                //if the total count wasn't cached, it would be collection 3, because it would make a getCollection count.
-              });
+        cache.informCacheOnResponse('example', service.getCollection(1, 3)).subscribe(() => {
+          cache.countAll('example').subscribe((data) => {
+            expect(data).toEqual(5);
+            service.getCollection(1, 3).subscribe((y) => {
+              expect(y._embedded.data[0].version).toEqual('collection 2');
+              //this is collection 2: collection 1 was the first innerservice.getCollection().
+              //if the total count wasn't cached, it would be collection 3, because it would make a getCollection count.
             });
           });
+        });
         tick(800);
       }));
     });
 
     describe('countBy', () => {
       it('should have cached counts after it witnesses a complete getCollection', fakeAsync(() => {
-        cache
-          .informCacheOnResponse('example', service.getCollection('example', new HttpParams().set('size', 10)))
-          .subscribe(() => {
-            cache.countBy('example', new HttpParams().set('imageUrl', 'A')).subscribe((data) => {
-              expect(data).toEqual(3);
-            });
-            cache.countBy('example', new HttpParams().set('imageUrl', 'B')).subscribe((data) => {
-              expect(data).toEqual(2);
-            });
-            cache.countBy('example', new HttpParams().set('version', 'collection 1')).subscribe((data) => {
-              expect(data).toEqual(5);
-            });
-            cache.countBy('example', new HttpParams().set('imageUrl', 'C')).subscribe((data) => {
-              expect(data).toEqual(0);
-            });
-            setTimeout(() => {
-              service.getCollection('example', new HttpParams().set('size', 3)).subscribe((y) => {
-                /**
-                 * This is collection 3: collection 1 was the first innerservice.getCollection().
-                 * Collection 2 was the cache.countBy imageUrl C since the original getCollection returned no elements of imageUrl C
-                 * if the counts weren't cached, it would be collection 5, because it would make a getCollection for each count.
-                 */
-                expect(y._embedded.data[0].version).toEqual('collection 3');
-              });
-            }, 1000);
+        cache.informCacheOnResponse('example', service.getCollection(1, 10)).subscribe(() => {
+          cache.countBy('example', new HttpParams().set('imageUrl', 'A')).subscribe((data) => {
+            expect(data).toEqual(3);
           });
+          cache.countBy('example', new HttpParams().set('imageUrl', 'B')).subscribe((data) => {
+            expect(data).toEqual(2);
+          });
+          cache.countBy('example', new HttpParams().set('version', 'collection 1')).subscribe((data) => {
+            expect(data).toEqual(5);
+          });
+          cache.countBy('example', new HttpParams().set('imageUrl', 'C')).subscribe((data) => {
+            expect(data).toEqual(0);
+          });
+          setTimeout(() => {
+            service.getCollection(1, 3).subscribe((y) => {
+              /**
+               * This is collection 3: collection 1 was the first innerservice.getCollection().
+               * Collection 2 was the cache.countBy imageUrl C since the original getCollection returned no elements of imageUrl C
+               * if the counts weren't cached, it would be collection 5, because it would make a getCollection for each count.
+               */
+              expect(y._embedded.data[0].version).toEqual('collection 3');
+            });
+          }, 1000);
+        });
         tick(2000);
       }));
 
       it('should not have cached counts after it witnesses an incomplete getCollection', fakeAsync(() => {
-        cache
-          .informCacheOnResponse('example', service.getCollection('example', new HttpParams().set('size', 3)))
-          .subscribe(() => {
-            cache.countBy('example', new HttpParams().set('imageUrl', 'A')).subscribe((data) => {
-              expect(data).toEqual(3);
-            });
-            cache.countBy('example', new HttpParams().set('imageUrl', 'B')).subscribe((data) => {
-              expect(data).toEqual(2);
-            });
-            cache.countBy('example', new HttpParams().set('imageUrl', 'C')).subscribe((data) => {
-              expect(data).toEqual(0);
-            });
-            setTimeout(() => {
-              service.getCollection('example', new HttpParams().set('size', 3)).subscribe((y) => {
-                expect(y._embedded.data[0].version).toEqual('collection 5');
-              });
-            }, 400);
+        cache.informCacheOnResponse('example', service.getCollection(1, 3)).subscribe(() => {
+          cache.countBy('example', new HttpParams().set('imageUrl', 'A')).subscribe((data) => {
+            expect(data).toEqual(3);
           });
+          cache.countBy('example', new HttpParams().set('imageUrl', 'B')).subscribe((data) => {
+            expect(data).toEqual(2);
+          });
+          cache.countBy('example', new HttpParams().set('imageUrl', 'C')).subscribe((data) => {
+            expect(data).toEqual(0);
+          });
+          setTimeout(() => {
+            service.getCollection(1, 3).subscribe((y) => {
+              expect(y._embedded.data[0].version).toEqual('collection 5');
+            });
+          }, 400);
+        });
         tick(1200);
       }));
     });
 
     describe('collectBy', () => {
       it('should have cached counts after it witnesses a complete getCollection', fakeAsync(() => {
-        cache
-          .informCacheOnResponse('example', service.getCollection('example', new HttpParams().set('size', 10)))
-          .subscribe(() => {
-            cache.collectBy('example', new HttpParams().set('imageUrl', 'A')).subscribe((data) => {
-              expect(data.length).toEqual(3);
-              expect(data[0].version).toEqual('collection 1');
-            });
-            cache.collectBy('example', new HttpParams().set('imageUrl', 'B')).subscribe((data) => {
-              expect(data.length).toEqual(2);
-              expect(data[0].version).toEqual('collection 1');
-            });
-            cache.collectBy('example', new HttpParams().set('version', 'collection 1')).subscribe((data) => {
-              expect(data.length).toEqual(5);
-              expect(data[0].version).toEqual('collection 1');
-            });
-            cache.collectBy('example', new HttpParams().set('imageUrl', 'C')).subscribe((data) => {
-              expect(data.length).toEqual(0);
-            });
-            setTimeout(() => {
-              service.getCollection('example', new HttpParams().set('size', 3)).subscribe((y) => {
-                /**
-                 * This is collection 3: collection 1 was the first innerservice.getCollection().
-                 * Collection 2 was the cache.countBy imageUrl C since the original getCollection returned no elements of imageUrl C
-                 * if the counts weren't cached, it would be collection 5, because it would make a getCollection for each count.
-                 */
-                expect(y._embedded.data[0].version).toEqual('collection 3');
-              });
-            }, 1000);
+        cache.informCacheOnResponse('example', service.getCollection(1, 10)).subscribe(() => {
+          cache.collectBy('example', new HttpParams().set('imageUrl', 'A')).subscribe((data) => {
+            expect(data.length).toEqual(3);
+            expect(data[0].version).toEqual('collection 1');
           });
+          cache.collectBy('example', new HttpParams().set('imageUrl', 'B')).subscribe((data) => {
+            expect(data.length).toEqual(2);
+            expect(data[0].version).toEqual('collection 1');
+          });
+          cache.collectBy('example', new HttpParams().set('version', 'collection 1')).subscribe((data) => {
+            expect(data.length).toEqual(5);
+            expect(data[0].version).toEqual('collection 1');
+          });
+          cache.collectBy('example', new HttpParams().set('imageUrl', 'C')).subscribe((data) => {
+            expect(data.length).toEqual(0);
+          });
+          setTimeout(() => {
+            service.getCollection(1, 3).subscribe((y) => {
+              /**
+               * This is collection 3: collection 1 was the first innerservice.getCollection().
+               * Collection 2 was the cache.countBy imageUrl C since the original getCollection returned no elements of imageUrl C
+               * if the counts weren't cached, it would be collection 5, because it would make a getCollection for each count.
+               */
+              expect(y._embedded.data[0].version).toEqual('collection 3');
+            });
+          }, 1000);
+        });
         tick(2000);
       }));
     });

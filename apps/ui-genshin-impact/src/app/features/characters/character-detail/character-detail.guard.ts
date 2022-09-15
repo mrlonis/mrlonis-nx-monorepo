@@ -5,14 +5,14 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class HeroDetailGuard implements CanActivate {
+export class CharacterDetailGuard implements CanActivate {
   constructor(private router: Router) {}
 
   canActivate(
     route: ActivatedRouteSnapshot,
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     state: RouterStateSnapshot
   ): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+    console.log(state);
     const id = route.paramMap.get('id');
     if (id == 'error') {
       alert('Invalid product Id');

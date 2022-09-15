@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { InjectionToken } from '@angular/core';
 import { Observable, Subject, throwError } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import { catchError, map } from 'rxjs/operators';
 import { BaseResource, SpringDataRestResponse } from '../../../types';
 
 export interface ApiConfigProvider {
@@ -15,7 +15,6 @@ export interface IApiService<T extends { [key: string]: BaseResource }> {
   getCollection<ATTR extends keyof T>(route: ATTR, params: HttpParams): Observable<SpringDataRestResponse<T[ATTR]>>;
   getSingle<ATTR extends keyof T>(route: ATTR, httpParams: HttpParams): Observable<T[ATTR]>;
   getImageUrl(imageUrlSuffix: string): string;
-  log(message: string): void;
 }
 
 export abstract class ApiService<T extends { [key: string]: BaseResource }> implements IApiService<T> {
@@ -74,7 +73,6 @@ export abstract class ApiService<T extends { [key: string]: BaseResource }> impl
   }
 
   getSingle<ATTR extends keyof T>(route: ATTR, httpParams: HttpParams): Observable<T[ATTR]> {
-    // console.log(httpParams.toString());
     const baseUrl = `${this.apiUrl}/${String(route)}`;
 
     const id = httpParams.get('id');
@@ -109,9 +107,5 @@ export abstract class ApiService<T extends { [key: string]: BaseResource }> impl
 
   getImageUrl(imageUrlSuffix: string): string {
     return `${this.apiUrl}/images/${imageUrlSuffix}`;
-  }
-
-  log(message: string): void {
-    console.log(`ApiService: log(): ${message}`);
   }
 }
