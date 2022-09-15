@@ -1,0 +1,89 @@
+table {
+  border-width: thin;
+  border-color: black;
+  border-style: solid;
+}
+.tablehead {
+  background-color: black;
+  color: white;
+}
+.riddle {
+  width: 100px;
+  height: 300px;
+  border-style: double;
+  padding: 1px;
+  border-width: 2px;
+  border-color: green;
+  background-image: url('images/desert.jpg');
+}
+.dumbledore {
+  width: 200px;
+  height: 200px;
+  border-style: dashed;
+  border-width: 7px;
+  border-color: purple;
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-image: url('images/smiley.png');
+  background-color: #dbdbdb;
+  margin: 5in 2in 1.5in 2in;
+}
+.red-col {
+  background-color: red;
+}
+.first {
+  width: 250 px;
+  height: 350 px;
+  border-style: solid;
+  border-width: 7px;
+  border-color: black;
+  padding: 1px;
+  background-color: red;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+.second {
+  width: 300 px;
+  height: 350 px;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: yellow;
+  padding: 2px;
+  background-color: blue;
+  color: yellow;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.third {
+  width: 200 px;
+  height: 400 px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: yellow;
+  padding: 3px;
+  background-color: green;
+  color: black;
+  font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;
+  text-align: center;
+}
+.fourth {
+  width: 150 px;
+  height: 300 px;
+  border-style: dashed;
+  border-width: 12px;
+  border-color: pink;
+  padding: 4px;
+  background-color: purple;
+  color: pink;
+  font-size: 14px;
+  font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;
+  text-align: center;
+}
+.red1 {
+  color: red;
+  font-size: 36px;
+  font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

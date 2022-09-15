@@ -124,3 +124,70 @@ Run the command `nx g @nrwl/angular:component my-component-name --project=my-app
 Example: `nx g @nrwl/angular:component my-component-name --project=my-app-name`
 
 [Reference](https://nx.dev/packages/angular/generators/component)
+
+### Old .eslintrc.json
+
+```json
+{
+  "root": true,
+  "ignorePatterns": ["projects/**/*"],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": ["tsconfig.json"]
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/recommended--extra",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:import/recommended",
+        "plugin:import/typescript",
+        // "plugin:jsdoc/recommended",
+        "plugin:prettier/recommended"
+        // "plugin:storybook/recommended"
+      ],
+      "plugins": ["deprecation"],
+      "rules": {
+        "deprecation/deprecation": "error",
+        "@typescript-eslint/unbound-method": ["error", { "ignoreStatic": true }],
+        "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }],
+        "import/no-unresolved": "error",
+        "import/order": "error",
+        "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {}
+    },
+    {
+      "files": ["*.html"],
+      "excludedFiles": ["*inline-template-*.component.html"],
+      "extends": ["plugin:prettier/recommended"],
+      "rules": {
+        "prettier/prettier": ["error", { "parser": "angular", "printWidth": 125, "tabWidth": 2 }]
+      }
+    }
+  ]
+}
+```

@@ -1,6 +1,6 @@
 {
   "extends": ["../../.eslintrc.json"],
-  "ignorePatterns": ["!**/*"],
+  "ignorePatterns": ["!**/*", "./src/assets/old-git-repo/**/*"],
   "overrides": [
     {
       "files": ["*.ts"],
@@ -10,7 +10,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "mrlonisNxAngularMonorepo",
+            "prefix": "mrlonis",
             "style": "camelCase"
           }
         ],
@@ -18,7 +18,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "mrlonis-nx-angular-monorepo",
+            "prefix": "mrlonis",
             "style": "kebab-case"
           }
         ]

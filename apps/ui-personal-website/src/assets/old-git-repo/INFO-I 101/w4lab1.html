@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>INFO-I 101: Week 4 - Lab 1</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS/main.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../home.html">Matthew Lonis</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="defaultNavbar1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="w4lab1.html">Week 4 - Lab 1<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"
+                >i101 Labs<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="index.html">i101 Home Page</a></li>
+                <li class="divider"></li>
+                <li><a href="w1lab1.html">Week 1 - Lab 1</a></li>
+                <li><a href="w1lab2.html">Week 1 - Lab 2</a></li>
+                <li><a href="w2lab1.html">Week 2 - Lab 1</a></li>
+                <li><a href="w2lab2.html">Week 2 - Lab 2</a></li>
+                <li><a href="w3lab1.html">Week 3 - Lab 1</a></li>
+                <li><a href="w3lab2.html">Week 3 - Lab 2</a></li>
+                <li class="divider"></li>
+                <li><a href="http://pages.iu.edu/~mrlonis/home.html">Individual Project</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"
+                >i101 Resources<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.indiana.edu/~i101/summer/">i101 Main Website - Summer</a></li>
+                <li><a href="https://winscp.net/eng/download.php">WinSCP</a></li>
+                <li><a href="https://kb.iu.edu/d/merc">What is Mercury at IU?</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.godlikeproductions.com/">Godlike Productions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1 class="text-center">INFO-I 101: Week 4 - Lab 1</h1>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <div class="container-fluid">
+      <div class="row text-left">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h3>Database Questions:</h3>
+          <ul class="1">
+            <li>What are primary keys?</li>
+            <ul class="2">
+              <li>Primary keys are unique values that represent a whole row.</li>
+            </ul>
+            <li>What are foreign keys?</li>
+            <ul class="2">
+              <li>Foreign keys are a type of key that exist in one table but refers to the primary key in another table.</li>
+            </ul>
+            <li>What is the differrence between a tuple and an attribute?</li>
+            <ul class="2">
+              <li>
+                The difference between a tuple and an attribute is that an attribute the column headings in the relational
+                table. All the attributes together make the Schema and hence the order of the attributes matters. Tuples on
+                the other hand are just a complete row in a table. It is also known as the record and the order of the tuples
+                does not matter.
+              </li>
+            </ul>
+            <li>What is SQL (What does it stand for and what does it do?)?</li>
+            <ul class="2">
+              <li>
+                SQL stands for <i>Structured Query Language</i>. It is composed of short lines of code that are grouped
+                together. A group of short lines of code is called a <i>query</i>.
+              </li>
+            </ul>
+            <li>
+              Provide an example of something that could be used as a primary key (do NOT use the example from the slides)
+              and explain why you chose that.
+            </li>
+            <ul class="2">
+              <li>
+                All the employees at a food company are given an employee ID upon being hired. Every employee has a unique
+                set of characters identifying them. I chose this example because I remember getting employee IDs when I was
+                in high school working at fast food restaurant.
+              </li>
+            </ul>
+          </ul>
+
+          <hr />
+
+          <h3><a href="Database1.accdb" class="main">Database 1</a></h3>
+
+          <hr />
+
+          <h3>More Questions:</h3>
+          <ul class="1">
+            <li>What is the primary key for the <b>students</b> table?</li>
+            <ul class="2">
+              <li>The primary key for the students table is the student id.</li>
+            </ul>
+            <li>What are the two foreign keys in the <b>takes_course</b> table?</li>
+            <ul class="2">
+              <li>
+                The two foreign keys in the takes_course table is the id and classid elements from the students and courses
+                tables respectively.
+              </li>
+            </ul>
+            <li>How are the foreign and primary keys related in the table?</li>
+            <ul class="2">
+              <li>
+                The foreign keys and primary keys are related in the table because each student id will correspond to a
+                classid.
+              </li>
+            </ul>
+            <li>What is the schema of the <b>courses</b> table</li>
+            <ul class="2">
+              <li>
+                The Schema of the courses table is one that relates classids to a name, course number, and a credit hour
+                amount.
+              </li>
+            </ul>
+          </ul>
+
+          <hr />
+
+          <h3><a href="Database2.accdb" class="main">Database 2</a></h3>
+
+          <hr />
+
+          <ul class="1">
+            <li>What are the common types of problems with data?</li>
+            <ul class="2">
+              <li>The common types of problem with data is that without contect the data is meaningless.</li>
+            </ul>
+            <li>What was the hardest type of data problem to clean for you?</li>
+            <ul class="2">
+              <li>
+                Of all the data problems assigned for me to cleanup, none of them were challenging in any way once I learned
+                how to use 'BETWEEN' and 'AND' in the query.
+              </li>
+            </ul>
+            <li>
+              How comfortable do you feel about cleaning data sets? (1-5 :: 1 == highly uncomfortable, 5 == quite
+              comfortable)
+            </li>
+            <ul class="2">
+              <li>I would give myself a 5; very comfortable cleaning data sets.</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row text-left">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h4>Matthew Lonis</h4>
+          <p>
+            Made with bootstrap @ <a href="http://getbootstrap.com/">http://getbootstrap.com/</a> &middot;
+            <a href="index.html">My Website</a>
+          </p>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../bootstrap-3.3.7-dist/js/jquery-1.11.3.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  </body>
+</html>

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'mrlonis-nx-angular-monorepo-root',
+  selector: 'pm-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'ui-ps-angular-getting-started';
+  pageTitle = 'Angular: Getting Started';
 }

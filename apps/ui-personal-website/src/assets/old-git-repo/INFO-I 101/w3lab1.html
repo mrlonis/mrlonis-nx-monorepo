@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>INFO-I 101: Week 3 - Lab 1</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS/main.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../home.html">Matthew Lonis</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="defaultNavbar1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="w3lab1.html">Week 3 - Lab 1<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"
+                >i101 Labs<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="index.html">i101 Home Page</a></li>
+                <li class="divider"></li>
+                <li><a href="w1lab1.html">Week 1 - Lab 1</a></li>
+                <li><a href="w1lab2.html">Week 1 - Lab 2</a></li>
+                <li><a href="w2lab1.html">Week 2 - Lab 1</a></li>
+                <li><a href="w2lab2.html">Week 2 - Lab 2</a></li>
+                <li><a href="w3lab2.html">Week 3 - Lab 2</a></li>
+                <li><a href="w4lab1.html">Week 4 - Lab 1</a></li>
+                <li class="divider"></li>
+                <li><a href="http://pages.iu.edu/~mrlonis/home.html">Individual Project</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"
+                >i101 Resources<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.indiana.edu/~i101/summer/">i101 Main Website - Summer</a></li>
+                <li><a href="https://winscp.net/eng/download.php">WinSCP</a></li>
+                <li><a href="https://kb.iu.edu/d/merc">What is Mercury at IU?</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.godlikeproductions.com/">Godlike Productions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1 class="text-center">INFO-I 101: Week 3 - Lab 1</h1>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <div class="container-fluid">
+      <div class="row text-left">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1>JavaScript 1</h1>
+          <p id="script1">This is my first JavaScript!</p>
+          <button type="button" onclick="newFunction()">Click Here!</button>
+
+          <hr />
+
+          <h1>JavaScript + CSS</h1>
+          <p id="styleChange1">JavaScript can change the style of the text too!</p>
+          <button type="button" onclick="styleChange1()">Click Me!</button>
+
+          <hr />
+
+          <h2>Trying it one more time!"</h2>
+          <p id="styleChange2">Here's another style change!</p>
+          <button type="button" onclick="styleChange2()">Another One!</button>
+
+          <hr />
+
+          <h1>JavaScript 2</h1>
+          <img id="myImage" onclick="changeImage()" src="images/bulboff.png" />
+          <p>Click the lightbulb to turn it on/off</p>
+
+          <hr />
+
+          <p>Please input a number between 1 and 10:</p>
+          <input id="num" type="number" />
+          <button type="button" onclick="checkNumber()">Sumbit</button>
+          <p id="script2"></p>
+
+          <hr />
+
+          <h2>JavaScript Questions</h2>
+          <ul class="2">
+            <li>When would be an instance where validation is useful in a website?</li>
+            <ul class="1">
+              <li>
+                Validating a webpage is useful because in a non valid werb page, one is force to rely on the browser for
+                correcting their code, and each browser does this correcting differently. For example, if I had forgot a tag
+                on this page or forgot to close one, Google Chrome might ignore this but Safari won't and I would end up with
+                a broken layout
+              </li>
+            </ul>
+            <li>
+              What would happen if your HTML code did not have either "bulbon" or "bulboff" as the original source for the
+              picture? Try and see what happens if you change he picture to some new image without changing the JavaScript
+              function. Why does it behave this way?
+            </li>
+            <ul class="1">
+              <li>
+                The function still works when you change the starting image. However once the image is changed you can't go
+                back to the original image because the JavaScript code is creating a loop between "bulbon" and "bulboff."
+              </li>
+            </ul>
+          </ul>
+
+          <hr />
+
+          <h2>JavaScript Homework</h2>
+          <p id="homework1">
+            Well I was told to write come kind of paragraph here. I'm making this for my Homework problem where i have to
+            change the content of this paragraph. Should be fun!
+          </p>
+          <button type="button" onclick="homeworkContent()">Content Change</button>
+
+          <hr />
+
+          <p id="homework2">
+            You already know what it is. I was told to make another paragraph but this time I have something special planned.
+            This time... I am going to be changing the style.
+          </p>
+          <button type="button" onclick="homeworkStyle()">Style Change</button>
+
+          <script>
+            function newFunction() {
+              document.getElementById('script1').innerHTML = 'It worked!';
+            }
+
+            function styleChange1() {
+              var x = document.getElementById('styleChange1');
+              x.style.fontSize = '25px';
+              x.style.color = 'red';
+            }
+            function styleChange2() {
+              var x = document.getElementById('styleChange2');
+              x.innerHTML = 'Again';
+              x.style.fontSize = '40px';
+              x.style.color = 'green';
+            }
+            function changeImage() {
+              var image = document.getElementById('myImage');
+              if (image.src.match('bulbon')) {
+                image.src = 'images/bulboff.png';
+              } else {
+                image.src = 'images/bulbon.png';
+              }
+            }
+            function checkNumber() {
+              var x, text;
+              x = document.getElementById('num').value;
+              if (isNaN(x) || x < 1 || x > 10) {
+                text = 'input not valid';
+              } else {
+                text = 'input accepted';
+                changeImage();
+              }
+              document.getElementById('script2').innerHTML = text;
+            }
+            function homeworkContent() {
+              var x = document.getElementById('homework1');
+              x.innerHTML = 'Hmm........ Did you read that?';
+            }
+            function homeworkStyle() {
+              var x = document.getElementById('homework2');
+              x.style.fontSize = '60px';
+              x.style.color = 'blue';
+            }
+          </script>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row text-left">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h4>Matthew Lonis</h4>
+          <p>
+            Made with bootstrap @ <a href="http://getbootstrap.com/">http://getbootstrap.com/</a> &middot;
+            <a href="index.html">My Website</a>
+          </p>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../bootstrap-3.3.7-dist/js/jquery-1.11.3.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>INFO-I 101: Week 3 - Lab 2</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS/main.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../home.html">Matthew Lonis</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="defaultNavbar1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="w3lab2.html">Week 3 - Lab 2<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"
+                >i101 Labs<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="index.html">i101 Home Page</a></li>
+                <li class="divider"></li>
+                <li><a href="w1lab1.html">Week 1 - Lab 1</a></li>
+                <li><a href="w1lab2.html">Week 1 - Lab 2</a></li>
+                <li><a href="w2lab1.html">Week 2 - Lab 1</a></li>
+                <li><a href="w2lab2.html">Week 2 - Lab 2</a></li>
+                <li><a href="w3lab1.html">Week 3 - Lab 1</a></li>
+                <li><a href="w4lab1.html">Week 4 - Lab 1</a></li>
+                <li class="divider"></li>
+                <li><a href="http://pages.iu.edu/~mrlonis/home.html">Individual Project</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"
+                >i101 Resources<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.indiana.edu/~i101/summer/">i101 Main Website - Summer</a></li>
+                <li><a href="https://winscp.net/eng/download.php">WinSCP</a></li>
+                <li><a href="https://kb.iu.edu/d/merc">What is Mercury at IU?</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.godlikeproductions.com/">Godlike Productions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1 class="text-center">INFO-I 101: Week 3 - Lab 2</h1>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <div class="container-fluid">
+      <div class="row text-left">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1>JavaScript 3</h1>
+          <p>Please enter a non-negative number:</p>
+          <input type="text" id="max_number" />
+          <input type="button" onClick="count_it()" value="Count!" />
+          <br />
+          <span id="counter"></span>
+
+          <hr />
+
+          <h1>Rock, Paper, Scissors Game</h1>
+          <input type="image" src="images/rock.jpg" onclick="rock_choice()" />
+          <input type="image" src="images/paper.jpg" onclick="paper_choice()" />
+          <input type="image" src="images/scissors.jpg" onclick="scissors_choice()" />
+
+          <hr />
+
+          <p id="test"></p>
+
+          <hr />
+
+          <h2>JavaScript Questions</h2>
+          <ul class="1">
+            <li>
+              What is the difference between n = 1 + 2 and n = "1" + "2"? If you were to display the contents of n, what
+              would be shown on your page for each?
+            </li>
+            <ul class="2">
+              <li>
+                The difference between "n = 1 + 2" and "n = "1" + "2"" is that the first n will return 3 and the second n
+                will return "12" due to data types.
+              </li>
+            </ul>
+            <li>What does the += mean/do? What did we use for in our JavaScript function?</li>
+            <ul class="2">
+              <li>
+                The symbol '+=' is an assignment operator used to assign an addition for a variable. So, for example, if we
+                have x = 2 and x += 3, x really equals 5. We used this symbol in our number counting JavaScript.
+              </li>
+            </ul>
+            <li>
+              What two pieces of code/functions/attributes have we used the last few labs to indicate/identify where our
+              JavaScript changes are going to happen?
+            </li>
+            <ul class="2">
+              <li>
+                We have used ID tages both in the attributes of a tag (for example "< p id="test" >") as well in the
+                JavaScript code (document.getElementById("test").
+              </li>
+            </ul>
+            <li>What benefit comes from breaking down the construction of bigger projects into smaller pieces?</li>
+            <ul class="2">
+              <li>
+                The benefit that comes from breaking down the construction of bigger problems into smaller pieces is that
+                errors are less common and they're easier to find. It creates a more stable construction.
+              </li>
+            </ul>
+            <li>
+              Why did we constantly check and test our code? What could go wrong if we did not test our code thoroughly?
+            </li>
+            <ul class="2">
+              <li>
+                We conastantly check and tested our code becuase if we didn't, one problem could've caused the entire
+                JavaScript code to not work and it would have been a hassle to go back through and figure out where the bug
+                is.
+              </li>
+            </ul>
+            <li>
+              What would we need to add in order to make this game usable for 2 players instead of 1 player and 1 computer?
+              Include pseudocode as part of your answer to assist in thinking about changing the project from PvC (player vs
+              computer) to PvP (player vs player).
+            </li>
+            <ul class="2">
+              <li>
+                We would need to ass some sort of second input for a second player as well as a way to track which player
+                chose which picture. From there it is merely a compare and contrast who picked what to decide the winner.
+              </li>
+            </ul>
+          </ul>
+
+          <hr />
+
+          <script>
+            function count_it() {
+              var max_num = document.getElementById('max_number').value;
+              var numbers = '';
+              for (var i = 1; i <= max_num; i++) {
+                if (i % 2 == 0) {
+                  numbers += String(i) + '<br>';
+                } else {
+                  numbers += String(i) + '';
+                }
+              }
+              document.getElementById('counter').innerHTML = numbers;
+            }
+
+            function rock_choice() {
+              var number = Math.floor(Math.random() * 3 + 1);
+
+              if (number == 1) {
+                document.getElementById('test').innerHTML =
+                  '<h1>YOU:</h1><img src="images/rock.jpg" /><h1>COMPUTER:</h1><img src="images/rock.jpg" /><h1>TIE</h1>';
+              } else if (number == 2) {
+                document.getElementById('test').innerHTML =
+                  '<h1>YOU:</h1><img src="images/rock.jpg"/><h1>COMPUTER:</h1> <img src="images/paper.jpg"/><h1>LOSE</h1>';
+              } else {
+                document.getElementById('test').innerHTML =
+                  '<h1>YOU:</h1><img src="images/rock.jpg"/><h1>COMPUTER:</h1><img src="images/scissors.jpg"/><h1>WIN</h1>';
+              }
+            }
+
+            function paper_choice() {
+              var number = Math.floor(Math.random() * 3 + 1);
+
+              if (number == 1) {
+                document.getElementById('test').innerHTML =
+                  '<h1>YOU:</h1><img src="images/paper.jpg" /><h1>COMPUTER:</h1><img src="images/paper.jpg" /><h1>TIE</h1>';
+              } else if (number == 2) {
+                document.getElementById('test').innerHTML =
+                  '<h1>YOU:</h1><img src="images/paper.jpg"/><h1>COMPUTER:</h1> <img src="images/rock.jpg"/><h1>WIN</h1>';
+              } else {
+                document.getElementById('test').innerHTML =
+                  '<h1>YOU:</h1><img src="images/paper.jpg"/><h1>COMPUTER:</h1> <img src="images/scissors.jpg"/><h1>LOSE</h1>';
+              }
+            }
+
+            function scissors_choice() {
+              var number = Math.floor(Math.random() * 3 + 1);
+
+              if (number == 1) {
+                document.getElementById('test').innerHTML =
+                  '<h1>YOU:</h1><img src="images/scissors.jpg" /><h1>COMPUTER:</h1><img src="images/scissors.jpg" /><h1>TIE</h1>';
+              } else if (number == 2) {
+                document.getElementById('test').innerHTML =
+                  '<h1>YOU:</h1><img src="images/scissors.jpg"/><h1>COMPUTER:</h1> <img src="images/rock.jpg"/><h1>LOSE</h1>';
+              } else {
+                document.getElementById('test').innerHTML =
+                  '<h1>YOU:</h1><img src="images/scissors.jpg"/><h1>COMPUTER:</h1> <img src="images/paper.jpg"/><h1>WIN</h1>';
+              }
+            }
+          </script>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row text-left">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h4>Matthew Lonis</h4>
+          <p>
+            Made with bootstrap @ <a href="http://getbootstrap.com/">http://getbootstrap.com/</a> &middot;
+            <a href="index.html">My Website</a>
+          </p>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../bootstrap-3.3.7-dist/js/jquery-1.11.3.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  </body>
+</html>
