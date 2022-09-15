@@ -100,6 +100,14 @@
       "prettier --write",
       "ng-lint-staged lint ui-mythic-heroes-e2e --fix --"
     ],
+    "apps/ui-personal-website/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint ui-personal-website --fix --"
+    ],
+    "apps/ui-personal-website-e2e/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint ui-personal-website-e2e --fix --"
+    ],
     "libs/ngx-mrlonis-shared/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
       "ng-lint-staged lint ngx-mrlonis-shared --fix --"

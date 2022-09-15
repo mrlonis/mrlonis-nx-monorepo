@@ -1,0 +1,87 @@
+{
+  "projectType": "application",
+  "sourceRoot": "apps/ui-personal-website/src",
+  "prefix": "mrlonis-nx-angular-monorepo",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/ui-personal-website",
+        "index": "apps/ui-personal-website/src/index.html",
+        "main": "apps/ui-personal-website/src/main.ts",
+        "polyfills": "apps/ui-personal-website/src/polyfills.ts",
+        "tsConfig": "apps/ui-personal-website/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": ["apps/ui-personal-website/src/favicon.ico", "apps/ui-personal-website/src/assets"],
+        "styles": ["apps/ui-personal-website/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/ui-personal-website/src/environments/environment.ts",
+              "with": "apps/ui-personal-website/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "ui-personal-website:build:production"
+        },
+        "development": {
+          "browserTarget": "ui-personal-website:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "ui-personal-website:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/ui-personal-website/**/*.ts", "apps/ui-personal-website/**/*.html"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/ui-personal-website"],
+      "options": {
+        "jestConfig": "apps/ui-personal-website/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
