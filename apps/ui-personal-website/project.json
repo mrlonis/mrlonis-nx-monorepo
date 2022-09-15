@@ -14,7 +14,10 @@
         "tsConfig": "apps/ui-personal-website/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/ui-personal-website/src/favicon.ico", "apps/ui-personal-website/src/assets"],
-        "styles": ["apps/ui-personal-website/src/styles.scss"],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+          "apps/ui-personal-website/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
