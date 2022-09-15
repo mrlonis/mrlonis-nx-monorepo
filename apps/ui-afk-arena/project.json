@@ -14,7 +14,7 @@
         "tsConfig": "apps/ui-afk-arena/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/ui-afk-arena/src/favicon.ico", "apps/ui-afk-arena/src/assets"],
-        "styles": ["apps/ui-afk-arena/src/styles.scss"],
+        "styles": ["./node_modules/@angular/material/prebuilt-themes/indigo-pink.css", "apps/ui-afk-arena/src/styles.scss"],
         "scripts": []
       },
       "configurations": {

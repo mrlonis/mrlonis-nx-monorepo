@@ -101,4 +101,4 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 
 ### Adding @angular/material to an Angular application
 
-Run the command: `nx g @angular/material:ng-add`
+Run the command: `nx g @angular/material:ng-add --project=my-project-name`
