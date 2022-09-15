@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "ngx-mrlonis-shared": "libs/ngx-mrlonis-shared",
     "ui-genshin-impact": "apps/ui-genshin-impact",
     "ui-genshin-impact-e2e": "apps/ui-genshin-impact-e2e",
     "ui-mythic-heroes": "apps/ui-mythic-heroes",
