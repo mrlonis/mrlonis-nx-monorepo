@@ -2,7 +2,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/ui-ps-angular-forms/src",
-  "prefix": "mrlonis-nx-angular-monorepo",
+  "prefix": "app",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -16,6 +16,7 @@
         "inlineStyleLanguage": "scss",
         "assets": ["apps/ui-ps-angular-forms/src/favicon.ico", "apps/ui-ps-angular-forms/src/assets"],
         "styles": [
+          "./node_modules/bootstrap/dist/css/bootstrap.min.css",
           "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
           "apps/ui-ps-angular-forms/src/styles.scss"
         ],
