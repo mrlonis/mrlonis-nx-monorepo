@@ -1,0 +1,1323 @@
+{
+  "_embedded": {
+    "data": [
+      {
+        "id": "24932afc-7b54-4767-9324-89cb80707fdf",
+        "name": "Amaterasu",
+        "imageUrl": "mythicHeroes/Amaterasu.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2022/03/website_icon-120x120.png",
+        "factionId": "18fb7a3d-8b54-47d4-a7b6-a19628fd8b03",
+        "rarityId": "861c6318-608c-4e02-b22d-6dad82989a8e",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/24932afc-7b54-4767-9324-89cb80707fdf"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/24932afc-7b54-4767-9324-89cb80707fdf"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/24932afc-7b54-4767-9324-89cb80707fdf/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/24932afc-7b54-4767-9324-89cb80707fdf/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/24932afc-7b54-4767-9324-89cb80707fdf/type"
+          }
+        }
+      },
+      {
+        "id": "e8b9396f-286c-46ef-8d8b-ce679d639ca2",
+        "name": "Anubis",
+        "imageUrl": "mythicHeroes/Anubis.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-9-120x120.png",
+        "factionId": "48bf14d3-5600-4699-bdc7-de3bbe0b2b96",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/e8b9396f-286c-46ef-8d8b-ce679d639ca2"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/e8b9396f-286c-46ef-8d8b-ce679d639ca2"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/e8b9396f-286c-46ef-8d8b-ce679d639ca2/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/e8b9396f-286c-46ef-8d8b-ce679d639ca2/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/e8b9396f-286c-46ef-8d8b-ce679d639ca2/type"
+          }
+        }
+      },
+      {
+        "id": "4153fab1-096b-45ae-8510-c7a1ac7bf6ea",
+        "name": "Archimedes",
+        "imageUrl": "mythicHeroes/Archimedes.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2022/01/tinyprofile-120x120.png",
+        "factionId": "3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/4153fab1-096b-45ae-8510-c7a1ac7bf6ea"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/4153fab1-096b-45ae-8510-c7a1ac7bf6ea"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/4153fab1-096b-45ae-8510-c7a1ac7bf6ea/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/4153fab1-096b-45ae-8510-c7a1ac7bf6ea/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/4153fab1-096b-45ae-8510-c7a1ac7bf6ea/type"
+          }
+        }
+      },
+      {
+        "id": "c131f051-dbeb-47f5-ab0d-29e646fa55f8",
+        "name": "Artemis",
+        "imageUrl": "mythicHeroes/Artemis.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-120x120.png",
+        "factionId": "3b667712-e1ec-4fa7-acc2-c363398d1b3c",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/c131f051-dbeb-47f5-ab0d-29e646fa55f8"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/c131f051-dbeb-47f5-ab0d-29e646fa55f8"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/c131f051-dbeb-47f5-ab0d-29e646fa55f8/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/c131f051-dbeb-47f5-ab0d-29e646fa55f8/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/c131f051-dbeb-47f5-ab0d-29e646fa55f8/type"
+          }
+        }
+      },
+      {
+        "id": "38c59115-8aa3-4c04-8b1e-616834dd914d",
+        "name": "Athena",
+        "imageUrl": "mythicHeroes/Athena.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-1-120x120.png",
+        "factionId": "3b667712-e1ec-4fa7-acc2-c363398d1b3c",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/38c59115-8aa3-4c04-8b1e-616834dd914d"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/38c59115-8aa3-4c04-8b1e-616834dd914d"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/38c59115-8aa3-4c04-8b1e-616834dd914d/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/38c59115-8aa3-4c04-8b1e-616834dd914d/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/38c59115-8aa3-4c04-8b1e-616834dd914d/type"
+          }
+        }
+      },
+      {
+        "id": "3ca985de-5f53-4d98-a332-b906376828f4",
+        "name": "Baldur",
+        "imageUrl": "mythicHeroes/Baldur.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-2-120x120.png",
+        "factionId": "3b667712-e1ec-4fa7-acc2-c363398d1b3c",
+        "rarityId": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/3ca985de-5f53-4d98-a332-b906376828f4"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/3ca985de-5f53-4d98-a332-b906376828f4"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/3ca985de-5f53-4d98-a332-b906376828f4/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/3ca985de-5f53-4d98-a332-b906376828f4/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/3ca985de-5f53-4d98-a332-b906376828f4/type"
+          }
+        }
+      },
+      {
+        "id": "7e6bf3bb-1db8-4639-9d94-60c46394fb37",
+        "name": "Cassandra",
+        "imageUrl": "mythicHeroes/Cassandra.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/11/tinyprofile-1-120x120.png",
+        "factionId": "3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/7e6bf3bb-1db8-4639-9d94-60c46394fb37"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/7e6bf3bb-1db8-4639-9d94-60c46394fb37"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/7e6bf3bb-1db8-4639-9d94-60c46394fb37/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/7e6bf3bb-1db8-4639-9d94-60c46394fb37/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/7e6bf3bb-1db8-4639-9d94-60c46394fb37/type"
+          }
+        }
+      },
+      {
+        "id": "6dd4f54b-14cc-4af8-8798-de440df46bd5",
+        "name": "Cleopatra",
+        "imageUrl": "mythicHeroes/Cleopatra.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-16-120x120.png",
+        "factionId": "3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/6dd4f54b-14cc-4af8-8798-de440df46bd5"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/6dd4f54b-14cc-4af8-8798-de440df46bd5"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/6dd4f54b-14cc-4af8-8798-de440df46bd5/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/6dd4f54b-14cc-4af8-8798-de440df46bd5/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/6dd4f54b-14cc-4af8-8798-de440df46bd5/type"
+          }
+        }
+      },
+      {
+        "id": "dd962b2e-8e24-4ef3-896d-07ac0403b955",
+        "name": "Dionysus",
+        "imageUrl": "mythicHeroes/Dionysus.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-3-120x120.png",
+        "factionId": "3b667712-e1ec-4fa7-acc2-c363398d1b3c",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/dd962b2e-8e24-4ef3-896d-07ac0403b955"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/dd962b2e-8e24-4ef3-896d-07ac0403b955"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/dd962b2e-8e24-4ef3-896d-07ac0403b955/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/dd962b2e-8e24-4ef3-896d-07ac0403b955/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/dd962b2e-8e24-4ef3-896d-07ac0403b955/type"
+          }
+        }
+      },
+      {
+        "id": "8fcf129f-f384-40e6-80d9-2a5233c6deab",
+        "name": "Dracula",
+        "imageUrl": "mythicHeroes/Dracula.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-10-120x120.png",
+        "factionId": "48bf14d3-5600-4699-bdc7-de3bbe0b2b96",
+        "rarityId": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/8fcf129f-f384-40e6-80d9-2a5233c6deab"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/8fcf129f-f384-40e6-80d9-2a5233c6deab"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/8fcf129f-f384-40e6-80d9-2a5233c6deab/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/8fcf129f-f384-40e6-80d9-2a5233c6deab/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/8fcf129f-f384-40e6-80d9-2a5233c6deab/type"
+          }
+        }
+      },
+      {
+        "id": "8b106d30-8e3b-4382-8d3a-7353911cd65f",
+        "name": "Eos",
+        "imageUrl": "mythicHeroes/Eos.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-4-120x120.png",
+        "factionId": "3b667712-e1ec-4fa7-acc2-c363398d1b3c",
+        "rarityId": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/8b106d30-8e3b-4382-8d3a-7353911cd65f"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/8b106d30-8e3b-4382-8d3a-7353911cd65f"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/8b106d30-8e3b-4382-8d3a-7353911cd65f/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/8b106d30-8e3b-4382-8d3a-7353911cd65f/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/8b106d30-8e3b-4382-8d3a-7353911cd65f/type"
+          }
+        }
+      },
+      {
+        "id": "3c138d70-5597-4f88-9ed4-d5c0e4b5b5ed",
+        "name": "Faust",
+        "imageUrl": "mythicHeroes/Faust.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2022/02/tinyprofile-1-120x120.png",
+        "factionId": "48bf14d3-5600-4699-bdc7-de3bbe0b2b96",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/3c138d70-5597-4f88-9ed4-d5c0e4b5b5ed"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/3c138d70-5597-4f88-9ed4-d5c0e4b5b5ed"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/3c138d70-5597-4f88-9ed4-d5c0e4b5b5ed/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/3c138d70-5597-4f88-9ed4-d5c0e4b5b5ed/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/3c138d70-5597-4f88-9ed4-d5c0e4b5b5ed/type"
+          }
+        }
+      },
+      {
+        "id": "52d48856-27df-4eb0-82f6-c4d901ae16c3",
+        "name": "Flora",
+        "imageUrl": "mythicHeroes/Flora.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/10/tinyprofile-2-120x120.png",
+        "factionId": "0f20eef1-b90b-42dc-b642-31b5d4574332",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/52d48856-27df-4eb0-82f6-c4d901ae16c3"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/52d48856-27df-4eb0-82f6-c4d901ae16c3"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/52d48856-27df-4eb0-82f6-c4d901ae16c3/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/52d48856-27df-4eb0-82f6-c4d901ae16c3/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/52d48856-27df-4eb0-82f6-c4d901ae16c3/type"
+          }
+        }
+      },
+      {
+        "id": "4d8c96ab-9ce4-4568-9ee6-e5165aef1d61",
+        "name": "Freyja",
+        "imageUrl": "mythicHeroes/Freyja.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2022/05/website_icon-120x120.png",
+        "factionId": "0f20eef1-b90b-42dc-b642-31b5d4574332",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/4d8c96ab-9ce4-4568-9ee6-e5165aef1d61"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/4d8c96ab-9ce4-4568-9ee6-e5165aef1d61"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/4d8c96ab-9ce4-4568-9ee6-e5165aef1d61/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/4d8c96ab-9ce4-4568-9ee6-e5165aef1d61/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/4d8c96ab-9ce4-4568-9ee6-e5165aef1d61/type"
+          }
+        }
+      },
+      {
+        "id": "5b9ebee6-63a7-45ca-9cee-5f8a3d66f547",
+        "name": "Gaia",
+        "imageUrl": "mythicHeroes/Gaia.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-25-120x120.png",
+        "factionId": "0f20eef1-b90b-42dc-b642-31b5d4574332",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/5b9ebee6-63a7-45ca-9cee-5f8a3d66f547"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/5b9ebee6-63a7-45ca-9cee-5f8a3d66f547"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/5b9ebee6-63a7-45ca-9cee-5f8a3d66f547/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/5b9ebee6-63a7-45ca-9cee-5f8a3d66f547/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/5b9ebee6-63a7-45ca-9cee-5f8a3d66f547/type"
+          }
+        }
+      },
+      {
+        "id": "4fdb55f2-28c2-4b19-812c-acc3e5f6bbdb",
+        "name": "Ganesha",
+        "imageUrl": "mythicHeroes/Ganesha.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-24-120x120.png",
+        "factionId": "0f20eef1-b90b-42dc-b642-31b5d4574332",
+        "rarityId": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "typeId": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/4fdb55f2-28c2-4b19-812c-acc3e5f6bbdb"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/4fdb55f2-28c2-4b19-812c-acc3e5f6bbdb"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/4fdb55f2-28c2-4b19-812c-acc3e5f6bbdb/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/4fdb55f2-28c2-4b19-812c-acc3e5f6bbdb/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/4fdb55f2-28c2-4b19-812c-acc3e5f6bbdb/type"
+          }
+        }
+      },
+      {
+        "id": "9680e9a1-f5b5-4363-a39b-537c5d96b9a1",
+        "name": "Ganjiang & Moye",
+        "imageUrl": "mythicHeroes/Ganjiang_Moye.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-17-120x120.png",
+        "factionId": "3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/9680e9a1-f5b5-4363-a39b-537c5d96b9a1"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/9680e9a1-f5b5-4363-a39b-537c5d96b9a1"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/9680e9a1-f5b5-4363-a39b-537c5d96b9a1/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/9680e9a1-f5b5-4363-a39b-537c5d96b9a1/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/9680e9a1-f5b5-4363-a39b-537c5d96b9a1/type"
+          }
+        }
+      },
+      {
+        "id": "36196fd2-0921-48d2-a5ca-4a86abd5463c",
+        "name": "Hades",
+        "imageUrl": "mythicHeroes/Hades.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-11-120x120.png",
+        "factionId": "48bf14d3-5600-4699-bdc7-de3bbe0b2b96",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/36196fd2-0921-48d2-a5ca-4a86abd5463c"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/36196fd2-0921-48d2-a5ca-4a86abd5463c"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/36196fd2-0921-48d2-a5ca-4a86abd5463c/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/36196fd2-0921-48d2-a5ca-4a86abd5463c/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/36196fd2-0921-48d2-a5ca-4a86abd5463c/type"
+          }
+        }
+      },
+      {
+        "id": "cc0342b3-4d0d-455d-9577-734d069ff982",
+        "name": "Harpy",
+        "imageUrl": "mythicHeroes/Harpy.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-26-120x120.png",
+        "factionId": "0f20eef1-b90b-42dc-b642-31b5d4574332",
+        "rarityId": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/cc0342b3-4d0d-455d-9577-734d069ff982"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/cc0342b3-4d0d-455d-9577-734d069ff982"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/cc0342b3-4d0d-455d-9577-734d069ff982/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/cc0342b3-4d0d-455d-9577-734d069ff982/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/cc0342b3-4d0d-455d-9577-734d069ff982/type"
+          }
+        }
+      },
+      {
+        "id": "9cc1bd29-7f5b-449d-81a9-b3677628e12f",
+        "name": "Hela",
+        "imageUrl": "mythicHeroes/Hela.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/12/Smallportrait-120x120.png",
+        "factionId": "48bf14d3-5600-4699-bdc7-de3bbe0b2b96",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/9cc1bd29-7f5b-449d-81a9-b3677628e12f"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/9cc1bd29-7f5b-449d-81a9-b3677628e12f"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/9cc1bd29-7f5b-449d-81a9-b3677628e12f/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/9cc1bd29-7f5b-449d-81a9-b3677628e12f/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/9cc1bd29-7f5b-449d-81a9-b3677628e12f/type"
+          }
+        }
+      },
+      {
+        "id": "7c26f2f6-7a8a-475a-a40e-ca811e70fda8",
+        "name": "Hercules",
+        "imageUrl": "mythicHeroes/Hercules.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-18-120x120.png",
+        "factionId": "3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/7c26f2f6-7a8a-475a-a40e-ca811e70fda8"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/7c26f2f6-7a8a-475a-a40e-ca811e70fda8"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/7c26f2f6-7a8a-475a-a40e-ca811e70fda8/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/7c26f2f6-7a8a-475a-a40e-ca811e70fda8/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/7c26f2f6-7a8a-475a-a40e-ca811e70fda8/type"
+          }
+        }
+      },
+      {
+        "id": "ce1034b5-7ec3-4714-a912-ea9e84c30b58",
+        "name": "Hippolyta",
+        "imageUrl": "mythicHeroes/Hippolyta.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-19-120x120.png",
+        "factionId": "3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56",
+        "rarityId": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "typeId": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/ce1034b5-7ec3-4714-a912-ea9e84c30b58"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/ce1034b5-7ec3-4714-a912-ea9e84c30b58"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/ce1034b5-7ec3-4714-a912-ea9e84c30b58/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/ce1034b5-7ec3-4714-a912-ea9e84c30b58/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/ce1034b5-7ec3-4714-a912-ea9e84c30b58/type"
+          }
+        }
+      },
+      {
+        "id": "21c8cad2-8929-4e3f-990d-711958fdaa25",
+        "name": "Hodur",
+        "imageUrl": "mythicHeroes/Hodur.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-12-120x120.png",
+        "factionId": "48bf14d3-5600-4699-bdc7-de3bbe0b2b96",
+        "rarityId": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/21c8cad2-8929-4e3f-990d-711958fdaa25"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/21c8cad2-8929-4e3f-990d-711958fdaa25"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/21c8cad2-8929-4e3f-990d-711958fdaa25/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/21c8cad2-8929-4e3f-990d-711958fdaa25/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/21c8cad2-8929-4e3f-990d-711958fdaa25/type"
+          }
+        }
+      },
+      {
+        "id": "6ca0502b-c1e1-4cee-99fe-f9ba8562a2ee",
+        "name": "Idun",
+        "imageUrl": "mythicHeroes/Idun.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-27-120x120.png",
+        "factionId": "0f20eef1-b90b-42dc-b642-31b5d4574332",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/6ca0502b-c1e1-4cee-99fe-f9ba8562a2ee"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/6ca0502b-c1e1-4cee-99fe-f9ba8562a2ee"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/6ca0502b-c1e1-4cee-99fe-f9ba8562a2ee/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/6ca0502b-c1e1-4cee-99fe-f9ba8562a2ee/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/6ca0502b-c1e1-4cee-99fe-f9ba8562a2ee/type"
+          }
+        }
+      },
+      {
+        "id": "04202a9f-b03d-4760-b184-8bef7df2e989",
+        "name": "Iset",
+        "imageUrl": "mythicHeroes/Iset.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/10/smallportrait-120x120.png",
+        "factionId": "3c707195-0030-4b5d-8cac-83b414091c0b",
+        "rarityId": "861c6318-608c-4e02-b22d-6dad82989a8e",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/04202a9f-b03d-4760-b184-8bef7df2e989"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/04202a9f-b03d-4760-b184-8bef7df2e989"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/04202a9f-b03d-4760-b184-8bef7df2e989/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/04202a9f-b03d-4760-b184-8bef7df2e989/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/04202a9f-b03d-4760-b184-8bef7df2e989/type"
+          }
+        }
+      },
+      {
+        "id": "d06368c3-cd13-4248-98e5-98e6740709b9",
+        "name": "Izanami",
+        "imageUrl": "mythicHeroes/Izanami.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-13-120x120.png",
+        "factionId": "48bf14d3-5600-4699-bdc7-de3bbe0b2b96",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/d06368c3-cd13-4248-98e5-98e6740709b9"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/d06368c3-cd13-4248-98e5-98e6740709b9"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/d06368c3-cd13-4248-98e5-98e6740709b9/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/d06368c3-cd13-4248-98e5-98e6740709b9/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/d06368c3-cd13-4248-98e5-98e6740709b9/type"
+          }
+        }
+      },
+      {
+        "id": "6c35278d-23ad-4d90-b55c-83b9c22a7e96",
+        "name": "Joan of Arc",
+        "imageUrl": "mythicHeroes/Joan_of_Arc.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-20-120x120.png",
+        "factionId": "3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/6c35278d-23ad-4d90-b55c-83b9c22a7e96"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/6c35278d-23ad-4d90-b55c-83b9c22a7e96"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/6c35278d-23ad-4d90-b55c-83b9c22a7e96/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/6c35278d-23ad-4d90-b55c-83b9c22a7e96/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/6c35278d-23ad-4d90-b55c-83b9c22a7e96/type"
+          }
+        }
+      },
+      {
+        "id": "2affca92-111e-4feb-b22f-f4a964c7e4ee",
+        "name": "Leonidas",
+        "imageUrl": "mythicHeroes/Leonidas.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2022/06/website_icon-120x120.png",
+        "factionId": "3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/2affca92-111e-4feb-b22f-f4a964c7e4ee"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/2affca92-111e-4feb-b22f-f4a964c7e4ee"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/2affca92-111e-4feb-b22f-f4a964c7e4ee/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/2affca92-111e-4feb-b22f-f4a964c7e4ee/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/2affca92-111e-4feb-b22f-f4a964c7e4ee/type"
+          }
+        }
+      },
+      {
+        "id": "45c8ee52-b5cd-42c1-83ac-da98b829ac1f",
+        "name": "Lilith",
+        "imageUrl": "mythicHeroes/Lilith.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/10/tinyprofile-120x120.png",
+        "factionId": "f104ce01-4dbc-4708-99bb-32a3425b0dc6",
+        "rarityId": "861c6318-608c-4e02-b22d-6dad82989a8e",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/45c8ee52-b5cd-42c1-83ac-da98b829ac1f"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/45c8ee52-b5cd-42c1-83ac-da98b829ac1f"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/45c8ee52-b5cd-42c1-83ac-da98b829ac1f/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/45c8ee52-b5cd-42c1-83ac-da98b829ac1f/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/45c8ee52-b5cd-42c1-83ac-da98b829ac1f/type"
+          }
+        }
+      },
+      {
+        "id": "c5c98cb9-2ea1-4e71-8de1-828b54fcb3d7",
+        "name": "Loki",
+        "imageUrl": "mythicHeroes/Loki.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2022/04/website_icon-120x120.png",
+        "factionId": "48bf14d3-5600-4699-bdc7-de3bbe0b2b96",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/c5c98cb9-2ea1-4e71-8de1-828b54fcb3d7"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/c5c98cb9-2ea1-4e71-8de1-828b54fcb3d7"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/c5c98cb9-2ea1-4e71-8de1-828b54fcb3d7/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/c5c98cb9-2ea1-4e71-8de1-828b54fcb3d7/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/c5c98cb9-2ea1-4e71-8de1-828b54fcb3d7/type"
+          }
+        }
+      },
+      {
+        "id": "d3b64a9c-fb8b-441c-aebc-fd2594a8772b",
+        "name": "Lu Bu",
+        "imageUrl": "mythicHeroes/Lu_Bu.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-21-120x120.png",
+        "factionId": "3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/d3b64a9c-fb8b-441c-aebc-fd2594a8772b"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/d3b64a9c-fb8b-441c-aebc-fd2594a8772b"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/d3b64a9c-fb8b-441c-aebc-fd2594a8772b/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/d3b64a9c-fb8b-441c-aebc-fd2594a8772b/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/d3b64a9c-fb8b-441c-aebc-fd2594a8772b/type"
+          }
+        }
+      },
+      {
+        "id": "0db0e2c2-0e6d-49ad-9a05-6e51485db78f",
+        "name": "Lucifer",
+        "imageUrl": "mythicHeroes/Lucifer.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-5-120x120.png",
+        "factionId": "c21815cd-e3f6-40af-b89a-4f8101ceb1c1",
+        "rarityId": "861c6318-608c-4e02-b22d-6dad82989a8e",
+        "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/0db0e2c2-0e6d-49ad-9a05-6e51485db78f"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/0db0e2c2-0e6d-49ad-9a05-6e51485db78f"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/0db0e2c2-0e6d-49ad-9a05-6e51485db78f/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/0db0e2c2-0e6d-49ad-9a05-6e51485db78f/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/0db0e2c2-0e6d-49ad-9a05-6e51485db78f/type"
+          }
+        }
+      },
+      {
+        "id": "f7878f88-86fa-4536-8553-2a0d4de122b1",
+        "name": "Medusa",
+        "imageUrl": "mythicHeroes/Medusa.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-14-120x120.png",
+        "factionId": "48bf14d3-5600-4699-bdc7-de3bbe0b2b96",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/f7878f88-86fa-4536-8553-2a0d4de122b1"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/f7878f88-86fa-4536-8553-2a0d4de122b1"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/f7878f88-86fa-4536-8553-2a0d4de122b1/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/f7878f88-86fa-4536-8553-2a0d4de122b1/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/f7878f88-86fa-4536-8553-2a0d4de122b1/type"
+          }
+        }
+      },
+      {
+        "id": "cc21dc5b-1bcf-4b04-a72d-b8bd81eb6941",
+        "name": "Merlin",
+        "imageUrl": "mythicHeroes/Merlin.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-22-120x120.png",
+        "factionId": "3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56",
+        "rarityId": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/cc21dc5b-1bcf-4b04-a72d-b8bd81eb6941"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/cc21dc5b-1bcf-4b04-a72d-b8bd81eb6941"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/cc21dc5b-1bcf-4b04-a72d-b8bd81eb6941/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/cc21dc5b-1bcf-4b04-a72d-b8bd81eb6941/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/cc21dc5b-1bcf-4b04-a72d-b8bd81eb6941/type"
+          }
+        }
+      },
+      {
+        "id": "e1dc4ec1-e5c9-477c-a16f-2ed248d5c6a9",
+        "name": "Mulan",
+        "imageUrl": "mythicHeroes/Mulan.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-32-120x120.png",
+        "factionId": "3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56",
+        "rarityId": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/e1dc4ec1-e5c9-477c-a16f-2ed248d5c6a9"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/e1dc4ec1-e5c9-477c-a16f-2ed248d5c6a9"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/e1dc4ec1-e5c9-477c-a16f-2ed248d5c6a9/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/e1dc4ec1-e5c9-477c-a16f-2ed248d5c6a9/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/e1dc4ec1-e5c9-477c-a16f-2ed248d5c6a9/type"
+          }
+        }
+      },
+      {
+        "id": "1c6035c8-3596-474c-badb-a68ca879e0c5",
+        "name": "Muse",
+        "imageUrl": "mythicHeroes/Muse.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/09/smallportrait-120x120.png",
+        "factionId": "3b667712-e1ec-4fa7-acc2-c363398d1b3c",
+        "rarityId": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/1c6035c8-3596-474c-badb-a68ca879e0c5"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/1c6035c8-3596-474c-badb-a68ca879e0c5"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/1c6035c8-3596-474c-badb-a68ca879e0c5/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/1c6035c8-3596-474c-badb-a68ca879e0c5/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/1c6035c8-3596-474c-badb-a68ca879e0c5/type"
+          }
+        }
+      },
+      {
+        "id": "0d3c5d86-e1e1-4f5a-a83f-bac2b4101d6a",
+        "name": "Nagakayna",
+        "imageUrl": "mythicHeroes/Nagakayna.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-28-120x120.png",
+        "factionId": "0f20eef1-b90b-42dc-b642-31b5d4574332",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/0d3c5d86-e1e1-4f5a-a83f-bac2b4101d6a"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/0d3c5d86-e1e1-4f5a-a83f-bac2b4101d6a"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/0d3c5d86-e1e1-4f5a-a83f-bac2b4101d6a/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/0d3c5d86-e1e1-4f5a-a83f-bac2b4101d6a/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/0d3c5d86-e1e1-4f5a-a83f-bac2b4101d6a/type"
+          }
+        }
+      },
+      {
+        "id": "2751bbaf-e676-4e9e-b5f6-8682dcbfcc3f",
+        "name": "Nuwa",
+        "imageUrl": "mythicHeroes/Nuwa.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-23-120x120.png",
+        "factionId": "75376e43-3a61-4963-b653-fd6a1a877665",
+        "rarityId": "861c6318-608c-4e02-b22d-6dad82989a8e",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/2751bbaf-e676-4e9e-b5f6-8682dcbfcc3f"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/2751bbaf-e676-4e9e-b5f6-8682dcbfcc3f"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/2751bbaf-e676-4e9e-b5f6-8682dcbfcc3f/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/2751bbaf-e676-4e9e-b5f6-8682dcbfcc3f/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/2751bbaf-e676-4e9e-b5f6-8682dcbfcc3f/type"
+          }
+        }
+      },
+      {
+        "id": "e439a6ff-c672-481a-a1c4-512667227d71",
+        "name": "Oberon",
+        "imageUrl": "mythicHeroes/Oberon.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-29-120x120.png",
+        "factionId": "0f20eef1-b90b-42dc-b642-31b5d4574332",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/e439a6ff-c672-481a-a1c4-512667227d71"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/e439a6ff-c672-481a-a1c4-512667227d71"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/e439a6ff-c672-481a-a1c4-512667227d71/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/e439a6ff-c672-481a-a1c4-512667227d71/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/e439a6ff-c672-481a-a1c4-512667227d71/type"
+          }
+        }
+      },
+      {
+        "id": "47c5c905-9a39-447f-9816-895346de4efa",
+        "name": "Odin",
+        "imageUrl": "mythicHeroes/Odin.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2022/04/website_icon-1-120x120.png",
+        "factionId": "3b667712-e1ec-4fa7-acc2-c363398d1b3c",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/47c5c905-9a39-447f-9816-895346de4efa"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/47c5c905-9a39-447f-9816-895346de4efa"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/47c5c905-9a39-447f-9816-895346de4efa/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/47c5c905-9a39-447f-9816-895346de4efa/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/47c5c905-9a39-447f-9816-895346de4efa/type"
+          }
+        }
+      },
+      {
+        "id": "feb76e3b-af5a-4479-a427-260ece4ae9cc",
+        "name": "Persephone",
+        "imageUrl": "mythicHeroes/Persephone.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyportrait-120x120.png",
+        "factionId": "48bf14d3-5600-4699-bdc7-de3bbe0b2b96",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/feb76e3b-af5a-4479-a427-260ece4ae9cc"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/feb76e3b-af5a-4479-a427-260ece4ae9cc"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/feb76e3b-af5a-4479-a427-260ece4ae9cc/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/feb76e3b-af5a-4479-a427-260ece4ae9cc/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/feb76e3b-af5a-4479-a427-260ece4ae9cc/type"
+          }
+        }
+      },
+      {
+        "id": "9b8572bb-3fd9-4ee9-8413-e0d3c76a04c5",
+        "name": "Poseidon",
+        "imageUrl": "mythicHeroes/Poseidon.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2022/01/tinyprofile-1-120x120.png",
+        "factionId": "0f20eef1-b90b-42dc-b642-31b5d4574332",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/9b8572bb-3fd9-4ee9-8413-e0d3c76a04c5"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/9b8572bb-3fd9-4ee9-8413-e0d3c76a04c5"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/9b8572bb-3fd9-4ee9-8413-e0d3c76a04c5/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/9b8572bb-3fd9-4ee9-8413-e0d3c76a04c5/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/9b8572bb-3fd9-4ee9-8413-e0d3c76a04c5/type"
+          }
+        }
+      },
+      {
+        "id": "9f760a5c-746e-44eb-bb10-6f64a34b9494",
+        "name": "Susanoo",
+        "imageUrl": "mythicHeroes/Susanoo.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-7-120x120.png",
+        "factionId": "3b667712-e1ec-4fa7-acc2-c363398d1b3c",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/9f760a5c-746e-44eb-bb10-6f64a34b9494"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/9f760a5c-746e-44eb-bb10-6f64a34b9494"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/9f760a5c-746e-44eb-bb10-6f64a34b9494/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/9f760a5c-746e-44eb-bb10-6f64a34b9494/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/9f760a5c-746e-44eb-bb10-6f64a34b9494/type"
+          }
+        }
+      },
+      {
+        "id": "fdf9c5fc-162e-4f5f-808c-b3cb60f47c87",
+        "name": "Tamamo no Mae",
+        "imageUrl": "mythicHeroes/Tamamo_no_Mae.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-30-120x120.png",
+        "factionId": "0f20eef1-b90b-42dc-b642-31b5d4574332",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/fdf9c5fc-162e-4f5f-808c-b3cb60f47c87"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/fdf9c5fc-162e-4f5f-808c-b3cb60f47c87"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/fdf9c5fc-162e-4f5f-808c-b3cb60f47c87/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/fdf9c5fc-162e-4f5f-808c-b3cb60f47c87/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/fdf9c5fc-162e-4f5f-808c-b3cb60f47c87/type"
+          }
+        }
+      },
+      {
+        "id": "101da47d-4837-4b98-9f22-304b724a0605",
+        "name": "Thanatos",
+        "imageUrl": "mythicHeroes/Thanatos.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-15-120x120.png",
+        "factionId": "48bf14d3-5600-4699-bdc7-de3bbe0b2b96",
+        "rarityId": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "typeId": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/101da47d-4837-4b98-9f22-304b724a0605"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/101da47d-4837-4b98-9f22-304b724a0605"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/101da47d-4837-4b98-9f22-304b724a0605/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/101da47d-4837-4b98-9f22-304b724a0605/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/101da47d-4837-4b98-9f22-304b724a0605/type"
+          }
+        }
+      },
+      {
+        "id": "3f8aea6f-68e6-45f8-b3db-7c0b5eaa45b2",
+        "name": "Thor",
+        "imageUrl": "mythicHeroes/Thor.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/11/tinyprofile-120x120.png",
+        "factionId": "3b667712-e1ec-4fa7-acc2-c363398d1b3c",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "b3f6a57c-eac7-41c2-bd5c-9066d92319d4",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/3f8aea6f-68e6-45f8-b3db-7c0b5eaa45b2"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/3f8aea6f-68e6-45f8-b3db-7c0b5eaa45b2"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/3f8aea6f-68e6-45f8-b3db-7c0b5eaa45b2/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/3f8aea6f-68e6-45f8-b3db-7c0b5eaa45b2/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/3f8aea6f-68e6-45f8-b3db-7c0b5eaa45b2/type"
+          }
+        }
+      },
+      {
+        "id": "54d59c66-03b8-4f33-a142-d0f7fbb0fa1a",
+        "name": "Typhon",
+        "imageUrl": "mythicHeroes/Typhon.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/12/small-portrait-120x120.png",
+        "factionId": "f53122f7-9235-4731-849b-631aebf2697c",
+        "rarityId": "861c6318-608c-4e02-b22d-6dad82989a8e",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/54d59c66-03b8-4f33-a142-d0f7fbb0fa1a"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/54d59c66-03b8-4f33-a142-d0f7fbb0fa1a"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/54d59c66-03b8-4f33-a142-d0f7fbb0fa1a/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/54d59c66-03b8-4f33-a142-d0f7fbb0fa1a/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/54d59c66-03b8-4f33-a142-d0f7fbb0fa1a/type"
+          }
+        }
+      },
+      {
+        "id": "512e378a-c6c4-4adf-b1ca-bfc779389870",
+        "name": "Western Queen",
+        "imageUrl": "mythicHeroes/Western_Queen.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2022/02/tinyprofile-120x120.png",
+        "factionId": "3b667712-e1ec-4fa7-acc2-c363398d1b3c",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "894d831c-20fe-42ec-b7a1-c99b26ec6ef5",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/512e378a-c6c4-4adf-b1ca-bfc779389870"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/512e378a-c6c4-4adf-b1ca-bfc779389870"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/512e378a-c6c4-4adf-b1ca-bfc779389870/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/512e378a-c6c4-4adf-b1ca-bfc779389870/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/512e378a-c6c4-4adf-b1ca-bfc779389870/type"
+          }
+        }
+      },
+      {
+        "id": "f6954765-424e-4b18-9c55-be22f0d91972",
+        "name": "Yukionna",
+        "imageUrl": "mythicHeroes/Yukionna.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-31-120x120.png",
+        "factionId": "0f20eef1-b90b-42dc-b642-31b5d4574332",
+        "rarityId": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/f6954765-424e-4b18-9c55-be22f0d91972"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/f6954765-424e-4b18-9c55-be22f0d91972"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/f6954765-424e-4b18-9c55-be22f0d91972/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/f6954765-424e-4b18-9c55-be22f0d91972/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/f6954765-424e-4b18-9c55-be22f0d91972/type"
+          }
+        }
+      },
+      {
+        "id": "275f399c-1f8b-4a9d-8da8-9f996556917b",
+        "name": "Zeus",
+        "imageUrl": "mythicHeroes/Zeus.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-8-120x120.png",
+        "factionId": "3b667712-e1ec-4fa7-acc2-c363398d1b3c",
+        "rarityId": "32716163-31cd-4618-b814-22f4ada595ce",
+        "typeId": "4d7009ad-d57b-4dc0-8740-06a858ea5742",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/mythicHero/275f399c-1f8b-4a9d-8da8-9f996556917b"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/mythicHero/275f399c-1f8b-4a9d-8da8-9f996556917b"
+          },
+          "rarity": {
+            "href": "http://localhost:9001/api/mythicHero/275f399c-1f8b-4a9d-8da8-9f996556917b/rarity"
+          },
+          "faction": {
+            "href": "http://localhost:9001/api/mythicHero/275f399c-1f8b-4a9d-8da8-9f996556917b/faction"
+          },
+          "type": {
+            "href": "http://localhost:9001/api/mythicHero/275f399c-1f8b-4a9d-8da8-9f996556917b/type"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:9001/api/mythicHero?page=0&size=200&sort=name"
+    },
+    "profile": {
+      "href": "http://localhost:9001/api/profile/mythicHero"
+    },
+    "search": {
+      "href": "http://localhost:9001/api/mythicHero/search"
+    }
+  },
+  "page": {
+    "size": 200,
+    "totalElements": 50,
+    "totalPages": 1,
+    "number": 0
+  }
+}

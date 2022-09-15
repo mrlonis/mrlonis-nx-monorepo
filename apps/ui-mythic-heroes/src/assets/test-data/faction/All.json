@@ -1,0 +1,163 @@
+{
+  "_embedded": {
+    "data": [
+      {
+        "id": "3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56",
+        "name": "Guardian",
+        "imageUrl": "factions/Guardian.png",
+        "imageSourceUrl": "",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/faction/3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/faction/3f7a5ece-cc39-47b1-a2fe-c90e42e7bf56"
+          }
+        }
+      },
+      {
+        "id": "75376e43-3a61-4963-b653-fd6a1a877665",
+        "name": "Guardian & Verdian",
+        "imageUrl": "factions/Guardian_Verdian.png",
+        "imageSourceUrl": "",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/faction/75376e43-3a61-4963-b653-fd6a1a877665"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/faction/75376e43-3a61-4963-b653-fd6a1a877665"
+          }
+        }
+      },
+      {
+        "id": "3b667712-e1ec-4fa7-acc2-c363398d1b3c",
+        "name": "Luminarch",
+        "imageUrl": "factions/Luminarch.png",
+        "imageSourceUrl": "",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/faction/3b667712-e1ec-4fa7-acc2-c363398d1b3c"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/faction/3b667712-e1ec-4fa7-acc2-c363398d1b3c"
+          }
+        }
+      },
+      {
+        "id": "18fb7a3d-8b54-47d4-a7b6-a19628fd8b03",
+        "name": "Luminarch & Guardian",
+        "imageUrl": "factions/Luminarch_Guardian.png",
+        "imageSourceUrl": "",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/faction/18fb7a3d-8b54-47d4-a7b6-a19628fd8b03"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/faction/18fb7a3d-8b54-47d4-a7b6-a19628fd8b03"
+          }
+        }
+      },
+      {
+        "id": "c21815cd-e3f6-40af-b89a-4f8101ceb1c1",
+        "name": "Luminarch & Shadowarch",
+        "imageUrl": "factions/Luminarch_Shadowarch.png",
+        "imageSourceUrl": "",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/faction/c21815cd-e3f6-40af-b89a-4f8101ceb1c1"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/faction/c21815cd-e3f6-40af-b89a-4f8101ceb1c1"
+          }
+        }
+      },
+      {
+        "id": "3c707195-0030-4b5d-8cac-83b414091c0b",
+        "name": "Luminarch & Verdian",
+        "imageUrl": "factions/Luminarch_Verdian.png",
+        "imageSourceUrl": "",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/faction/3c707195-0030-4b5d-8cac-83b414091c0b"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/faction/3c707195-0030-4b5d-8cac-83b414091c0b"
+          }
+        }
+      },
+      {
+        "id": "48bf14d3-5600-4699-bdc7-de3bbe0b2b96",
+        "name": "Shadowarch",
+        "imageUrl": "factions/Shadowarch.png",
+        "imageSourceUrl": "",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/faction/48bf14d3-5600-4699-bdc7-de3bbe0b2b96"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/faction/48bf14d3-5600-4699-bdc7-de3bbe0b2b96"
+          }
+        }
+      },
+      {
+        "id": "f104ce01-4dbc-4708-99bb-32a3425b0dc6",
+        "name": "Shadowarch & Guardian",
+        "imageUrl": "factions/Shadowarch_Guardian.png",
+        "imageSourceUrl": "",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/faction/f104ce01-4dbc-4708-99bb-32a3425b0dc6"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/faction/f104ce01-4dbc-4708-99bb-32a3425b0dc6"
+          }
+        }
+      },
+      {
+        "id": "f53122f7-9235-4731-849b-631aebf2697c",
+        "name": "Shadowarch & Verdian",
+        "imageUrl": "factions/Shadowarch_Verdian.png",
+        "imageSourceUrl": "",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/faction/f53122f7-9235-4731-849b-631aebf2697c"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/faction/f53122f7-9235-4731-849b-631aebf2697c"
+          }
+        }
+      },
+      {
+        "id": "0f20eef1-b90b-42dc-b642-31b5d4574332",
+        "name": "Verdian",
+        "imageUrl": "factions/Verdian.png",
+        "imageSourceUrl": "",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/faction/0f20eef1-b90b-42dc-b642-31b5d4574332"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/faction/0f20eef1-b90b-42dc-b642-31b5d4574332"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:9001/api/faction?page=0&size=50&sort=name"
+    },
+    "profile": {
+      "href": "http://localhost:9001/api/profile/faction"
+    },
+    "search": {
+      "href": "http://localhost:9001/api/faction/search"
+    }
+  },
+  "page": {
+    "size": 50,
+    "totalElements": 10,
+    "totalPages": 1,
+    "number": 0
+  }
+}

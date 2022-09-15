@@ -1,13 +1,24 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
-import { AppModule } from './app/app.module';
+import { HttpClientModule } from '@angular/common/http';
+import { enableProdMode, importProvidersFrom } from '@angular/core';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ApiConfigProvider, API_CONFIG_TOKEN, AppComponent, AppRoutingModule, config as appConfig } from './app';
 import { environment } from './environments/environment';
 
 if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic()
-  .bootstrapModule(AppModule)
-  .catch((err) => console.error(err));
+bootstrapApplication(AppComponent, {
+  providers: [
+    {
+      provide: API_CONFIG_TOKEN,
+      useValue: {
+        apiUrl: appConfig.apiUrl,
+      } as ApiConfigProvider,
+    },
+    importProvidersFrom(AppRoutingModule),
+    importProvidersFrom(BrowserAnimationsModule),
+    importProvidersFrom(HttpClientModule),
+  ],
+}).catch((err) => console.error(err));

@@ -15,6 +15,7 @@
     "test:all": "nx run-many --target=test",
     "lint:all": "nx run-many --target=lint --fix",
     "gauntlet": "npm run build:all && npm run test:all && npm run lint:all",
+    "gauntlet:skip-nx-cache": "npm run build:all -- --skip-nx-cache && npm run test:all -- --skip-nx-cache && npm run lint:all -- --skip-nx-cache",
     "repair": "nx repair"
   },
   "private": true,
@@ -30,6 +31,7 @@
     "@angular/platform-browser-dynamic": "^14.2.1",
     "@angular/router": "^14.2.1",
     "@nrwl/angular": "14.7.5",
+    "ng-table-virtual-scroll": "^1.4.1",
     "rxjs": "^7.5.6",
     "tslib": "^2.4.0",
     "zone.js": "^0.11.8"
@@ -78,63 +80,63 @@
     ],
     "apps/ui-afk-arena/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-afk-arena --fix --"
+      "ng-lint-staged lint ui-afk-arena --fix --skip-nx-cache --"
     ],
     "apps/ui-afk-arena-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-afk-arena-e2e --fix --"
+      "ng-lint-staged lint ui-afk-arena-e2e --fix --skip-nx-cache --"
     ],
     "apps/ui-genshin-impact/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-genshin-impact --fix --"
+      "ng-lint-staged lint ui-genshin-impact --fix --skip-nx-cache --"
     ],
     "apps/ui-genshin-impact-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-genshin-impact-e2e --fix --"
+      "ng-lint-staged lint ui-genshin-impact-e2e --fix --skip-nx-cache --"
     ],
     "apps/ui-mythic-heroes/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-mythic-heroes --fix --"
+      "ng-lint-staged lint ui-mythic-heroes --fix --skip-nx-cache --"
     ],
     "apps/ui-mythic-heroes-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-mythic-heroes-e2e --fix --"
+      "ng-lint-staged lint ui-mythic-heroes-e2e --fix --skip-nx-cache --"
     ],
     "apps/ui-personal-website/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-personal-website --fix --"
+      "ng-lint-staged lint ui-personal-website --fix --skip-nx-cache --"
     ],
     "apps/ui-personal-website-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-personal-website-e2e --fix --"
+      "ng-lint-staged lint ui-personal-website-e2e --fix --skip-nx-cache --"
     ],
     "apps/ui-ps-angular-forms/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-ps-angular-forms --fix --"
+      "ng-lint-staged lint ui-ps-angular-forms --fix --skip-nx-cache --"
     ],
     "apps/ui-ps-angular-forms-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-ps-angular-forms-e2e --fix --"
+      "ng-lint-staged lint ui-ps-angular-forms-e2e --fix --skip-nx-cache --"
     ],
     "apps/ui-ps-angular-fundamentals/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-ps-angular-fundamentals --fix --"
+      "ng-lint-staged lint ui-ps-angular-fundamentals --fix --skip-nx-cache --"
     ],
     "apps/ui-ps-angular-fundamentals-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-ps-angular-fundamentals-e2e --fix --"
+      "ng-lint-staged lint ui-ps-angular-fundamentals-e2e --fix --skip-nx-cache --"
     ],
     "apps/ui-ps-angular-getting-started/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-ps-angular-getting-started --fix --"
+      "ng-lint-staged lint ui-ps-angular-getting-started --fix --skip-nx-cache --"
     ],
     "apps/ui-ps-angular-getting-started-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-ps-angular-getting-started-e2e --fix --"
+      "ng-lint-staged lint ui-ps-angular-getting-started-e2e --fix --skip-nx-cache --"
     ],
     "libs/ngx-mrlonis-shared/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ngx-mrlonis-shared --fix --"
+      "ng-lint-staged lint ngx-mrlonis-shared --fix --skip-nx-cache --"
     ]
   }
 }

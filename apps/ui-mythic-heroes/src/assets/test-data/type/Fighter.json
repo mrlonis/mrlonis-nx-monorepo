@@ -1,0 +1,14 @@
+{
+  "id": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+  "name": "Fighter",
+  "imageUrl": "types/Fighter.png",
+  "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/HeroFilters_Button_Class_Damage.png",
+  "_links": {
+    "self": {
+      "href": "http://localhost:9001/api/type/31ac95f4-ccb1-4039-bda8-59d89b3b3036"
+    },
+    "item": {
+      "href": "http://localhost:9001/api/type/31ac95f4-ccb1-4039-bda8-59d89b3b3036"
+    }
+  }
+}

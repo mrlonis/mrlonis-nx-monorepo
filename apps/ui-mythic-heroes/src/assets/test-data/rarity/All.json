@@ -1,0 +1,65 @@
+{
+  "_embedded": {
+    "data": [
+      {
+        "id": "e43734ca-9c50-459a-bfc9-d0bfff428445",
+        "name": "SR",
+        "imageUrl": "rarities/SR.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/Rarity_Sr.png",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/rarity/e43734ca-9c50-459a-bfc9-d0bfff428445"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/rarity/e43734ca-9c50-459a-bfc9-d0bfff428445"
+          }
+        }
+      },
+      {
+        "id": "32716163-31cd-4618-b814-22f4ada595ce",
+        "name": "SSR",
+        "imageUrl": "rarities/SSR.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/Rarity_Ssr.png",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/rarity/32716163-31cd-4618-b814-22f4ada595ce"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/rarity/32716163-31cd-4618-b814-22f4ada595ce"
+          }
+        }
+      },
+      {
+        "id": "861c6318-608c-4e02-b22d-6dad82989a8e",
+        "name": "UR",
+        "imageUrl": "rarities/UR.png",
+        "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/09/Rarity_Ur-1.png",
+        "_links": {
+          "self": {
+            "href": "http://localhost:9001/api/rarity/861c6318-608c-4e02-b22d-6dad82989a8e"
+          },
+          "item": {
+            "href": "http://localhost:9001/api/rarity/861c6318-608c-4e02-b22d-6dad82989a8e"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:9001/api/rarity?page=0&size=50&sort=name"
+    },
+    "profile": {
+      "href": "http://localhost:9001/api/profile/rarity"
+    },
+    "search": {
+      "href": "http://localhost:9001/api/rarity/search"
+    }
+  },
+  "page": {
+    "size": 50,
+    "totalElements": 3,
+    "totalPages": 1,
+    "number": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "0db0e2c2-0e6d-49ad-9a05-6e51485db78f",
+  "name": "Lucifer",
+  "imageUrl": "mythicHeroes/Lucifer.png",
+  "imageSourceUrl": "https://www.mythicheroes.com/wp-content/uploads/2021/08/tinyprofile-5-120x120.png",
+  "factionId": "c21815cd-e3f6-40af-b89a-4f8101ceb1c1",
+  "rarityId": "861c6318-608c-4e02-b22d-6dad82989a8e",
+  "typeId": "31ac95f4-ccb1-4039-bda8-59d89b3b3036",
+  "_links": {
+    "self": {
+      "href": "http://localhost:9001/api/mythicHero/0db0e2c2-0e6d-49ad-9a05-6e51485db78f"
+    },
+    "item": {
+      "href": "http://localhost:9001/api/mythicHero/0db0e2c2-0e6d-49ad-9a05-6e51485db78f"
+    },
+    "rarity": {
+      "href": "http://localhost:9001/api/mythicHero/0db0e2c2-0e6d-49ad-9a05-6e51485db78f/rarity"
+    },
+    "faction": {
+      "href": "http://localhost:9001/api/mythicHero/0db0e2c2-0e6d-49ad-9a05-6e51485db78f/faction"
+    },
+    "type": {
+      "href": "http://localhost:9001/api/mythicHero/0db0e2c2-0e6d-49ad-9a05-6e51485db78f/type"
+    }
+  }
+}

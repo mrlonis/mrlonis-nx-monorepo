@@ -1,0 +1,13 @@
+<table [routerLink]="['/heroes', this.id]" class="base-resource-display-table">
+  <tr>
+    <td *ngIf="this.imageUrl !== ''">
+      <img [src]="this.getImageUrl()" alt="Hero Image" class="img-scale-down" />
+    </td>
+    <td *ngIf="this.name !== ''">
+      <div>{{ name }}</div>
+    </td>
+    <td *ngIf="this.name === '' && this.imageUrl === ''">
+      <mat-spinner></mat-spinner>
+    </td>
+  </tr>
+</table>

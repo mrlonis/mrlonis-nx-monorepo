@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@mrlonis-nx-angular-monorepo/ngx-mrlonis-shared": ["libs/ngx-mrlonis-shared/src/index.ts"]
-    }
+    },
+    "resolveJsonModule": true
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,71 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Hero Name</mat-label>
+    <input
+      type="text"
+      placeholder="Filter By hero Name"
+      aria-label="Hero Name"
+      matInput
+      [formControl]="heroNameFilterControl"
+      [matAutocomplete]="auto"
+    />
+    <button type="button" mat-button matSuffix (click)="clearNameFilter()">
+      <mat-icon>close</mat-icon>
+    </button>
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option.name">
+        {{ option.name }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+<mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+
+<div #scrollViewport>
+  <cdk-virtual-scroll-viewport tvsItemSize="48" headerHeight="56" style="height: 600px">
+    <mat-table [dataSource]="dataSource" matSort (matSortChange)="sortData($event)">
+      <!-- Position Column -->
+      <ng-container matColumnDef="hero">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Hero</mat-header-cell>
+        <mat-cell *matCellDef="let element"
+          ><mrlonis-base-resource-display [data]="element.hero"></mrlonis-base-resource-display
+        ></mat-cell>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="faction">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Faction</mat-header-cell>
+        <mat-cell *matCellDef="let element"
+          ><mrlonis-base-resource-display [data]="element.faction | async"></mrlonis-base-resource-display
+        ></mat-cell>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="rarity">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Rarity</mat-header-cell>
+        <mat-cell *matCellDef="let element"
+          ><mrlonis-base-resource-display [data]="element.rarity | async"></mrlonis-base-resource-display
+        ></mat-cell>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="type">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Type</mat-header-cell>
+        <mat-cell *matCellDef="let element"
+          ><mrlonis-base-resource-display [data]="element.type | async"></mrlonis-base-resource-display
+        ></mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+    </mat-table>
+  </cdk-virtual-scroll-viewport>
+</div>
+<mat-paginator
+  [disabled]="isLoadingResults"
+  [pageSize]="10"
+  [pageSizeOptions]="[5, 10, 25, 50, 100]"
+  showFirstLastButtons
+  (page)="pageEventHandler($event)"
+>
+</mat-paginator>

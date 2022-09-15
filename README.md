@@ -121,4 +121,6 @@ Run the command `nx g @nrwl/angular:library my-lib-name`
 
 Run the command `nx g @nrwl/angular:component my-component-name --project=my-app-name`
 
+Example: `nx g @nrwl/angular:component my-component-name --project=my-app-name`
+
 [Reference](https://nx.dev/packages/angular/generators/component)
