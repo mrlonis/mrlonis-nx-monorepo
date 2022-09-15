@@ -10,6 +10,12 @@
     "ui-mythic-heroes": "apps/ui-mythic-heroes",
     "ui-mythic-heroes-e2e": "apps/ui-mythic-heroes-e2e",
     "ui-personal-website": "apps/ui-personal-website",
-    "ui-personal-website-e2e": "apps/ui-personal-website-e2e"
+    "ui-personal-website-e2e": "apps/ui-personal-website-e2e",
+    "ui-ps-angular-forms": "apps/ui-ps-angular-forms",
+    "ui-ps-angular-forms-e2e": "apps/ui-ps-angular-forms-e2e",
+    "ui-ps-angular-fundamentals": "apps/ui-ps-angular-fundamentals",
+    "ui-ps-angular-fundamentals-e2e": "apps/ui-ps-angular-fundamentals-e2e",
+    "ui-ps-angular-getting-started": "apps/ui-ps-angular-getting-started",
+    "ui-ps-angular-getting-started-e2e": "apps/ui-ps-angular-getting-started-e2e"
   }
 }

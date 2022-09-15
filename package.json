@@ -108,6 +108,30 @@
       "prettier --write",
       "ng-lint-staged lint ui-personal-website-e2e --fix --"
     ],
+    "apps/ui-ps-angular-forms/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint ui-ps-angular-forms --fix --"
+    ],
+    "apps/ui-ps-angular-forms-e2e/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint ui-ps-angular-forms-e2e --fix --"
+    ],
+    "apps/ui-ps-angular-fundamentals/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint ui-ps-angular-fundamentals --fix --"
+    ],
+    "apps/ui-ps-angular-fundamentals-e2e/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint ui-ps-angular-fundamentals-e2e --fix --"
+    ],
+    "apps/ui-ps-angular-getting-started/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint ui-ps-angular-getting-started --fix --"
+    ],
+    "apps/ui-ps-angular-getting-started-e2e/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint ui-ps-angular-getting-started-e2e --fix --"
+    ],
     "libs/ngx-mrlonis-shared/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
       "ng-lint-staged lint ngx-mrlonis-shared --fix --"
