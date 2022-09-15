@@ -13,7 +13,7 @@
     "prepare": "husky install",
     "build:all": "nx run-many --target=build",
     "test:all": "nx run-many --target=test",
-    "lint:all": "nx run-many --target=lint",
+    "lint:all": "nx run-many --target=lint --fix",
     "gauntlet": "npm run build:all && npm run test:all && npm run lint:all",
     "repair": "nx repair"
   },
