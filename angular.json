@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "ngx-mrlonis-shared": "libs/ngx-mrlonis-shared",
+    "ui-afk-arena": "apps/ui-afk-arena",
+    "ui-afk-arena-e2e": "apps/ui-afk-arena-e2e",
     "ui-genshin-impact": "apps/ui-genshin-impact",
     "ui-genshin-impact-e2e": "apps/ui-genshin-impact-e2e",
     "ui-mythic-heroes": "apps/ui-mythic-heroes",
