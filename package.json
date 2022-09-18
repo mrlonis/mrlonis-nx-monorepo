@@ -12,10 +12,9 @@
     "prettier": "prettier --config .prettierrc --write \"**/*.{ts,js,css,scss,html,json,md}\"",
     "prepare": "husky install",
     "build:all": "nx run-many --target=build",
-    "test:all": "nx run-many --target=test",
+    "test:all": "nx run-many --target=test --ci --code-coverage",
     "lint:all": "nx run-many --target=lint --fix",
     "gauntlet": "npm run build:all && npm run test:all && npm run lint:all",
-    "gauntlet:skip-nx-cache": "npm run build:all -- --skip-nx-cache && npm run test:all -- --skip-nx-cache && npm run lint:all -- --skip-nx-cache",
     "repair": "nx repair"
   },
   "private": true,
