@@ -9,5 +9,6 @@
     "extensions": [".js", ".jsx", ".ts", ".tsx", ".html"]
   },
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html"],
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.eol": "\n"
 }
