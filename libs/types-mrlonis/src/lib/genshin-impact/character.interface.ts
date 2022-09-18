@@ -1,4 +1,5 @@
-import { BaseResource, SpringDataRestHref } from '.';
+import { BaseResource } from '../base';
+import { SpringDataRestHref } from '../spring-data-rest';
 
 export interface Character extends BaseResource {
   rarity: number;

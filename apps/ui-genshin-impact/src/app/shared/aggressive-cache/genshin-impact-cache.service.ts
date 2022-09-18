@@ -1,17 +1,9 @@
 import { HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { AggressiveCache, AggressiveCacheInvalidator } from '@mrlonis-nx-angular-monorepo/ngx-mrlonis-shared';
+import { ArtifactSet, Character, Element, Weapon } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
 import { map } from 'rxjs/operators';
-import {
-  ArtifactSet,
-  ArtifactSetService,
-  Character,
-  CharacterService,
-  Element,
-  ElementService,
-  Weapon,
-  WeaponService,
-} from '../api';
-import { AggressiveCache, AggressiveCacheInvalidator } from './base';
+import { GenshinImpactApiService } from '../api';
 
 @Injectable({ providedIn: 'root' })
 export class GenshinImpactAggressiveCache extends AggressiveCache<{
@@ -20,18 +12,12 @@ export class GenshinImpactAggressiveCache extends AggressiveCache<{
   weapon: Weapon;
   artifactSet: ArtifactSet;
 }> {
-  constructor(
-    characterService: CharacterService,
-    elementService: ElementService,
-    weaponService: WeaponService,
-    artifactSetService: ArtifactSetService,
-    invalidator: AggressiveCacheInvalidator
-  ) {
+  constructor(genshinImpactApi: GenshinImpactApiService, invalidator: AggressiveCacheInvalidator) {
     super(
       {
         character: {
-          service: (index, page, params) => {
-            return characterService.getCollection(index, page, params);
+          service: (params) => {
+            return genshinImpactApi.getCollection('character', params);
           },
           getAll: true,
           getBy: {
@@ -41,11 +27,11 @@ export class GenshinImpactAggressiveCache extends AggressiveCache<{
               }
               return [new HttpParams().set('id', entity.id)];
             },
-            directRequest: (httpParams: HttpParams) => characterService.getSingle(httpParams.get('id') ?? ''),
+            directRequest: (httpParams: HttpParams) => genshinImpactApi.getSingle('character', httpParams),
           },
           collectBy: {
             directRequest: (httpParams: HttpParams) =>
-              characterService.getCollection(0, 300, httpParams).pipe(
+              genshinImpactApi.getCollection('character', httpParams).pipe(
                 map((response) => {
                   return response._embedded.data;
                 })
@@ -53,8 +39,8 @@ export class GenshinImpactAggressiveCache extends AggressiveCache<{
           },
         },
         element: {
-          service: (index, page, params) => {
-            return elementService.getCollection(index, page, params);
+          service: (params) => {
+            return genshinImpactApi.getCollection('element', params);
           },
           getAll: true,
           getBy: {
@@ -64,12 +50,12 @@ export class GenshinImpactAggressiveCache extends AggressiveCache<{
               }
               return [new HttpParams().set('id', entity.id)];
             },
-            directRequest: (httpParams: HttpParams) => elementService.getSingle(httpParams.get('id') ?? ''),
+            directRequest: (httpParams: HttpParams) => genshinImpactApi.getSingle('element', httpParams),
           },
         },
         weapon: {
-          service: (index, page, params) => {
-            return weaponService.getCollection(index, page, params);
+          service: (params) => {
+            return genshinImpactApi.getCollection('weapon', params);
           },
           getAll: true,
           getBy: {
@@ -79,12 +65,12 @@ export class GenshinImpactAggressiveCache extends AggressiveCache<{
               }
               return [new HttpParams().set('id', entity.id)];
             },
-            directRequest: (httpParams: HttpParams) => weaponService.getSingle(httpParams.get('id') ?? ''),
+            directRequest: (httpParams: HttpParams) => genshinImpactApi.getSingle('weapon', httpParams),
           },
         },
         artifactSet: {
-          service: (index, page, params) => {
-            return artifactSetService.getCollection(index, page, params);
+          service: (params) => {
+            return genshinImpactApi.getCollection('artifactSet', params);
           },
           getAll: true,
           getBy: {
@@ -94,7 +80,7 @@ export class GenshinImpactAggressiveCache extends AggressiveCache<{
               }
               return [new HttpParams().set('id', entity.id)];
             },
-            directRequest: (httpParams: HttpParams) => artifactSetService.getSingle(httpParams.get('id') ?? ''),
+            directRequest: (httpParams: HttpParams) => genshinImpactApi.getSingle('artifactSet', httpParams),
           },
         },
       },

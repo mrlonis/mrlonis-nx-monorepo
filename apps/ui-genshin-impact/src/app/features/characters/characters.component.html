@@ -5,7 +5,7 @@
         <table class="character-display-table" [routerLink]="['/characters', character.name]">
           <tr>
             <td class="character-display-cell">
-              <img [alt]="character.imageUrl" [src]="this.imageApiService.getImageUrl(character.imageUrl)" />
+              <img [alt]="character.imageUrl" [src]="this.genshinImpactApi.getImageUrl(character.imageUrl)" />
               <p>{{ character.name }}</p>
             </td>
           </tr>

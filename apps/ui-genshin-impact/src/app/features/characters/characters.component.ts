@@ -1,7 +1,8 @@
 import { HttpParams } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Character, SpringDataRestResponse } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
 import { Observable } from 'rxjs';
-import { Character, CharacterService, ImageApiService, SpringDataRestResponse } from '../../shared';
+import { GenshinImpactApiService } from '../../shared';
 
 @Component({
   selector: 'mrlonis-characters',
@@ -11,11 +12,11 @@ import { Character, CharacterService, ImageApiService, SpringDataRestResponse } 
 export class CharactersComponent implements OnInit {
   characters?: Observable<SpringDataRestResponse<Character>>;
 
-  constructor(private characterService: CharacterService, public imageApiService: ImageApiService) {}
+  constructor(public genshinImpactApi: GenshinImpactApiService) {}
 
   ngOnInit(): void {
-    this.characters = this.characterService.getCollection(0, 10, new HttpParams());
-    this.characterService.getCollection(0, 10, new HttpParams()).subscribe((response) => {
+    this.characters = this.genshinImpactApi.getCollection('character', new HttpParams());
+    this.genshinImpactApi.getCollection('character', new HttpParams()).subscribe((response) => {
       console.log(response);
       // this.characters = response;
     });

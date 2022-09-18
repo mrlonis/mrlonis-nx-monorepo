@@ -1,7 +1,8 @@
 import { HttpParams } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Character, CharacterService, ImageApiService } from '../../../shared';
+import { Character } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
+import { GenshinImpactApiService } from '../../../shared';
 
 @Component({
   selector: 'mrlonis-character-detail',
@@ -11,17 +12,13 @@ import { Character, CharacterService, ImageApiService } from '../../../shared';
 export class CharacterDetailComponent implements OnInit {
   character?: Character;
 
-  constructor(
-    private route: ActivatedRoute,
-    private characterService: CharacterService,
-    public imageApiService: ImageApiService
-  ) {}
+  constructor(private route: ActivatedRoute, public genshinImpactApi: GenshinImpactApiService) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
       const name = params.get('name');
       if (name !== null) {
-        this.characterService.getCollection(0, 1, new HttpParams().set('name', name)).subscribe((response) => {
+        this.genshinImpactApi.getCollection('character', new HttpParams().set('name', name)).subscribe((response) => {
           if (response.page.totalElements == 1) {
             this.character = response._embedded.data[0];
           }
