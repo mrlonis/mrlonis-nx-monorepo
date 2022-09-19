@@ -11,10 +11,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatPaginator, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSortModule, Sort } from '@angular/material/sort';
-import { MatTableModule } from '@angular/material/table';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { RouterModule } from '@angular/router';
 import { BaseResource, Faction, MythicHero, Rarity, Type } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
-import { TableVirtualScrollDataSource, TableVirtualScrollModule } from 'ng-table-virtual-scroll';
+// import { TableVirtualScrollDataSource, TableVirtualScrollModule } from 'ng-table-virtual-scroll';
 import { forkJoin, Observable, of } from 'rxjs';
 import { BaseResourceDisplayComponent, MythicHeroesAggressiveCache } from '../../../shared';
 
@@ -39,12 +39,13 @@ import { BaseResourceDisplayComponent, MythicHeroesAggressiveCache } from '../..
     MatTableModule,
     ReactiveFormsModule,
     RouterModule,
-    TableVirtualScrollModule,
+    // TableVirtualScrollModule,
   ],
 })
 export class HeroListComponent implements AfterViewInit, OnInit {
   displayedColumns: string[] = ['hero', 'faction', 'rarity', 'type'];
-  dataSource = new TableVirtualScrollDataSource<MythicHeroesTableDataSource>([]);
+  // dataSource = new TableVirtualScrollDataSource<MythicHeroesTableDataSource>([]);
+  dataSource = new MatTableDataSource<MythicHeroesTableDataSource>([]);
   data: MythicHeroesTableDataSource[] = [];
   isLoadingResults = true;
 
@@ -133,7 +134,9 @@ export class HeroListComponent implements AfterViewInit, OnInit {
       rarities: this.cache.getAll('rarity'),
       types: this.cache.getAll('type'),
     }).subscribe((x) => {
-      this.dataSource = new TableVirtualScrollDataSource<MythicHeroesTableDataSource>(this.createDataSource(x));
+      console.log(x);
+      // this.dataSource = new TableVirtualScrollDataSource<MythicHeroesTableDataSource>(this.createDataSource(x));
+      this.dataSource = new MatTableDataSource<MythicHeroesTableDataSource>(this.createDataSource(x));
       this.dataSource.paginator = this.paginator;
       this.isLoadingResults = false;
     });
