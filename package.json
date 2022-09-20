@@ -9,13 +9,14 @@
     "build": "nx build",
     "test": "nx test",
     "lint": "nx lint",
+    "repair": "nx repair",
+    "graph": "nx graph",
     "prettier": "prettier --config .prettierrc --write \"**/*.{ts,js,css,scss,html,json,md}\"",
     "prepare": "husky install",
     "build:all": "nx run-many --target=build",
     "test:all": "nx run-many --target=test --ci --code-coverage",
     "lint:all": "nx run-many --target=lint --fix",
-    "gauntlet": "npm run build:all && npm run test:all && npm run lint:all",
-    "repair": "nx repair"
+    "gauntlet": "npm run build:all && npm run test:all && npm run lint:all"
   },
   "private": true,
   "dependencies": {
