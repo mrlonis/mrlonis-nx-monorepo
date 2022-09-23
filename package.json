@@ -14,7 +14,7 @@
     "prettier": "prettier --config .prettierrc --write \"**/*.{ts,js,css,scss,html,json,md}\"",
     "prepare": "husky install",
     "build:all": "nx run-many --target=build",
-    "test:all": "nx run-many --target=test --ci --code-coverage",
+    "test:all": "nx run-many --target=test --code-coverage",
     "lint:all": "nx run-many --target=lint --fix",
     "gauntlet": "npm run build:all && npm run test:all && npm run lint:all"
   },
