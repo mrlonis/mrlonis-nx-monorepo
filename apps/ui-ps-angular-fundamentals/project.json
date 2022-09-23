@@ -56,6 +56,9 @@
     },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "port": 4205
+      },
       "configurations": {
         "production": {
           "browserTarget": "ui-ps-angular-fundamentals:build:production"
@@ -64,8 +67,7 @@
           "browserTarget": "ui-ps-angular-fundamentals:build:development"
         }
       },
-      "defaultConfiguration": "development",
-      "port": 4205
+      "defaultConfiguration": "development"
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",

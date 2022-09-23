@@ -56,6 +56,9 @@
     },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "port": 4202
+      },
       "configurations": {
         "production": {
           "browserTarget": "ui-mythic-heroes:build:production"
@@ -64,8 +67,7 @@
           "browserTarget": "ui-mythic-heroes:build:development"
         }
       },
-      "defaultConfiguration": "development",
-      "port": 4202
+      "defaultConfiguration": "development"
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
