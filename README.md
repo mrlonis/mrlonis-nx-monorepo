@@ -191,3 +191,13 @@ Example: `nx g @nrwl/angular:component my-component-name --project=my-app-name`
   ]
 }
 ```
+
+## Ports
+
+- 4200 - ui-afk-arena
+- 4201 - ui-genshin-impact
+- 4202 - ui-mythic-heroes
+- 4203 - ui-personal-website
+- 4204 - ui-ps-angular-forms
+- 4205 - ui-ps-angular-fundametals
+- 4206 - ui-ps-angular-getting-started

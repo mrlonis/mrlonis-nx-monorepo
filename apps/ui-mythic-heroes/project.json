@@ -64,7 +64,8 @@
           "browserTarget": "ui-mythic-heroes:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "port": 4202
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",

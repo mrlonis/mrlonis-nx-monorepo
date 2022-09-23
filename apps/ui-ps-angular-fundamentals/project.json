@@ -64,7 +64,8 @@
           "browserTarget": "ui-ps-angular-fundamentals:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "port": 4205
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",

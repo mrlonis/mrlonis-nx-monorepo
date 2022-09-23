@@ -64,7 +64,8 @@
           "browserTarget": "ui-genshin-impact:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "port": 4201
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",

@@ -65,7 +65,8 @@
           "browserTarget": "ui-ps-angular-forms:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "port": 4204
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
