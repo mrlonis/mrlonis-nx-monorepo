@@ -86,63 +86,63 @@
     ],
     "apps/ui-afk-arena/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-afk-arena --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-afk-arena --fix --"
     ],
     "apps/ui-afk-arena-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-afk-arena-e2e --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-afk-arena-e2e --fix --"
     ],
     "apps/ui-genshin-impact/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-genshin-impact --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-genshin-impact --fix --"
     ],
     "apps/ui-genshin-impact-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-genshin-impact-e2e --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-genshin-impact-e2e --fix --"
     ],
     "apps/ui-mythic-heroes/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-mythic-heroes --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-mythic-heroes --fix --"
     ],
     "apps/ui-mythic-heroes-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-mythic-heroes-e2e --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-mythic-heroes-e2e --fix --"
     ],
     "apps/ui-personal-website/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-personal-website --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-personal-website --fix --"
     ],
     "apps/ui-personal-website-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-personal-website-e2e --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-personal-website-e2e --fix --"
     ],
     "apps/ui-ps-angular-forms/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-ps-angular-forms --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-ps-angular-forms --fix --"
     ],
     "apps/ui-ps-angular-forms-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-ps-angular-forms-e2e --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-ps-angular-forms-e2e --fix --"
     ],
     "apps/ui-ps-angular-fundamentals/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-ps-angular-fundamentals --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-ps-angular-fundamentals --fix --"
     ],
     "apps/ui-ps-angular-fundamentals-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-ps-angular-fundamentals-e2e --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-ps-angular-fundamentals-e2e --fix --"
     ],
     "apps/ui-ps-angular-getting-started/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-ps-angular-getting-started --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-ps-angular-getting-started --fix --"
     ],
     "apps/ui-ps-angular-getting-started-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ui-ps-angular-getting-started-e2e --fix --skip-nx-cache --"
+      "ng-lint-staged lint ui-ps-angular-getting-started-e2e --fix --"
     ],
     "libs/ngx-mrlonis-shared/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
-      "ng-lint-staged lint ngx-mrlonis-shared --fix --skip-nx-cache --"
+      "ng-lint-staged lint ngx-mrlonis-shared --fix --"
     ]
   }
 }
