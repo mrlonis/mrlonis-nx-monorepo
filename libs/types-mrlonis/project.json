@@ -1,4 +1,5 @@
 {
+  "name": "types-mrlonis",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/types-mrlonis/src",
   "projectType": "library",

@@ -1,4 +1,5 @@
 {
+  "name": "ui-genshin-impact-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/ui-genshin-impact-e2e/src",
   "projectType": "application",

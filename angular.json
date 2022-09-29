@@ -2,6 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "ng-table-virtual-scroll-example": "apps/ng-table-virtual-scroll-example",
+    "ng-table-virtual-scroll-example-e2e": "apps/ng-table-virtual-scroll-example-e2e",
     "ngx-mrlonis-shared": "libs/ngx-mrlonis-shared",
     "types-mrlonis": "libs/types-mrlonis",
     "ui-afk-arena": "apps/ui-afk-arena",
