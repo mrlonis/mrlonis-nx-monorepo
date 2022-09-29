@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mrlonis-nx-angular-monorepo/ngx-mrlonis-shared": ["libs/ngx-mrlonis-shared/src/index.ts"],
-      "@mrlonis-nx-angular-monorepo/types-mrlonis": ["libs/types-mrlonis/src/index.ts"]
+      "@mrlonis/ngx-mrlonis-shared": ["libs/ngx-mrlonis-shared/src/index.ts"],
+      "@mrlonis/types-mrlonis": ["libs/types-mrlonis/src/index.ts"]
     },
     "resolveJsonModule": true
   },

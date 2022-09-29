@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'mrlonis-nx-angular-monorepo-root',
+  selector: 'mrlonis-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

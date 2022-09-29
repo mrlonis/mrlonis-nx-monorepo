@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
-import { ApiConfigProvider, ApiService, API_CONFIG_TOKEN } from '@mrlonis-nx-angular-monorepo/ngx-mrlonis-shared';
-import { ArtifactSet, Character, Element, Weapon } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
+import { ApiConfigProvider, ApiService, API_CONFIG_TOKEN } from '@mrlonis/ngx-mrlonis-shared';
+import { ArtifactSet, Character, Element, Weapon } from '@mrlonis/types-mrlonis';
 
 @Injectable({
   providedIn: 'root',

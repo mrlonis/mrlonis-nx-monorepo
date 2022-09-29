@@ -1,6 +1,6 @@
 import { HttpParams } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Character, SpringDataRestResponse } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
+import { Character, SpringDataRestResponse } from '@mrlonis/types-mrlonis';
 import { Observable } from 'rxjs';
 import { GenshinImpactApiService } from '../../shared';
 

@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { Inject, Injectable } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { Faction, SpringDataRestResponse } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
+import { Faction, SpringDataRestResponse } from '@mrlonis/types-mrlonis';
 import * as allFactions from '../../../assets/test-data/faction/All.json';
 import { ApiConfigProvider, ApiService, API_CONFIG_TOKEN } from './api.service';
 

@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
-import { ApiConfigProvider, API_CONFIG_TOKEN } from '@mrlonis-nx-angular-monorepo/ngx-mrlonis-shared';
+import { ApiConfigProvider, API_CONFIG_TOKEN } from '@mrlonis/ngx-mrlonis-shared';
 import { CharacterDetailComponent } from './character-detail.component';
 
 describe('CharacterDetailComponent', () => {

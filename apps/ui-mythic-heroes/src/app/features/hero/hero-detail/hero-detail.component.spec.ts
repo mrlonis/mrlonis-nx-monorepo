@@ -2,8 +2,8 @@ import { HttpClientTestingModule, HttpTestingController } from '@angular/common/
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
-import { ApiConfigProvider, API_CONFIG_TOKEN } from '@mrlonis-nx-angular-monorepo/ngx-mrlonis-shared';
-import { Faction, MythicHero, Rarity, Type } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
+import { ApiConfigProvider, API_CONFIG_TOKEN } from '@mrlonis/ngx-mrlonis-shared';
+import { Faction, MythicHero, Rarity, Type } from '@mrlonis/types-mrlonis';
 import * as luminarchShadowarch from '../../../../assets/test-data/faction/Luminarch_&_Shadowarch.json';
 import * as lucifer from '../../../../assets/test-data/mythicHero/Lucifer.json';
 import * as urRarity from '../../../../assets/test-data/rarity/UR.json';

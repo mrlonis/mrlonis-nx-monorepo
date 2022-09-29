@@ -1,4 +1,4 @@
-import { BaseResource } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
+import { BaseResource } from '@mrlonis/types-mrlonis';
 import { Observable } from 'rxjs';
 
 // Used by aggressive cache internally

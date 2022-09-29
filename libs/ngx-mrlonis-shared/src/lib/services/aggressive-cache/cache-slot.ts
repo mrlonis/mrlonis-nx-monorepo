@@ -1,5 +1,5 @@
 import { HttpParams } from '@angular/common/http';
-import { BaseResource, SpringDataRestResponse } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
+import { BaseResource, SpringDataRestResponse } from '@mrlonis/types-mrlonis';
 import { Observable } from 'rxjs';
 
 /**

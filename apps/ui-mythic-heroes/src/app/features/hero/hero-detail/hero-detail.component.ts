@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { Faction, MythicHero, Rarity, Type } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
+import { Faction, MythicHero, Rarity, Type } from '@mrlonis/types-mrlonis';
 import { MythicHeroesAggressiveCache, MythicHeroesApiService } from '../../../shared';
 
 @Component({

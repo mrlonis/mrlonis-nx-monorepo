@@ -1,7 +1,7 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { ApiConfigProvider, API_CONFIG_TOKEN } from '@mrlonis-nx-angular-monorepo/ngx-mrlonis-shared';
-import { Faction, SpringDataRestResponse } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
+import { ApiConfigProvider, API_CONFIG_TOKEN } from '@mrlonis/ngx-mrlonis-shared';
+import { Faction, SpringDataRestResponse } from '@mrlonis/types-mrlonis';
 import * as allFactions from '../../../../assets/test-data/faction/All.json';
 import { MythicHeroesApiService } from './mythic-heroes-api.service';
 

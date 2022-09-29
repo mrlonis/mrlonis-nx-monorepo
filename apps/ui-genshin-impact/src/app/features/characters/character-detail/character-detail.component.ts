@@ -1,7 +1,7 @@
 import { HttpParams } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Character } from '@mrlonis-nx-angular-monorepo/types-mrlonis';
+import { Character } from '@mrlonis/types-mrlonis';
 import { GenshinImpactApiService } from '../../../shared';
 
 @Component({
