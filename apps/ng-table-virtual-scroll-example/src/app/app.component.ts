@@ -1,4 +1,10 @@
 import { Component } from '@angular/core';
+import { TableVirtualScrollDataSource } from 'ng-table-virtual-scroll';
+
+const DATA = Array.from({ length: 1000 }, (v, i) => ({
+  id: i + 1,
+  name: `Element #${i + 1}`,
+}));
 
 @Component({
   selector: 'mrlonis-root',
@@ -6,5 +12,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'ng-table-virtual-scroll-example';
+  displayedColumns = ['id', 'name'];
+
+  dataSource = new TableVirtualScrollDataSource(DATA);
 }

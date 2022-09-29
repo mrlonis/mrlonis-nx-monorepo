@@ -2,6 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "angular-table-virtual-scroll-sticky-headers": "apps/angular-table-virtual-scroll-sticky-headers",
+    "angular-table-virtual-scroll-sticky-headers-e2e": "apps/angular-table-virtual-scroll-sticky-headers-e2e",
     "ng-table-virtual-scroll-example": "apps/ng-table-virtual-scroll-example",
     "ng-table-virtual-scroll-example-e2e": "apps/ng-table-virtual-scroll-example-e2e",
     "ngx-mrlonis-shared": "libs/ngx-mrlonis-shared",
@@ -19,6 +21,8 @@
     "ui-ps-angular-fundamentals": "apps/ui-ps-angular-fundamentals",
     "ui-ps-angular-fundamentals-e2e": "apps/ui-ps-angular-fundamentals-e2e",
     "ui-ps-angular-getting-started": "apps/ui-ps-angular-getting-started",
-    "ui-ps-angular-getting-started-e2e": "apps/ui-ps-angular-getting-started-e2e"
+    "ui-ps-angular-getting-started-e2e": "apps/ui-ps-angular-getting-started-e2e",
+    "virtual-scroll-cdk-table-test": "apps/virtual-scroll-cdk-table-test",
+    "virtual-scroll-cdk-table-test-e2e": "apps/virtual-scroll-cdk-table-test-e2e"
   }
 }

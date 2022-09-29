@@ -1,0 +1,24 @@
+<cdk-virtual-scroll-viewport #viewPort itemSize="16" matSort>
+  <table cdk-table #table [dataSource]="dataSource">
+    <!-- Id -->
+    <ng-container cdkColumnDef="id">
+      <th cdk-header-cell *cdkHeaderCellDef mat-sort-header>Id</th>
+      <td cdk-cell *cdkCellDef="let user">{{ user.id }}</td>
+    </ng-container>
+
+    <!-- Name -->
+    <ng-container cdkColumnDef="name">
+      <th cdk-header-cell *cdkHeaderCellDef mat-sort-header>Name</th>
+      <td cdk-cell *cdkCellDef="let user">{{ user.lastName }}, {{ user.firstName }}</td>
+    </ng-container>
+
+    <!-- Email -->
+    <ng-container cdkColumnDef="email">
+      <th cdk-header-cell *cdkHeaderCellDef mat-sort-header>Email</th>
+      <td cdk-cell *cdkCellDef="let user">{{ user.email }}</td>
+    </ng-container>
+
+    <tr cdk-header-row *cdkHeaderRowDef="visibleColumns"></tr>
+    <tr cdk-row *cdkRowDef="let row; columns: visibleColumns;"></tr>
+  </table>
+</cdk-virtual-scroll-viewport>

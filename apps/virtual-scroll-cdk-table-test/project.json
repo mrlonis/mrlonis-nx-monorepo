@@ -1,0 +1,89 @@
+{
+  "name": "virtual-scroll-cdk-table-test",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/virtual-scroll-cdk-table-test/src",
+  "prefix": "mrlonis",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/virtual-scroll-cdk-table-test",
+        "index": "apps/virtual-scroll-cdk-table-test/src/index.html",
+        "main": "apps/virtual-scroll-cdk-table-test/src/main.ts",
+        "polyfills": "apps/virtual-scroll-cdk-table-test/src/polyfills.ts",
+        "tsConfig": "apps/virtual-scroll-cdk-table-test/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": ["apps/virtual-scroll-cdk-table-test/src/favicon.ico", "apps/virtual-scroll-cdk-table-test/src/assets"],
+        "styles": ["apps/virtual-scroll-cdk-table-test/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/virtual-scroll-cdk-table-test/src/environments/environment.ts",
+              "with": "apps/virtual-scroll-cdk-table-test/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "virtual-scroll-cdk-table-test:build:production"
+        },
+        "development": {
+          "browserTarget": "virtual-scroll-cdk-table-test:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "virtual-scroll-cdk-table-test:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/virtual-scroll-cdk-table-test/**/*.ts", "apps/virtual-scroll-cdk-table-test/**/*.html"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/virtual-scroll-cdk-table-test"],
+      "options": {
+        "jestConfig": "apps/virtual-scroll-cdk-table-test/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

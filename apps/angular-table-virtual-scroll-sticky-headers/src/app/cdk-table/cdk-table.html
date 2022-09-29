@@ -1,0 +1,27 @@
+<cdk-virtual-scroll-viewport #viewPort itemSize="16" matSort>
+  <cdk-table #table [dataSource]="dataSource" style="display: flex; flex-direction: column">
+    <!-- Id -->
+    <ng-container cdkColumnDef="id">
+      <cdk-header-cell *cdkHeaderCellDef mat-sort-header style="flex: 1 0 auto">Id</cdk-header-cell>
+      <cdk-cell *cdkCellDef="let user" style="flex: 1 0 auto">{{ user.id }}</cdk-cell>
+    </ng-container>
+
+    <!-- Name -->
+    <ng-container cdkColumnDef="name">
+      <cdk-header-cell *cdkHeaderCellDef mat-sort-header style="flex: 1 0 auto">Name</cdk-header-cell>
+      <cdk-cell *cdkCellDef="let user" style="flex: 1 0 auto"> {{ user.lastName }}, {{ user.firstName }} </cdk-cell>
+    </ng-container>
+
+    <!-- Email -->
+    <ng-container cdkColumnDef="email">
+      <cdk-header-cell *cdkHeaderCellDef mat-sort-header style="flex: 1 0 auto">Email</cdk-header-cell>
+      <cdk-cell *cdkCellDef="let user" style="flex: 1 0 auto">{{ user.email }}</cdk-cell>
+    </ng-container>
+
+    <cdk-header-row
+      *cdkHeaderRowDef="visibleColumns"
+      style="display: flex; flex-direction: row; border-bottom: 1px solid black"
+    ></cdk-header-row>
+    <cdk-row *cdkRowDef="let row; columns: visibleColumns;" style="display: flex; flex-direction: row"></cdk-row>
+  </cdk-table>
+</cdk-virtual-scroll-viewport>
