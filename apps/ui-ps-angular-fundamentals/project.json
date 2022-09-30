@@ -84,7 +84,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/ui-ps-angular-fundamentals"],
+      "outputs": ["coverage/apps/ui-ps-angular-fundamentals", "junit/apps/ui-ps-angular-fundamentals"],
       "options": {
         "jestConfig": "apps/ui-ps-angular-fundamentals/jest.config.ts",
         "passWithNoTests": true

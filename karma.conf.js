@@ -39,9 +39,9 @@ module.exports = () => {
       subdir: '.',
       reporters: [{ type: 'html' }, { type: 'text-summary' }, { type: 'cobertura' }],
     },
-    reporters: ['progress', 'kjhtml'],
+    reporters: ['progress', 'kjhtml', 'junit'],
     junitReporter: {
-      outputDir: '../../junit',
+      outputDir: './junit',
     },
     port: 9876,
     colors: true,

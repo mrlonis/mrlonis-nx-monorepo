@@ -19,4 +19,16 @@ export default {
     'jest-preset-angular/build/serializers/ng-snapshot',
     'jest-preset-angular/build/serializers/html-comment',
   ],
+  reporters: [
+    'default',
+    [
+      'jest-junit',
+      {
+        suiteName: 'ngx-mrlonis-shared Jest Tests',
+        outputDirectory: 'junit/libs/ngx-mrlonis-shared',
+        outputName: 'junit.xml',
+        uniqueOutputName: 'false',
+      },
+    ],
+  ],
 };

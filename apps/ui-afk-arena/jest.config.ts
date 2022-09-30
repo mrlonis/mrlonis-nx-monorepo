@@ -19,4 +19,16 @@ export default {
     'jest-preset-angular/build/serializers/ng-snapshot',
     'jest-preset-angular/build/serializers/html-comment',
   ],
+  reporters: [
+    'default',
+    [
+      'jest-junit',
+      {
+        suiteName: 'ui-afk-arena Jest Tests',
+        outputDirectory: 'junit/apps/ui-afk-arena',
+        outputName: 'junit.xml',
+        uniqueOutputName: 'false',
+      },
+    ],
+  ],
 };

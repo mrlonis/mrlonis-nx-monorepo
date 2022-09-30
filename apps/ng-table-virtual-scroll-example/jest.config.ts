@@ -19,4 +19,16 @@ export default {
     'jest-preset-angular/build/serializers/ng-snapshot',
     'jest-preset-angular/build/serializers/html-comment',
   ],
+  reporters: [
+    'default',
+    [
+      'jest-junit',
+      {
+        suiteName: 'ng-table-virtual-scroll-example Jest Tests',
+        outputDirectory: 'junit/apps/ng-table-virtual-scroll-example',
+        outputName: 'junit.xml',
+        uniqueOutputName: 'false',
+      },
+    ],
+  ],
 };

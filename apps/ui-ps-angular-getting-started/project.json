@@ -88,7 +88,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/ui-ps-angular-getting-started"],
+      "outputs": ["coverage/apps/ui-ps-angular-getting-started", "junit/apps/ui-ps-angular-getting-started"],
       "options": {
         "jestConfig": "apps/ui-ps-angular-getting-started/jest.config.ts",
         "passWithNoTests": true

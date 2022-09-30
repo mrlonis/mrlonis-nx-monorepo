@@ -84,7 +84,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/ui-mythic-heroes"],
+      "outputs": ["coverage/apps/ui-mythic-heroes", "junit/apps/ui-mythic-heroes"],
       "options": {
         "jestConfig": "apps/ui-mythic-heroes/jest.config.ts",
         "passWithNoTests": true

@@ -87,7 +87,10 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/angular-table-virtual-scroll-sticky-headers"],
+      "outputs": [
+        "coverage/apps/angular-table-virtual-scroll-sticky-headers",
+        "junit/apps/angular-table-virtual-scroll-sticky-headers"
+      ],
       "options": {
         "jestConfig": "apps/angular-table-virtual-scroll-sticky-headers/jest.config.ts",
         "passWithNoTests": true

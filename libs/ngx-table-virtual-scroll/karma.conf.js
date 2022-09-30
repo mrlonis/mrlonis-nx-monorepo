@@ -12,5 +12,9 @@ module.exports = function (config) {
       ...baseConfig.coverageReporter,
       dir: join(__dirname, '../../coverage/libs/ngx-table-virtual-scroll'),
     },
+    junitReporter: {
+      ...baseConfig.junitReporter,
+      outputDir: '../../junit/libs/ngx-table-virtual-scroll',
+    },
   });
 };

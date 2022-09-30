@@ -16,7 +16,8 @@
     "build:all": "nx run-many --target=build",
     "test:all": "nx run-many --target=test --code-coverage",
     "lint:all": "nx run-many --target=lint --fix",
-    "gauntlet": "npm run build:all && npm run test:all && npm run lint:all"
+    "gauntlet": "npm run build:all && npm run test:all && npm run lint:all",
+    "merge-code-coverage": "node ./pipeline/merge-code-coverage.js"
   },
   "private": true,
   "dependencies": {
@@ -35,9 +36,16 @@
     "@ng-bootstrap/ng-bootstrap": "^13.0.0",
     "@nrwl/angular": "14.8.2",
     "@popperjs/core": "^2.11.6",
+    "angular-split": "^14.0.0",
     "bootstrap": "^5.2.1",
+    "clone": "^2.1.2",
+    "date-fns": "^2.29.3",
     "jquery": "^3.6.1",
+    "leader-line-new": "^1.1.9",
     "ng-table-virtual-scroll": "^1.4.1",
+    "ngx-currency": "^2.5.3",
+    "ngx-diff": "^1.0.0",
+    "ngx-mat-select-search": "^4.2.1",
     "rxjs": "^7.5.7",
     "tslib": "^2.4.0",
     "zone.js": "^0.11.8"
@@ -76,6 +84,7 @@
     "jasmine-spec-reporter": "^7.0.0",
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
+    "jest-junit": "^14.0.1",
     "jest-preset-angular": "^12.2.2",
     "karma": "^6.4.1",
     "karma-chrome-launcher": "^3.1.1",

@@ -33,9 +33,9 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+/.angular
+/junit
 
 # System Files
 .DS_Store
 Thumbs.db
-
-.angular

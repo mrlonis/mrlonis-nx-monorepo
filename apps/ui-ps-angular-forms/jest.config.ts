@@ -19,4 +19,16 @@ export default {
     'jest-preset-angular/build/serializers/ng-snapshot',
     'jest-preset-angular/build/serializers/html-comment',
   ],
+  reporters: [
+    'default',
+    [
+      'jest-junit',
+      {
+        suiteName: 'ui-ps-angular-forms Jest Tests',
+        outputDirectory: 'junit/apps/ui-ps-angular-forms',
+        outputName: 'junit.xml',
+        uniqueOutputName: 'false',
+      },
+    ],
+  ],
 };

@@ -81,7 +81,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/ui-afk-arena"],
+      "outputs": ["coverage/apps/ui-afk-arena", "junit/apps/ui-afk-arena"],
       "options": {
         "jestConfig": "apps/ui-afk-arena/jest.config.ts",
         "passWithNoTests": true
