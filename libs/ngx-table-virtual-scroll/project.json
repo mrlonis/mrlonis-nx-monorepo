@@ -1,0 +1,24 @@
+{
+  "name": "ngx-table-virtual-scroll",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ngx-table-virtual-scroll/src",
+  "prefix": "mrlonis",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ngx-table-virtual-scroll"],
+      "options": {
+        "jestConfig": "libs/ngx-table-virtual-scroll/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/ngx-table-virtual-scroll/**/*.ts", "libs/ngx-table-virtual-scroll/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@mrlonis/ngx-mrlonis-shared": ["libs/ngx-mrlonis-shared/src/index.ts"],
+      "@mrlonis/ngx-table-virtual-scroll": ["libs/ngx-table-virtual-scroll/src/index.ts"],
       "@mrlonis/types-mrlonis": ["libs/types-mrlonis/src/index.ts"]
     },
     "resolveJsonModule": true
