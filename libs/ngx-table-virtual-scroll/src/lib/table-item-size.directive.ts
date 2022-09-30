@@ -5,7 +5,7 @@ import { MatTable } from '@angular/material/table';
 import { combineLatest, from, Subject } from 'rxjs';
 import { delayWhen, distinctUntilChanged, filter, map, startWith, switchMap, take, takeUntil, tap } from 'rxjs/operators';
 import { FixedSizeTableVirtualScrollStrategy } from './fixed-size-table-virtual-scroll-strategy';
-import { TableVirtualScrollDataSource } from './table-data-source';
+import { MrlonisTableVirtualScrollDataSource } from './table-data-source';
 
 export function _tableVirtualScrollDirectiveStrategyFactory(tableDir: TableItemSizeDirective) {
   return tableDir.scrollStrategy;
@@ -36,7 +36,6 @@ const defaults = {
 export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDestroy {
   private destroyed$ = new Subject<void>();
 
-  // tslint:disable-next-line:no-input-rename
   // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input('mrlonisTvsItemSize')
   rowHeight: string | number = defaults.rowHeight;
@@ -67,7 +66,9 @@ export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDe
   private stickyPositions = new Map<HTMLElement, number>();
   private resetStickyPositions = new Subject<void>();
 
-  constructor(private zone: NgZone) {}
+  constructor(private zone: NgZone) {
+    console.log('TableItemSizeDirective');
+  }
 
   ngOnDestroy() {
     this.destroyed$.next();
@@ -127,8 +128,9 @@ export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDe
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   connectDataSource(dataSource: any) {
+    console.log('TableItemSizeDirective: connectDataSource(): Starting...');
     this.dataSourceChanges.next();
-    if (dataSource instanceof TableVirtualScrollDataSource) {
+    if (dataSource instanceof MrlonisTableVirtualScrollDataSource) {
       dataSource.dataToRender$
         .pipe(
           distinctUntilChanged(),
@@ -147,7 +149,10 @@ export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDe
           });
         });
     } else {
-      throw new Error('[mrlonisTvsItemSize] requires TableVirtualScrollDataSource be set as [dataSource] of [mat-table]');
+      console.log('TableItemSizeDirective: connectDataSource(): Finished! Throwing Error...');
+      throw new Error(
+        '[mrlonisTvsItemSize] requires MrlonisTableVirtualScrollDataSource be set as [dataSource] of [mat-table]'
+      );
     }
   }
 

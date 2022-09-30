@@ -10,6 +10,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MatTableModule } from '@angular/material/table';
 import { TableVirtualScrollModule } from 'ng-table-virtual-scroll';
 
+import { MrlonisTableVirtualScrollModule } from '@mrlonis/ngx-table-virtual-scroll';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -19,13 +20,14 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatTableModule,
-    ScrollingModule,
-    TableVirtualScrollModule,
+    MatCheckboxModule,
     MatFormFieldModule,
     MatInputModule,
     MatSortModule,
-    MatCheckboxModule,
+    MatTableModule,
+    MrlonisTableVirtualScrollModule,
+    ScrollingModule,
+    TableVirtualScrollModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

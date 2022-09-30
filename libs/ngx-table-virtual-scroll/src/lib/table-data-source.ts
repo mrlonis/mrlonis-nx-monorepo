@@ -4,7 +4,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { BehaviorSubject, combineLatest, merge, Observable, of, ReplaySubject, Subject, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-export class TableVirtualScrollDataSource<T> extends MatTableDataSource<T> {
+export class MrlonisTableVirtualScrollDataSource<T> extends MatTableDataSource<T> {
   public dataToRender$!: Subject<T[]>;
   public dataOfRange$!: Subject<T[]>;
   private streamsReady!: boolean;

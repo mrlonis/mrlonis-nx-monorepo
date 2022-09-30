@@ -1,16 +1,17 @@
 import { CdkVirtualScrollViewport, ScrollingModule } from '@angular/cdk/scrolling';
-import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import {
   ComponentFixture,
   // fakeAsync,
   // flush,
+  // flushMicrotasks,
   TestBed,
 } from '@angular/core/testing';
 import { MatTableModule } from '@angular/material/table';
 import { By } from '@angular/platform-browser';
 // import { animationFrameScheduler } from 'rxjs';
 // import { FixedSizeTableVirtualScrollStrategy } from './fixed-size-table-virtual-scroll-strategy';
-import { TableVirtualScrollDataSource } from './table-data-source';
+import { MrlonisTableVirtualScrollDataSource } from './table-data-source';
 import { TableItemSizeDirective } from './table-item-size.directive';
 import { MrlonisTableVirtualScrollModule } from './table-virtual-scroll.module';
 
@@ -18,14 +19,10 @@ import { MrlonisTableVirtualScrollModule } from './table-virtual-scroll.module';
   template: `
     <div class="test">
       <cdk-virtual-scroll-viewport
-        mrlonisTvsItemSize="10"
-        headerHeight="20"
-        footerHeight="15"
-        bufferMultiplier="0.5"
+        mrlonisTvsItemSize
         [headerEnabled]="headerEnabled"
         [footerEnabled]="footerEnabled"
         class="wrapper"
-        scrollWindow
       >
         <table mat-table [dataSource]="dataSource">
           <ng-container *ngIf="headerEnabled">
@@ -82,7 +79,7 @@ import { MrlonisTableVirtualScrollModule } from './table-virtual-scroll.module';
       }
     `,
   ],
-  encapsulation: ViewEncapsulation.None,
+  // encapsulation: ViewEncapsulation.None,
 })
 class TableVirtualScrollComponent {
   @ViewChild(CdkVirtualScrollViewport, { static: true })
@@ -93,7 +90,7 @@ class TableVirtualScrollComponent {
 
   displayedColumns = ['id'];
 
-  dataSource = new TableVirtualScrollDataSource(
+  dataSource = new MrlonisTableVirtualScrollDataSource(
     Array(50)
       .fill(0)
       .map((_, i) => ({ id: i }))
@@ -103,7 +100,7 @@ class TableVirtualScrollComponent {
   footerEnabled = false;
 
   changeDataSource() {
-    this.dataSource = new TableVirtualScrollDataSource(
+    this.dataSource = new MrlonisTableVirtualScrollDataSource(
       Array(50)
         .fill(0)
         .map((_, i) => ({ id: i + 50 }))
@@ -117,18 +114,22 @@ class TableVirtualScrollComponent {
 //   // On the first cycle we render and measure the viewport.
 //   fixture.detectChanges();
 //   flush();
+//   flushMicrotasks();
 
 //   // On the second cycle we render the items.
 //   fixture.detectChanges();
 //   flush();
+//   flushMicrotasks();
 
 //   // Flush the initial fake scroll event.
 //   animationFrameScheduler.flush();
 //   flush();
 //   fixture.detectChanges();
+//   flush();
+//   flushMicrotasks();
 // }
 
-/** Trigger a scroll event on the viewport (optionally setting a new scroll offset). */
+// Trigger a scroll event on the viewport (optionally setting a new scroll offset)
 // function triggerScroll(viewport: CdkVirtualScrollViewport, offset?: number) {
 //   if (offset !== undefined) {
 //     viewport.scrollToOffset(offset);
