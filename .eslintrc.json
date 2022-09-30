@@ -5,6 +5,7 @@
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "extends": ["eslint:recommended", "plugin:prettier/recommended"],
       "rules": {
         "@nrwl/nx/enforce-module-boundaries": [
           "error",
@@ -18,13 +19,27 @@
               }
             ]
           }
-        ]
+        ],
+        "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }]
       }
     },
     {
       "files": ["*.ts", "*.tsx"],
-      "extends": ["plugin:@nrwl/nx/typescript", "plugin:prettier/recommended"],
-      "rules": { "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }] }
+      "parserOptions": {
+        "project": ["tsconfig.base.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@nrwl/nx/typescript",
+        "plugin:prettier/recommended"
+      ],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }],
+        "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }]
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
@@ -32,10 +47,11 @@
       "rules": { "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }] }
     },
     {
-      "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx", "plugin:prettier/recommended"],
+      "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
       "env": {
         "jest": true
       },
+      "extends": ["plugin:prettier/recommended"],
       "rules": { "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }] }
     }
   ]

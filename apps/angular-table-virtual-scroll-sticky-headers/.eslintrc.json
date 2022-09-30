@@ -4,7 +4,25 @@
   "overrides": [
     {
       "files": ["*.ts"],
-      "extends": ["plugin:@nrwl/nx/angular", "plugin:@angular-eslint/template/process-inline-templates"],
+      "parserOptions": {
+        "project": [
+          "apps/angular-table-virtual-scroll-sticky-headers/tsconfig.app.json",
+          "apps/angular-table-virtual-scroll-sticky-headers/tsconfig.editor.json",
+          "apps/angular-table-virtual-scroll-sticky-headers/tsconfig.json",
+          "apps/angular-table-virtual-scroll-sticky-headers/tsconfig.spec.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/recommended--extra",
+        "plugin:@nrwl/nx/angular",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:prettier/recommended"
+      ],
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
@@ -21,13 +39,22 @@
             "prefix": "mrlonis",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }]
       }
     },
     {
       "files": ["*.html"],
       "extends": ["plugin:@nrwl/nx/angular-template"],
       "rules": {}
+    },
+    {
+      "files": ["*.html"],
+      "excludedFiles": ["*inline-template-*.component.html"],
+      "extends": ["plugin:prettier/recommended"],
+      "rules": {
+        "prettier/prettier": ["error", { "parser": "angular", "printWidth": 125, "tabWidth": 2 }]
+      }
     }
   ]
 }

@@ -102,6 +102,7 @@ export class TableVirtualScrollViewportComponent extends CdkScrollable implement
   // performance.
   /** Emits when the index of the first element visible in the viewport changes. */
   @Output() scrolledIndexChange: Observable<number> = new Observable((observer: Observer<number>) =>
+    // eslint-disable-next-line @typescript-eslint/no-misused-promises
     this._scrollStrategy.scrolledIndexChange.subscribe((index) =>
       Promise.resolve().then(() => this.ngZone.run(() => observer.next(index)))
     )
@@ -192,10 +193,11 @@ export class TableVirtualScrollViewportComponent extends CdkScrollable implement
     // the Viewport to be rendered with the correct size before we measure. We run this outside the
     // zone to avoid causing more change detection cycles. We handle the change detection loop
     // ourselves instead.
+    // eslint-disable-next-line @typescript-eslint/no-floating-promises
     this.ngZone.runOutsideAngular(() =>
       Promise.resolve().then(() => {
         this._measureViewportSize();
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-argument
         this._scrollStrategy.attach(this as any);
 
         this.elementScrolled()
@@ -396,6 +398,7 @@ export class TableVirtualScrollViewportComponent extends CdkScrollable implement
     // properties sequentially we only have to run `_doChangeDetection` once at the end.
     if (!this._isChangeDetectionPending) {
       this._isChangeDetectionPending = true;
+      // eslint-disable-next-line @typescript-eslint/no-floating-promises
       this.ngZone.runOutsideAngular(() =>
         Promise.resolve().then(() => {
           this._doChangeDetection();

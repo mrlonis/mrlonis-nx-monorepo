@@ -142,7 +142,7 @@ describe('TableItemSizeDirective', () => {
   let directive: TableItemSizeDirective;
 
   beforeEach(async () => {
-    TestBed.configureTestingModule({
+    await TestBed.configureTestingModule({
       imports: [ScrollingModule, MatTableModule, MrlonisTableVirtualScrollModule],
       declarations: [TableVirtualScrollComponent],
     }).compileComponents();
@@ -154,7 +154,7 @@ describe('TableItemSizeDirective', () => {
     viewport = testComponent.viewport;
     strategy = testComponent.directive.scrollStrategy;
     const directiveEl = fixture.debugElement.query(By.directive(TableItemSizeDirective));
-    directive = directiveEl.injector.get(TableItemSizeDirective) as TableItemSizeDirective;
+    directive = directiveEl.injector.get(TableItemSizeDirective);
   });
 
   it('should create an instance', () => {
@@ -166,8 +166,10 @@ describe('TableItemSizeDirective', () => {
   it('should init correct state', fakeAsync(() => {
     finishInit(fixture);
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
     const tbody = fixture.nativeElement.querySelector('tbody');
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     expect(tbody.children.length)
       .withContext('should render 8 10px row to fill 40px + 40px * 0.5 (buffer before) + 40px * 0.5 (buffer after) space')
       .toBe(8);
@@ -198,14 +200,17 @@ describe('TableItemSizeDirective', () => {
 
   it('should subscribe and rerender after dataSource is changed', fakeAsync(() => {
     finishInit(fixture);
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
     const tbody = fixture.nativeElement.querySelector('tbody');
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     expect(tbody.children[0].children[0].innerHTML).toBe('el - 0');
 
     testComponent.changeDataSource();
     fixture.detectChanges();
     flush();
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     expect(tbody.children[0].children[0].innerHTML).toBe('el - 50');
   }));
 

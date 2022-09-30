@@ -41,6 +41,7 @@ describe('MrlonisTableVirtualScrollDataSource', () => {
 
     stream.subscribe(dataSource.dataOfRange$);
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const renderData: Subject<TestData[]> = dataSource['_renderData'];
 
     let count = -1; // renderData is BehaviorSubject with base value '[]'
@@ -65,6 +66,7 @@ describe('MrlonisTableVirtualScrollDataSource', () => {
       .pipe(switchMap((data) => stream.pipe(map(({ start, end }) => data.slice(start, end)))))
       .subscribe(dataSource.dataOfRange$);
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const renderData: Subject<TestData[]> = dataSource['_renderData'];
 
     const results: TestData[][] = [];

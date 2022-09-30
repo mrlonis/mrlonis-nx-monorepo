@@ -85,15 +85,19 @@ export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDe
   }
 
   ngAfterContentInit() {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const switchDataSourceOrigin = this.table['_switchDataSource'];
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     this.table['_switchDataSource'] = (dataSource: any) => {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
       switchDataSourceOrigin.call(this.table, dataSource);
       this.connectDataSource(dataSource);
     };
 
+    // eslint-disable-next-line @typescript-eslint/unbound-method
     const updateStickyColumnStylesOrigin = this.table.updateStickyColumnStyles;
     this.table.updateStickyColumnStyles = () => {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       const stickyColumnStylesNeedReset = this.table['_stickyColumnStylesNeedReset'];
       updateStickyColumnStylesOrigin.call(this.table);
       if (stickyColumnStylesNeedReset) {
@@ -137,6 +141,7 @@ export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDe
           tap((data) => (this.scrollStrategy.dataLength = data.length)),
           switchMap((data) =>
             this.scrollStrategy.renderedRangeStream.pipe(
+              // eslint-disable-next-line @typescript-eslint/no-unsafe-return
               map(({ start, end }) => (typeof start !== 'number' || typeof end !== 'number' ? data : data.slice(start, end)))
             )
           )

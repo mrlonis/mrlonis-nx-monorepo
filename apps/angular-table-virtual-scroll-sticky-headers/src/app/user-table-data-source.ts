@@ -42,7 +42,7 @@ export class UserTableDataSource extends DataSource<User> {
     this.initFetchingOnScrollUpdates();
 
     // Attach DataSource as CdkVirtualForOf so ViewPort can access dataStream
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-argument
     this._viewPort.attach(this as any);
 
     // Trigger range change so that 1st page can be loaded

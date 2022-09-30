@@ -11,18 +11,22 @@ export class MrlonisTableVirtualScrollDataSource<T> extends MatTableDataSource<T
 
   override _updateChangeSubscription() {
     this.initStreams();
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const _sort: MatSort | null = this['_sort'];
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const _paginator: MatPaginator | null = this['_paginator'];
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const _internalPageChanges: Subject<void> = this['_internalPageChanges'];
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const _filter: BehaviorSubject<string> = this['_filter'];
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const _renderData: BehaviorSubject<T[]> = this['_renderData'];
 
-    const sortChange: Observable<Sort | null | void> = _sort
-      ? (merge(_sort.sortChange, _sort.initialized) as Observable<Sort | void>)
-      : of(null);
+    const sortChange: Observable<Sort | null | void> = _sort ? merge(_sort.sortChange, _sort.initialized) : of(null);
     const pageChange: Observable<PageEvent | null | void> = _paginator
-      ? (merge(_paginator.page, _internalPageChanges, _paginator.initialized) as Observable<PageEvent | void>)
+      ? merge(_paginator.page, _internalPageChanges, _paginator.initialized)
       : of(null);
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const dataStream: Observable<T[]> = this['_data'];
     const filteredData = combineLatest([dataStream, _filter]).pipe(map(([data]) => this._filterData(data)));
     const orderedData = combineLatest([filteredData, sortChange]).pipe(map(([data]) => this._orderData(data)));

@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     console.log('ngOnInit(): Starting...');
     this._initSorting();
-    console.log(`ngOnInit(): this.viewPort = ${this.viewPort}`);
+    console.log('ngOnInit(): this.viewPort = ', this.viewPort);
     console.log(`ngOnInit(): this.offset = ${this.offset}`);
     this.dataSource.attach(this.viewPort);
 
