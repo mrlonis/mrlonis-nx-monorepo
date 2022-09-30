@@ -1,6 +1,6 @@
 # ngx-table-virtual-scroll
 
-This library was generated with [Nx](https://nx.dev) but is a faithful re-make of [ng-table-virtual-scroll](https://github.com/diprokon/ng-table-virtual-scroll)
+This library was generated with [Nx](https://nx.dev).
 
 ## Running unit tests
 

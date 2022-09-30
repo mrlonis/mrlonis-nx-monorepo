@@ -60,8 +60,9 @@ export class FixedSizeTableVirtualScrollStrategy implements VirtualScrollStrateg
     this.updateContent();
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  public onContentRendered(): void {}
+  public onContentRendered(): void {
+    // no-op
+  }
 
   public onRenderedOffsetChanged(): void {
     // no-op
@@ -96,11 +97,7 @@ export class FixedSizeTableVirtualScrollStrategy implements VirtualScrollStrateg
       return;
     }
 
-    let renderedOffset = this.viewport.getOffsetToRenderedContentStart();
-    if (renderedOffset === null) {
-      console.log('renderedOffset is null');
-      renderedOffset = 1000;
-    }
+    const renderedOffset = this.viewport.getOffsetToRenderedContentStart() ?? 0;
     const start = renderedOffset / this.rowHeight;
     const itemsDisplayed = Math.ceil(this.viewport.getViewportSize() / this.rowHeight);
     const bufferItems = Math.ceil(itemsDisplayed * this.bufferMultiplier);

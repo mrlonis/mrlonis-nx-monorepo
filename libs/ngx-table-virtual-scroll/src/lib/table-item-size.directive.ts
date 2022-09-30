@@ -36,6 +36,7 @@ const defaults = {
 export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDestroy {
   private destroyed$ = new Subject<void>();
 
+  // tslint:disable-next-line:no-input-rename
   // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input('mrlonisTvsItemSize')
   rowHeight: string | number = defaults.rowHeight;
@@ -66,9 +67,7 @@ export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDe
   private stickyPositions = new Map<HTMLElement, number>();
   private resetStickyPositions = new Subject<void>();
 
-  constructor(private zone: NgZone) {
-    console.log('TableItemSizeDirective');
-  }
+  constructor(private zone: NgZone) {}
 
   ngOnDestroy() {
     this.destroyed$.next();
@@ -128,7 +127,6 @@ export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDe
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   connectDataSource(dataSource: any) {
-    console.log('TableItemSizeDirective: connectDataSource(): Starting...');
     this.dataSourceChanges.next();
     if (dataSource instanceof MrlonisTableVirtualScrollDataSource) {
       dataSource.dataToRender$
@@ -149,7 +147,6 @@ export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDe
           });
         });
     } else {
-      console.log('TableItemSizeDirective: connectDataSource(): Finished! Throwing Error...');
       throw new Error(
         '[mrlonisTvsItemSize] requires MrlonisTableVirtualScrollDataSource be set as [dataSource] of [mat-table]'
       );

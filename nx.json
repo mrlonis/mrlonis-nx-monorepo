@@ -19,7 +19,7 @@
       "inputs": ["production", "^production"]
     },
     "test": {
-      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"]
+      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js", "{workspaceRoot}/karma.conf.js"]
     },
     "e2e": {
       "inputs": ["default", "^production"]
@@ -35,7 +35,9 @@
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
       "!{projectRoot}/tsconfig.spec.json",
       "!{projectRoot}/jest.config.[jt]s",
-      "!{projectRoot}/.eslintrc.json"
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/**/*.spec.[jt]s",
+      "!{projectRoot}/karma.conf.js"
     ],
     "sharedGlobals": []
   },

@@ -14,7 +14,7 @@ function getTestData(n = 10): TestData[] {
 }
 
 // tslint:disable:no-string-literal
-describe('TableVirtualScrollDataSource', () => {
+describe('MrlonisTableVirtualScrollDataSource', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
