@@ -1,6 +1,6 @@
 {
   "root": true,
-  "ignorePatterns": ["**/*"],
+  "ignorePatterns": ["apps/*", "libs/**", "pipeline/**", "tools/**"],
   "plugins": ["@nrwl/nx"],
   "overrides": [
     {

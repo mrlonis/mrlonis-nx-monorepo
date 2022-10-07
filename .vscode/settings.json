@@ -1,5 +1,16 @@
 {
-  "cSpell.words": ["compodoc", "frontends", "genshin", "Mrlonis", "nrwl", "packagr", "prettierrc"],
+  "cSpell.words": [
+    "Buildable",
+    "cobertura",
+    "compodoc",
+    "frontends",
+    "genshin",
+    "Mrlonis",
+    "nrwl",
+    "packagr",
+    "prettierrc",
+    "subdir"
+  ],
   "editor.codeActionsOnSave": {
     "source.organizeImports": true,
     "source.fixAll.eslint": true
