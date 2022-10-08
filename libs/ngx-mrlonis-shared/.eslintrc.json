@@ -39,6 +39,7 @@
             "style": "kebab-case"
           }
         ],
+        "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }],
         "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }]
       }
     },
