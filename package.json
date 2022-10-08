@@ -16,7 +16,7 @@
     "build:all": "nx run-many --target=build",
     "test:all": "nx run-many --target=test --configuration ci",
     "lint:all": "nx run-many --target=lint",
-    "gauntlet": "npm run prettier && npm run lint:all && npm run test:all && npm run build:all && npm run lint:all -- --fix",
+    "gauntlet": "npm run prettier && npm run lint:all && npm run test:all && npm run merge-code-coverage && npm run build:all && npm run lint:all -- --fix",
     "merge-code-coverage": "node ./pipeline/merge-code-coverage.js"
   },
   "private": true,
@@ -70,6 +70,7 @@
     "@types/node": "^16.11.64",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
+    "cobertura-merge": "^1.0.3",
     "cypress": "^10.9.0",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
