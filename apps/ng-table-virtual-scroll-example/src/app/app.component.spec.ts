@@ -1,11 +1,33 @@
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { CommonModule } from '@angular/common';
 import { TestBed } from '@angular/core/testing';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
+import { MrlonisTableVirtualScrollModule } from '@mrlonis/ngx-table-virtual-scroll';
+import { TableVirtualScrollModule } from 'ng-table-virtual-scroll';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [
+        CommonModule,
+        MatCheckboxModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSortModule,
+        MatTableModule,
+        MrlonisTableVirtualScrollModule,
+        NoopAnimationsModule,
+        RouterTestingModule,
+        ScrollingModule,
+        TableVirtualScrollModule,
+      ],
       declarations: [AppComponent],
     }).compileComponents();
   });
