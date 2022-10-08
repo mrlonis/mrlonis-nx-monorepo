@@ -11,6 +11,14 @@
         "main": "libs/ngx-table-virtual-scroll/src/test.ts",
         "tsConfig": "libs/ngx-table-virtual-scroll/tsconfig.spec.json",
         "karmaConfig": "libs/ngx-table-virtual-scroll/karma.conf.js"
+      },
+      "configurations": {
+        "ci": {
+          "watch": false,
+          "browsers": "ChromeHeadless",
+          "codeCoverage": true,
+          "reporters": ["progress", "coverage", "junit"]
+        }
       }
     },
     "lint": {

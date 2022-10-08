@@ -88,6 +88,12 @@
       "options": {
         "jestConfig": "apps/ui-personal-website/jest.config.ts",
         "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
       }
     }
   },

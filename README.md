@@ -1,4 +1,4 @@
-# MrlonisNxAngularMonorepo
+# Mrlonis - Nx Angular - Monorepo
 
 This project was generated using [Nx](https://nx.dev).
 

@@ -14,9 +14,9 @@
     "prettier": "prettier --config .prettierrc --write \"**/*.{ts,js,css,scss,html,json,md}\"",
     "prepare": "husky install",
     "build:all": "nx run-many --target=build",
-    "test:all": "nx run-many --target=test --code-coverage",
-    "lint:all": "nx run-many --target=lint --fix",
-    "gauntlet": "npm run build:all && npm run test:all && npm run lint:all",
+    "test:all": "nx run-many --target=test --configuration ci",
+    "lint:all": "nx run-many --target=lint",
+    "gauntlet": "npm run lint:all && npm run test:all && npm run build:all && npm run lint:all -- --fix",
     "merge-code-coverage": "node ./pipeline/merge-code-coverage.js"
   },
   "private": true,

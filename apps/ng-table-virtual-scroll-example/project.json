@@ -91,6 +91,12 @@
       "options": {
         "jestConfig": "apps/ng-table-virtual-scroll-example/jest.config.ts",
         "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
       }
     }
   },

@@ -94,6 +94,12 @@
       "options": {
         "jestConfig": "apps/angular-table-virtual-scroll-sticky-headers/jest.config.ts",
         "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
       }
     }
   },

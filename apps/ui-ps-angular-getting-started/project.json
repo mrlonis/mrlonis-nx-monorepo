@@ -92,6 +92,12 @@
       "options": {
         "jestConfig": "apps/ui-ps-angular-getting-started/jest.config.ts",
         "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
       }
     }
   },

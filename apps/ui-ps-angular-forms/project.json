@@ -89,6 +89,12 @@
       "options": {
         "jestConfig": "apps/ui-ps-angular-forms/jest.config.ts",
         "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
       }
     }
   },

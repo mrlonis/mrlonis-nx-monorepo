@@ -82,6 +82,12 @@
       "options": {
         "jestConfig": "apps/virtual-scroll-cdk-table-test/jest.config.ts",
         "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
       }
     }
   },
