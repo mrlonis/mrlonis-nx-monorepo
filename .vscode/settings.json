@@ -18,7 +18,9 @@
   },
   "editor.formatOnSave": true,
   "eslint.options": {
-    "extensions": [".js", ".jsx", ".ts", ".tsx", ".html"]
+    "extensions": [".js", ".jsx", ".ts", ".tsx", ".html"],
+    "fix": true,
+    "cache": true
   },
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
