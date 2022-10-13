@@ -99,25 +99,31 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 
 ## Notes
 
+### Generating a new TypeScript Library
+
+Run the command `nx g @nrwl/workspace:library my-lib-name`
+
+[Reference](https://nx.dev/packages/workspace/generators/library)
+
 ### Adding @angular/material to an Angular application
 
 Run the command: `nx g @angular/material:ng-add --project=my-app-name`
 
 [Reference](https://stackoverflow.com/a/71275473)
 
-### Generating a new Application
+### Generating a new Angular Application
 
 Run the command `nx g @nrwl/angular:application my-app-name`
 
 [Reference](https://nx.dev/packages/angular/generators/application)
 
-### Generating a new Library
+### Generating a new Angular Library
 
 Run the command `nx g @nrwl/angular:library my-lib-name`
 
 [Reference](https://nx.dev/packages/angular/generators/library)
 
-### Generating a new Component
+### Generating a new Angular Component
 
 Run the command `nx g @nrwl/angular:component my-component-name --project=my-app-name`
 
