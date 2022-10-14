@@ -84,7 +84,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/ui-genshin-impact", "junit/apps/ui-genshin-impact"],
+      "outputs": ["{workspaceRoot}/coverage/apps/ui-genshin-impact", "{workspaceRoot}/junit/apps/ui-genshin-impact"],
       "options": {
         "jestConfig": "apps/ui-genshin-impact/jest.config.ts",
         "passWithNoTests": true

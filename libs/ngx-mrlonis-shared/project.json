@@ -7,7 +7,7 @@
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/ngx-mrlonis-shared", "junit/libs/ngx-mrlonis-shared"],
+      "outputs": ["{workspaceRoot}/coverage/libs/ngx-mrlonis-shared", "{workspaceRoot}/junit/libs/ngx-mrlonis-shared"],
       "options": {
         "jestConfig": "libs/ngx-mrlonis-shared/jest.config.ts",
         "passWithNoTests": true

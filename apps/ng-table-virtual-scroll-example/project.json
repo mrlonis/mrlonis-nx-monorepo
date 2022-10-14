@@ -87,7 +87,10 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/ng-table-virtual-scroll-example", "junit/apps/ng-table-virtual-scroll-example"],
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/ng-table-virtual-scroll-example",
+        "{workspaceRoot}/junit/apps/ng-table-virtual-scroll-example"
+      ],
       "options": {
         "jestConfig": "apps/ng-table-virtual-scroll-example/jest.config.ts",
         "passWithNoTests": true
