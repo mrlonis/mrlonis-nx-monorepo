@@ -4,6 +4,7 @@
   "projects": {
     "angular-table-virtual-scroll-sticky-headers": "apps/angular-table-virtual-scroll-sticky-headers",
     "angular-table-virtual-scroll-sticky-headers-e2e": "apps/angular-table-virtual-scroll-sticky-headers-e2e",
+    "interview-typescript-workspace": "libs/interview-typescript-workspace",
     "ng-table-virtual-scroll-example": "apps/ng-table-virtual-scroll-example",
     "ng-table-virtual-scroll-example-e2e": "apps/ng-table-virtual-scroll-example-e2e",
     "ngx-mrlonis-shared": "libs/ngx-mrlonis-shared",

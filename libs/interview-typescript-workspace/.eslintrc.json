@@ -1,12 +1,10 @@
 {
-  "root": true,
-  "ignorePatterns": ["apps/*", "libs/**", "pipeline/**", "tools/**"],
-  "plugins": ["@nrwl/nx"],
+  "extends": ["../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "extends": ["eslint:recommended", "plugin:prettier/recommended"],
-      "plugins": ["@nrwl/nx"],
       "rules": {
         "@nrwl/nx/enforce-module-boundaries": [
           "error",
@@ -27,7 +25,11 @@
     {
       "files": ["*.ts", "*.tsx"],
       "parserOptions": {
-        "project": ["tsconfig.base.json"],
+        "project": [
+          "libs/interview-typescript-workspace/tsconfig.json",
+          "libs/interview-typescript-workspace/tsconfig.lib.json",
+          "libs/interview-typescript-workspace/tsconfig.spec.json"
+        ],
         "createDefaultProgram": true
       },
       "extends": [
@@ -45,14 +47,6 @@
     {
       "files": ["*.js", "*.jsx"],
       "extends": ["plugin:@nrwl/nx/javascript", "plugin:prettier/recommended"],
-      "rules": { "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }] }
-    },
-    {
-      "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
-      "env": {
-        "jest": true
-      },
-      "extends": ["plugin:prettier/recommended"],
       "rules": { "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }] }
     }
   ]

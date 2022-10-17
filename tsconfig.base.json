@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mrlonis/interview-typescript-workspace": ["libs/interview-typescript-workspace/src/index.ts"],
       "@mrlonis/ngx-mrlonis-shared": ["libs/ngx-mrlonis-shared/src/index.ts"],
       "@mrlonis/ngx-table-virtual-scroll": ["libs/ngx-table-virtual-scroll/src/index.ts"],
       "@mrlonis/types-mrlonis": ["libs/types-mrlonis/src/index.ts"]
