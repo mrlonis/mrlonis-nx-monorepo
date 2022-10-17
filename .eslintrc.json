@@ -52,7 +52,6 @@
         "createDefaultProgram": true
       },
       "extends": [
-        "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:@nrwl/nx/typescript",
@@ -120,17 +119,7 @@
       "env": {
         "jest": true
       },
-      "extends": ["plugin:prettier/recommended"],
-      "rules": {
-        "prettier/prettier": [
-          "error",
-          {
-            "singleQuote": true,
-            "printWidth": 125,
-            "tabWidth": 2
-          }
-        ]
-      }
+      "rules": {}
     },
     {
       "files": "*.json",

@@ -1,27 +1,25 @@
 {
   "extends": ["../../.eslintrc.json"],
   "ignorePatterns": ["!**/*"],
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      "extends": ["eslint:recommended", "plugin:prettier/recommended"],
-      "rules": {
-        "@nrwl/nx/enforce-module-boundaries": [
-          "error",
-          {
-            "enforceBuildableLibDependency": true,
-            "allow": [],
-            "depConstraints": [
-              {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
-              }
-            ]
-          }
-        ],
-        "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }]
-      }
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
     },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": [
+          "libs/mrlonis-nx-plugin/tsconfig.json",
+          "libs/mrlonis-nx-plugin/tsconfig.lib.json",
+          "libs/mrlonis-nx-plugin/tsconfig.spec.json"
+        ]
+      }
+    }
+  },
+  "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
       "parserOptions": {
@@ -32,17 +30,7 @@
         ],
         "createDefaultProgram": true
       },
-      "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "plugin:@nrwl/nx/typescript",
-        "plugin:prettier/recommended"
-      ],
-      "rules": {
-        "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }],
-        "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }]
-      }
+      "rules": {}
     },
     {
       "files": ["*.js", "*.jsx"],

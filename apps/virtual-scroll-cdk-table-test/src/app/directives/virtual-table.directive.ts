@@ -1,3 +1,4 @@
+/* eslint-disable import/no-deprecated */
 import { ArrayDataSource, CollectionViewer, isDataSource, ListRange } from '@angular/cdk/collections';
 import { CdkVirtualScrollRepeater, CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
 import {

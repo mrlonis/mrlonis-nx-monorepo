@@ -1,3 +1,4 @@
+/* eslint-disable import/no-deprecated */
 import { ListRange } from '@angular/cdk/collections';
 import { TestBed } from '@angular/core/testing';
 import { MatTableDataSource } from '@angular/material/table';

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-deprecated */
 import { HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { fakeAsync, TestBed, tick } from '@angular/core/testing';

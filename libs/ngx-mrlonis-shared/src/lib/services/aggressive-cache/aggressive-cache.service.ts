@@ -1,3 +1,4 @@
+/* eslint-disable import/no-deprecated */
 import { HttpParams } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map, mergeMap, shareReplay, tap } from 'rxjs/operators';

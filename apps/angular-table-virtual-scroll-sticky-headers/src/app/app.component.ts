@@ -1,3 +1,4 @@
+/* eslint-disable import/no-deprecated */
 import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
 import { ChangeDetectorRef, Component, NgZone, OnInit, ViewChild } from '@angular/core';
 import { MatSort } from '@angular/material/sort';

@@ -1,6 +1,25 @@
 {
   "extends": ["../../.eslintrc.json"],
   "ignorePatterns": ["!**/*"],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": [
+          "apps/ui-afk-arena/tsconfig.app.json",
+          "apps/ui-afk-arena/tsconfig.editor.json",
+          "apps/ui-afk-arena/tsconfig.json",
+          "apps/ui-afk-arena/tsconfig.spec.json"
+        ]
+      }
+    }
+  },
   "overrides": [
     {
       "files": ["*.ts"],
@@ -14,9 +33,6 @@
         "createDefaultProgram": true
       },
       "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/recommended--extra",
         "plugin:@nrwl/nx/angular",

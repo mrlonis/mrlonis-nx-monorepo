@@ -1,3 +1,4 @@
+/* eslint-disable import/no-deprecated */
 import { VIRTUAL_SCROLL_STRATEGY } from '@angular/cdk/scrolling';
 import { CdkHeaderRowDef } from '@angular/cdk/table';
 import { AfterContentInit, ContentChild, Directive, forwardRef, Input, NgZone, OnChanges, OnDestroy } from '@angular/core';

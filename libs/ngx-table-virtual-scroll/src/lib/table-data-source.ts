@@ -1,3 +1,4 @@
+/* eslint-disable import/no-deprecated */
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatSort, Sort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-deprecated */
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-deprecated */
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { InjectionToken } from '@angular/core';
 import { Observable, Subject, throwError } from 'rxjs';
@@ -70,6 +71,7 @@ export abstract class ApiService<T extends { [key: string]: BaseResource }> impl
         return throwError(() => error);
       })
     );
+    // return this.http.get<SpringDataRestResponse<T[ATTR]>>(url, { params });
   }
 
   getSingle<ATTR extends keyof T>(route: ATTR, httpParams: HttpParams): Observable<T[ATTR]> {

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-deprecated */
 import { ListRange } from '@angular/cdk/collections';
 import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
 import { DataSource } from '@angular/cdk/table';
