@@ -6,6 +6,7 @@
 /junit
 /node_modules
 /storybook-static
+/tmp
 /documentation.json
 /package-lock.json
 /yarn.lock

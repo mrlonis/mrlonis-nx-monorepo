@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mrlonis/buildable-angular-library": ["libs/buildable-angular-library/src/index.ts"],
       "@mrlonis/buildable-typescript-library": ["libs/buildable-typescript-library/src/index.ts"],
       "@mrlonis/interview-typescript-workspace": ["libs/interview-typescript-workspace/src/index.ts"],
       "@mrlonis/ngx-mrlonis-shared": ["libs/ngx-mrlonis-shared/src/index.ts"],

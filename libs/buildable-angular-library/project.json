@@ -1,0 +1,46 @@
+{
+  "name": "buildable-angular-library",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/buildable-angular-library/src",
+  "prefix": "mrlonis",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/buildable-angular-library/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/buildable-angular-library/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/buildable-angular-library/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/buildable-angular-library/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/buildable-angular-library/**/*.ts", "libs/buildable-angular-library/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
