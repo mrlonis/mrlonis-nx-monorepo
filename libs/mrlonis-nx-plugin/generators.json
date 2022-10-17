@@ -7,6 +7,11 @@
       "factory": "./src/generators/mrlonis-nx-plugin/generator",
       "schema": "./src/generators/mrlonis-nx-plugin/schema.json",
       "description": "mrlonis-nx-plugin generator"
+    },
+    "mrlonis-generator": {
+      "factory": "./src/generators/mrlonis-generator/generator",
+      "schema": "./src/generators/mrlonis-generator/schema.json",
+      "description": "mrlonis-generator generator"
     }
   }
 }
