@@ -6,10 +6,9 @@
       "files": ["*.ts"],
       "parserOptions": {
         "project": [
-          "libs/buildable-angular-library/tsconfig.json",
-          "libs/buildable-angular-library/tsconfig.lib.json",
-          "libs/buildable-angular-library/tsconfig.lib.prod.json",
-          "libs/buildable-angular-library/tsconfig.spec.json"
+          "libs/interview-angular-karma-workspace/tsconfig.json",
+          "libs/interview-angular-karma-workspace/tsconfig.lib.json",
+          "libs/interview-angular-karma-workspace/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },

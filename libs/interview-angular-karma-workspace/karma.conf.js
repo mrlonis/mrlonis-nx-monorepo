@@ -10,11 +10,11 @@ module.exports = function (config) {
     ...baseConfig,
     coverageReporter: {
       ...baseConfig.coverageReporter,
-      dir: join(__dirname, '../../coverage/libs/ngx-table-virtual-scroll'),
+      dir: join(__dirname, '../../coverage/libs/interview-angular-karma-workspace'),
     },
     junitReporter: {
       ...baseConfig.junitReporter,
-      outputDir: join(__dirname, '../../junit/libs/ngx-table-virtual-scroll'),
+      outputDir: join(__dirname, '../../junit/libs/interview-angular-karma-workspace'),
     },
   });
 };

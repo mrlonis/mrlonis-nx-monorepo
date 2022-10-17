@@ -8,6 +8,7 @@
         "project": [
           "libs/publishable-angular-library/tsconfig.json",
           "libs/publishable-angular-library/tsconfig.lib.json",
+          "libs/publishable-angular-library/tsconfig.lib.prod.json",
           "libs/publishable-angular-library/tsconfig.spec.json"
         ],
         "createDefaultProgram": true

@@ -6,6 +6,7 @@
     "angular-table-virtual-scroll-sticky-headers-e2e": "apps/angular-table-virtual-scroll-sticky-headers-e2e",
     "buildable-angular-library": "libs/buildable-angular-library",
     "buildable-typescript-library": "libs/buildable-typescript-library",
+    "interview-angular-karma-workspace": "libs/interview-angular-karma-workspace",
     "interview-angular-workspace": "libs/interview-angular-workspace",
     "interview-typescript-workspace": "libs/interview-typescript-workspace",
     "ng-table-virtual-scroll-example": "apps/ng-table-virtual-scroll-example",
