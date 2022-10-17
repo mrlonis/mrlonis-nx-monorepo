@@ -109,23 +109,31 @@ Run the command `nx g @nrwl/workspace:library my-lib-name`
 
 Run the command `nx g @nrwl/workspace:library my-lib-name --buildable`
 
-### Adding @angular/material to an Angular application
-
-Run the command: `nx g @angular/material:ng-add --project=my-app-name`
-
-[Reference](https://stackoverflow.com/a/71275473)
-
 ### Generating a new Angular Application
 
 Run the command `nx g @nrwl/angular:application my-app-name`
 
 [Reference](https://nx.dev/packages/angular/generators/application)
 
+#### Generating a new Angular Application with Karma test runner
+
+Run the command `nx g @nrwl/angular:application my-app-name --unitTestRunner=karma`
+
+#### Adding @angular/material to an Angular application
+
+Run the command: `nx g @angular/material:ng-add --project=my-app-name`
+
+[Reference](https://stackoverflow.com/a/71275473)
+
 ### Generating a new Angular Library
 
 Run the command `nx g @nrwl/angular:library my-lib-name`
 
 [Reference](https://nx.dev/packages/angular/generators/library)
+
+#### Generating a new Angular Library with Karma test runner
+
+Run the command `nx g @nrwl/angular:library my-lib-name --unitTestRunner=karma`
 
 #### Generating a new buildable Angular Library
 

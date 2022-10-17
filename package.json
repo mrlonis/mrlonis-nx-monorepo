@@ -73,11 +73,11 @@
     "@typescript-eslint/eslint-plugin": "5.39.0",
     "@typescript-eslint/parser": "5.39.0",
     "cobertura-merge": "^1.0.3",
-    "cypress": "^10.10.0",
+    "cypress": "^10.7.0",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.5.1",
-    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-deprecation": "^1.3.2",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsdoc": "^39.3.6",
@@ -120,6 +120,14 @@
     "apps/angular-table-virtual-scroll-sticky-headers-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
       "ng-lint-staged lint angular-table-virtual-scroll-sticky-headers-e2e --fix --"
+    ],
+    "apps/interview-angular-test-application/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint interview-angular-test-application --fix --"
+    ],
+    "apps/interview-angular-test-application-e2e/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint interview-angular-test-application-e2e --fix --"
     ],
     "apps/ng-table-virtual-scroll-example/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
