@@ -8,8 +8,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
-import { MrlonisTableVirtualScrollModule } from '@mrlonis/ngx-table-virtual-scroll';
 import { TableVirtualScrollModule } from 'ng-table-virtual-scroll';
+import { MrlonisTableVirtualScrollModule } from '@mrlonis/ngx-table-virtual-scroll';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {

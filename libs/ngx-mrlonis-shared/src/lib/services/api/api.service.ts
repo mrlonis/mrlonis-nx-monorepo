@@ -1,8 +1,8 @@
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { InjectionToken } from '@angular/core';
-import { BaseResource, SpringDataRestResponse } from '@mrlonis/types-mrlonis';
 import { Observable, Subject, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
+import { BaseResource, SpringDataRestResponse } from '@mrlonis/types-mrlonis';
 
 export interface ApiConfigProvider {
   apiUrl?: string;

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MrlonisTableVirtualScrollDataSource } from '@mrlonis/ngx-table-virtual-scroll';
 import { TableVirtualScrollDataSource } from 'ng-table-virtual-scroll';
+import { MrlonisTableVirtualScrollDataSource } from '@mrlonis/ngx-table-virtual-scroll';
 
 const DATA = Array.from({ length: 1000 }, (v, i) => ({
   id: i + 1,

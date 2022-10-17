@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Observable, of } from 'rxjs';
 import { DataService } from '../data/data.service';
-
 import { UserSettingsFormComponent } from './user-settings-form.component';
 
 describe('UserSettingsFormComponent', () => {

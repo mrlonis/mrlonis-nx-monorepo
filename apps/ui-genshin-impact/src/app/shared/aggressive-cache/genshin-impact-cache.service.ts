@@ -1,8 +1,8 @@
 import { HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { map } from 'rxjs/operators';
 import { AggressiveCache, AggressiveCacheInvalidator } from '@mrlonis/ngx-mrlonis-shared';
 import { ArtifactSet, Character, Element, Weapon } from '@mrlonis/types-mrlonis';
-import { map } from 'rxjs/operators';
 import { GenshinImpactApiService } from '../api';
 
 @Injectable({ providedIn: 'root' })

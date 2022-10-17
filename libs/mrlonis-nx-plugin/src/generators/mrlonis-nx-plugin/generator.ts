@@ -1,3 +1,4 @@
+import * as path from 'path';
 import {
   addProjectConfiguration,
   formatFiles,
@@ -7,7 +8,6 @@ import {
   offsetFromRoot,
   Tree,
 } from '@nrwl/devkit';
-import * as path from 'path';
 import { MrlonisNxPluginGeneratorSchema } from './schema';
 
 interface NormalizedSchema extends MrlonisNxPluginGeneratorSchema {

@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
-
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   imports: [CommonModule, MatButtonModule, MatIconModule, NgxChartsModule],
