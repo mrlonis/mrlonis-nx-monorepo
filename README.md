@@ -105,6 +105,10 @@ Run the command `nx g @nrwl/workspace:library my-lib-name`
 
 [Reference](https://nx.dev/packages/workspace/generators/library)
 
+#### Generating a new buildable TypeScript Library
+
+Run the command `nx g @nrwl/workspace:library my-lib-name --buildable`
+
 ### Adding @angular/material to an Angular application
 
 Run the command: `nx g @angular/material:ng-add --project=my-app-name`
@@ -122,6 +126,16 @@ Run the command `nx g @nrwl/angular:application my-app-name`
 Run the command `nx g @nrwl/angular:library my-lib-name`
 
 [Reference](https://nx.dev/packages/angular/generators/library)
+
+#### Generating a new buildable Angular Library
+
+Run the command `nx g @nrwl/angular:library my-lib-name --buildable`
+
+#### Generating a new publishable Angular Library
+
+Run the command `nx g @nrwl/angular:library my-lib-name --publishable --importPath='some-path-to-import or like this @some/path-to-import'`
+
+**Note**: A Publishable library is also a buildable library, it is just built using partial compilation. Generating a "buildable / publishable" library likw `nx g @nrwl/angular:library my-lib-name --buildable --publishable --importPath='some-path-to-import or like this @some/path-to-import'` is ultimately redundant. It will not cause an error but there is no reason to pass the buildable flag.
 
 ### Generating a new Angular Component
 
