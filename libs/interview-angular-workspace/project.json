@@ -1,0 +1,30 @@
+{
+  "name": "interview-angular-workspace",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/interview-angular-workspace/src",
+  "prefix": "mrlonis",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/interview-angular-workspace/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/interview-angular-workspace/**/*.ts", "libs/interview-angular-workspace/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
