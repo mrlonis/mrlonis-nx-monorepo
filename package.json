@@ -62,6 +62,7 @@
     "@nrwl/cypress": "15.0.0",
     "@nrwl/eslint-plugin-nx": "15.0.0",
     "@nrwl/jest": "15.0.0",
+    "@nrwl/js": "15.0.0",
     "@nrwl/linter": "15.0.0",
     "@nrwl/nx-cloud": "14.7.0",
     "@nrwl/workspace": "15.0.0",
@@ -161,6 +162,10 @@
     "apps/ui-ps-angular-getting-started-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
       "ng-lint-staged lint ui-ps-angular-getting-started-e2e --fix --"
+    ],
+    "libs/buildable-typescript-library/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint buildable-typescript-library --fix --"
     ],
     "libs/interview-typescript-workspace/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",

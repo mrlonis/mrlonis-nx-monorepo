@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'interview-typescript-workspace',
+  displayName: 'buildable-typescript-library',
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -11,14 +11,14 @@ export default {
     '^.+\\.[tj]sx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/libs/interview-typescript-workspace',
+  coverageDirectory: '../../coverage/libs/buildable-typescript-library',
   reporters: [
     'default',
     [
       'jest-junit',
       {
-        suiteName: 'interview-typescript-workspace Jest Tests',
-        outputDirectory: 'junit/libs/interview-typescript-workspace',
+        suiteName: 'buildable-typescript-library Jest Tests',
+        outputDirectory: 'junit/libs/buildable-typescript-library',
         outputName: 'junit.xml',
         uniqueOutputName: 'false',
       },
