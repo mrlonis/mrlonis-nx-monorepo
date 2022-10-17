@@ -8,7 +8,7 @@
     "test": {
       "executor": "@angular-devkit/build-angular:karma",
       "options": {
-        "main": "libs/interview-angular-karma-workspace/test.ts",
+        "main": "libs/interview-angular-karma-workspace/src/test.ts",
         "tsConfig": "libs/interview-angular-karma-workspace/tsconfig.spec.json",
         "karmaConfig": "libs/interview-angular-karma-workspace/karma.conf.js"
       },
