@@ -212,6 +212,10 @@
       "prettier --write",
       "ng-lint-staged lint ngx-table-virtual-scroll --fix --"
     ],
+    "libs/publishable-angular-library/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint publishable-angular-library --fix --"
+    ],
     "libs/types-mrlonis/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
       "ng-lint-staged lint types-mrlonis --fix --"

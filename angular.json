@@ -11,6 +11,7 @@
     "ng-table-virtual-scroll-example-e2e": "apps/ng-table-virtual-scroll-example-e2e",
     "ngx-mrlonis-shared": "libs/ngx-mrlonis-shared",
     "ngx-table-virtual-scroll": "libs/ngx-table-virtual-scroll",
+    "publishable-angular-library": "libs/publishable-angular-library",
     "types-mrlonis": "libs/types-mrlonis",
     "ui-afk-arena": "apps/ui-afk-arena",
     "ui-afk-arena-e2e": "apps/ui-afk-arena-e2e",

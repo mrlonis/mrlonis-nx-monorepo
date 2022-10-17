@@ -6,9 +6,9 @@
       "files": ["*.ts"],
       "parserOptions": {
         "project": [
-          "libs/ngx-table-virtual-scroll/tsconfig.json",
-          "libs/ngx-table-virtual-scroll/tsconfig.lib.json",
-          "libs/ngx-table-virtual-scroll/tsconfig.spec.json"
+          "libs/publishable-angular-library/tsconfig.json",
+          "libs/publishable-angular-library/tsconfig.lib.json",
+          "libs/publishable-angular-library/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },
@@ -27,7 +27,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "mrlonisTvs",
+            "prefix": "mrlonis",
             "style": "camelCase"
           }
         ],
@@ -35,7 +35,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "mrlonis-tvs",
+            "prefix": "mrlonis",
             "style": "kebab-case"
           }
         ],
