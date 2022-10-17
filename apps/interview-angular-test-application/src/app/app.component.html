@@ -1,1 +1,24 @@
-<mrlonis-nx-welcome></mrlonis-nx-welcome> <router-outlet></router-outlet>
+<mrlonis-nx-welcome></mrlonis-nx-welcome>
+<div>
+  <p>Do you see a button below this line???</p>
+  <table>
+    <tr>
+      <td>
+        <button matButton accent routerLink="/barChart">
+          <mat-icon>bar_chart</mat-icon>
+        </button>
+      </td>
+      <td>
+        <button matButton accent routerLink="/lineChart">
+          <mat-icon>show_chart</mat-icon>
+        </button>
+      </td>
+      <td>
+        <button matButton accent routerLink="/pieChart">
+          <mat-icon>pie_chart</mat-icon>
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>
+<router-outlet></router-outlet>

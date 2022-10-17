@@ -39,6 +39,7 @@
     "@nrwl/nx-plugin": "15.0.0",
     "@popperjs/core": "^2.11.6",
     "@swc/helpers": "^0.4.11",
+    "@swimlane/ngx-charts": "^20.1.0",
     "angular-split": "^14.1.0",
     "bootstrap": "^5.2.2",
     "clone": "^2.1.2",
