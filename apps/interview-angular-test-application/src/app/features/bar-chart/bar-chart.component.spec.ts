@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
+import { SharedModule } from '../../shared';
 import { BarChartComponent } from './bar-chart.component';
 
 describe('BarChartComponent', () => {
@@ -9,6 +11,7 @@ describe('BarChartComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [BarChartComponent],
+      imports: [NoopAnimationsModule, SharedModule],
     }).compileComponents();
 
     fixture = TestBed.createComponent(BarChartComponent);

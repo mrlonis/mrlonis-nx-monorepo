@@ -7,8 +7,7 @@ import { ScaleType } from '@swimlane/ngx-charts';
   styleUrls: ['./line-chart.component.scss'],
 })
 export class LineChartComponent implements OnInit {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  multi: any[] = [
+  multi = [
     {
       name: 'Germany',
       series: [
@@ -26,7 +25,6 @@ export class LineChartComponent implements OnInit {
         },
       ],
     },
-
     {
       name: 'USA',
       series: [
@@ -44,7 +42,6 @@ export class LineChartComponent implements OnInit {
         },
       ],
     },
-
     {
       name: 'France',
       series: [
@@ -76,7 +73,6 @@ export class LineChartComponent implements OnInit {
       ],
     },
   ];
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   view: [number, number] = [700, 300];
 
   // options
@@ -94,7 +90,7 @@ export class LineChartComponent implements OnInit {
   colorScheme = {
     name: '',
     selectable: true,
-    group: {} as ScaleType,
+    group: ScaleType.Linear,
     domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5'],
   };
 

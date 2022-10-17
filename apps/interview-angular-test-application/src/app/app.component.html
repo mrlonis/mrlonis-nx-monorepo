@@ -1,24 +1,19 @@
-<mrlonis-nx-welcome></mrlonis-nx-welcome>
-<div>
-  <p>Do you see a button below this line???</p>
-  <table>
+<div class="center">
+  <h1>Interview Test Application</h1>
+  <table class="table-center">
     <tr>
       <td>
-        <button matButton accent routerLink="/barChart">
-          <mat-icon>bar_chart</mat-icon>
-        </button>
+        <button mat-flat-button color="primary" routerLink="/barChart">Bar Chart <mat-icon>bar_chart</mat-icon></button>
       </td>
       <td>
-        <button matButton accent routerLink="/lineChart">
-          <mat-icon>show_chart</mat-icon>
-        </button>
+        <button mat-flat-button color="primary" routerLink="/lineChart">Line Chart <mat-icon>show_chart</mat-icon></button>
       </td>
       <td>
-        <button matButton accent routerLink="/pieChart">
-          <mat-icon>pie_chart</mat-icon>
-        </button>
+        <button mat-flat-button color="primary" routerLink="/pieChart">Pie Chart <mat-icon>pie_chart</mat-icon></button>
       </td>
     </tr>
   </table>
+  <div class="router-center">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<router-outlet></router-outlet>

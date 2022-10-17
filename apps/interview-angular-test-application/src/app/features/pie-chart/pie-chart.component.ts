@@ -37,7 +37,7 @@ export class PieChartComponent implements OnInit {
   colorScheme = {
     name: '',
     selectable: true,
-    group: {} as ScaleType,
+    group: ScaleType.Linear,
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA'],
   };
 
