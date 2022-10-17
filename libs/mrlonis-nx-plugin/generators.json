@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "mrlonis-nx-plugin",
+  "version": "0.0.1",
+  "generators": {
+    "mrlonis-nx-plugin": {
+      "factory": "./src/generators/mrlonis-nx-plugin/generator",
+      "schema": "./src/generators/mrlonis-nx-plugin/schema.json",
+      "description": "mrlonis-nx-plugin generator"
+    }
+  }
+}

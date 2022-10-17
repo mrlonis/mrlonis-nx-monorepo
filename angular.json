@@ -11,6 +11,8 @@
     "interview-angular-test-application-e2e": "apps/interview-angular-test-application-e2e",
     "interview-angular-workspace": "libs/interview-angular-workspace",
     "interview-typescript-workspace": "libs/interview-typescript-workspace",
+    "mrlonis-nx-plugin": "libs/mrlonis-nx-plugin",
+    "mrlonis-nx-plugin-e2e": "apps/mrlonis-nx-plugin-e2e",
     "ng-table-virtual-scroll-example": "apps/ng-table-virtual-scroll-example",
     "ng-table-virtual-scroll-example-e2e": "apps/ng-table-virtual-scroll-example-e2e",
     "ngx-mrlonis-shared": "libs/ngx-mrlonis-shared",

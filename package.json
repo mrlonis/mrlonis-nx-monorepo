@@ -36,7 +36,9 @@
     "@faker-js/faker": "^7.6.0",
     "@ng-bootstrap/ng-bootstrap": "^13.0.0",
     "@nrwl/angular": "15.0.0",
+    "@nrwl/nx-plugin": "15.0.0",
     "@popperjs/core": "^2.11.6",
+    "@swc/helpers": "^0.4.11",
     "angular-split": "^14.1.0",
     "bootstrap": "^5.2.2",
     "clone": "^2.1.2",
@@ -61,15 +63,19 @@
     "@angular/language-service": "^14.2.0",
     "@nrwl/cli": "15.0.0",
     "@nrwl/cypress": "15.0.0",
+    "@nrwl/devkit": "15.0.0",
     "@nrwl/eslint-plugin-nx": "15.0.0",
     "@nrwl/jest": "15.0.0",
     "@nrwl/js": "15.0.0",
     "@nrwl/linter": "15.0.0",
     "@nrwl/nx-cloud": "14.7.0",
     "@nrwl/workspace": "15.0.0",
+    "@swc-node/register": "^1.4.2",
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.173",
     "@types/jasmine": "^4.3.0",
     "@types/jest": "^28.1.1",
-    "@types/node": "^16.11.66",
+    "@types/node": "^16.11.7",
     "@typescript-eslint/eslint-plugin": "5.39.0",
     "@typescript-eslint/parser": "5.39.0",
     "cobertura-merge": "^1.0.3",
@@ -89,6 +95,7 @@
     "jest-environment-jsdom": "^28.1.1",
     "jest-junit": "^14.0.1",
     "jest-preset-angular": "^12.2.2",
+    "jsonc-eslint-parser": "^2.1.0",
     "karma": "^6.4.1",
     "karma-chrome-launcher": "^3.1.1",
     "karma-coverage": "^2.2.0",
@@ -128,6 +135,10 @@
     "apps/interview-angular-test-application-e2e/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
       "ng-lint-staged lint interview-angular-test-application-e2e --fix --"
+    ],
+    "apps/mrlonis-nx-plugin-e2e/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint mrlonis-nx-plugin-e2e --fix --"
     ],
     "apps/ng-table-virtual-scroll-example/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
@@ -220,6 +231,10 @@
     "libs/interview-typescript-workspace/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",
       "ng-lint-staged lint interview-typescript-workspace --fix --"
+    ],
+    "libs/mrlonis-nx-plugin/**/*.{html,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "ng-lint-staged lint mrlonis-nx-plugin --fix --"
     ],
     "libs/ngx-mrlonis-shared/**/*.{html,js,jsx,ts,tsx}": [
       "prettier --write",

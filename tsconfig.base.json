@@ -20,6 +20,7 @@
       "@mrlonis/interview-angular-karma-workspace": ["libs/interview-angular-karma-workspace/src/index.ts"],
       "@mrlonis/interview-angular-workspace": ["libs/interview-angular-workspace/src/index.ts"],
       "@mrlonis/interview-typescript-workspace": ["libs/interview-typescript-workspace/src/index.ts"],
+      "@mrlonis/mrlonis-nx-plugin": ["libs/mrlonis-nx-plugin/src/index.ts"],
       "@mrlonis/ngx-mrlonis-shared": ["libs/ngx-mrlonis-shared/src/index.ts"],
       "@mrlonis/ngx-table-virtual-scroll": ["libs/ngx-table-virtual-scroll/src/index.ts"],
       "@mrlonis/publishable-angular-library": ["libs/publishable-angular-library/src/index.ts"],
