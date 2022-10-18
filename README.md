@@ -151,7 +151,7 @@ Run the command `nx g @nrwl/angular:component my-component-name --project=my-app
 
 Example: `nx g @nrwl/angular:component --name=my-component-name --path='apps/interview-angular-test-application/src/app/features' --project=my-app-name --module=my-module --style=scss`
 
-`nx g @nrwl/angular:component --name=line-chart --path='apps/interview-angular-test-application/src/app/features' --project=interview-angular-test-application --module=app --style=scss`
+`nx g @nrwl/angular:component --name=anime-grid --path='apps/interview-angular-test-application/src/app/features' --project=interview-angular-test-application --module=app --style=scss`
 
 [Reference](https://nx.dev/packages/angular/generators/component)
 

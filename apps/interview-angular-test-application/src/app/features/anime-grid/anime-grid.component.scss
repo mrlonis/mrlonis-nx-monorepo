@@ -1,0 +1,63 @@
+#anime-body {
+  height: max-content;
+  margin: 0px;
+}
+
+#tiles {
+  height: max-content;
+  width: max-content;
+  margin: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+#tilesGradient {
+  animation: background-pan 10s linear infinite;
+
+  background: linear-gradient(to right, rgb(98, 0, 234), rgb(236, 64, 122), rgb(98, 0, 234));
+  background-size: 200%;
+
+  height: max-content;
+  width: max-content;
+  margin: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+}
+
+.tile {
+  height: 50px;
+  width: 50px;
+  outline: 1px solid black;
+  color: black;
+  border: 1px solid black;
+}
+
+.tileGradient:before {
+  height: 49px;
+  width: 49px;
+  display: block;
+  background-color: rgb(20, 20, 20);
+  content: '';
+}
+
+.tileGradient {
+  height: 50px;
+  width: 50px;
+  outline: 1px solid black;
+  color: black;
+  border: 1px solid black;
+}
