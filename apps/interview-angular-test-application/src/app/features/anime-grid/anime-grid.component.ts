@@ -1,6 +1,6 @@
 import { AfterViewInit, ChangeDetectorRef, Component, ViewEncapsulation } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import anime from 'animejs';
+import anime, { AnimeInstance } from 'animejs';
 
 @Component({
   selector: 'mrlonis-anime-grid',
@@ -18,6 +18,7 @@ export class AnimeGridComponent implements AfterViewInit {
   heightChop = 0.8;
   backgroundColor: string | null = null;
   toggled = false;
+  animation: AnimeInstance | null = null;
 
   constructor(private changeDetectorRef: ChangeDetectorRef) {}
 
@@ -85,7 +86,6 @@ export class AnimeGridComponent implements AfterViewInit {
   }
 
   handleOnClick(index: number, gridType: 'rainbow' | 'gradient') {
-    console.log('AnimeGridComponent: handleOnClick(): Starting...');
     if (gridType === 'rainbow') {
       this.backgroundColor =
         'rgb(' +

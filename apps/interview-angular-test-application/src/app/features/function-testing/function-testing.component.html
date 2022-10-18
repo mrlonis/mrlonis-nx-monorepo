@@ -1,0 +1,26 @@
+<h2>Function Testing</h2>
+
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>Max Number</mat-label>
+    <input matInput [formControl]="maxInput" placeholder="Ex. 0" type="number" />
+  </mat-form-field>
+</form>
+<button mat-flat-button color="primary" (click)="handleButtonClick()">Run Another Test</button>
+<ngx-charts-line-chart
+  [view]="view"
+  [scheme]="colorScheme"
+  [legend]="legend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxis]="xAxis"
+  [yAxis]="yAxis"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  [timeline]="timeline"
+  [results]="data"
+  (select)="onSelect($event)"
+  (activate)="onActivate($event)"
+  (deactivate)="onDeactivate($event)"
+>
+</ngx-charts-line-chart>

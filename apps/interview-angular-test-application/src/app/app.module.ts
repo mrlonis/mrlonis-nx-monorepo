@@ -4,11 +4,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
-import { AnimeGridComponent, BarChartComponent, LineChartComponent, PieChartComponent } from './features';
+import {
+  AnimeGridComponent,
+  BarChartComponent,
+  FunctionTestingComponent,
+  LineChartComponent,
+  PieChartComponent,
+} from './features';
 import { SharedModule } from './shared';
 
 @NgModule({
-  declarations: [AppComponent, LineChartComponent, PieChartComponent, BarChartComponent, AnimeGridComponent],
+  declarations: [
+    AppComponent,
+    LineChartComponent,
+    PieChartComponent,
+    BarChartComponent,
+    AnimeGridComponent,
+    FunctionTestingComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
