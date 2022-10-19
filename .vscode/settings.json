@@ -7,12 +7,14 @@
     "compodoc",
     "frontends",
     "genshin",
+    "lintstagedrc",
     "Lonis",
     "Mrlonis",
     "nrwl",
     "packagr",
     "prettierrc",
-    "subdir"
+    "subdir",
+    "todos"
   ],
   "editor.codeActionsOnSave": {
     "source.organizeImports": true,

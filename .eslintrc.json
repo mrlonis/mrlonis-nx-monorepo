@@ -1,6 +1,14 @@
 {
   "root": true,
-  "ignorePatterns": ["apps/*", "libs/**", "pipeline/**", "tools/**"],
+  "ignorePatterns": [
+    "apps/**",
+    "libs/**",
+    "pipeline/**",
+    "tools/**",
+    "!.lintstagedrc.json",
+    "!.markdownlint.json",
+    "!.prettierrc"
+  ],
   "parserOptions": {
     "ecmaVersion": 2020
   },
@@ -94,10 +102,7 @@
     {
       "files": ["*.js", "*.jsx"],
       "extends": ["plugin:@nrwl/nx/javascript", "plugin:import/recommended", "plugin:prettier/recommended"],
-      "plugins": ["deprecation"],
       "rules": {
-        "deprecation/deprecation": "error",
-        "import/no-deprecated": "error",
         "import/no-unresolved": "error",
         "import/no-useless-path-segments": ["error", { "noUselessIndex": true }],
         "import/order": [
@@ -122,7 +127,7 @@
       "rules": {}
     },
     {
-      "files": "*.json",
+      "files": ["*.json", "*.json5", ".prettierrc"],
       "parser": "jsonc-eslint-parser",
       "extends": ["plugin:prettier/recommended"],
       "rules": {

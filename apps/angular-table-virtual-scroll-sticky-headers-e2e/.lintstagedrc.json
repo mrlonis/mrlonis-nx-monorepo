@@ -1,0 +1,7 @@
+{
+  "**/*.{css,json,md,scss}": ["prettier --write"],
+  "**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint angular-table-virtual-scroll-sticky-headers-e2e --fix --"
+  ]
+}

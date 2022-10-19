@@ -1,0 +1,4 @@
+{
+  "**/*.{css,json,md,scss}": ["prettier --write"],
+  "**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint ui-genshin-impact --fix --"]
+}
