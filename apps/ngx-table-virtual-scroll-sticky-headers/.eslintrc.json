@@ -12,10 +12,10 @@
       "typescript": {
         "alwaysTryTypes": true,
         "project": [
-          "apps/angular-table-virtual-scroll-sticky-headers/tsconfig.app.json",
-          "apps/angular-table-virtual-scroll-sticky-headers/tsconfig.editor.json",
-          "apps/angular-table-virtual-scroll-sticky-headers/tsconfig.json",
-          "apps/angular-table-virtual-scroll-sticky-headers/tsconfig.spec.json"
+          "apps/ngx-table-virtual-scroll-sticky-headers/tsconfig.app.json",
+          "apps/ngx-table-virtual-scroll-sticky-headers/tsconfig.editor.json",
+          "apps/ngx-table-virtual-scroll-sticky-headers/tsconfig.json",
+          "apps/ngx-table-virtual-scroll-sticky-headers/tsconfig.spec.json"
         ]
       }
     }
@@ -25,10 +25,10 @@
       "files": ["*.ts"],
       "parserOptions": {
         "project": [
-          "apps/angular-table-virtual-scroll-sticky-headers/tsconfig.app.json",
-          "apps/angular-table-virtual-scroll-sticky-headers/tsconfig.editor.json",
-          "apps/angular-table-virtual-scroll-sticky-headers/tsconfig.json",
-          "apps/angular-table-virtual-scroll-sticky-headers/tsconfig.spec.json"
+          "apps/ngx-table-virtual-scroll-sticky-headers/tsconfig.app.json",
+          "apps/ngx-table-virtual-scroll-sticky-headers/tsconfig.editor.json",
+          "apps/ngx-table-virtual-scroll-sticky-headers/tsconfig.json",
+          "apps/ngx-table-virtual-scroll-sticky-headers/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },

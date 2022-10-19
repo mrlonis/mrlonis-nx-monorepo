@@ -11,7 +11,7 @@
     "import/resolver": {
       "typescript": {
         "alwaysTryTypes": true,
-        "project": ["apps/angular-table-virtual-scroll-sticky-headers-e2e/tsconfig.json"]
+        "project": ["apps/ngx-table-virtual-scroll-sticky-headers-e2e/tsconfig.json"]
       }
     }
   },

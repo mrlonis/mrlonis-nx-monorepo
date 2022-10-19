@@ -2,8 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "angular-table-virtual-scroll-sticky-headers": "apps/angular-table-virtual-scroll-sticky-headers",
-    "angular-table-virtual-scroll-sticky-headers-e2e": "apps/angular-table-virtual-scroll-sticky-headers-e2e",
+    "ngx-table-virtual-scroll-sticky-headers": "apps/ngx-table-virtual-scroll-sticky-headers",
+    "ngx-table-virtual-scroll-sticky-headers-e2e": "apps/ngx-table-virtual-scroll-sticky-headers-e2e",
     "buildable-angular-library": "libs/buildable-angular-library",
     "buildable-typescript-library": "libs/buildable-typescript-library",
     "interview-angular-karma-workspace": "libs/interview-angular-karma-workspace",

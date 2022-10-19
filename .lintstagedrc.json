@@ -1,12 +1,12 @@
 {
   "*.{css,html,js,jsx,json,md,ts,tsx,scss}": ["prettier --write"],
-  "apps/angular-table-virtual-scroll-sticky-headers/**/*.{html,js,jsx,ts,tsx}": [
+  "apps/ngx-table-virtual-scroll-sticky-headers/**/*.{html,js,jsx,ts,tsx}": [
     "prettier --write",
-    "ng-lint-staged lint angular-table-virtual-scroll-sticky-headers --fix --"
+    "ng-lint-staged lint ngx-table-virtual-scroll-sticky-headers --fix --"
   ],
-  "apps/angular-table-virtual-scroll-sticky-headers-e2e/**/*.{html,js,jsx,ts,tsx}": [
+  "apps/ngx-table-virtual-scroll-sticky-headers-e2e/**/*.{html,js,jsx,ts,tsx}": [
     "prettier --write",
-    "ng-lint-staged lint angular-table-virtual-scroll-sticky-headers-e2e --fix --"
+    "ng-lint-staged lint ngx-table-virtual-scroll-sticky-headers-e2e --fix --"
   ],
   "apps/interview-angular-test-application/**/*.{html,js,jsx,ts,tsx}": [
     "prettier --write",

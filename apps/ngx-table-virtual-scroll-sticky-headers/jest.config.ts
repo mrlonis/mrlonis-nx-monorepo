@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'angular-table-virtual-scroll-sticky-headers',
+  displayName: 'ngx-table-virtual-scroll-sticky-headers',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/apps/angular-table-virtual-scroll-sticky-headers',
+  coverageDirectory: '../../coverage/apps/ngx-table-virtual-scroll-sticky-headers',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
@@ -24,8 +24,8 @@ export default {
     [
       'jest-junit',
       {
-        suiteName: 'angular-table-virtual-scroll-sticky-headers Jest Tests',
-        outputDirectory: 'junit/apps/angular-table-virtual-scroll-sticky-headers',
+        suiteName: 'ngx-table-virtual-scroll-sticky-headers Jest Tests',
+        outputDirectory: 'junit/apps/ngx-table-virtual-scroll-sticky-headers',
         outputName: 'junit.xml',
         uniqueOutputName: 'false',
       },
