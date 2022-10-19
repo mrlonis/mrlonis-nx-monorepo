@@ -6,6 +6,21 @@ This project was generated using [Nx](https://nx.dev).
 
 🔎 **Smart, Fast and Extensible Build System**
 
+## Index
+
+- [Quick Start & Documentation](#quick-start--documentation)
+- [Adding capabilities to your workspace](#adding-capabilities-to-your-workspace)
+- [Generate an application](#generate-an-application)
+- [Generate a library](#generate-a-library)
+- [Development server](#development-server)
+- [Code scaffolding](#code-scaffolding)
+- [Build](#build)
+- [Running unit tests](#running-unit-tests)
+- [Running end-to-end tests](#running-end-to-end-tests)
+- [Understand your workspace](#understand-your-workspace)
+- [☁ Nx Cloud](#-nx-cloud)
+- [Project Ports](#project-ports)
+
 ## Quick Start & Documentation
 
 [Nx Documentation](https://nx.dev/angular)
@@ -45,6 +60,22 @@ Run `ng g @nrwl/angular:app my-app` to generate an application.
 
 When using Nx, you can create multiple applications and libraries in the same workspace.
 
+### Generating a new Angular Application
+
+Run the command `nx g @nrwl/angular:application my-app-name`
+
+[Reference](https://nx.dev/packages/angular/generators/application)
+
+#### Generating a new Angular Application with Karma test runner
+
+Run the command `nx g @nrwl/angular:application my-app-name --unitTestRunner=karma`
+
+#### Adding @angular/material to an Angular application
+
+Run the command: `nx g @angular/material:ng-add --project=my-app-name`
+
+[Reference](https://stackoverflow.com/a/71275473)
+
 ## Generate a library
 
 Run `ng g @nrwl/angular:lib my-lib` to generate a library.
@@ -53,6 +84,36 @@ Run `ng g @nrwl/angular:lib my-lib` to generate a library.
 
 Libraries are shareable across libraries and applications. They can be imported from `@mrlonis/mylib`.
 
+### Generating a new TypeScript Library
+
+Run the command `nx g @nrwl/workspace:library my-lib-name`
+
+[Reference](https://nx.dev/packages/workspace/generators/library)
+
+#### Generating a new buildable TypeScript Library
+
+Run the command `nx g @nrwl/workspace:library my-lib-name --buildable`
+
+### Generating a new Angular Library
+
+Run the command `nx g @nrwl/angular:library my-lib-name`
+
+[Reference](https://nx.dev/packages/angular/generators/library)
+
+#### Generating a new Angular Library with Karma test runner
+
+Run the command `nx g @nrwl/angular:library my-lib-name --unitTestRunner=karma`
+
+#### Generating a new buildable Angular Library
+
+Run the command `nx g @nrwl/angular:library my-lib-name --buildable`
+
+#### Generating a new publishable Angular Library
+
+Run the command `nx g @nrwl/angular:library my-lib-name --publishable --importPath='some-path-to-import or like this @some/path-to-import'`
+
+**Note**: A Publishable library is also a buildable library, it is just built using partial compilation. Generating a "buildable / publishable" library likw `nx g @nrwl/angular:library my-lib-name --buildable --publishable --importPath='some-path-to-import or like this @some/path-to-import'` is ultimately redundant. It will not cause an error but there is no reason to pass the buildable flag.
+
 ## Development server
 
 Run `ng serve my-app` for a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/). The app will automatically reload if you change any of the source files.
@@ -60,6 +121,16 @@ Run `ng serve my-app` for a dev server. Navigate to [http://localhost:4200/](htt
 ## Code scaffolding
 
 Run `ng g component my-component --project=my-app` to generate a new component.
+
+### Generating a new Angular Component
+
+Run the command `nx g @nrwl/angular:component my-component-name --project=my-app-name`
+
+Example: `nx g @nrwl/angular:component --name=my-component-name --path='apps/interview-angular-test-application/src/app/features' --project=my-app-name --module=my-module --style=scss`
+
+`nx g @nrwl/angular:component --name=anime-grid --path='apps/interview-angular-test-application/src/app/features' --project=interview-angular-test-application --module=app --style=scss`
+
+[Reference](https://nx.dev/packages/angular/generators/component)
 
 ## Build
 
@@ -97,132 +168,7 @@ Teams using Nx gain the advantage of building full-stack applications with their
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
 
-## Notes
-
-### Generating a new TypeScript Library
-
-Run the command `nx g @nrwl/workspace:library my-lib-name`
-
-[Reference](https://nx.dev/packages/workspace/generators/library)
-
-#### Generating a new buildable TypeScript Library
-
-Run the command `nx g @nrwl/workspace:library my-lib-name --buildable`
-
-### Generating a new Angular Application
-
-Run the command `nx g @nrwl/angular:application my-app-name`
-
-[Reference](https://nx.dev/packages/angular/generators/application)
-
-#### Generating a new Angular Application with Karma test runner
-
-Run the command `nx g @nrwl/angular:application my-app-name --unitTestRunner=karma`
-
-#### Adding @angular/material to an Angular application
-
-Run the command: `nx g @angular/material:ng-add --project=my-app-name`
-
-[Reference](https://stackoverflow.com/a/71275473)
-
-### Generating a new Angular Library
-
-Run the command `nx g @nrwl/angular:library my-lib-name`
-
-[Reference](https://nx.dev/packages/angular/generators/library)
-
-#### Generating a new Angular Library with Karma test runner
-
-Run the command `nx g @nrwl/angular:library my-lib-name --unitTestRunner=karma`
-
-#### Generating a new buildable Angular Library
-
-Run the command `nx g @nrwl/angular:library my-lib-name --buildable`
-
-#### Generating a new publishable Angular Library
-
-Run the command `nx g @nrwl/angular:library my-lib-name --publishable --importPath='some-path-to-import or like this @some/path-to-import'`
-
-**Note**: A Publishable library is also a buildable library, it is just built using partial compilation. Generating a "buildable / publishable" library likw `nx g @nrwl/angular:library my-lib-name --buildable --publishable --importPath='some-path-to-import or like this @some/path-to-import'` is ultimately redundant. It will not cause an error but there is no reason to pass the buildable flag.
-
-### Generating a new Angular Component
-
-Run the command `nx g @nrwl/angular:component my-component-name --project=my-app-name`
-
-Example: `nx g @nrwl/angular:component --name=my-component-name --path='apps/interview-angular-test-application/src/app/features' --project=my-app-name --module=my-module --style=scss`
-
-`nx g @nrwl/angular:component --name=anime-grid --path='apps/interview-angular-test-application/src/app/features' --project=interview-angular-test-application --module=app --style=scss`
-
-[Reference](https://nx.dev/packages/angular/generators/component)
-
-### Old .eslintrc.json
-
-```json
-{
-  "root": true,
-  "ignorePatterns": ["projects/**/*"],
-  "parserOptions": {
-    "ecmaVersion": 2020
-  },
-  "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
-    },
-    "import/resolver": {
-      "typescript": {
-        "alwaysTryTypes": true,
-        "project": ["tsconfig.json"]
-      }
-    }
-  },
-  "overrides": [
-    {
-      "files": ["*.ts"],
-      "parserOptions": {
-        "project": ["tsconfig.json"],
-        "createDefaultProgram": true
-      },
-      "extends": [
-        "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/recommended--extra",
-        "plugin:@angular-eslint/template/process-inline-templates",
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "plugin:import/recommended",
-        "plugin:import/typescript",
-        // "plugin:jsdoc/recommended",
-        "plugin:prettier/recommended"
-        // "plugin:storybook/recommended"
-      ],
-      "plugins": ["deprecation"],
-      "rules": {
-        "deprecation/deprecation": "error",
-        "@typescript-eslint/unbound-method": ["error", { "ignoreStatic": true }],
-        "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }],
-        "import/no-unresolved": "error",
-        "import/order": "error",
-        "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }]
-      }
-    },
-    {
-      "files": ["*.html"],
-      "extends": ["plugin:@angular-eslint/template/recommended"],
-      "rules": {}
-    },
-    {
-      "files": ["*.html"],
-      "excludedFiles": ["*inline-template-*.component.html"],
-      "extends": ["plugin:prettier/recommended"],
-      "rules": {
-        "prettier/prettier": ["error", { "parser": "angular", "printWidth": 125, "tabWidth": 2 }]
-      }
-    }
-  ]
-}
-```
-
-## Ports
+## Project Ports
 
 - 4211 - ui-afk-arena
 - 4201 - ui-genshin-impact
