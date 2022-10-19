@@ -7,6 +7,10 @@ describe('mrlonis-nx-plugin e2e', () => {
   // consumes 1 workspace. The tests should each operate
   // on a unique project in the workspace, such that they
   // are not dependant on one another.
+  beforeAll(async () => {
+    await runNxCommandAsync('reset');
+  });
+
   beforeAll(() => {
     ensureNxProject('@mrlonis/mrlonis-nx-plugin', 'dist/libs/mrlonis-nx-plugin');
   });
@@ -24,7 +28,7 @@ describe('mrlonis-nx-plugin e2e', () => {
     const result = await runNxCommandAsync(`build ${project}`);
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     expect(result.stdout).toContain('Executor ran');
-  }, 120000);
+  }, 500000);
 
   describe('--directory', () => {
     it('should create src in the specified directory', async () => {
@@ -32,13 +36,12 @@ describe('mrlonis-nx-plugin e2e', () => {
       await runNxCommandAsync(`generate @mrlonis/mrlonis-nx-plugin:mrlonis-nx-plugin ${project} --directory subdir`);
       // eslint-disable-next-line @typescript-eslint/no-unsafe-call
       expect(() => checkFilesExist(`libs/subdir/${project}/src/index.ts`)).not.toThrow();
-    }, 120000);
+    }, 500000);
   });
 
   describe('--tags', () => {
     it('should add tags to the project', async () => {
       const projectName = uniq('mrlonis-nx-plugin');
-      ensureNxProject('@mrlonis/mrlonis-nx-plugin', 'dist/libs/mrlonis-nx-plugin');
       await runNxCommandAsync(
         `generate @mrlonis/mrlonis-nx-plugin:mrlonis-nx-plugin ${projectName} --tags e2etag,e2ePackage`
       );
@@ -46,6 +49,6 @@ describe('mrlonis-nx-plugin e2e', () => {
       const project = readJson(`libs/${projectName}/project.json`);
       // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
       expect(project.tags).toEqual(['e2etag', 'e2ePackage']);
-    }, 120000);
+    }, 500000);
   });
 });
