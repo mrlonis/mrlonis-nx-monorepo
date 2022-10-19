@@ -1,0 +1,36 @@
+{
+  "extends": ["../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*"],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": [
+          "libs/ts-workspace/tsconfig.json",
+          "libs/ts-workspace/tsconfig.lib.json",
+          "libs/ts-workspace/tsconfig.spec.json"
+        ]
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": [
+          "libs/ts-workspace/tsconfig.json",
+          "libs/ts-workspace/tsconfig.lib.json",
+          "libs/ts-workspace/tsconfig.spec.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "rules": {}
+    }
+  ]
+}

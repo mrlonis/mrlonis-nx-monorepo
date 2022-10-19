@@ -126,9 +126,9 @@ Run `ng g component my-component --project=my-app` to generate a new component.
 
 Run the command `nx g @nrwl/angular:component my-component-name --project=my-app-name`
 
-Example: `nx g @nrwl/angular:component --name=my-component-name --path='apps/interview-angular-test-application/src/app/features' --project=my-app-name --module=my-module --style=scss`
+Example: `nx g @nrwl/angular:component --name=my-component-name --path='apps/ngx-test-application/src/app/features' --project=my-app-name --module=my-module --style=scss`
 
-`nx g @nrwl/angular:component --name=anime-grid --path='apps/interview-angular-test-application/src/app/features' --project=interview-angular-test-application --module=app --style=scss`
+`nx g @nrwl/angular:component --name=anime-grid --path='apps/ngx-test-application/src/app/features' --project=ngx-test-application --module=app --style=scss`
 
 [Reference](https://nx.dev/packages/angular/generators/component)
 
@@ -170,16 +170,16 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 
 ## Project Ports
 
-- 4211 - ui-afk-arena
-- 4201 - ui-genshin-impact
-- 4202 - ui-mythic-heroes
-- 4203 - ui-personal-website
-- 4204 - ui-ps-angular-forms
-- 4205 - ui-ps-angular-fundamentals
-- 4206 - ui-ps-angular-getting-started
+- 4211 - ngx-ui-afk-arena
+- 4201 - ngx-ui-genshin-impact
+- 4202 - ngx-ui-mythic-heroes
+- 4203 - ngx-ui-personal-website
+- 4204 - ps-angular-forms
+- 4205 - ps-angular-fundamentals
+- 4206 - ps-angular-getting-started
 - 4207 - ngx-table-virtual-scroll-sticky-headers
-- 4208 - virtual-scroll-cdk-table-test
-- 4209 - ng-table-virtual-scroll-example
-- 4210 - interview-angular-test-application
+- 4208 - ngx-virtual-scroll-cdk-table-example
+- 4209 - ngx-table-virtual-scroll-example
+- 4210 - ngx-test-application
 - 4212 - nx-angular-tutorial-todos
 - 3333 - nx-angular-tutorial-api

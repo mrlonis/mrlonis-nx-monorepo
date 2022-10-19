@@ -1,0 +1,32 @@
+{
+  "name": "ngx-workspace-karma",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ngx-workspace-karma/src",
+  "prefix": "mrlonis",
+  "targets": {
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "main": "libs/ngx-workspace-karma/src/test.ts",
+        "tsConfig": "libs/ngx-workspace-karma/tsconfig.spec.json",
+        "karmaConfig": "libs/ngx-workspace-karma/karma.conf.js"
+      },
+      "configurations": {
+        "ci": {
+          "watch": false,
+          "browsers": "ChromeHeadless",
+          "codeCoverage": true,
+          "reporters": ["progress", "coverage", "junit"]
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/ngx-workspace-karma/**/*.ts", "libs/ngx-workspace-karma/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

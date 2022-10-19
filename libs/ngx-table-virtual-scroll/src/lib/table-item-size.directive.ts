@@ -6,7 +6,7 @@ import { MatTable } from '@angular/material/table';
 import { combineLatest, from, Subject } from 'rxjs';
 import { delayWhen, distinctUntilChanged, filter, map, startWith, switchMap, take, takeUntil, tap } from 'rxjs/operators';
 import { FixedSizeTableVirtualScrollStrategy } from './fixed-size-table-virtual-scroll-strategy';
-import { MrlonisTableVirtualScrollDataSource } from './table-data-source';
+import { NgxTableVirtualScrollDataSource } from './ngx-table-data-source';
 
 export function _tableVirtualScrollDirectiveStrategyFactory(tableDir: TableItemSizeDirective) {
   return tableDir.scrollStrategy;
@@ -133,7 +133,7 @@ export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDe
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   connectDataSource(dataSource: any) {
     this.dataSourceChanges.next();
-    if (dataSource instanceof MrlonisTableVirtualScrollDataSource) {
+    if (dataSource instanceof NgxTableVirtualScrollDataSource) {
       dataSource.dataToRender$
         .pipe(
           distinctUntilChanged(),

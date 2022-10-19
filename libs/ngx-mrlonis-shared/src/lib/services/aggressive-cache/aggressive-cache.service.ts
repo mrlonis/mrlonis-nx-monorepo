@@ -2,7 +2,7 @@
 import { HttpParams } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map, mergeMap, shareReplay, tap } from 'rxjs/operators';
-import { BaseResource, SpringDataRestResponse } from '@mrlonis/types-mrlonis';
+import { BaseResource, SpringDataRestResponse } from '@mrlonis/types';
 import { AggressiveCacheInvalidator } from './aggressive-cache-invalidator.service';
 import { CacheOccupant } from './cache-occupant';
 import { CacheSlot, CollectBySlot, GetBySlot } from './cache-slot';

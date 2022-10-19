@@ -5,9 +5,9 @@ import { MatTableModule } from '@angular/material/table';
 import { By } from '@angular/platform-browser';
 import { animationFrameScheduler } from 'rxjs';
 import { FixedSizeTableVirtualScrollStrategy } from './fixed-size-table-virtual-scroll-strategy';
-import { MrlonisTableVirtualScrollDataSource } from './table-data-source';
+import { NgxTableVirtualScrollDataSource } from './ngx-table-data-source';
+import { NgxTableVirtualScrollModule } from './ngx-table-virtual-scroll.module';
 import { TableItemSizeDirective } from './table-item-size.directive';
-import { MrlonisTableVirtualScrollModule } from './table-virtual-scroll.module';
 
 @Component({
   template: `
@@ -80,7 +80,7 @@ class TableVirtualScrollComponent {
 
   displayedColumns = ['id'];
 
-  dataSource = new MrlonisTableVirtualScrollDataSource(
+  dataSource = new NgxTableVirtualScrollDataSource(
     Array(50)
       .fill(0)
       .map((_, i) => ({ id: i }))
@@ -90,7 +90,7 @@ class TableVirtualScrollComponent {
   footerEnabled = false;
 
   changeDataSource() {
-    this.dataSource = new MrlonisTableVirtualScrollDataSource(
+    this.dataSource = new NgxTableVirtualScrollDataSource(
       Array(50)
         .fill(0)
         .map((_, i) => ({ id: i + 50 }))
@@ -143,7 +143,7 @@ describe('TableItemSizeDirective', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ScrollingModule, MatTableModule, MrlonisTableVirtualScrollModule],
+      imports: [ScrollingModule, MatTableModule, NgxTableVirtualScrollModule],
       declarations: [TableVirtualScrollComponent],
     }).compileComponents();
   });

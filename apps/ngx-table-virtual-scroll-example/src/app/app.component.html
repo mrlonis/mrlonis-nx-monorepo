@@ -1,0 +1,43 @@
+<h1>Welcome ngx-table-virtual-scroll-example</h1>
+<h2>Table 1</h2>
+<p>
+  The table shown below is created with the original
+  <a href="https://www.npmjs.com/package/ng-table-virtual-scroll">ng-table-virtual-scroll</a> npm package
+</p>
+<cdk-virtual-scroll-viewport tvsItemSize class="wrapper mat-elevation-z2">
+  <table mat-table [dataSource]="dataSource">
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef class="col-sm">No.</th>
+      <td mat-cell *matCellDef="let element" class="col-sm">{{ element.id }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+    </ng-container>
+  </table>
+</cdk-virtual-scroll-viewport>
+
+<h2>Table 2</h2>
+<p>
+  The table shown below is created with my own modified ng-table-virtual-scroll. It is being called ngx-table-virtual-scroll
+</p>
+<cdk-virtual-scroll-viewport mrlonisTvsItemSize class="wrapper mat-elevation-z2">
+  <table mat-table [dataSource]="dataSource2">
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef class="col-sm">No.</th>
+      <td mat-cell *matCellDef="let element" class="col-sm">{{ element.id }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+    </ng-container>
+  </table>
+</cdk-virtual-scroll-viewport>

@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { BaseResource } from '@mrlonis/types-mrlonis';
+import { BaseResource } from '@mrlonis/types';
 
 // Used by aggressive cache internally
 export interface CacheOccupant<T extends BaseResource> {

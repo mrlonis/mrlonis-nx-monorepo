@@ -15,18 +15,18 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mrlonis/buildable-angular-library": ["libs/buildable-angular-library/src/index.ts"],
-      "@mrlonis/buildable-typescript-library": ["libs/buildable-typescript-library/src/index.ts"],
-      "@mrlonis/interview-angular-karma-workspace": ["libs/interview-angular-karma-workspace/src/index.ts"],
-      "@mrlonis/interview-angular-workspace": ["libs/interview-angular-workspace/src/index.ts"],
-      "@mrlonis/interview-typescript-workspace": ["libs/interview-typescript-workspace/src/index.ts"],
-      "@mrlonis/mrlonis-nx-plugin": ["libs/mrlonis-nx-plugin/src/index.ts"],
+      "@mrlonis/ngx-buildable-library": ["libs/ngx-buildable-library/src/index.ts"],
       "@mrlonis/ngx-mrlonis-shared": ["libs/ngx-mrlonis-shared/src/index.ts"],
+      "@mrlonis/ngx-publishable-library": ["libs/ngx-publishable-library/src/index.ts"],
       "@mrlonis/ngx-table-virtual-scroll": ["libs/ngx-table-virtual-scroll/src/index.ts"],
+      "@mrlonis/ngx-workspace": ["libs/ngx-workspace/src/index.ts"],
+      "@mrlonis/ngx-workspace-karma": ["libs/ngx-workspace-karma/src/index.ts"],
       "@mrlonis/nx-angular-tutorial-data": ["libs/nx-angular-tutorial-data/src/index.ts"],
       "@mrlonis/nx-angular-tutorial-ui": ["libs/nx-angular-tutorial-ui/src/index.ts"],
-      "@mrlonis/publishable-angular-library": ["libs/publishable-angular-library/src/index.ts"],
-      "@mrlonis/types-mrlonis": ["libs/types-mrlonis/src/index.ts"]
+      "@mrlonis/nx-plugin-mrlonis": ["libs/nx-plugin-mrlonis/src/index.ts"],
+      "@mrlonis/ts-buildable-library": ["libs/ts-buildable-library/src/index.ts"],
+      "@mrlonis/ts-workspace": ["libs/ts-workspace/src/index.ts"],
+      "@mrlonis/types": ["libs/types/src/index.ts"]
     },
     "resolveJsonModule": true
   },

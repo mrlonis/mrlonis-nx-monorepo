@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 import { fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { Observable, of, throwError } from 'rxjs';
 import { delay, map } from 'rxjs/operators';
-import { BaseResource, SpringDataRestResponse } from '@mrlonis/types-mrlonis';
+import { BaseResource, SpringDataRestResponse } from '@mrlonis/types';
 import { IApiService } from '../api';
 import { AggressiveCacheInvalidator } from './aggressive-cache-invalidator.service';
 import { AggressiveCache } from './aggressive-cache.service';
