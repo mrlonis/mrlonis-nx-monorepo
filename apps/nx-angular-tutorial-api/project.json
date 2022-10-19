@@ -1,0 +1,66 @@
+{
+  "name": "nx-angular-tutorial-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/nx-angular-tutorial-api/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/apps/nx-angular-tutorial-api",
+        "main": "apps/nx-angular-tutorial-api/src/main.ts",
+        "tsConfig": "apps/nx-angular-tutorial-api/tsconfig.app.json",
+        "assets": ["apps/nx-angular-tutorial-api/src/assets"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/nx-angular-tutorial-api/src/environments/environment.ts",
+              "with": "apps/nx-angular-tutorial-api/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/js:node",
+      "options": {
+        "buildTarget": "nx-angular-tutorial-api:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "nx-angular-tutorial-api:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/nx-angular-tutorial-api/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/nx-angular-tutorial-api/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

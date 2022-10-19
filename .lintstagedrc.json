@@ -1,3 +1,139 @@
 {
-  "*.{css,html,js,jsx,json,md,ts,tsx,scss}": ["prettier --write"]
+  "*.{css,html,js,jsx,json,md,ts,tsx,scss}": ["prettier --write"],
+  "apps/angular-table-virtual-scroll-sticky-headers/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint angular-table-virtual-scroll-sticky-headers --fix --"
+  ],
+  "apps/angular-table-virtual-scroll-sticky-headers-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint angular-table-virtual-scroll-sticky-headers-e2e --fix --"
+  ],
+  "apps/interview-angular-test-application/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint interview-angular-test-application --fix --"
+  ],
+  "apps/interview-angular-test-application-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint interview-angular-test-application-e2e --fix --"
+  ],
+  "apps/mrlonis-nx-plugin-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint mrlonis-nx-plugin-e2e --fix --"
+  ],
+  "apps/ng-table-virtual-scroll-example/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ng-table-virtual-scroll-example --fix --"
+  ],
+  "apps/ng-table-virtual-scroll-example-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ng-table-virtual-scroll-example-e2e --fix --"
+  ],
+  "apps/nx-angular-tutorial-api/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-angular-tutorial-api --fix --"
+  ],
+  "apps/nx-angular-tutorial-todos/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-angular-tutorial-todos --fix --"
+  ],
+  "apps/nx-angular-tutorial-todos-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-angular-tutorial-todos-e2e --fix --"
+  ],
+  "apps/ui-afk-arena/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint ui-afk-arena --fix --"],
+  "apps/ui-afk-arena-e2e/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint ui-afk-arena-e2e --fix --"],
+  "apps/ui-genshin-impact/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint ui-genshin-impact --fix --"],
+  "apps/ui-genshin-impact-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ui-genshin-impact-e2e --fix --"
+  ],
+  "apps/ui-mythic-heroes/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint ui-mythic-heroes --fix --"],
+  "apps/ui-mythic-heroes-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ui-mythic-heroes-e2e --fix --"
+  ],
+  "apps/ui-personal-website/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ui-personal-website --fix --"
+  ],
+  "apps/ui-personal-website-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ui-personal-website-e2e --fix --"
+  ],
+  "apps/ui-ps-angular-forms/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ui-ps-angular-forms --fix --"
+  ],
+  "apps/ui-ps-angular-forms-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ui-ps-angular-forms-e2e --fix --"
+  ],
+  "apps/ui-ps-angular-fundamentals/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ui-ps-angular-fundamentals --fix --"
+  ],
+  "apps/ui-ps-angular-fundamentals-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ui-ps-angular-fundamentals-e2e --fix --"
+  ],
+  "apps/ui-ps-angular-getting-started/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ui-ps-angular-getting-started --fix --"
+  ],
+  "apps/ui-ps-angular-getting-started-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ui-ps-angular-getting-started-e2e --fix --"
+  ],
+  "apps/virtual-scroll-cdk-table-test/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint virtual-scroll-cdk-table-test --fix --"
+  ],
+  "apps/virtual-scroll-cdk-table-test-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint virtual-scroll-cdk-table-test-e2e --fix --"
+  ],
+  "libs/buildable-angular-library/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint buildable-angular-library --fix --"
+  ],
+  "libs/buildable-typescript-library/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint buildable-typescript-library --fix --"
+  ],
+  "libs/interview-angular-karma-workspace/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint interview-angular-karma-workspace --fix --"
+  ],
+  "libs/interview-angular-workspace/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint interview-angular-workspace --fix --"
+  ],
+  "libs/interview-typescript-workspace/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint interview-typescript-workspace --fix --"
+  ],
+  "libs/mrlonis-nx-plugin/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint mrlonis-nx-plugin --fix --"],
+  "libs/ngx-mrlonis-shared/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ngx-mrlonis-shared --fix --"
+  ],
+  "libs/ngx-table-virtual-scroll/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint ngx-table-virtual-scroll --fix --"
+  ],
+  "libs/nx-angular-tutorial-data/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-angular-tutorial-data --fix --"
+  ],
+  "libs/nx-angular-tutorial-ui/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-angular-tutorial-ui --fix --"
+  ],
+  "libs/publishable-angular-library/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint publishable-angular-library --fix --"
+  ],
+  "libs/types-mrlonis/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint types-mrlonis --fix --"],
+  "pipeline/**/*.{js,json}": ["prettier --write"],
+  "tools/**/*.{json}": ["prettier --write"]
 }

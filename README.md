@@ -236,3 +236,4 @@ Example: `nx g @nrwl/angular:component --name=my-component-name --path='apps/int
 - 4209 - ng-table-virtual-scroll-example
 - 4210 - interview-angular-test-application
 - 4212 - nx-angular-tutorial-todos
+- 3333 - nx-angular-tutorial-api

@@ -23,6 +23,8 @@
       "@mrlonis/mrlonis-nx-plugin": ["libs/mrlonis-nx-plugin/src/index.ts"],
       "@mrlonis/ngx-mrlonis-shared": ["libs/ngx-mrlonis-shared/src/index.ts"],
       "@mrlonis/ngx-table-virtual-scroll": ["libs/ngx-table-virtual-scroll/src/index.ts"],
+      "@mrlonis/nx-angular-tutorial-data": ["libs/nx-angular-tutorial-data/src/index.ts"],
+      "@mrlonis/nx-angular-tutorial-ui": ["libs/nx-angular-tutorial-ui/src/index.ts"],
       "@mrlonis/publishable-angular-library": ["libs/publishable-angular-library/src/index.ts"],
       "@mrlonis/types-mrlonis": ["libs/types-mrlonis/src/index.ts"]
     },

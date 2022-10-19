@@ -55,7 +55,8 @@
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
       "options": {
-        "port": 4212
+        "port": 4212,
+        "proxyConfig": "apps/nx-angular-tutorial-todos/proxy.conf.json"
       },
       "configurations": {
         "production": {
