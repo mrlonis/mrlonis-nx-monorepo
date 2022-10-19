@@ -60,6 +60,9 @@
     },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "port": 4210
+      },
       "configurations": {
         "production": {
           "browserTarget": "interview-angular-test-application:build:production"

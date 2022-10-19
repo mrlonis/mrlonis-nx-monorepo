@@ -3,16 +3,72 @@ import { FormControl } from '@angular/forms';
 import { ScaleType } from '@swimlane/ngx-charts';
 import { Fibonacci } from '@mrlonis/interview-typescript-workspace';
 
+export interface SeriesData {
+  name: string;
+  value: number;
+}
+
+export interface LineGraphData {
+  name: string;
+  series: SeriesData[];
+}
+
+export interface FunctionToTest {
+  name: string;
+  xAxisLabel: string;
+  yAxisLabel: string;
+  runTest: (data: LineGraphData[], run: number) => LineGraphData[];
+  runCacheTest: ((data: LineGraphData[], run: number) => LineGraphData[]) | null;
+}
+
+function _coreFibonacciRunTest(data: LineGraphData[], run: number, fibonacci: Fibonacci): LineGraphData[] {
+  const newData: LineGraphData[] = [];
+  for (let i = 0; i < data.length; i++) {
+    newData.push(data[i]);
+  }
+
+  const series: SeriesData[] = [];
+  for (let i = 0; i < 30; i++) {
+    const startTime = new Date().getTime();
+    fibonacci.getFibonacci(i);
+    const endTime = new Date().getTime();
+    const timeDiff = endTime - startTime;
+
+    series.push({
+      name: i.toString(),
+      value: timeDiff,
+    });
+  }
+
+  newData.push({
+    name: `Run ${run}`,
+    series: series,
+  });
+
+  return newData;
+}
+
+function fibonacciRunTest(data: LineGraphData[], run: number): LineGraphData[] {
+  console.log('fibonacciRunTest(): Starting...');
+  return _coreFibonacciRunTest(data, run, new Fibonacci(false));
+}
+
+function fibonacciRunCacheTest(data: LineGraphData[], run: number): LineGraphData[] {
+  console.log('fibonacciRunCacheTest(): Starting...');
+  return _coreFibonacciRunTest(data, run, new Fibonacci(true));
+}
+
 @Component({
   selector: 'mrlonis-function-testing',
   templateUrl: './function-testing.component.html',
   styleUrls: ['./function-testing.component.scss'],
 })
 export class FunctionTestingComponent implements OnInit {
-  data: { name: string; series: { name: string; value: number }[] }[] = [];
+  data: LineGraphData[] = [];
+  cacheData: LineGraphData[] = [];
   view: [number, number] = [700, 300];
 
-  // options
+  // graph options
   legend = true;
   showLabels = true;
   animations = true;
@@ -20,10 +76,7 @@ export class FunctionTestingComponent implements OnInit {
   yAxis = true;
   showYAxisLabel = true;
   showXAxisLabel = true;
-  xAxisLabel = 'Fibonacci Number';
-  yAxisLabel = 'Time in Milliseconds';
   timeline = true;
-
   colorScheme = {
     name: '',
     selectable: true,
@@ -31,12 +84,21 @@ export class FunctionTestingComponent implements OnInit {
     domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5'],
   };
 
+  // custom variables
   run = 1;
-  maxInput = new FormControl(30, { nonNullable: true });
+  functions: FunctionToTest[] = [
+    {
+      name: 'Fibonacci',
+      xAxisLabel: 'Fibonacci Number',
+      yAxisLabel: 'Time in Milliseconds',
+      runTest: fibonacciRunTest,
+      runCacheTest: fibonacciRunCacheTest,
+    },
+  ];
+  activeFunction = new FormControl<FunctionToTest>(this.functions[0], { nonNullable: true });
 
   constructor(private changeDetectorRef: ChangeDetectorRef) {
     console.log('FunctionTestingComponent: constructor(): Starting...');
-    // Object.assign(this, { multi });
   }
 
   ngOnInit(): void {
@@ -44,38 +106,11 @@ export class FunctionTestingComponent implements OnInit {
   }
 
   runTest(): void {
-    console.log('FunctionTestingComponent: runTest(): Starting...');
-    const newData: { name: string; series: { name: string; value: number }[] }[] = [];
-    for (let i = 0; i < this.data.length; i++) {
-      newData.push(this.data[i]);
+    this.data = this.activeFunction.value.runTest(this.data, this.run);
+    if (this.activeFunction.value.runCacheTest !== null) {
+      this.cacheData = this.activeFunction.value.runCacheTest(this.cacheData, this.run);
     }
-
-    const fibonacci = new Fibonacci(false);
-    const series = [];
-
-    for (let i = 0; i < this.maxInput.value; i++) {
-      const startTime = new Date().getTime();
-      fibonacci.getFibonacci(i);
-      const endTime = new Date().getTime();
-      const timeDiff = endTime - startTime;
-
-      series.push({
-        name: i.toString(),
-        value: timeDiff,
-      });
-    }
-
-    newData.push({
-      name: `Run ${this.run}`,
-      series: series,
-    });
     this.run = this.run + 1;
-
-    this.data = newData;
-
-    console.log('FunctionTestingComponent: runTest(): Finished!');
-    console.log(this.data);
-
     this.changeDetectorRef.detectChanges();
   }
 

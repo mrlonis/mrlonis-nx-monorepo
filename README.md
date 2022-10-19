@@ -229,5 +229,9 @@ Example: `nx g @nrwl/angular:component --name=my-component-name --path='apps/int
 - 4202 - ui-mythic-heroes
 - 4203 - ui-personal-website
 - 4204 - ui-ps-angular-forms
-- 4205 - ui-ps-angular-fundametals
+- 4205 - ui-ps-angular-fundamentals
 - 4206 - ui-ps-angular-getting-started
+- 4207 - angular-table-virtual-scroll-sticky-headers
+- 4208 - virtual-scroll-cdk-table-test
+- 4209 - ng-table-virtual-scroll-example
+- 4210 - interview-angular-test-application

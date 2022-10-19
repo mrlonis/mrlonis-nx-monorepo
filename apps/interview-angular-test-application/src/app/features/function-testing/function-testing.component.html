@@ -1,26 +1,60 @@
 <h2>Function Testing</h2>
-
 <form>
   <mat-form-field appearance="fill">
-    <mat-label>Max Number</mat-label>
-    <input matInput [formControl]="maxInput" placeholder="Ex. 0" type="number" />
+    <mat-label>Function to test</mat-label>
+    <mat-select [formControl]="activeFunction">
+      <mat-option *ngFor="let func of functions" [value]="func">
+        {{ func.name }}
+      </mat-option>
+    </mat-select>
   </mat-form-field>
 </form>
 <button mat-flat-button color="primary" (click)="handleButtonClick()">Run Another Test</button>
-<ngx-charts-line-chart
-  [view]="view"
-  [scheme]="colorScheme"
-  [legend]="legend"
-  [showXAxisLabel]="showXAxisLabel"
-  [showYAxisLabel]="showYAxisLabel"
-  [xAxis]="xAxis"
-  [yAxis]="yAxis"
-  [xAxisLabel]="xAxisLabel"
-  [yAxisLabel]="yAxisLabel"
-  [timeline]="timeline"
-  [results]="data"
-  (select)="onSelect($event)"
-  (activate)="onActivate($event)"
-  (deactivate)="onDeactivate($event)"
->
-</ngx-charts-line-chart>
+<table>
+  <tr>
+    <td>
+      <h3>{{ this.activeFunction.value.name }} Tests</h3>
+      <ngx-charts-line-chart
+        [view]="view"
+        [scheme]="colorScheme"
+        [legend]="legend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [xAxisLabel]="this.activeFunction.value.xAxisLabel"
+        [yAxisLabel]="this.activeFunction.value.yAxisLabel"
+        [timeline]="timeline"
+        [results]="data"
+        (select)="onSelect($event)"
+        (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)"
+      >
+      </ngx-charts-line-chart>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div *ngIf="this.activeFunction.value.runCacheTest !== null">
+        <h3>{{ this.activeFunction.value.name }} Cache-Enabled Tests</h3>
+        <ngx-charts-line-chart
+          [view]="view"
+          [scheme]="colorScheme"
+          [legend]="legend"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [xAxis]="xAxis"
+          [yAxis]="yAxis"
+          [xAxisLabel]="this.activeFunction.value.xAxisLabel"
+          [yAxisLabel]="this.activeFunction.value.yAxisLabel"
+          [timeline]="timeline"
+          [results]="cacheData"
+          (select)="onSelect($event)"
+          (activate)="onActivate($event)"
+          (deactivate)="onDeactivate($event)"
+        >
+        </ngx-charts-line-chart>
+      </div>
+    </td>
+  </tr>
+</table>

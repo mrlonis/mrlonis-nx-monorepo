@@ -60,6 +60,9 @@
     },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "port": 4207
+      },
       "configurations": {
         "production": {
           "browserTarget": "angular-table-virtual-scroll-sticky-headers:build:production"
