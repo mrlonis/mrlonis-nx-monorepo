@@ -8,6 +8,6 @@ describe('interview-angular-test-application', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome interview-angular-test-application');
+    getGreeting().contains('Interview Test Application');
   });
 });
