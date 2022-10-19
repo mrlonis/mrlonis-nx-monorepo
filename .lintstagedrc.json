@@ -77,6 +77,22 @@
     "prettier --write",
     "ng-lint-staged lint nx-plugin-mrlonis-e2e --fix --"
   ],
+  "apps/nx-react-tutorial-admin/**/*.{js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-react-tutorial-admin --fix --"
+  ],
+  "apps/nx-react-tutorial-admin-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-react-tutorial-admin-e2e --fix --"
+  ],
+  "apps/nx-react-tutorial-store/**/*.{js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-react-tutorial-store --fix --"
+  ],
+  "apps/nx-react-tutorial-store-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-react-tutorial-store-e2e --fix --"
+  ],
   "apps/ps-angular-forms/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint ps-angular-forms --fix --"],
   "apps/ps-angular-forms-e2e/**/*.{html,js,jsx,ts,tsx}": [
     "prettier --write",
@@ -128,6 +144,14 @@
     "ng-lint-staged lint nx-angular-tutorial-ui --fix --"
   ],
   "libs/nx-plugin-mrlonis/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint nx-plugin-mrlonis --fix --"],
+  "libs/nx-react-tutorial-common-ui/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-react-tutorial-common-ui --fix --"
+  ],
+  "libs/nx-react-tutorial-products/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-react-tutorial-products --fix --"
+  ],
   "libs/ts-buildable-library/**/*.{html,js,jsx,ts,tsx}": [
     "prettier --write",
     "ng-lint-staged lint ts-buildable-library --fix --"

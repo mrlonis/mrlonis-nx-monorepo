@@ -183,3 +183,5 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 - 4210 - ngx-test-application
 - 4212 - nx-angular-tutorial-todos
 - 3333 - nx-angular-tutorial-api
+- 4213 - nx-react-tutorial-admin
+- 4214 - nx-react-tutorial-store

@@ -1,0 +1,44 @@
+{
+  "extends": ["plugin:@nrwl/nx/react", "../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*"],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": [
+          "libs/nx-react-tutorial-common-ui/tsconfig.json",
+          "libs/nx-react-tutorial-common-ui/tsconfig.lib.json",
+          "libs/nx-react-tutorial-common-ui/tsconfig.spec.json"
+        ]
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": [
+          "libs/nx-react-tutorial-common-ui/tsconfig.json",
+          "libs/nx-react-tutorial-common-ui/tsconfig.lib.json",
+          "libs/nx-react-tutorial-common-ui/tsconfig.spec.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "rules": { "import/no-named-as-default": "off" }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}
