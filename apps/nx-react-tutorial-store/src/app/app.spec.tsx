@@ -20,6 +20,6 @@ describe('App', () => {
       </BrowserRouter>
     );
 
-    expect(getByText(/Welcome nx-react-tutorial-store/gi)).toBeTruthy();
+    expect(getByText('Welcome to the store!')).toBeTruthy();
   });
 });

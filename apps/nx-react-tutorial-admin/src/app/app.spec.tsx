@@ -20,6 +20,6 @@ describe('App', () => {
       </BrowserRouter>
     );
 
-    expect(getByText(/Welcome nx-react-tutorial-admin/gi)).toBeTruthy();
+    expect(getByText('Welcome to our admin app.')).toBeTruthy();
   });
 });

@@ -1,1 +1,1 @@
-export * from './lib/nx-react-tutorial-common-ui';
+export * from './lib';
