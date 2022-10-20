@@ -11,7 +11,7 @@
     "lint": "nx lint",
     "repair": "nx repair",
     "graph": "nx graph",
-    "prettier": "prettier --config .prettierrc --write \"**/*.{ts,js,css,scss,html,json,md}\"",
+    "prettier": "prettier --config .prettierrc --write \"**/*.{css,html,js,jsx,json,md,scss,ts,tsx}\"",
     "prepare": "husky install",
     "build:all": "nx run-many --target=build",
     "test:all": "nx run-many --target=test",
