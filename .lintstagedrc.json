@@ -73,6 +73,18 @@
     "prettier --write",
     "ng-lint-staged lint nx-angular-tutorial-todos-e2e --fix --"
   ],
+  "apps/nx-express-tutorial-angular-ui/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-express-tutorial-angular-ui --fix --"
+  ],
+  "apps/nx-express-tutorial-angular-ui-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-express-tutorial-angular-ui-e2e --fix --"
+  ],
+  "apps/nx-express-tutorial-api/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-express-tutorial-api --fix --"
+  ],
   "apps/nx-plugin-mrlonis-e2e/**/*.{html,js,jsx,ts,tsx}": [
     "prettier --write",
     "ng-lint-staged lint nx-plugin-mrlonis-e2e --fix --"

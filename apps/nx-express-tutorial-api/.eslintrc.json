@@ -1,0 +1,44 @@
+{
+  "extends": ["../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*"],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": [
+          "apps/nx-express-tutorial-api/tsconfig.app.json",
+          "apps/nx-express-tutorial-api/tsconfig.json",
+          "apps/nx-express-tutorial-api/tsconfig.spec.json"
+        ]
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": [
+          "apps/nx-express-tutorial-api/tsconfig.app.json",
+          "apps/nx-express-tutorial-api/tsconfig.json",
+          "apps/nx-express-tutorial-api/tsconfig.spec.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}
