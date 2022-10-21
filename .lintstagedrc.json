@@ -85,6 +85,14 @@
     "prettier --write",
     "ng-lint-staged lint nx-express-tutorial-api --fix --"
   ],
+  "apps/nx-nextjs-tutorial-app/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-nextjs-tutorial-app --fix --"
+  ],
+  "apps/nx-nextjs-tutorial-app-e2e/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-nextjs-tutorial-app-e2e --fix --"
+  ],
   "apps/nx-plugin-mrlonis-e2e/**/*.{html,js,jsx,ts,tsx}": [
     "prettier --write",
     "ng-lint-staged lint nx-plugin-mrlonis-e2e --fix --"
@@ -154,6 +162,14 @@
   "libs/nx-angular-tutorial-ui/**/*.{html,js,jsx,ts,tsx}": [
     "prettier --write",
     "ng-lint-staged lint nx-angular-tutorial-ui --fix --"
+  ],
+  "libs/nx-nextjs-tutorial-lib/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-nextjs-tutorial-lib --fix --"
+  ],
+  "libs/nx-nextjs-tutorial-publishable-lib/**/*.{html,js,jsx,ts,tsx}": [
+    "prettier --write",
+    "ng-lint-staged lint nx-nextjs-tutorial-publishable-lib --fix --"
   ],
   "libs/nx-plugin-mrlonis/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint nx-plugin-mrlonis --fix --"],
   "libs/nx-react-tutorial-common-ui/**/*.{html,js,jsx,ts,tsx}": [
