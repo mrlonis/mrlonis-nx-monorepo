@@ -71,7 +71,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
       "options": {
         "jestConfig": "apps/nx-react-tutorial-store/jest.config.ts",
         "passWithNoTests": true

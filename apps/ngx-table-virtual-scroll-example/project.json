@@ -90,10 +90,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/ngx-table-virtual-scroll-example",
-        "{workspaceRoot}/junit/apps/ngx-table-virtual-scroll-example"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
       "options": {
         "jestConfig": "apps/ngx-table-virtual-scroll-example/jest.config.ts",
         "passWithNoTests": true

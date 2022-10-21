@@ -23,6 +23,8 @@
       "@mrlonis/ngx-workspace-karma": ["libs/ngx-workspace-karma/src/index.ts"],
       "@mrlonis/nx-angular-tutorial-data": ["libs/nx-angular-tutorial-data/src/index.ts"],
       "@mrlonis/nx-angular-tutorial-ui": ["libs/nx-angular-tutorial-ui/src/index.ts"],
+      "@mrlonis/nx-nextjs-tutorial-lib": ["libs/nx-nextjs-tutorial-lib/src/index.ts"],
+      "@mrlonis/nx-nextjs-tutorial-publishable-lib": ["libs/nx-nextjs-tutorial-publishable-lib/src/index.ts"],
       "@mrlonis/nx-plugin-mrlonis": ["libs/nx-plugin-mrlonis/src/index.ts"],
       "@mrlonis/nx-react-tutorial-common-ui": ["libs/nx-react-tutorial-common-ui/src/index.ts"],
       "@mrlonis/nx-react-tutorial-products": ["libs/nx-react-tutorial-products/src/index.ts"],

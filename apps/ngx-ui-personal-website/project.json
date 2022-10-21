@@ -84,10 +84,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/ngx-ui-personal-website",
-        "{workspaceRoot}/junit/apps/ngx-ui-personal-website"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
       "options": {
         "jestConfig": "apps/ngx-ui-personal-website/jest.config.ts",
         "passWithNoTests": true

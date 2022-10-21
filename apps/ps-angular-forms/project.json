@@ -85,7 +85,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/apps/ps-angular-forms", "{workspaceRoot}/junit/apps/ps-angular-forms"],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
       "options": {
         "jestConfig": "apps/ps-angular-forms/jest.config.ts",
         "passWithNoTests": true

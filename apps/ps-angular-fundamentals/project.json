@@ -84,10 +84,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/ps-angular-fundamentals",
-        "{workspaceRoot}/junit/apps/ps-angular-fundamentals"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
       "options": {
         "jestConfig": "apps/ps-angular-fundamentals/jest.config.ts",
         "passWithNoTests": true

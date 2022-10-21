@@ -87,10 +87,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/ngx-virtual-scroll-cdk-table-example",
-        "{workspaceRoot}/junit/apps/ngx-virtual-scroll-cdk-table-example"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
       "options": {
         "jestConfig": "apps/ngx-virtual-scroll-cdk-table-example/jest.config.ts",
         "passWithNoTests": true
