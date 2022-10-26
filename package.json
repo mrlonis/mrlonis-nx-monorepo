@@ -13,6 +13,8 @@
     "graph": "nx graph",
     "repair": "nx repair",
     "reset": "nx reset",
+    "workspace:lint": "nx workspace-lint",
+    "format:check": "nx format:check",
     "prettier": "prettier --config .prettierrc --write \"**/*.{css,html,js,jsx,json,md,scss,ts,tsx}\"",
     "prettier:test": "prettier --config .prettierrc --list-different \"**/*.{css,html,js,jsx,json,md,scss,ts,tsx}\"",
     "prepare": "husky install",
@@ -21,7 +23,7 @@
     "merge-code-coverage": "node ./pipeline/merge-code-coverage.js",
     "lint:all": "nx run-many --target=lint",
     "e2e:all": "nx run-many --target=e2e",
-    "gauntlet": "npm run prettier && npm run lint:all -- --fix && npm run lint:all && npm run test:all -- --configuration ci && npm run merge-code-coverage && npm run build:all && npm run e2e:all"
+    "gauntlet": "npm run prettier && npm run workspace:lint && npm run format:check && npm run lint:all -- --fix && npm run lint:all && npm run test:all -- --configuration ci && npm run merge-code-coverage && npm run build:all && npm run e2e:all"
   },
   "private": true,
   "dependencies": {
