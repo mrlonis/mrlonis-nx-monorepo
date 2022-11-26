@@ -62,7 +62,7 @@
     "ng-table-virtual-scroll": "^1.4.1",
     "ngx-currency": "^2.5.3",
     "ngx-diff": "^1.0.0",
-    "ngx-mat-select-search": "^5.0.0",
+    "ngx-mat-select-search": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
