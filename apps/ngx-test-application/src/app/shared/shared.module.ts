@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-import { MatOptionModule } from '@angular/material/core';
+import { MatCommonModule, MatOptionModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -15,6 +15,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     CommonModule,
     FormsModule,
     MatButtonModule,
+    MatCommonModule,
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
@@ -28,6 +29,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     CommonModule,
     FormsModule,
     MatButtonModule,
+    MatCommonModule,
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,

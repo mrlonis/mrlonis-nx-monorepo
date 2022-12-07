@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { SharedModule } from '../../shared';
 import { AnimeGridComponent } from './anime-grid.component';
 
 describe('AnimeGridComponent', () => {
@@ -8,6 +9,7 @@ describe('AnimeGridComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [AnimeGridComponent],
+      imports: [SharedModule],
     }).compileComponents();
 
     fixture = TestBed.createComponent(AnimeGridComponent);

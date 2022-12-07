@@ -1,4 +1,21 @@
 /* eslint-disable */
+const esModules = [
+  '@angular/animations',
+  '@angular/cdk',
+  '@angular/common',
+  '@angular/compiler',
+  '@angular/core',
+  '@angular/forms',
+  '@angular/material',
+  '@angular/platform-browser',
+  '@angular/platform-browser-dynamic',
+  '@swimlane/ngx-charts',
+  'd3',
+  'd3-array',
+  'd3-color',
+  'jest-runtime',
+].join('|');
+
 export default {
   displayName: 'ngx-test-application',
   preset: '../../jest.preset.js',
@@ -13,7 +30,7 @@ export default {
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
-  transformIgnorePatterns: ['node_modules/(?!.*\\.mjs$)'],
+  transformIgnorePatterns: ['node_modules/(?!.*\\.mjs$)', `node_modules/(?!${esModules}$)`],
   snapshotSerializers: [
     'jest-preset-angular/build/serializers/no-ng-attributes',
     'jest-preset-angular/build/serializers/ng-snapshot',

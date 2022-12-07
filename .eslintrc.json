@@ -67,9 +67,7 @@
         "plugin:import/typescript",
         "plugin:prettier/recommended"
       ],
-      "plugins": ["deprecation"],
       "rules": {
-        "deprecation/deprecation": "error",
         "@typescript-eslint/unbound-method": ["error", { "ignoreStatic": true }],
         "@typescript-eslint/no-unused-vars": [
           "error",
