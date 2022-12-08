@@ -83,16 +83,19 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@angular-devkit/build-angular:karma",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/ngx-test-application/jest.config.ts",
-        "passWithNoTests": true
+        "main": "apps/ngx-test-application/src/test.ts",
+        "tsConfig": "apps/ngx-test-application/tsconfig.spec.json",
+        "karmaConfig": "apps/ngx-test-application/karma.conf.js"
       },
       "configurations": {
         "ci": {
-          "ci": true,
-          "codeCoverage": true
+          "watch": false,
+          "browsers": "ChromeHeadless",
+          "codeCoverage": true,
+          "reporters": ["progress", "coverage", "junit"]
         }
       }
     }
