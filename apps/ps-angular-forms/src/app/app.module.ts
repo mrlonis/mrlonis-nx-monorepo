@@ -18,9 +18,9 @@ import { UserSettingsFormComponent } from './user-settings-form/user-settings-fo
     CommonModule,
     FormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

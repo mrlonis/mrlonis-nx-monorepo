@@ -67,9 +67,9 @@ import { TableItemSizeDirective } from './table-item-size.directive';
       .footer-cell {
         height: 15px !important;
       }
-    `
+    `,
   ],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 class TableVirtualScrollComponent {
   @ViewChild(CdkVirtualScrollViewport, { static: true })
@@ -144,7 +144,7 @@ describe('TableItemSizeDirective', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [ScrollingModule, MatTableModule, NgxTableVirtualScrollModule],
-      declarations: [TableVirtualScrollComponent]
+      declarations: [TableVirtualScrollComponent],
     }).compileComponents();
   });
 

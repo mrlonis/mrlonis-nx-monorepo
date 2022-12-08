@@ -14,10 +14,10 @@ import { CharactersModule } from './features';
     {
       provide: API_CONFIG_TOKEN,
       useValue: {
-        apiUrl: appConfig.apiUrl
-      } as ApiConfigProvider
-    }
+        apiUrl: appConfig.apiUrl,
+      } as ApiConfigProvider,
+    },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

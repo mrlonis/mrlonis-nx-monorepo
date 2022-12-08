@@ -17,10 +17,10 @@ describe('CharactersComponent', () => {
         {
           provide: API_CONFIG_TOKEN,
           useValue: {
-            apiUrl: 'http://fake-url.com'
-          } as ApiConfigProvider
-        }
-      ]
+            apiUrl: 'http://fake-url.com',
+          } as ApiConfigProvider,
+        },
+      ],
     }).compileComponents();
   });
 

@@ -4,7 +4,7 @@ import {
   BarChartComponent,
   FunctionTestingComponent,
   LineChartComponent,
-  PieChartComponent
+  PieChartComponent,
 } from './features';
 
 export const appRoutes: Route[] = [
@@ -14,5 +14,5 @@ export const appRoutes: Route[] = [
   { path: 'functionTesting', component: FunctionTestingComponent },
   { path: 'pieChart', component: PieChartComponent },
   { path: '', redirectTo: 'animeGrid', pathMatch: 'full' },
-  { path: '**', redirectTo: 'animeGrid', pathMatch: 'full' }
+  { path: '**', redirectTo: 'animeGrid', pathMatch: 'full' },
 ];

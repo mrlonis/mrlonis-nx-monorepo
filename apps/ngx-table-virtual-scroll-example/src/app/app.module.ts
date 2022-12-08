@@ -25,9 +25,9 @@ import { AppComponent } from './app.component';
     MatTableModule,
     NgxTableVirtualScrollModule,
     ScrollingModule,
-    TableVirtualScrollModule
+    TableVirtualScrollModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

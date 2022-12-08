@@ -4,7 +4,7 @@ export default {
   preset: '../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nrwl/react/plugins/jest',
-    '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nrwl/next/babel'] }]
+    '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nrwl/next/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/apps/nx-nextjs-tutorial-app',
@@ -16,8 +16,8 @@ export default {
         suiteName: 'nx-nextjs-tutorial-app Jest Tests',
         outputDirectory: 'junit/apps/nx-nextjs-tutorial-app',
         outputName: 'junit.xml',
-        uniqueOutputName: 'false'
-      }
-    ]
-  ]
+        uniqueOutputName: 'false',
+      },
+    ],
+  ],
 };

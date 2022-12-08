@@ -16,16 +16,16 @@ import { TableVirtualScrollViewportComponent } from './table-virtual-scroll-view
     MyTableComponent,
     VirtualTableDirective,
     FixedRowSizeTableVirtualScrollStrategyDirective,
-    TableVirtualScrollViewportComponent
+    TableVirtualScrollViewportComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ScrollingModule,
     MatTableModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' })
+    RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

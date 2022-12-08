@@ -23,7 +23,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     MatRadioModule,
     MatSelectModule,
     NgxChartsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   exports: [
     CommonModule,
@@ -37,7 +37,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     MatRadioModule,
     MatSelectModule,
     NgxChartsModule,
-    ReactiveFormsModule
-  ]
+    ReactiveFormsModule,
+  ],
 })
 export class SharedModule {}

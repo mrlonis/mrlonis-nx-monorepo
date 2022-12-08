@@ -26,9 +26,9 @@ describe('AppComponent', () => {
         NoopAnimationsModule,
         RouterTestingModule,
         ScrollingModule,
-        TableVirtualScrollModule
+        TableVirtualScrollModule,
       ],
-      declarations: [AppComponent]
+      declarations: [AppComponent],
     }).compileComponents();
   });
 

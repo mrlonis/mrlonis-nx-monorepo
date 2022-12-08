@@ -9,7 +9,7 @@ describe('NavigationComponentComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [NavigationComponentComponent, NoopAnimationsModule, RouterTestingModule]
+      imports: [NavigationComponentComponent, NoopAnimationsModule, RouterTestingModule],
     });
     fixture = TestBed.createComponent(NavigationComponentComponent);
     component = fixture.componentInstance;

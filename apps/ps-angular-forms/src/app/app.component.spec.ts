@@ -16,12 +16,12 @@ describe('AppComponent', () => {
           useValue: {
             getSubscriptionTypes(): Observable<string[]> {
               return of(['Monthly', 'Annual', 'Lifetime']);
-            }
-          }
-        }
+            },
+          },
+        },
       ],
       declarations: [AppComponent, UserSettingsFormComponent],
-      imports: [CommonModule, FormsModule, NgbModule]
+      imports: [CommonModule, FormsModule, NgbModule],
     }).compileComponents();
   });
 

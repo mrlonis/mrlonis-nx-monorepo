@@ -19,8 +19,8 @@ describe('AppComponent', () => {
         MyTableComponent,
         VirtualTableDirective,
         FixedRowSizeTableVirtualScrollStrategyDirective,
-        TableVirtualScrollViewportComponent
-      ]
+        TableVirtualScrollViewportComponent,
+      ],
     }).compileComponents();
   });
 

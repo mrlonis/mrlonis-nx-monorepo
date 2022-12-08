@@ -23,7 +23,7 @@ describe('NgxTableVirtualScrollDataSource', () => {
     expect(dataSource).toBeTruthy();
 
     const dataSource2: NgxTableVirtualScrollDataSource<TestData> = new NgxTableVirtualScrollDataSource<TestData>([
-      { index: 0 }
+      { index: 0 },
     ]);
     expect(dataSource2).toBeTruthy();
   });

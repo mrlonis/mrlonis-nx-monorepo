@@ -18,9 +18,9 @@ describe('AppComponent', () => {
         ScrollingModule,
         MatSortModule,
         CdkTableModule,
-        RouterTestingModule
+        RouterTestingModule,
       ],
-      declarations: [AppComponent]
+      declarations: [AppComponent],
     }).compileComponents();
   });
 

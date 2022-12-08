@@ -4,11 +4,11 @@ export default {
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
-      tsconfig: '<rootDir>/tsconfig.spec.json'
-    }
+      tsconfig: '<rootDir>/tsconfig.spec.json',
+    },
   },
   transform: {
-    '^.+\\.[tj]s$': 'ts-jest'
+    '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
   coverageDirectory: '../../coverage/libs/nx-react-tutorial-products',
@@ -20,8 +20,8 @@ export default {
         suiteName: 'nx-react-tutorial-products Jest Tests',
         outputDirectory: 'junit/apps/nx-react-tutorial-products',
         outputName: 'junit.xml',
-        uniqueOutputName: 'false'
-      }
-    ]
-  ]
+        uniqueOutputName: 'false',
+      },
+    ],
+  ],
 };

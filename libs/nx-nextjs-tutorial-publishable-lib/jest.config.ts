@@ -3,7 +3,7 @@ export default {
   displayName: 'nx-nextjs-tutorial-publishable-lib',
   preset: '../../jest.preset.js',
   transform: {
-    '^.+\\.[tj]sx?$': ['@swc/jest', { jsc: { transform: { react: { runtime: 'automatic' } } } }]
+    '^.+\\.[tj]sx?$': ['@swc/jest', { jsc: { transform: { react: { runtime: 'automatic' } } } }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/libs/nx-nextjs-tutorial-publishable-lib',
@@ -15,8 +15,8 @@ export default {
         suiteName: 'nnx-nextjs-tutorial-publishable-lib Jest Tests',
         outputDirectory: 'junit/libs/nx-nextjs-tutorial-publishable-lib',
         outputName: 'junit.xml',
-        uniqueOutputName: 'false'
-      }
-    ]
-  ]
+        uniqueOutputName: 'false',
+      },
+    ],
+  ],
 };

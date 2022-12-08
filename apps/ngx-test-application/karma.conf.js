@@ -10,11 +10,11 @@ module.exports = function (config) {
     ...baseConfig,
     coverageReporter: {
       ...baseConfig.coverageReporter,
-      dir: join(__dirname, '../../coverage/apps/ngx-test-application')
+      dir: join(__dirname, '../../coverage/apps/ngx-test-application'),
     },
     junitReporter: {
       ...baseConfig.junitReporter,
-      outputDir: join(__dirname, '../../junit/apps/ngx-test-application')
-    }
+      outputDir: join(__dirname, '../../junit/apps/ngx-test-application'),
+    },
   });
 };

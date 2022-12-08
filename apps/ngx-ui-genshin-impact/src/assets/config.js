@@ -1,3 +1,3 @@
 var config = {
-  apiUrl: 'http://localhost:9002/api'
+  apiUrl: 'http://localhost:9002/api',
 };

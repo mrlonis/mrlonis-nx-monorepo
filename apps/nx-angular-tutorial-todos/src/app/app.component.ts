@@ -5,7 +5,7 @@ import { Todo } from '@mrlonis/nx-angular-tutorial-data';
 @Component({
   selector: 'mrlonis-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   todos: Todo[] = [];

@@ -17,9 +17,9 @@ import { AppComponent } from './app.component';
     ScrollingModule,
     MatSortModule,
     CdkTableModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' })
+    RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

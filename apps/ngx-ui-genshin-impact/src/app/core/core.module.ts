@@ -6,6 +6,6 @@ import { HomeModule } from './home';
 @NgModule({
   declarations: [],
   imports: [BrowserModule, BrowserAnimationsModule, HomeModule],
-  exports: [BrowserModule, HomeModule]
+  exports: [BrowserModule, HomeModule],
 })
 export class CoreModule {}

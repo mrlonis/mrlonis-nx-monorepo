@@ -36,13 +36,13 @@ function _coreFibonacciRunTest(data: LineGraphData[], run: number, fibonacci: Fi
 
     series.push({
       name: i.toString(),
-      value: timeDiff
+      value: timeDiff,
     });
   }
 
   newData.push({
     name: `Run ${run}`,
-    series: series
+    series: series,
   });
 
   return newData;
@@ -61,7 +61,7 @@ function fibonacciRunCacheTest(data: LineGraphData[], run: number): LineGraphDat
 @Component({
   selector: 'mrlonis-function-testing',
   templateUrl: './function-testing.component.html',
-  styleUrls: ['./function-testing.component.scss']
+  styleUrls: ['./function-testing.component.scss'],
 })
 export class FunctionTestingComponent implements OnInit {
   data: LineGraphData[] = [];
@@ -81,7 +81,7 @@ export class FunctionTestingComponent implements OnInit {
     name: '',
     selectable: true,
     group: ScaleType.Linear,
-    domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']
+    domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5'],
   };
 
   // custom variables
@@ -92,8 +92,8 @@ export class FunctionTestingComponent implements OnInit {
       xAxisLabel: 'Fibonacci Number',
       yAxisLabel: 'Time in Milliseconds',
       runTest: fibonacciRunTest,
-      runCacheTest: fibonacciRunCacheTest
-    }
+      runCacheTest: fibonacciRunCacheTest,
+    },
   ];
   activeFunction = new FormControl<FunctionToTest>(this.functions[0], { nonNullable: true });
 

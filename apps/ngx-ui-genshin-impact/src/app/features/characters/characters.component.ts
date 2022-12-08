@@ -7,7 +7,7 @@ import { GenshinImpactApiService } from '../../shared';
 @Component({
   selector: 'mrlonis-characters',
   templateUrl: './characters.component.html',
-  styleUrls: ['./characters.component.scss']
+  styleUrls: ['./characters.component.scss'],
 })
 export class CharactersComponent implements OnInit {
   characters?: Observable<SpringDataRestResponse<Character>>;

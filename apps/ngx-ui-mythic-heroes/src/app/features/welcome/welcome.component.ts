@@ -6,7 +6,7 @@ import { MatCardModule } from '@angular/material/card';
   selector: 'mrlonis-welcome',
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.scss'],
-  imports: [MatCardModule]
+  imports: [MatCardModule],
 })
 export class WelcomeComponent {
   public pageTitle = 'Welcome';

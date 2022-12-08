@@ -50,6 +50,6 @@ export { setupTests };
 
 describe('StorageServiceBase', () => {
   setupTests<StorageServiceBase>(StorageServiceBase, 'storage service base', [
-    { provide: StorageServiceBase, useValue: new StorageServiceBase(window.localStorage) }
+    { provide: StorageServiceBase, useValue: new StorageServiceBase(window.localStorage) },
   ]);
 });

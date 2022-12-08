@@ -4,22 +4,22 @@ import { ScaleType } from '@swimlane/ngx-charts';
 @Component({
   selector: 'mrlonis-bar-chart',
   templateUrl: './bar-chart.component.html',
-  styleUrls: ['./bar-chart.component.scss']
+  styleUrls: ['./bar-chart.component.scss'],
 })
 export class BarChartComponent implements OnInit {
   single = [
     {
       name: 'Germany',
-      value: 8940000
+      value: 8940000,
     },
     {
       name: 'USA',
-      value: 5000000
+      value: 5000000,
     },
     {
       name: 'France',
-      value: 7200000
-    }
+      value: 7200000,
+    },
   ];
   multi = [
     {
@@ -27,13 +27,13 @@ export class BarChartComponent implements OnInit {
       series: [
         {
           name: '2010',
-          value: 7300000
+          value: 7300000,
         },
         {
           name: '2011',
-          value: 8940000
-        }
-      ]
+          value: 8940000,
+        },
+      ],
     },
 
     {
@@ -41,13 +41,13 @@ export class BarChartComponent implements OnInit {
       series: [
         {
           name: '2010',
-          value: 7870000
+          value: 7870000,
         },
         {
           name: '2011',
-          value: 8270000
-        }
-      ]
+          value: 8270000,
+        },
+      ],
     },
 
     {
@@ -55,14 +55,14 @@ export class BarChartComponent implements OnInit {
       series: [
         {
           name: '2010',
-          value: 5000002
+          value: 5000002,
         },
         {
           name: '2011',
-          value: 5800000
-        }
-      ]
-    }
+          value: 5800000,
+        },
+      ],
+    },
   ];
 
   view: [number, number] = [700, 400];
@@ -81,7 +81,7 @@ export class BarChartComponent implements OnInit {
     name: '',
     selectable: true,
     group: ScaleType.Linear,
-    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA'],
   };
 
   constructor() {

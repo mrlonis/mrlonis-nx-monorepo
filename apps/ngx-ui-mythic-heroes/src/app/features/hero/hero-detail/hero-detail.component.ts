@@ -12,7 +12,7 @@ import { MythicHeroesAggressiveCache, MythicHeroesApiService } from '../../../sh
   selector: 'mrlonis-hero-detail',
   templateUrl: './hero-detail.component.html',
   styleUrls: ['./hero-detail.component.scss'],
-  imports: [CommonModule, MatButtonModule, MatCardModule, RouterModule]
+  imports: [CommonModule, MatButtonModule, MatCardModule, RouterModule],
 })
 export class HeroDetailComponent implements OnInit {
   errorMessage = '';
@@ -41,20 +41,20 @@ export class HeroDetailComponent implements OnInit {
         this.hero = hero;
         this.cache.getBy('faction', new HttpParams().set('id', hero.factionId)).subscribe({
           next: (faction) => (this.faction = faction),
-          error: (err) => (this.errorMessage = <string>err)
+          error: (err) => (this.errorMessage = <string>err),
         });
         this.cache.getBy('rarity', new HttpParams().set('id', hero.rarityId)).subscribe({
           next: (rarity) => (this.rarity = rarity),
-          error: (err) => (this.errorMessage = <string>err)
+          error: (err) => (this.errorMessage = <string>err),
         });
         this.cache.getBy('type', new HttpParams().set('id', hero.typeId)).subscribe({
           next: (type) => (this.type = type),
-          error: (err) => (this.errorMessage = <string>err)
+          error: (err) => (this.errorMessage = <string>err),
         });
       },
       error: (err) => {
         this.errorMessage = <string>err;
-      }
+      },
     });
   }
 

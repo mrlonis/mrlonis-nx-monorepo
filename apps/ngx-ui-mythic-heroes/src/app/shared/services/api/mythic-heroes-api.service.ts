@@ -4,7 +4,7 @@ import { ApiConfigProvider, ApiService, API_CONFIG_TOKEN } from '@mrlonis/ngx-mr
 import { Faction, MythicHero, Rarity, Type } from '@mrlonis/types';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MythicHeroesApiService extends ApiService<{
   mythicHero: MythicHero;

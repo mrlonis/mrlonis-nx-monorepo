@@ -7,7 +7,7 @@ import { Faction, MythicHero, Rarity, Type } from '@mrlonis/types';
 import { MythicHeroesApiService } from '../api';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MythicHeroesAggressiveCache extends AggressiveCache<{
   mythicHero: MythicHero;
@@ -30,7 +30,7 @@ export class MythicHeroesAggressiveCache extends AggressiveCache<{
               }
               return [new HttpParams().set('id', entity.id)];
             },
-            directRequest: (httpParams: HttpParams) => api.getSingle('mythicHero', httpParams)
+            directRequest: (httpParams: HttpParams) => api.getSingle('mythicHero', httpParams),
           },
           collectBy: {
             directRequest: (httpParams: HttpParams) =>
@@ -38,8 +38,8 @@ export class MythicHeroesAggressiveCache extends AggressiveCache<{
                 map((response) => {
                   return response._embedded.data;
                 })
-              )
-          }
+              ),
+          },
         },
         faction: {
           service: (params) => {
@@ -53,8 +53,8 @@ export class MythicHeroesAggressiveCache extends AggressiveCache<{
               }
               return [new HttpParams().set('id', entity.id)];
             },
-            directRequest: (httpParams: HttpParams) => api.getSingle('faction', httpParams)
-          }
+            directRequest: (httpParams: HttpParams) => api.getSingle('faction', httpParams),
+          },
         },
         type: {
           service: (params) => {
@@ -68,8 +68,8 @@ export class MythicHeroesAggressiveCache extends AggressiveCache<{
               }
               return [new HttpParams().set('id', entity.id)];
             },
-            directRequest: (httpParams: HttpParams) => api.getSingle('type', httpParams)
-          }
+            directRequest: (httpParams: HttpParams) => api.getSingle('type', httpParams),
+          },
         },
         rarity: {
           service: (params) => {
@@ -83,9 +83,9 @@ export class MythicHeroesAggressiveCache extends AggressiveCache<{
               }
               return [new HttpParams().set('id', entity.id)];
             },
-            directRequest: (httpParams: HttpParams) => api.getSingle('rarity', httpParams)
-          }
-        }
+            directRequest: (httpParams: HttpParams) => api.getSingle('rarity', httpParams),
+          },
+        },
       },
       invalidator
     );

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
  *    the aggressive cache constructor needs a copy of this, so just inject it and pass it in when inheriting.
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AggressiveCacheInvalidator {
   caches: { invalidate(key: string): void }[] = [];

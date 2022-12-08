@@ -10,7 +10,7 @@ describe('PieChartComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [PieChartComponent],
-      imports: [NoopAnimationsModule, SharedModule]
+      imports: [NoopAnimationsModule, SharedModule],
     }).compileComponents();
 
     fixture = TestBed.createComponent(PieChartComponent);

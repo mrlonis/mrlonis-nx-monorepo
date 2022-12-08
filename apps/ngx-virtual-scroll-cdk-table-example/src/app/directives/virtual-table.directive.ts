@@ -7,7 +7,7 @@ import {
   DataSource,
   STICKY_POSITIONING_LISTENER,
   _CoalescedStyleScheduler,
-  _COALESCED_STYLE_SCHEDULER
+  _COALESCED_STYLE_SCHEDULER,
 } from '@angular/cdk/table';
 import {
   ContentChildren,
@@ -19,7 +19,7 @@ import {
   NgZone,
   OnDestroy,
   OnInit,
-  QueryList
+  QueryList,
 } from '@angular/core';
 import { isObservable, Observable, of, Subject } from 'rxjs';
 import { map, pairwise, shareReplay, startWith, switchMap, takeUntil } from 'rxjs/operators';
@@ -32,7 +32,7 @@ import { TableVirtualScrollViewportComponent } from '../table-virtual-scroll-vie
  */
 @Directive({
   selector: '[mat-table][mrlonisVirtualDataSource], mat-table[mrlonisVirtualDataSource]',
-  providers: [{ provide: STICKY_POSITIONING_LISTENER, useExisting: VirtualTableDirective }]
+  providers: [{ provide: STICKY_POSITIONING_LISTENER, useExisting: VirtualTableDirective }],
 })
 export class VirtualTableDirective<T> implements CdkVirtualScrollRepeater<T>, CollectionViewer, OnInit, OnDestroy {
   // eslint-disable-next-line @angular-eslint/no-input-rename

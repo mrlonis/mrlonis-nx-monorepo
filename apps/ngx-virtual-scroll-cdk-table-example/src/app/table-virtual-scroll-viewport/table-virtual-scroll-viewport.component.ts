@@ -16,7 +16,7 @@ import {
   ScrollDispatcher,
   ViewportRuler,
   VirtualScrollStrategy,
-  VIRTUAL_SCROLL_STRATEGY
+  VIRTUAL_SCROLL_STRATEGY,
 } from '@angular/cdk/scrolling';
 import {
   ChangeDetectionStrategy,
@@ -31,7 +31,7 @@ import {
   Optional,
   Output,
   ViewChild,
-  ViewEncapsulation
+  ViewEncapsulation,
 } from '@angular/core';
 import { animationFrameScheduler, asapScheduler, Observable, Observer, Subject, Subscription } from 'rxjs';
 import { auditTime, startWith, takeUntil } from 'rxjs/operators';
@@ -61,20 +61,20 @@ const SCROLL_SCHEDULER = typeof requestAnimationFrame !== 'undefined' ? animatio
   host: {
     class: 'mrlonis-table-virtual-scroll-viewport',
     '[class.mrlonis-table-virtual-scroll-orientation-horizontal]': 'orientation === "horizontal"',
-    '[class.mrlonis-table-virtual-scroll-orientation-vertical]': 'orientation !== "horizontal"'
+    '[class.mrlonis-table-virtual-scroll-orientation-vertical]': 'orientation !== "horizontal"',
   },
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [
     {
       provide: CdkScrollable,
-      useExisting: TableVirtualScrollViewportComponent
+      useExisting: TableVirtualScrollViewportComponent,
     },
     {
       provide: CdkVirtualScrollViewport,
-      useExisting: TableVirtualScrollViewportComponent
-    }
-  ]
+      useExisting: TableVirtualScrollViewportComponent,
+    },
+  ],
 })
 export class TableVirtualScrollViewportComponent extends CdkScrollable implements OnInit, OnDestroy {
   /** Emits when the viewport is detached from a CdkVirtualForOf. */

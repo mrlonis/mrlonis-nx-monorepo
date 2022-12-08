@@ -21,7 +21,7 @@ const defaults = {
   headerEnabled: true,
   footerHeight: 48,
   footerEnabled: false,
-  bufferMultiplier: 0.7
+  bufferMultiplier: 0.7,
 };
 
 @Directive({
@@ -30,9 +30,9 @@ const defaults = {
     {
       provide: VIRTUAL_SCROLL_STRATEGY,
       useFactory: _tableVirtualScrollDirectiveStrategyFactory,
-      deps: [forwardRef(() => TableItemSizeDirective)]
-    }
-  ]
+      deps: [forwardRef(() => TableItemSizeDirective)],
+    },
+  ],
 })
 export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDestroy {
   private destroyed$ = new Subject<void>();
@@ -116,7 +116,7 @@ export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDe
         tap(() => {
           this.stickyPositions = new Map<HTMLElement, number>();
         })
-      )
+      ),
     ])
       .pipe(
         filter(() => this.isStickyEnabled()),
@@ -164,7 +164,7 @@ export class TableItemSizeDirective implements OnChanges, AfterContentInit, OnDe
       rowHeight: +this.rowHeight || defaults.rowHeight,
       headerHeight: this.headerEnabled ? +this.headerHeight || defaults.headerHeight : 0,
       footerHeight: this.footerEnabled ? +this.footerHeight || defaults.footerHeight : 0,
-      bufferMultiplier: +this.bufferMultiplier || defaults.bufferMultiplier
+      bufferMultiplier: +this.bufferMultiplier || defaults.bufferMultiplier,
     };
     this.scrollStrategy.setConfig(config);
   }

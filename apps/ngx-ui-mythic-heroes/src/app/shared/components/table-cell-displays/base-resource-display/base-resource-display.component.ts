@@ -10,7 +10,7 @@ import { MythicHeroesApiService } from '../../../services';
   selector: 'mrlonis-base-resource-display',
   styleUrls: ['base-resource-display.component.scss'],
   templateUrl: 'base-resource-display.component.html',
-  imports: [CommonModule, MatProgressSpinnerModule, RouterModule]
+  imports: [CommonModule, MatProgressSpinnerModule, RouterModule],
 })
 export class BaseResourceDisplayComponent implements OnInit {
   @Input() data: BaseResource | null;

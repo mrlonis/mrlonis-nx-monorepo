@@ -7,7 +7,7 @@ import { GenshinImpactApiService } from '../../../shared';
 @Component({
   selector: 'mrlonis-character-detail',
   templateUrl: './character-detail.component.html',
-  styleUrls: ['./character-detail.component.scss']
+  styleUrls: ['./character-detail.component.scss'],
 })
 export class CharacterDetailComponent implements OnInit {
   character?: Character;

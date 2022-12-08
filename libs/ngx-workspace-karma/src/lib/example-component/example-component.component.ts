@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'mrlonis-example-component',
   templateUrl: './example-component.component.html',
-  styleUrls: ['./example-component.component.scss']
+  styleUrls: ['./example-component.component.scss'],
 })
 export class ExampleComponentComponent implements OnInit {
   constructor() {
