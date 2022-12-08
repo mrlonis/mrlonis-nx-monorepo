@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from '../../shared';
 import { AnimeGridComponent } from './anime-grid.component';
 
@@ -9,7 +10,7 @@ describe('AnimeGridComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [AnimeGridComponent],
-      imports: [SharedModule],
+      imports: [NoopAnimationsModule, SharedModule],
     }).compileComponents();
 
     fixture = TestBed.createComponent(AnimeGridComponent);
