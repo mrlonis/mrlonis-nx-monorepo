@@ -20,7 +20,7 @@ module.exports = () => {
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
       require('@angular-devkit/build-angular/plugins/karma'),
-      require('karma-junit-reporter'),
+      require('karma-junit-reporter')
     ],
     client: {
       jasmine: {
@@ -29,19 +29,19 @@ module.exports = () => {
         // for example, you can disable the random execution with `random: false`
         // or set a specific seed with `seed: 4321`
       },
-      clearContext: false, // leave Jasmine Spec Runner output visible in browser
+      clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     jasmineHtmlReporter: {
-      suppressAll: true, // removes the duplicated traces
+      suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
       dir: join(__dirname, './coverage'),
       subdir: '.',
-      reporters: [{ type: 'html' }, { type: 'text-summary' }, { type: 'cobertura' }],
+      reporters: [{ type: 'html' }, { type: 'text-summary' }, { type: 'cobertura' }]
     },
     reporters: ['progress', 'kjhtml', 'junit'],
     junitReporter: {
-      outputDir: './junit',
+      outputDir: './junit'
     },
     port: 9876,
     colors: true,
@@ -49,6 +49,6 @@ module.exports = () => {
     autoWatch: true,
     browsers: [browser],
     singleRun: true,
-    restartOnFileChange: true,
+    restartOnFileChange: true
   };
 };

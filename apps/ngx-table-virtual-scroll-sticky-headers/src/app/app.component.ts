@@ -9,7 +9,7 @@ import { User } from './user.model';
 @Component({
   selector: 'mrlonis-root',
   templateUrl: './table-mat-table/table-mat-table.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
   visibleColumns = ['id', 'name', 'email'];

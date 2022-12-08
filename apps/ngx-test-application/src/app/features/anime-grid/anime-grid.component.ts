@@ -6,7 +6,7 @@ import anime, { AnimeInstance } from 'animejs';
   selector: 'mrlonis-anime-grid',
   templateUrl: './anime-grid.component.html',
   styleUrls: ['./anime-grid.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None
 })
 export class AnimeGridComponent implements AfterViewInit {
   columns = 10;
@@ -102,8 +102,8 @@ export class AnimeGridComponent implements AfterViewInit {
         // eslint-disable-next-line import/no-named-as-default-member
         delay: anime.stagger(50, {
           grid: [this.columns, this.rows],
-          from: index,
-        }),
+          from: index
+        })
       });
     } else {
       this.toggled = !this.toggled;
@@ -114,8 +114,8 @@ export class AnimeGridComponent implements AfterViewInit {
         // eslint-disable-next-line import/no-named-as-default-member
         delay: anime.stagger(50, {
           grid: [this.columns, this.rows],
-          from: index,
-        }),
+          from: index
+        })
       });
     }
   }

@@ -18,10 +18,10 @@ import { CharactersComponent } from './characters.component';
       {
         path: 'characters/:name',
         canActivate: [CharacterDetailGuard],
-        component: CharacterDetailComponent,
-      },
-    ]),
+        component: CharacterDetailComponent
+      }
+    ])
   ],
-  exports: [CharactersComponent, CharacterDetailComponent, CommonModule, MatCardModule, MatGridListModule, RouterModule],
+  exports: [CharactersComponent, CharacterDetailComponent, CommonModule, MatCardModule, MatGridListModule, RouterModule]
 })
 export class CharactersModule {}

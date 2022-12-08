@@ -68,12 +68,12 @@ class ExampleService implements IApiService<ExampleServiceIndex> {
           imageUrl: entityImageUrl,
           _links: {
             self: {
-              href: '',
+              href: ''
             },
             item: {
-              href: '',
-            },
-          },
+              href: ''
+            }
+          }
         });
       }
     }
@@ -82,25 +82,25 @@ class ExampleService implements IApiService<ExampleServiceIndex> {
     collection = collection.slice(0, pageSize);
     const bundle: SpringDataRestResponse<ExampleResource> = {
       _embedded: {
-        data: collection,
+        data: collection
       },
       _links: {
         self: {
-          href: '',
+          href: ''
         },
         profile: {
-          href: '',
+          href: ''
         },
         search: {
-          href: '',
-        },
+          href: ''
+        }
       },
       page: {
         size: totalLength,
         totalElements: totalLength,
         totalPages: 1,
-        number: 1,
-      },
+        number: 1
+      }
     };
     return of(bundle).pipe(delay(300));
   }
@@ -121,12 +121,12 @@ class ExampleService implements IApiService<ExampleServiceIndex> {
       version: ver,
       _links: {
         self: {
-          href: '',
+          href: ''
         },
         item: {
-          href: '',
-        },
-      },
+          href: ''
+        }
+      }
     };
     return of(almost).pipe(delay(300));
   }
@@ -150,9 +150,9 @@ class AggressiveCacheExample extends AggressiveCache<{
             match: (entry: ExampleResource) => [
               new HttpParams().set('id', entry.id),
               new HttpParams().set('ident', entry.id),
-              new HttpParams().set('name', entry.name),
+              new HttpParams().set('name', entry.name)
             ],
-            directRequest: (httpParams: HttpParams) => service.getSingle('example', httpParams),
+            directRequest: (httpParams: HttpParams) => service.getSingle('example', httpParams)
           },
           countBy: {
             match: (entry: ExampleResource) => {
@@ -160,16 +160,16 @@ class AggressiveCacheExample extends AggressiveCache<{
             },
             directRequest: (httpParams: HttpParams) => {
               return service.getCollection('example', httpParams.set('size', 1)).pipe(map((x) => x.page.totalElements ?? 0));
-            },
+            }
           },
           collectBy: {
             match: (entry: ExampleResource) => {
               return [new HttpParams().set('imageUrl', entry.imageUrl), new HttpParams().set('version', entry.version)];
             },
             directRequest: (httpParams: HttpParams) =>
-              service.getCollection('example', httpParams.set('size', 100)).pipe(map((x) => x._embedded.data.map((y) => y))),
-          },
-        },
+              service.getCollection('example', httpParams.set('size', 100)).pipe(map((x) => x._embedded.data.map((y) => y)))
+          }
+        }
       },
       invalidator
     );
@@ -183,7 +183,7 @@ describe('AggressiveCache', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [ExampleService, AggressiveCacheExample, AggressiveCacheInvalidator],
+      providers: [ExampleService, AggressiveCacheExample, AggressiveCacheInvalidator]
     });
     cache = TestBed.inject(AggressiveCacheExample);
     invalidator = TestBed.inject(AggressiveCacheInvalidator);
@@ -206,7 +206,7 @@ describe('AggressiveCache', () => {
         error: (err: Error) => {
           expect(err.message).toEqual('not found');
           done();
-        },
+        }
       });
     });
 
@@ -219,12 +219,12 @@ describe('AggressiveCache', () => {
           version: 'single 1',
           _links: {
             self: {
-              href: '',
+              href: ''
             },
             item: {
-              href: '',
-            },
-          },
+              href: ''
+            }
+          }
         });
       });
       /** We know it is caching because the version isn't incremented */
@@ -236,12 +236,12 @@ describe('AggressiveCache', () => {
           version: 'single 1',
           _links: {
             self: {
-              href: '',
+              href: ''
             },
             item: {
-              href: '',
-            },
-          },
+              href: ''
+            }
+          }
         });
       });
       /** We know it ISN'T cached because the version DID incremented */
@@ -253,12 +253,12 @@ describe('AggressiveCache', () => {
           version: 'single 2',
           _links: {
             self: {
-              href: '',
+              href: ''
             },
             item: {
-              href: '',
-            },
-          },
+              href: ''
+            }
+          }
         });
       });
       /** We know it is caching because the version isn't incremented */
@@ -270,12 +270,12 @@ describe('AggressiveCache', () => {
           version: 'single 2',
           _links: {
             self: {
-              href: '',
+              href: ''
             },
             item: {
-              href: '',
-            },
-          },
+              href: ''
+            }
+          }
         });
       });
       tick(1000);
@@ -290,12 +290,12 @@ describe('AggressiveCache', () => {
           version: 'single 1',
           _links: {
             self: {
-              href: '',
+              href: ''
             },
             item: {
-              href: '',
-            },
-          },
+              href: ''
+            }
+          }
         });
       });
       tick(400);
@@ -311,12 +311,12 @@ describe('AggressiveCache', () => {
           version: 'single 1',
           _links: {
             self: {
-              href: '',
+              href: ''
             },
             item: {
-              href: '',
-            },
-          },
+              href: ''
+            }
+          }
         });
       });
       cache.getBy('example', new HttpParams().set('id', '4')).subscribe((data) => {
@@ -327,12 +327,12 @@ describe('AggressiveCache', () => {
           version: 'single 1',
           _links: {
             self: {
-              href: '',
+              href: ''
             },
             item: {
-              href: '',
-            },
-          },
+              href: ''
+            }
+          }
         });
       });
 
@@ -346,12 +346,12 @@ describe('AggressiveCache', () => {
             version: 'single 1',
             _links: {
               self: {
-                href: '',
+                href: ''
               },
               item: {
-                href: '',
-              },
-            },
+                href: ''
+              }
+            }
           });
         });
 
@@ -363,12 +363,12 @@ describe('AggressiveCache', () => {
             version: 'single 1',
             _links: {
               self: {
-                href: '',
+                href: ''
               },
               item: {
-                href: '',
-              },
-            },
+                href: ''
+              }
+            }
           });
         });
       }, 400);
@@ -510,12 +510,12 @@ describe('AggressiveCache', () => {
           version: 'single 1',
           _links: {
             self: {
-              href: '',
+              href: ''
             },
             item: {
-              href: '',
-            },
-          },
+              href: ''
+            }
+          }
         });
       });
       invalidator.invalidate('example');
@@ -527,12 +527,12 @@ describe('AggressiveCache', () => {
           version: 'single 2',
           _links: {
             self: {
-              href: '',
+              href: ''
             },
             item: {
-              href: '',
-            },
-          },
+              href: ''
+            }
+          }
         });
       });
       tick(800);
@@ -555,12 +555,12 @@ describe('AggressiveCache', () => {
               version: 'collection 1',
               _links: {
                 self: {
-                  href: '',
+                  href: ''
                 },
                 item: {
-                  href: '',
-                },
-              },
+                  href: ''
+                }
+              }
             });
           });
           /**
@@ -577,12 +577,12 @@ describe('AggressiveCache', () => {
               version: 'collection 1',
               _links: {
                 self: {
-                  href: '',
+                  href: ''
                 },
                 item: {
-                  href: '',
-                },
-              },
+                  href: ''
+                }
+              }
             });
           });
           //4 is not cached
@@ -594,12 +594,12 @@ describe('AggressiveCache', () => {
               version: 'single 1',
               _links: {
                 self: {
-                  href: '',
+                  href: ''
                 },
                 item: {
-                  href: '',
-                },
-              },
+                  href: ''
+                }
+              }
             });
           });
           /**
@@ -614,7 +614,7 @@ describe('AggressiveCache', () => {
             },
             error: (err: Error) => {
               expect(err.message).toEqual('not found');
-            },
+            }
           });
         }, 400);
         tick(800);

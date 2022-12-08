@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["**/*.ts"],
+  "include": ["src/**/*.ts"],
   "compilerOptions": {
-    "types": ["animejs", "jest", "node"]
+    "types": ["animejs", "jasmine", "node"]
   }
 }

@@ -4,7 +4,7 @@ import { ApiConfigProvider, ApiService, API_CONFIG_TOKEN } from '@mrlonis/ngx-mr
 import { ArtifactSet, Character, Element, Weapon } from '@mrlonis/types';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class GenshinImpactApiService extends ApiService<{
   artifactSet: ArtifactSet;

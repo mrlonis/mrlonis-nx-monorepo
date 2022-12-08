@@ -9,7 +9,7 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [HttpClientTestingModule, NxAngularTutorialUiModule, RouterTestingModule],
-      declarations: [AppComponent, NxWelcomeComponent],
+      declarations: [AppComponent, NxWelcomeComponent]
     }).compileComponents();
   });
 

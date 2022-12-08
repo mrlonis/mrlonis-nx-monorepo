@@ -10,7 +10,7 @@ describe('LineChartComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [LineChartComponent],
-      imports: [NoopAnimationsModule, SharedModule],
+      imports: [NoopAnimationsModule, SharedModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(LineChartComponent);

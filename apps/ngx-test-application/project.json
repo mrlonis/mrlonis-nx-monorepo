@@ -12,7 +12,7 @@
         "outputPath": "dist/apps/ngx-test-application",
         "index": "apps/ngx-test-application/src/index.html",
         "main": "apps/ngx-test-application/src/main.ts",
-        "polyfills": "apps/ngx-test-application/src/polyfills.ts",
+        "polyfills": ["zone.js"],
         "tsConfig": "apps/ngx-test-application/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/ngx-test-application/src/favicon.ico", "apps/ngx-test-application/src/assets"],
@@ -83,16 +83,22 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@angular-devkit/build-angular:karma",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/ngx-test-application/jest.config.ts",
-        "passWithNoTests": true
+        "tsConfig": "apps/ngx-test-application/tsconfig.spec.json",
+        "karmaConfig": "apps/ngx-test-application/karma.conf.js",
+        "polyfills": ["zone.js", "zone.js/testing"],
+        "styles": [],
+        "scripts": [],
+        "assets": []
       },
       "configurations": {
         "ci": {
-          "ci": true,
-          "codeCoverage": true
+          "watch": false,
+          "browsers": "ChromeHeadless",
+          "codeCoverage": true,
+          "reporters": ["progress", "coverage", "junit"]
         }
       }
     }

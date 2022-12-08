@@ -6,7 +6,7 @@ import {
   getWorkspaceLayout,
   names,
   offsetFromRoot,
-  Tree,
+  Tree
 } from '@nrwl/devkit';
 import { MrlonisNxPluginGeneratorSchema } from './schema';
 
@@ -29,7 +29,7 @@ function normalizeOptions(tree: Tree, options: MrlonisNxPluginGeneratorSchema): 
     projectName,
     projectRoot,
     projectDirectory,
-    parsedTags,
+    parsedTags
   };
 }
 
@@ -38,7 +38,7 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
     ...options,
     ...names(options.name),
     offsetFromRoot: offsetFromRoot(options.projectRoot),
-    template: '',
+    template: ''
   };
   generateFiles(tree, path.join(__dirname, 'files'), options.projectRoot, templateOptions);
 }
@@ -51,10 +51,10 @@ export default async function (tree: Tree, options: MrlonisNxPluginGeneratorSche
     sourceRoot: `${normalizedOptions.projectRoot}/src`,
     targets: {
       build: {
-        executor: '@mrlonis/nx-plugin-mrlonis:build',
-      },
+        executor: '@mrlonis/nx-plugin-mrlonis:build'
+      }
     },
-    tags: normalizedOptions.parsedTags,
+    tags: normalizedOptions.parsedTags
   });
   addFiles(tree, normalizedOptions);
   await formatFiles(tree);

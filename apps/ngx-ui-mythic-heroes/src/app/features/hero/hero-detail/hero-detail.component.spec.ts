@@ -28,18 +28,18 @@ describe('HeroDetailComponent', () => {
         {
           provide: API_CONFIG_TOKEN,
           useValue: {
-            apiUrl: testApiUrl,
-          } as ApiConfigProvider,
+            apiUrl: testApiUrl
+          } as ApiConfigProvider
         },
         {
           provide: ActivatedRoute,
           useValue: {
             snapshot: {
-              paramMap: convertToParamMap({ id: testMythicHero.id }),
-            },
-          },
-        },
-      ],
+              paramMap: convertToParamMap({ id: testMythicHero.id })
+            }
+          }
+        }
+      ]
     }).compileComponents();
   });
 

@@ -4,11 +4,11 @@ export default {
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
-      tsconfig: '<rootDir>/tsconfig.spec.json',
-    },
+      tsconfig: '<rootDir>/tsconfig.spec.json'
+    }
   },
   transform: {
-    '^.+\\.[tj]sx?$': 'ts-jest',
+    '^.+\\.[tj]sx?$': 'ts-jest'
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/libs/types',
@@ -20,8 +20,8 @@ export default {
         suiteName: 'types Jest Tests',
         outputDirectory: 'junit/libs/types',
         outputName: 'junit.xml',
-        uniqueOutputName: 'false',
-      },
-    ],
-  ],
+        uniqueOutputName: 'false'
+      }
+    ]
+  ]
 };

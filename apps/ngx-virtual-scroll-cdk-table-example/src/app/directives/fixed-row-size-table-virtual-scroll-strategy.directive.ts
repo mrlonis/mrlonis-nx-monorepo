@@ -113,7 +113,7 @@ export class FixedRowSizeTableVirtualScrollStrategy implements VirtualScrollStra
 
     const newRange = {
       start: newStart,
-      end: newEnd,
+      end: newEnd
     };
     const newOffset = this.rowHeight * (firstVisibleIndex - bufferedItems);
     this.viewport.setRenderedContentOffset(newOffset);
@@ -143,9 +143,9 @@ export function fixedSizeVirtualScrollStrategyFactory(fixedSizeDir: FixedRowSize
     {
       provide: VIRTUAL_SCROLL_STRATEGY,
       useFactory: fixedSizeVirtualScrollStrategyFactory,
-      deps: [forwardRef(() => FixedRowSizeTableVirtualScrollStrategyDirective)],
-    },
-  ],
+      deps: [forwardRef(() => FixedRowSizeTableVirtualScrollStrategyDirective)]
+    }
+  ]
 })
 export class FixedRowSizeTableVirtualScrollStrategyDirective implements AfterContentInit, OnChanges {
   static ngAcceptInputType_rowHeight: NumberInput;

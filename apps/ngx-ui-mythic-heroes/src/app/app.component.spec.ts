@@ -14,16 +14,16 @@ describe('AppComponent', () => {
         HttpClientTestingModule,
         NavigationComponentComponent,
         NoopAnimationsModule,
-        RouterTestingModule,
+        RouterTestingModule
       ],
       providers: [
         {
           provide: API_CONFIG_TOKEN,
           useValue: {
-            apiUrl: 'http://localhost:9001/api',
-          } as ApiConfigProvider,
-        },
-      ],
+            apiUrl: 'http://localhost:9001/api'
+          } as ApiConfigProvider
+        }
+      ]
     }).compileComponents();
   });
 
