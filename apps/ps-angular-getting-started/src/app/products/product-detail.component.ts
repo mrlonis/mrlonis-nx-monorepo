@@ -5,7 +5,7 @@ import { ProductService } from './product.service';
 
 @Component({
   templateUrl: './product-detail.component.html',
-  styleUrls: ['./product-detail.component.css'],
+  styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
   pageTitle = 'Product Detail';
@@ -26,7 +26,7 @@ export class ProductDetailComponent implements OnInit {
     this.productService.getProduct(id).subscribe({
       next: (product) => (this.product = product),
       // eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-unsafe-assignment
-      error: (err) => (this.errorMessage = err),
+      error: (err) => (this.errorMessage = err)
     });
   }
 

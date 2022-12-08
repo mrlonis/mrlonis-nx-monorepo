@@ -7,7 +7,7 @@ describe('DataService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [{ provide: DataService, useValue: {} }],
-      imports: [],
+      imports: []
     });
     service = TestBed.inject(DataService);
   });

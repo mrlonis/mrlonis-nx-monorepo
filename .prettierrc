@@ -2,7 +2,7 @@
   "singleQuote": true,
   "printWidth": 125,
   "tabWidth": 2,
-  "trailingComma": "es5",
+  "trailingComma": "none",
   "overrides": [
     {
       "files": "*.html",

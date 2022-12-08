@@ -28,7 +28,7 @@ export class GenshinImpactAggressiveCache extends AggressiveCache<{
               }
               return [new HttpParams().set('id', entity.id)];
             },
-            directRequest: (httpParams: HttpParams) => genshinImpactApi.getSingle('character', httpParams),
+            directRequest: (httpParams: HttpParams) => genshinImpactApi.getSingle('character', httpParams)
           },
           collectBy: {
             directRequest: (httpParams: HttpParams) =>
@@ -36,8 +36,8 @@ export class GenshinImpactAggressiveCache extends AggressiveCache<{
                 map((response) => {
                   return response._embedded.data;
                 })
-              ),
-          },
+              )
+          }
         },
         element: {
           service: (params) => {
@@ -51,8 +51,8 @@ export class GenshinImpactAggressiveCache extends AggressiveCache<{
               }
               return [new HttpParams().set('id', entity.id)];
             },
-            directRequest: (httpParams: HttpParams) => genshinImpactApi.getSingle('element', httpParams),
-          },
+            directRequest: (httpParams: HttpParams) => genshinImpactApi.getSingle('element', httpParams)
+          }
         },
         weapon: {
           service: (params) => {
@@ -66,8 +66,8 @@ export class GenshinImpactAggressiveCache extends AggressiveCache<{
               }
               return [new HttpParams().set('id', entity.id)];
             },
-            directRequest: (httpParams: HttpParams) => genshinImpactApi.getSingle('weapon', httpParams),
-          },
+            directRequest: (httpParams: HttpParams) => genshinImpactApi.getSingle('weapon', httpParams)
+          }
         },
         artifactSet: {
           service: (params) => {
@@ -81,9 +81,9 @@ export class GenshinImpactAggressiveCache extends AggressiveCache<{
               }
               return [new HttpParams().set('id', entity.id)];
             },
-            directRequest: (httpParams: HttpParams) => genshinImpactApi.getSingle('artifactSet', httpParams),
-          },
-        },
+            directRequest: (httpParams: HttpParams) => genshinImpactApi.getSingle('artifactSet', httpParams)
+          }
+        }
       },
       invalidator
     );

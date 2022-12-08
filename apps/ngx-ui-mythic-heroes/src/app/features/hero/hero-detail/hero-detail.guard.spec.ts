@@ -7,7 +7,7 @@ describe('HeroDetailGuard', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterTestingModule]
     });
     guard = TestBed.inject(HeroDetailGuard);
   });

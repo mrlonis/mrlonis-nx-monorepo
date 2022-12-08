@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 import { UserSettings } from './user-settings';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class DataService {
   constructor(private http: HttpClient) {}

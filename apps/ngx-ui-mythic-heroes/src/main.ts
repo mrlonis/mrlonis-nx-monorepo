@@ -15,11 +15,11 @@ bootstrapApplication(AppComponent, {
     {
       provide: API_CONFIG_TOKEN,
       useValue: {
-        apiUrl: appConfig.apiUrl,
-      } as ApiConfigProvider,
+        apiUrl: appConfig.apiUrl
+      } as ApiConfigProvider
     },
     importProvidersFrom(AppRoutingModule),
     importProvidersFrom(BrowserAnimationsModule),
-    importProvidersFrom(HttpClientModule),
-  ],
+    importProvidersFrom(HttpClientModule)
+  ]
 }).catch((err) => console.error(err));

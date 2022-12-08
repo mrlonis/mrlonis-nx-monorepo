@@ -9,7 +9,7 @@ import {
   BarChartComponent,
   FunctionTestingComponent,
   LineChartComponent,
-  PieChartComponent,
+  PieChartComponent
 } from './features';
 import { SharedModule } from './shared';
 
@@ -20,15 +20,15 @@ import { SharedModule } from './shared';
     PieChartComponent,
     BarChartComponent,
     AnimeGridComponent,
-    FunctionTestingComponent,
+    FunctionTestingComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
-    SharedModule,
+    SharedModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

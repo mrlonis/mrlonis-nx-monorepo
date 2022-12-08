@@ -10,7 +10,7 @@ describe('AnimeGridComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [AnimeGridComponent],
-      imports: [NoopAnimationsModule, SharedModule],
+      imports: [NoopAnimationsModule, SharedModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(AnimeGridComponent);

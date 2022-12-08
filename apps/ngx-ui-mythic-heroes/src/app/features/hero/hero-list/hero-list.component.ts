@@ -38,9 +38,9 @@ import { BaseResourceDisplayComponent, MythicHeroesAggressiveCache } from '../..
     MatSortModule,
     MatTableModule,
     ReactiveFormsModule,
-    RouterModule,
+    RouterModule
     // TableVirtualScrollModule,
-  ],
+  ]
 })
 export class HeroListComponent implements AfterViewInit, OnInit {
   displayedColumns: string[] = ['hero', 'faction', 'rarity', 'type'];
@@ -92,7 +92,7 @@ export class HeroListComponent implements AfterViewInit, OnInit {
         hero: hero,
         faction: this.cache.getBy('faction', new HttpParams().set('id', hero.factionId)),
         rarity: this.cache.getBy('rarity', new HttpParams().set('id', hero.rarityId)),
-        type: this.cache.getBy('type', new HttpParams().set('id', hero.typeId)),
+        type: this.cache.getBy('type', new HttpParams().set('id', hero.typeId))
       });
     });
     return data;
@@ -132,7 +132,7 @@ export class HeroListComponent implements AfterViewInit, OnInit {
       heroes: this.cache.collectBy('mythicHero', this.getHttpParams()),
       factions: this.cache.getAll('faction'),
       rarities: this.cache.getAll('rarity'),
-      types: this.cache.getAll('type'),
+      types: this.cache.getAll('type')
     }).subscribe((x) => {
       console.log(x);
       // this.dataSource = new TableVirtualScrollDataSource<MythicHeroesTableDataSource>(this.createDataSource(x));

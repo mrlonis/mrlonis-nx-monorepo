@@ -8,7 +8,7 @@ import { UserSettings } from '../data/user-settings';
 @Component({
   selector: 'app-user-settings-form',
   templateUrl: './user-settings-form.component.html',
-  styleUrls: ['./user-settings-form.component.scss'],
+  styleUrls: ['./user-settings-form.component.scss']
 })
 export class UserSettingsFormComponent implements OnInit {
   originalUserSettings: UserSettings = {
@@ -16,7 +16,7 @@ export class UserSettingsFormComponent implements OnInit {
     emailOffers: false,
     interfaceStyle: '',
     subscriptionType: '',
-    notes: '',
+    notes: ''
   };
 
   startDate: NgbDateStruct = { year: 1789, month: 7, day: 14 };
@@ -65,7 +65,7 @@ export class UserSettingsFormComponent implements OnInit {
           this.postError = false;
           this.postErrorMessage = '';
         },
-        error: (error) => this.onHttpError(error),
+        error: (error) => this.onHttpError(error)
       });
     } else {
       this.postError = true;
