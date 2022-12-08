@@ -6,18 +6,18 @@ export default {
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
-      stringifyContentPathRegex: '\\.(html|svg)$',
-    },
+      stringifyContentPathRegex: '\\.(html|svg)$'
+    }
   },
   coverageDirectory: '../../coverage/libs/nx-angular-tutorial-ui',
   transform: {
-    '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
+    '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular'
   },
   transformIgnorePatterns: ['node_modules/(?!.*\\.mjs$)'],
   snapshotSerializers: [
     'jest-preset-angular/build/serializers/no-ng-attributes',
     'jest-preset-angular/build/serializers/ng-snapshot',
-    'jest-preset-angular/build/serializers/html-comment',
+    'jest-preset-angular/build/serializers/html-comment'
   ],
   reporters: [
     'default',
@@ -27,8 +27,8 @@ export default {
         suiteName: 'nx-angular-tutorial-ui Jest Tests',
         outputDirectory: 'junit/libs/nx-angular-tutorial-ui',
         outputName: 'junit.xml',
-        uniqueOutputName: 'false',
-      },
-    ],
-  ],
+        uniqueOutputName: 'false'
+      }
+    ]
+  ]
 };

@@ -10,7 +10,7 @@ describe('BarChartComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [BarChartComponent],
-      imports: [NoopAnimationsModule, SharedModule],
+      imports: [NoopAnimationsModule, SharedModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(BarChartComponent);

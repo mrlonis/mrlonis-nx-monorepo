@@ -14,7 +14,7 @@ describe('MythicHeroesApiService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [{ provide: API_CONFIG_TOKEN, useValue: { apiUrl: testApiUrl } as ApiConfigProvider }],
+      providers: [{ provide: API_CONFIG_TOKEN, useValue: { apiUrl: testApiUrl } as ApiConfigProvider }]
     });
 
     apiService = TestBed.inject(MythicHeroesApiService);

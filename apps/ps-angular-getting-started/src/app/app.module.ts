@@ -11,6 +11,6 @@ import { ProductModule } from './products/product.module';
   declarations: [AppComponent, WelcomeComponent],
   imports: [AppRoutingModule, BrowserAnimationsModule, BrowserModule, HttpClientModule, ProductModule],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

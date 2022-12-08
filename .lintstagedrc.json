@@ -1,7 +1,5 @@
 {
   "*.{css,html,js,jsx,json,md,ts,tsx,scss}": ["prettier --write"],
   "apps/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint --fix --"],
-  "libs/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint --fix --"],
-  "pipeline/**/*.{js,json}": ["prettier --write"],
-  "tools/**/*.{json}": ["prettier --write"]
+  "libs/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint --fix --"]
 }

@@ -11,7 +11,7 @@ export class AppService {
 
   addTodo() {
     this.todos.push({
-      title: `New todo ${Math.floor(Math.random() * 1000)}`,
+      title: `New todo ${Math.floor(Math.random() * 1000)}`
     });
   }
 }

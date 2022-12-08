@@ -9,7 +9,7 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [NoopAnimationsModule, RouterTestingModule, SharedModule],
-      declarations: [AppComponent, LineChartComponent, PieChartComponent, BarChartComponent],
+      declarations: [AppComponent, LineChartComponent, PieChartComponent, BarChartComponent]
     }).compileComponents();
   });
 

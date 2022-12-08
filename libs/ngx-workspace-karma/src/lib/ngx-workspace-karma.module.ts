@@ -4,6 +4,6 @@ import { ExampleComponentComponent } from './example-component/example-component
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [ExampleComponentComponent],
+  declarations: [ExampleComponentComponent]
 })
 export class NgxWorkspaceKarmaModule {}

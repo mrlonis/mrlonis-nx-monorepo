@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'mrlonis-my-table',
   templateUrl: './my-table.component.html',
-  styleUrls: ['./my-table.component.scss'],
+  styleUrls: ['./my-table.component.scss']
 })
 export class MyTableComponent {
   columnsToDisplay = ['name', 'weight', 'symbol', 'position'];
@@ -37,7 +37,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 1.0079,
     symbol: 'H',
     description: `Hydrogen is a chemical element with symbol H and atomic number 1. With a standard
-        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.`,
+        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.`
   },
   {
     position: 2,
@@ -46,7 +46,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     symbol: 'He',
     description: `Helium is a chemical element with symbol He and atomic number 2. It is a
         colorless, odorless, tasteless, non-toxic, inert, monatomic gas, the first in the noble gas
-        group in the periodic table. Its boiling point is the lowest among all the elements.`,
+        group in the periodic table. Its boiling point is the lowest among all the elements.`
   },
   {
     position: 3,
@@ -55,7 +55,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     symbol: 'Li',
     description: `Lithium is a chemical element with symbol Li and atomic number 3. It is a soft,
         silvery-white alkali metal. Under standard conditions, it is the lightest metal and the
-        lightest solid element.`,
+        lightest solid element.`
   },
   {
     position: 4,
@@ -64,7 +64,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     symbol: 'Be',
     description: `Beryllium is a chemical element with symbol Be and atomic number 4. It is a
         relatively rare element in the universe, usually occurring as a product of the spallation of
-        larger atomic nuclei that have collided with cosmic rays.`,
+        larger atomic nuclei that have collided with cosmic rays.`
   },
   {
     position: 5,
@@ -73,7 +73,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     symbol: 'B',
     description: `Boron is a chemical element with symbol B and atomic number 5. Produced entirely
         by cosmic ray spallation and supernovae and not by stellar nucleosynthesis, it is a
-        low-abundance element in the Solar system and in the Earth's crust.`,
+        low-abundance element in the Solar system and in the Earth's crust.`
   },
   {
     position: 6,
@@ -82,7 +82,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     symbol: 'C',
     description: `Carbon is a chemical element with symbol C and atomic number 6. It is nonmetallic
         and tetravalent—making four electrons available to form covalent chemical bonds. It belongs
-        to group 14 of the periodic table.`,
+        to group 14 of the periodic table.`
   },
   {
     position: 7,
@@ -90,7 +90,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 14.0067,
     symbol: 'N',
     description: `Nitrogen is a chemical element with symbol N and atomic number 7. It was first
-        discovered and isolated by Scottish physician Daniel Rutherford in 1772.`,
+        discovered and isolated by Scottish physician Daniel Rutherford in 1772.`
   },
   {
     position: 8,
@@ -99,7 +99,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     symbol: 'O',
     description: `Oxygen is a chemical element with symbol O and atomic number 8. It is a member of
          the chalcogen group on the periodic table, a highly reactive nonmetal, and an oxidizing
-         agent that readily forms oxides with most elements as well as with other compounds.`,
+         agent that readily forms oxides with most elements as well as with other compounds.`
   },
   {
     position: 9,
@@ -108,7 +108,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     symbol: 'F',
     description: `Fluorine is a chemical element with symbol F and atomic number 9. It is the
         lightest halogen and exists as a highly toxic pale yellow diatomic gas at standard
-        conditions.`,
+        conditions.`
   },
   {
     position: 10,
@@ -117,6 +117,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
     symbol: 'Ne',
     description: `Neon is a chemical element with symbol Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
-        two-thirds the density of air.`,
-  },
+        two-thirds the density of air.`
+  }
 ];

@@ -8,14 +8,14 @@ const routes: Routes = [
   {
     path: 'heroes/:id',
     canActivate: [HeroDetailGuard],
-    component: HeroDetailComponent,
+    component: HeroDetailComponent
   },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-  { path: '**', redirectTo: 'welcome', pathMatch: 'full' },
+  { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class AppRoutingModule {}

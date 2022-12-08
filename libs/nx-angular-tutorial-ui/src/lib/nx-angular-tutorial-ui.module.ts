@@ -5,6 +5,6 @@ import { TodosComponent } from './todos/todos.component';
 @NgModule({
   imports: [CommonModule],
   declarations: [TodosComponent],
-  exports: [TodosComponent],
+  exports: [TodosComponent]
 })
 export class NxAngularTutorialUiModule {}

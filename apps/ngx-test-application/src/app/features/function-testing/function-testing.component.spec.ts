@@ -10,7 +10,7 @@ describe('FunctionTestingComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [FunctionTestingComponent],
-      imports: [NoopAnimationsModule, SharedModule],
+      imports: [NoopAnimationsModule, SharedModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(FunctionTestingComponent);

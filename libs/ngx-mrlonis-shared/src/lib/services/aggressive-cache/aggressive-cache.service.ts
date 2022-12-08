@@ -59,7 +59,7 @@ export abstract class AggressiveCache<Types extends { [key: string]: BaseResourc
         lastEntry: undefined,
         getBy: new Map<string, Observable<Types[ATTR]>>(),
         countBy: new Map<string, { complete: boolean; map: Observable<number> }>(),
-        collectBy: new Map<string, { complete: boolean; map: Observable<Types[ATTR][]> }>(),
+        collectBy: new Map<string, { complete: boolean; map: Observable<Types[ATTR][]> }>()
       };
       this._cache[key] = defaultCacheOccupant;
       return defaultCacheOccupant;
@@ -173,7 +173,7 @@ export abstract class AggressiveCache<Types extends { [key: string]: BaseResourc
           rowCollectBy.forEach((collection, key2) => {
             cacheOccupant.collectBy.set(key2, {
               complete: true,
-              map: of(collection),
+              map: of(collection)
             });
           });
         }
@@ -303,14 +303,14 @@ export abstract class AggressiveCache<Types extends { [key: string]: BaseResourc
     if (cacheOccupant.collectBy.get(httpParamsString) == undefined) {
       cacheOccupant.collectBy.set(httpParamsString, {
         complete: false,
-        map: new Observable<Types[ATTR][]>(),
+        map: new Observable<Types[ATTR][]>()
       });
     }
 
     const returnValue = cacheSlot.collectBy.directRequest(httpParams).pipe(shareReplay(1));
     cacheOccupant.collectBy.set(httpParamsString, {
       complete: true,
-      map: returnValue,
+      map: returnValue
     });
     return returnValue;
   }
@@ -398,14 +398,14 @@ export abstract class AggressiveCache<Types extends { [key: string]: BaseResourc
       );
       cacheOccupant.countBy.set(httpParamsString, {
         complete: true,
-        map: returnValue,
+        map: returnValue
       });
       return returnValue;
     } else {
       const returnValue = cacheSlot.countBy.directRequest(httpParams).pipe(shareReplay(1));
       cacheOccupant.countBy.set(httpParamsString, {
         complete: true,
-        map: returnValue,
+        map: returnValue
       });
       return returnValue;
     }

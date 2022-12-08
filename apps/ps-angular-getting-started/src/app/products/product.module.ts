@@ -14,10 +14,10 @@ import { ProductListComponent } from './product-list.component';
       {
         path: 'products/:id',
         canActivate: [ProductDetailGuard],
-        component: ProductDetailComponent,
-      },
+        component: ProductDetailComponent
+      }
     ]),
-    SharedModule,
-  ],
+    SharedModule
+  ]
 })
 export class ProductModule {}

@@ -10,11 +10,11 @@ module.exports = function (config) {
     ...baseConfig,
     coverageReporter: {
       ...baseConfig.coverageReporter,
-      dir: join(__dirname, '../../coverage/libs/ngx-workspace-karma'),
+      dir: join(__dirname, '../../coverage/libs/ngx-workspace-karma')
     },
     junitReporter: {
       ...baseConfig.junitReporter,
-      outputDir: join(__dirname, '../../junit/libs/ngx-workspace-karma'),
-    },
+      outputDir: join(__dirname, '../../junit/libs/ngx-workspace-karma')
+    }
   });
 };

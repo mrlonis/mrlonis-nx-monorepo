@@ -9,6 +9,6 @@ import { NxWelcomeComponent } from './nx-welcome.component';
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [BrowserModule, RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' })],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

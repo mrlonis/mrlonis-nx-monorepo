@@ -5,7 +5,7 @@ import { ProductService } from './product.service';
 
 @Component({
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css'],
+  styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit, OnDestroy {
   pageTitle = 'Product List';
@@ -45,7 +45,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
         this.filteredProducts = this.products;
       },
       // eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-unsafe-assignment
-      error: (err) => (this.errorMessage = err),
+      error: (err) => (this.errorMessage = err)
     });
   }
 
