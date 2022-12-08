@@ -12,7 +12,7 @@
         "outputPath": "dist/apps/ngx-test-application",
         "index": "apps/ngx-test-application/src/index.html",
         "main": "apps/ngx-test-application/src/main.ts",
-        "polyfills": "apps/ngx-test-application/src/polyfills.ts",
+        "polyfills": ["zone.js"],
         "tsConfig": "apps/ngx-test-application/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/ngx-test-application/src/favicon.ico", "apps/ngx-test-application/src/assets"],

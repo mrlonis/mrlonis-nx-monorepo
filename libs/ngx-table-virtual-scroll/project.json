@@ -8,9 +8,9 @@
     "test": {
       "executor": "@angular-devkit/build-angular:karma",
       "options": {
-        "main": "libs/ngx-table-virtual-scroll/src/test.ts",
         "tsConfig": "libs/ngx-table-virtual-scroll/tsconfig.spec.json",
-        "karmaConfig": "libs/ngx-table-virtual-scroll/karma.conf.js"
+        "karmaConfig": "libs/ngx-table-virtual-scroll/karma.conf.js",
+        "polyfills": ["zone.js", "zone.js/testing"]
       },
       "configurations": {
         "ci": {
