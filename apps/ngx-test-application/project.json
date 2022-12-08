@@ -86,9 +86,12 @@
       "executor": "@angular-devkit/build-angular:karma",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
       "options": {
-        "main": "apps/ngx-test-application/src/test.ts",
         "tsConfig": "apps/ngx-test-application/tsconfig.spec.json",
-        "karmaConfig": "apps/ngx-test-application/karma.conf.js"
+        "karmaConfig": "apps/ngx-test-application/karma.conf.js",
+        "polyfills": ["zone.js", "zone.js/testing"],
+        "styles": [],
+        "scripts": [],
+        "assets": []
       },
       "configurations": {
         "ci": {
