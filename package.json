@@ -18,7 +18,7 @@
     "format:write": "nx format:write",
     "prettier": "prettier --config .prettierrc --write \"**/*.{css,html,js,jsx,json,md,scss,ts,tsx}\"",
     "prettier:test": "prettier --config .prettierrc --list-different \"**/*.{css,html,js,jsx,json,md,scss,ts,tsx}\"",
-    "prepare": "husky install",
+    "prepare": "chmod +x ./node_modules/husky/lib/bin.js && husky install",
     "build:all": "nx run-many --target=build",
     "test:all": "nx run-many --target=test",
     "merge-code-coverage": "node ./pipeline/merge-code-coverage.js",
