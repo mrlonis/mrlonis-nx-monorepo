@@ -19,7 +19,8 @@
         "assets": ["apps/nx-react-tutorial-admin/src/favicon.ico", "apps/nx-react-tutorial-admin/src/assets"],
         "styles": ["apps/nx-react-tutorial-admin/src/styles.scss"],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "webpackConfig": "apps/nx-react-tutorial-admin/webpack.config.js",
+        "isolatedConfig": true
       },
       "configurations": {
         "development": {

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { RouterModule } from '@angular/router';
-import { CharacterDetailGuard } from './character-detail';
+import { characterDetailCanActivate } from './character-detail';
 import { CharacterDetailComponent } from './character-detail/character-detail.component';
 import { CharactersComponent } from './characters.component';
 
@@ -17,7 +17,7 @@ import { CharactersComponent } from './characters.component';
       { path: '', component: CharactersComponent },
       {
         path: 'characters/:name',
-        canActivate: [CharacterDetailGuard],
+        canActivate: [characterDetailCanActivate],
         component: CharacterDetailComponent
       }
     ])

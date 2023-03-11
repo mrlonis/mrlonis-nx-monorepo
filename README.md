@@ -6,20 +6,37 @@ This project was generated using [Nx](https://nx.dev).
 
 🔎 **Smart, Fast and Extensible Build System**
 
-## Index
+## Table of Contents
 
-- [Quick Start & Documentation](#quick-start--documentation)
-- [Adding capabilities to your workspace](#adding-capabilities-to-your-workspace)
-- [Generate an application](#generate-an-application)
-- [Generate a library](#generate-a-library)
-- [Development server](#development-server)
-- [Code scaffolding](#code-scaffolding)
-- [Build](#build)
-- [Running unit tests](#running-unit-tests)
-- [Running end-to-end tests](#running-end-to-end-tests)
-- [Understand your workspace](#understand-your-workspace)
-- [☁ Nx Cloud](#-nx-cloud)
-- [Project Ports](#project-ports)
+- [Mrlonis - Nx Angular - Monorepo](#mrlonis---nx-angular---monorepo)
+  - [Table of Contents](#table-of-contents)
+  - [Quick Start \& Documentation](#quick-start--documentation)
+  - [Adding capabilities to your workspace](#adding-capabilities-to-your-workspace)
+  - [Generate an application](#generate-an-application)
+    - [Generating a new Angular Application](#generating-a-new-angular-application)
+      - [Generating a new Angular Application with Karma test runner](#generating-a-new-angular-application-with-karma-test-runner)
+      - [Adding @angular/material to an Angular application](#adding-angularmaterial-to-an-angular-application)
+  - [Generate a library](#generate-a-library)
+    - [Generating a new TypeScript Library](#generating-a-new-typescript-library)
+      - [Generating a new buildable TypeScript Library](#generating-a-new-buildable-typescript-library)
+    - [Generating a new Angular Library](#generating-a-new-angular-library)
+      - [Generating a new Angular Library with Karma test runner](#generating-a-new-angular-library-with-karma-test-runner)
+      - [Generating a new buildable Angular Library](#generating-a-new-buildable-angular-library)
+      - [Generating a new publishable Angular Library](#generating-a-new-publishable-angular-library)
+  - [Development server](#development-server)
+  - [Code scaffolding](#code-scaffolding)
+    - [Generating a new Angular Component](#generating-a-new-angular-component)
+  - [Build](#build)
+  - [Running unit tests](#running-unit-tests)
+  - [Running end-to-end tests](#running-end-to-end-tests)
+  - [Understand your workspace](#understand-your-workspace)
+  - [Further help](#further-help)
+  - [☁ Nx Cloud](#-nx-cloud)
+    - [Distributed Computation Caching \& Distributed Task Execution](#distributed-computation-caching--distributed-task-execution)
+  - [Project Ports](#project-ports)
+  - [Running the gauntlet](#running-the-gauntlet)
+    - [nx-angular-tutorial-api](#nx-angular-tutorial-api)
+    - [nx-express-tutorial-api](#nx-express-tutorial-api)
 
 ## Quick Start & Documentation
 
@@ -189,3 +206,17 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 - 4215 - nx-express-tutorial-angular-ui
 
 ## Running the gauntlet
+
+As part of the gauntlet, we run the Cypress e2e tests. This requires some backend APIs running. In 2 other shells, run the following commands:
+
+### nx-angular-tutorial-api
+
+```shell
+npm run start nx-angular-tutorial-api
+```
+
+### nx-express-tutorial-api
+
+```shell
+npm run start nx-express-tutorial-api
+```

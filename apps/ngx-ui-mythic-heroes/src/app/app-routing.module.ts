@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeroDetailComponent, HeroDetailGuard, HeroListComponent, WelcomeComponent } from './features';
+import { heroDetailCanActivate, HeroDetailComponent, HeroListComponent, WelcomeComponent } from './features';
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: 'heroes', component: HeroListComponent },
   {
     path: 'heroes/:id',
-    canActivate: [HeroDetailGuard],
+    canActivate: [heroDetailCanActivate],
     component: HeroDetailComponent
   },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },

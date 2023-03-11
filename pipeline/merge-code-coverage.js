@@ -21,7 +21,7 @@ function findCoverageFiles() {
 }
 
 function generateCoverageMergingCommand(filePaths) {
-  let command = 'cobertura-merge -o coverage/output.xml ';
+  let command = 'npx cobertura-merge -o coverage/output.xml ';
   filePaths.forEach((filePath) => {
     const projectName = extractProjectNameFromFilePath(filePath);
     command += `${projectName}=${filePath} `;
