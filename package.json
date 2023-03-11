@@ -1,7 +1,7 @@
 {
   "name": "mrlonis",
   "version": "0.0.0",
-  "license": "MIT",
+  "license": "Unlicense",
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js",
