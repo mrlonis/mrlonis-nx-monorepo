@@ -28,6 +28,7 @@ This project was generated using [Nx](https://nx.dev).
     - [Generating a new Angular Component](#generating-a-new-angular-component)
   - [Build](#build)
   - [Running unit tests](#running-unit-tests)
+    - [WSL - Required Packages for Testing](#wsl---required-packages-for-testing)
   - [Running end-to-end tests](#running-end-to-end-tests)
   - [Understand your workspace](#understand-your-workspace)
   - [Further help](#further-help)
@@ -158,6 +159,12 @@ Run `ng build my-app` to build the project. The build artifacts will be stored i
 Run `ng test my-app` to execute the unit tests via [Jest](https://jestjs.io).
 
 Run `nx affected:test` to execute the unit tests affected by a change.
+
+### WSL - Required Packages for Testing
+
+```shell
+sudo apt-get install libgbm-dev
+```
 
 ## Running end-to-end tests
 
