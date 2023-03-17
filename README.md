@@ -163,7 +163,11 @@ Run `nx affected:test` to execute the unit tests affected by a change.
 ### WSL - Required Packages for Testing
 
 ```shell
+sudo apt-get update
 sudo apt-get install libgbm-dev
+sudo apt-get install -y curl unzip xvfb libxi6 libgconf-2-4
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
 
 ## Running end-to-end tests
