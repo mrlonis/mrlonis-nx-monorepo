@@ -56,23 +56,23 @@ These capabilities include generating applications, libraries, etc as well as th
 Below are our core plugins:
 
 - [Angular](https://angular.io)
-  - `ng add @nrwl/angular`
+  - `ng add @nx/angular`
 - [React](https://reactjs.org)
-  - `ng add @nrwl/react`
+  - `ng add @nx/react`
 - Web (no framework frontends)
-  - `ng add @nrwl/web`
+  - `ng add @nx/web`
 - [Nest](https://nestjs.com)
-  - `ng add @nrwl/nest`
+  - `ng add @nx/nest`
 - [Express](https://expressjs.com)
-  - `ng add @nrwl/express`
+  - `ng add @nx/express`
 - [Node](https://nodejs.org)
-  - `ng add @nrwl/node`
+  - `ng add @nx/node`
 
 There are also many [community plugins](https://nx.dev/community) you could add.
 
 ## Generate an application
 
-Run `ng g @nrwl/angular:app my-app` to generate an application.
+Run `ng g @nx/angular:app my-app` to generate an application.
 
 > You can use any of the plugins above to generate applications as well.
 
@@ -80,13 +80,13 @@ When using Nx, you can create multiple applications and libraries in the same wo
 
 ### Generating a new Angular Application
 
-Run the command `nx g @nrwl/angular:application my-app-name`
+Run the command `nx g @nx/angular:application my-app-name`
 
 [Reference](https://nx.dev/packages/angular/generators/application)
 
 #### Generating a new Angular Application with Karma test runner
 
-Run the command `nx g @nrwl/angular:application my-app-name --unitTestRunner=karma`
+Run the command `nx g @nx/angular:application my-app-name --unitTestRunner=karma`
 
 #### Adding @angular/material to an Angular application
 
@@ -96,7 +96,7 @@ Run the command: `nx g @angular/material:ng-add --project=my-app-name`
 
 ## Generate a library
 
-Run `ng g @nrwl/angular:lib my-lib` to generate a library.
+Run `ng g @nx/angular:lib my-lib` to generate a library.
 
 > You can also use any of the plugins above to generate libraries as well.
 
@@ -104,33 +104,33 @@ Libraries are shareable across libraries and applications. They can be imported 
 
 ### Generating a new TypeScript Library
 
-Run the command `nx g @nrwl/workspace:library my-lib-name`
+Run the command `nx g @nx/workspace:library my-lib-name`
 
 [Reference](https://nx.dev/packages/workspace/generators/library)
 
 #### Generating a new buildable TypeScript Library
 
-Run the command `nx g @nrwl/workspace:library my-lib-name --buildable`
+Run the command `nx g @nx/workspace:library my-lib-name --buildable`
 
 ### Generating a new Angular Library
 
-Run the command `nx g @nrwl/angular:library my-lib-name`
+Run the command `nx g @nx/angular:library my-lib-name`
 
 [Reference](https://nx.dev/packages/angular/generators/library)
 
 #### Generating a new Angular Library with Karma test runner
 
-Run the command `nx g @nrwl/angular:library my-lib-name --unitTestRunner=karma`
+Run the command `nx g @nx/angular:library my-lib-name --unitTestRunner=karma`
 
 #### Generating a new buildable Angular Library
 
-Run the command `nx g @nrwl/angular:library my-lib-name --buildable`
+Run the command `nx g @nx/angular:library my-lib-name --buildable`
 
 #### Generating a new publishable Angular Library
 
-Run the command `nx g @nrwl/angular:library my-lib-name --publishable --importPath='some-path-to-import or like this @some/path-to-import'`
+Run the command `nx g @nx/angular:library my-lib-name --publishable --importPath='some-path-to-import or like this @some/path-to-import'`
 
-**Note**: A Publishable library is also a buildable library, it is just built using partial compilation. Generating a "buildable / publishable" library likw `nx g @nrwl/angular:library my-lib-name --buildable --publishable --importPath='some-path-to-import or like this @some/path-to-import'` is ultimately redundant. It will not cause an error but there is no reason to pass the buildable flag.
+**Note**: A Publishable library is also a buildable library, it is just built using partial compilation. Generating a "buildable / publishable" library likw `nx g @nx/angular:library my-lib-name --buildable --publishable --importPath='some-path-to-import or like this @some/path-to-import'` is ultimately redundant. It will not cause an error but there is no reason to pass the buildable flag.
 
 ## Development server
 
@@ -142,11 +142,11 @@ Run `ng g component my-component --project=my-app` to generate a new component.
 
 ### Generating a new Angular Component
 
-Run the command `nx g @nrwl/angular:component my-component-name --project=my-app-name`
+Run the command `nx g @nx/angular:component my-component-name --project=my-app-name`
 
-Example: `nx g @nrwl/angular:component --name=my-component-name --path='apps/ngx-test-application/src/app/features' --project=my-app-name --module=my-module --style=scss`
+Example: `nx g @nx/angular:component --name=my-component-name --path='apps/ngx-test-application/src/app/features' --project=my-app-name --module=my-module --style=scss`
 
-`nx g @nrwl/angular:component --name=anime-grid --path='apps/ngx-test-application/src/app/features' --project=ngx-test-application --module=app --style=scss`
+`nx g @nx/angular:component --name=anime-grid --path='apps/ngx-test-application/src/app/features' --project=ngx-test-application --module=app --style=scss`
 
 [Reference](https://nx.dev/packages/angular/generators/component)
 
@@ -203,9 +203,6 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 - 4201 - ngx-ui-genshin-impact
 - 4202 - ngx-ui-mythic-heroes
 - 4203 - ngx-ui-personal-website
-- 4204 - ps-angular-forms
-- 4205 - ps-angular-fundamentals
-- 4206 - ps-angular-getting-started
 - 4207 - ngx-table-virtual-scroll-sticky-headers
 - 4208 - ngx-virtual-scroll-cdk-table-example
 - 4209 - ngx-table-virtual-scroll-example

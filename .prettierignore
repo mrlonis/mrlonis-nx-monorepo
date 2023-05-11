@@ -11,6 +11,3 @@
 /documentation.json
 /package-lock.json
 /yarn.lock
-
-# Really not sure why but prettier wants to add a newline to top of file which causes issues
-/apps/ps-angular-getting-started/src/app/home/welcome.component.html

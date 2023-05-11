@@ -7,7 +7,7 @@ import {
   names,
   offsetFromRoot,
   Tree
-} from '@nrwl/devkit';
+} from '@nx/devkit';
 import { MrlonisGeneratorGeneratorSchema } from './schema';
 
 interface NormalizedSchema extends MrlonisGeneratorGeneratorSchema {
