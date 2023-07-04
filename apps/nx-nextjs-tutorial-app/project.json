@@ -9,7 +9,6 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/nx-nextjs-tutorial-app",
         "outputPath": "dist/apps/nx-nextjs-tutorial-app"
       },
       "configurations": {

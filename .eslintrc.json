@@ -68,7 +68,12 @@
         "plugin:prettier/recommended"
       ],
       "rules": {
-        "@typescript-eslint/unbound-method": ["error", { "ignoreStatic": true }],
+        "@typescript-eslint/unbound-method": [
+          "error",
+          {
+            "ignoreStatic": true
+          }
+        ],
         "@typescript-eslint/no-unused-vars": [
           "error",
           {
@@ -78,13 +83,21 @@
         ],
         "import/no-deprecated": "error",
         "import/no-unresolved": "error",
-        "import/no-useless-path-segments": ["error", { "noUselessIndex": true }],
+        "import/no-useless-path-segments": [
+          "error",
+          {
+            "noUselessIndex": true
+          }
+        ],
         "import/order": [
           "error",
           {
             "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
             "newlines-between": "never",
-            "alphabetize": { "order": "asc", "caseInsensitive": false }
+            "alphabetize": {
+              "order": "asc",
+              "caseInsensitive": false
+            }
           }
         ],
         "prettier/prettier": [
@@ -102,10 +115,21 @@
       "extends": ["plugin:@nx/javascript", "plugin:import/recommended", "plugin:prettier/recommended"],
       "rules": {
         "import/no-unresolved": "error",
-        "import/no-useless-path-segments": ["error", { "noUselessIndex": true }],
+        "import/no-useless-path-segments": [
+          "error",
+          {
+            "noUselessIndex": true
+          }
+        ],
         "import/order": [
           "error",
-          { "newlines-between": "never", "alphabetize": { "order": "asc", "caseInsensitive": false } }
+          {
+            "newlines-between": "never",
+            "alphabetize": {
+              "order": "asc",
+              "caseInsensitive": false
+            }
+          }
         ],
         "prettier/prettier": [
           "error",

@@ -34,7 +34,9 @@
         ],
         "createDefaultProgram": true
       },
-      "rules": { "import/no-named-as-default": "off" }
+      "rules": {
+        "import/no-named-as-default": "off"
+      }
     },
     {
       "files": ["*.js", "*.jsx"],

@@ -55,7 +55,14 @@
             "style": "kebab-case"
           }
         ],
-        "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 125, "tabWidth": 2 }]
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true,
+            "printWidth": 125,
+            "tabWidth": 2
+          }
+        ]
       }
     },
     {
@@ -68,7 +75,14 @@
       "excludedFiles": ["*inline-template-*.component.html"],
       "extends": ["plugin:prettier/recommended"],
       "rules": {
-        "prettier/prettier": ["error", { "parser": "angular", "printWidth": 125, "tabWidth": 2 }]
+        "prettier/prettier": [
+          "error",
+          {
+            "parser": "angular",
+            "printWidth": 125,
+            "tabWidth": 2
+          }
+        ]
       }
     }
   ]
