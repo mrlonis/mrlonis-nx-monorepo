@@ -25,8 +25,11 @@ describe('nx-plugin-mrlonis e2e', () => {
   it('should create nx-plugin-mrlonis', async () => {
     const project = uniq('nx-plugin-mrlonis');
     await runNxCommandAsync(`generate @mrlonis/nx-plugin-mrlonis:nx-plugin-mrlonis ${project}`);
+    // Need to wait, otherwise the build command fails.
+    await new Promise((r) => setTimeout(r, 2000));
     const result = await runNxCommandAsync(`build ${project}`);
-    console.log(result.stdout);
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    expect(result).toBeTruthy();
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     expect(result.stdout).toContain('Executor ran');
   }, 500000);

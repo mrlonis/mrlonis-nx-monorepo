@@ -8,7 +8,9 @@
       "executor": "@nx/jest:jest",
       "options": {
         "jestConfig": "apps/nx-plugin-mrlonis-e2e/jest.config.ts",
-        "runInBand": true
+        "runInBand": true,
+        "silent": false,
+        "verbose": true
       },
       "dependsOn": ["nx-plugin-mrlonis:build"]
     },
