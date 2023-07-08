@@ -26,6 +26,7 @@ describe('nx-plugin-mrlonis e2e', () => {
     const project = uniq('nx-plugin-mrlonis');
     await runNxCommandAsync(`generate @mrlonis/nx-plugin-mrlonis:nx-plugin-mrlonis ${project}`);
     const result = await runNxCommandAsync(`build ${project}`);
+    console.log(result.stdout);
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     expect(result.stdout).toContain('Executor ran');
   }, 500000);

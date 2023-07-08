@@ -33,7 +33,8 @@
       "executor": "@nx/js:node",
       "options": {
         "buildTarget": "nx-express-tutorial-api:build",
-        "port": 3334
+        "port": 3335,
+        "inspect": true
       },
       "configurations": {
         "production": {

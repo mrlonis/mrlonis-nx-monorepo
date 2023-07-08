@@ -25,7 +25,7 @@
     "e2e:all": "nx run-many -t e2e",
     "gauntlet:format": "npm run prettier && npm run format:write && npm run format:check",
     "gauntlet": "npm run gauntlet:format && npm run lint:all -- --fix && npm run lint:all && npm run test:all -- --configuration ci && npm run merge-code-coverage && npm run build:all",
-    "gauntlet:e2e": "npm run gauntlet:format && npm run lint:all -- --fix && npm run lint:all && npm run test:all -- --configuration ci && npm run merge-code-coverage && npm run build:all && npm run e2e:all"
+    "gauntlet:e2e": "npm run gauntlet && npm run e2e:all"
   },
   "private": true,
   "dependencies": {

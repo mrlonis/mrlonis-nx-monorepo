@@ -212,6 +212,7 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 - 4213 - nx-react-tutorial-admin
 - 4214 - nx-react-tutorial-store
 - 3334 - nx-express-tutorial-api
+  - 3335 - Debug Port
 - 4215 - nx-express-tutorial-angular-ui
 
 ## Running the gauntlet
