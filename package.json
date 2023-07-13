@@ -150,7 +150,7 @@
     "ng-lint-staged": "^12.0.4",
     "ng-packagr": "^16.1.0",
     "nx": "16.5.1",
-    "nx-cloud": "16.0.5",
+    "nx-cloud": "16.1.0",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
     "postcss-preset-env": "^9.0.0",
