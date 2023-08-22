@@ -11,7 +11,7 @@
     "format:check": "nx format:check",
     "format:write": "nx format:write",
     "gauntlet": "npm run gauntlet:format && npm run lint:all -- --fix && npm run lint:all && npm run test:all -- --configuration ci && npm run build:all",
-    "gauntlet:e2e": "npm run gauntlet && npm run e2e:all",
+    "gauntlet:e2e": "npm run gauntlet && npm run e2e:setup",
     "gauntlet:format": "npm run prettier && npm run format:write && npm run format:check",
     "graph": "nx graph",
     "postinstall": "node ./decorate-angular-cli.js",
@@ -25,7 +25,11 @@
     "reset": "nx reset",
     "start": "nx serve",
     "test": "nx test",
-    "test:all": "nx run-many -t test"
+    "test:all": "nx run-many -t test",
+    "start:nx-angular-tutorial-api": "npm run start nx-angular-tutorial-api",
+    "start:nx-express-tutorial-api": "npm run start nx-express-tutorial-api",
+    "e2e:setup": "start-server-and-test start:nx-angular-tutorial-api http://localhost:3333/api/todos e2e:setup:2",
+    "e2e:setup:2": "start-server-and-test start:nx-express-tutorial-api http://localhost:3334/api e2e:all"
   },
   "dependencies": {
     "@angular/animations": "^16.2.1",
@@ -158,6 +162,7 @@
     "puppeteer": "^21.1.0",
     "react-refresh": "^0.14.0",
     "sass": "^1.59.3",
+    "start-server-and-test": "^2.0.0",
     "style-loader": "^3.3.2",
     "stylus": "^0.59.0",
     "stylus-loader": "^7.1.0",
