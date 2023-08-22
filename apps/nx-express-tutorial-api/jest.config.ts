@@ -13,14 +13,14 @@ export default {
     ]
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/apps/nx-express-tutorial-api',
+  coverageDirectory: '../../test-reports/apps/nx-express-tutorial-api/coverage',
   reporters: [
     'default',
     [
       'jest-junit',
       {
         suiteName: 'nx-express-tutorial-api Jest Tests',
-        outputDirectory: 'junit/apps/nx-express-tutorial-api',
+        outputDirectory: 'test-reports/apps/nx-express-tutorial-api/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

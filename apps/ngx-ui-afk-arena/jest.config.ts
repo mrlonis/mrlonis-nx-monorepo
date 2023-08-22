@@ -4,7 +4,7 @@ export default {
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {},
-  coverageDirectory: '../../coverage/apps/ngx-ui-afk-arena',
+  coverageDirectory: '../../test-reports/apps/ngx-ui-afk-arena/coverage',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
@@ -26,7 +26,7 @@ export default {
       'jest-junit',
       {
         suiteName: 'ngx-ui-afk-arena Jest Tests',
-        outputDirectory: 'junit/apps/ngx-ui-afk-arena',
+        outputDirectory: 'test-reports/apps/ngx-ui-afk-arena/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

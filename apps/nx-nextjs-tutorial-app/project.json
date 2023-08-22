@@ -44,7 +44,7 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
+      "outputs": ["{workspaceRoot}/test-reports/{projectRoot}"],
       "options": {
         "jestConfig": "apps/nx-nextjs-tutorial-app/jest.config.ts",
         "passWithNoTests": true

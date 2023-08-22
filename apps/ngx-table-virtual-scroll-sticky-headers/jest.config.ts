@@ -4,7 +4,7 @@ export default {
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {},
-  coverageDirectory: '../../coverage/apps/ngx-table-virtual-scroll-sticky-headers',
+  coverageDirectory: '../../test-reports/apps/ngx-table-virtual-scroll-sticky-headers/coverage',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
@@ -26,7 +26,7 @@ export default {
       'jest-junit',
       {
         suiteName: 'ngx-table-virtual-scroll-sticky-headers Jest Tests',
-        outputDirectory: 'junit/apps/ngx-table-virtual-scroll-sticky-headers',
+        outputDirectory: 'test-reports/apps/ngx-table-virtual-scroll-sticky-headers/j unit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

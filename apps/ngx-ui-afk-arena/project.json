@@ -84,7 +84,7 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
+      "outputs": ["{workspaceRoot}/test-reports/{projectRoot}"],
       "options": {
         "jestConfig": "apps/ngx-ui-afk-arena/jest.config.ts",
         "passWithNoTests": true

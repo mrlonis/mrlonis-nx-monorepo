@@ -6,14 +6,14 @@ export default {
     '^.+\\.[tj]sx?$': ['@swc/jest', { jsc: { transform: { react: { runtime: 'automatic' } } } }]
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/libs/nx-nextjs-tutorial-publishable-lib',
+  coverageDirectory: '../../test-reports/libs/nx-nextjs-tutorial-publishable-lib/coverage',
   reporters: [
     'default',
     [
       'jest-junit',
       {
         suiteName: 'nnx-nextjs-tutorial-publishable-lib Jest Tests',
-        outputDirectory: 'junit/libs/nx-nextjs-tutorial-publishable-lib',
+        outputDirectory: 'test-reports/libs/nx-nextjs-tutorial-publishable-lib/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

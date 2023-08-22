@@ -4,7 +4,7 @@ export default {
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {},
-  coverageDirectory: '../../coverage/libs/ngx-workspace',
+  coverageDirectory: '../../test-reports/libs/ngx-workspace/coverage',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
@@ -26,7 +26,7 @@ export default {
       'jest-junit',
       {
         suiteName: 'ngx-workspace Jest Tests',
-        outputDirectory: 'junit/libs/ngx-workspace',
+        outputDirectory: 'test-reports/libs/ngx-workspace/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

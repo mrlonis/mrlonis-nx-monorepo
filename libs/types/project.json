@@ -13,7 +13,7 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
+      "outputs": ["{workspaceRoot}/test-reports/{projectRoot}"],
       "options": {
         "jestConfig": "libs/types/jest.config.ts",
         "passWithNoTests": true

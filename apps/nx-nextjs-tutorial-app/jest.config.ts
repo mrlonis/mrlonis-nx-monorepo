@@ -7,14 +7,14 @@ export default {
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/next/babel'] }]
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/nx-nextjs-tutorial-app',
+  coverageDirectory: '../../test-reports/apps/nx-nextjs-tutorial-app/coverage',
   reporters: [
     'default',
     [
       'jest-junit',
       {
         suiteName: 'nx-nextjs-tutorial-app Jest Tests',
-        outputDirectory: 'junit/apps/nx-nextjs-tutorial-app',
+        outputDirectory: 'test-reports/apps/nx-nextjs-tutorial-app/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

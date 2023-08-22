@@ -12,5 +12,5 @@ export default {
     ]
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/apps/nx-plugin-mrlonis-e2e'
+  coverageDirectory: '../../test-reports/apps/nx-plugin-mrlonis-e2e/coverage'
 };

@@ -4,7 +4,7 @@ export default {
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {},
-  coverageDirectory: '../../coverage/apps/ngx-virtual-scroll-cdk-table-example',
+  coverageDirectory: '../../test-reports/apps/ngx-virtual-scroll-cdk-table-example/coverage',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
@@ -26,7 +26,7 @@ export default {
       'jest-junit',
       {
         suiteName: 'ngx-virtual-scroll-cdk-table-example Jest Tests',
-        outputDirectory: 'junit/apps/ngx-virtual-scroll-cdk-table-example',
+        outputDirectory: 'test-reports/apps/ngx-virtual-scroll-cdk-table-example/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

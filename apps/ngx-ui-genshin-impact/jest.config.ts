@@ -4,7 +4,7 @@ export default {
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {},
-  coverageDirectory: '../../coverage/apps/ngx-ui-genshin-impact',
+  coverageDirectory: '../../test-reports/apps/ngx-ui-genshin-impact/coverage',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
@@ -26,7 +26,7 @@ export default {
       'jest-junit',
       {
         suiteName: 'ngx-ui-genshin-impact Jest Tests',
-        outputDirectory: 'junit/apps/ngx-ui-genshin-impact',
+        outputDirectory: 'test-reports/apps/ngx-ui-genshin-impact/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

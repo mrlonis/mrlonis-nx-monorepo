@@ -7,7 +7,7 @@
   "targets": {
     "test": {
       "executor": "@angular-devkit/build-angular:karma",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
+      "outputs": ["{workspaceRoot}/test-reports/{projectRoot}"],
       "options": {
         "tsConfig": "libs/ngx-workspace-karma/tsconfig.spec.json",
         "karmaConfig": "libs/ngx-workspace-karma/karma.conf.js",

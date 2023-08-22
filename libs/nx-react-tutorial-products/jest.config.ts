@@ -12,14 +12,14 @@ export default {
     ]
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/libs/nx-react-tutorial-products',
+  coverageDirectory: '../../test-reports/libs/nx-react-tutorial-products/coverage',
   reporters: [
     'default',
     [
       'jest-junit',
       {
         suiteName: 'nx-react-tutorial-products Jest Tests',
-        outputDirectory: 'junit/apps/nx-react-tutorial-products',
+        outputDirectory: 'test-reports/apps/nx-react-tutorial-products/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

@@ -4,7 +4,7 @@ export default {
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {},
-  coverageDirectory: '../../coverage/apps/nx-express-tutorial-angular-ui',
+  coverageDirectory: '../../test-reports/apps/nx-express-tutorial-angular-ui/coverage',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
@@ -26,7 +26,7 @@ export default {
       'jest-junit',
       {
         suiteName: 'nx-express-tutorial-angular-ui Jest Tests',
-        outputDirectory: 'junit/apps/nx-express-tutorial-angular-ui',
+        outputDirectory: 'test-reports/apps/nx-express-tutorial-angular-ui/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

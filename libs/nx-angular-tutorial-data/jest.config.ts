@@ -12,14 +12,14 @@ export default {
     ]
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/libs/nx-angular-tutorial-data',
+  coverageDirectory: '../../test-reports/libs/nx-angular-tutorial-data/coverage',
   reporters: [
     'default',
     [
       'jest-junit',
       {
         suiteName: 'nx-angular-tutorial-data Jest Tests',
-        outputDirectory: 'junit/libs/nx-angular-tutorial-data',
+        outputDirectory: 'test-reports/libs/nx-angular-tutorial-data/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

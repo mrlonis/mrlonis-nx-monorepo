@@ -4,7 +4,7 @@ export default {
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {},
-  coverageDirectory: '../../coverage/apps/ngx-ui-mythic-heroes',
+  coverageDirectory: '../../test-reports/apps/ngx-ui-mythic-heroes/coverage',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
@@ -26,7 +26,7 @@ export default {
       'jest-junit',
       {
         suiteName: 'ngx-ui-mythic-heroes Jest Tests',
-        outputDirectory: 'junit/apps/ngx-ui-mythic-heroes',
+        outputDirectory: 'test-reports/apps/ngx-ui-mythic-heroes/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

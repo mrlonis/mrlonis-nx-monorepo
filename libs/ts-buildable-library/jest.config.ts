@@ -12,14 +12,14 @@ export default {
     ]
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/libs/ts-buildable-library',
+  coverageDirectory: '../../test-reports/libs/ts-buildable-library/coverage',
   reporters: [
     'default',
     [
       'jest-junit',
       {
         suiteName: 'ts-buildable-library Jest Tests',
-        outputDirectory: 'junit/libs/ts-buildable-library',
+        outputDirectory: 'test-reports/libs/ts-buildable-library/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

@@ -90,7 +90,7 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}", "{workspaceRoot}/junit/{projectRoot}"],
+      "outputs": ["{workspaceRoot}/test-reports/{projectRoot}"],
       "options": {
         "jestConfig": "apps/ngx-table-virtual-scroll-sticky-headers/jest.config.ts",
         "passWithNoTests": true

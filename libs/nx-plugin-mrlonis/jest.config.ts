@@ -12,14 +12,14 @@ export default {
     ]
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/libs/nx-plugin-mrlonis',
+  coverageDirectory: '../../test-reports/libs/nx-plugin-mrlonis/coverage',
   reporters: [
     'default',
     [
       'jest-junit',
       {
         suiteName: 'nx-plugin-mrlonis Jest Tests',
-        outputDirectory: 'junit/libs/nx-plugin-mrlonis',
+        outputDirectory: 'test-reports/libs/nx-plugin-mrlonis/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }

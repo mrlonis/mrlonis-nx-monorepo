@@ -12,14 +12,14 @@ export default {
     ]
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/libs/ts-workspace',
+  coverageDirectory: '../../test-reports/libs/ts-workspace/coverage',
   reporters: [
     'default',
     [
       'jest-junit',
       {
         suiteName: 'ts-workspace Jest Tests',
-        outputDirectory: 'junit/libs/ts-workspace',
+        outputDirectory: 'test-reports/libs/ts-workspace/junit',
         outputName: 'junit.xml',
         uniqueOutputName: 'false'
       }
