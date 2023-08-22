@@ -8,6 +8,8 @@
     "build": "nx build",
     "build:all": "nx run-many -t build",
     "e2e:all": "nx run-many -t e2e",
+    "e2e:setup": "start-server-and-test start:nx-angular-tutorial-api http://localhost:3333/api/todos e2e:setup:2",
+    "e2e:setup:2": "start-server-and-test start:nx-express-tutorial-api http://localhost:3334/api e2e:all",
     "format:check": "nx format:check",
     "format:write": "nx format:write",
     "gauntlet": "npm run gauntlet:format && npm run lint:all -- --fix && npm run lint:all && npm run test:all -- --configuration ci && npm run build:all",
@@ -24,12 +26,10 @@
     "repair": "nx repair",
     "reset": "nx reset",
     "start": "nx serve",
-    "test": "nx test",
-    "test:all": "nx run-many -t test",
     "start:nx-angular-tutorial-api": "npm run start nx-angular-tutorial-api",
     "start:nx-express-tutorial-api": "npm run start nx-express-tutorial-api",
-    "e2e:setup": "start-server-and-test start:nx-angular-tutorial-api http://localhost:3333/api/todos e2e:setup:2",
-    "e2e:setup:2": "start-server-and-test start:nx-express-tutorial-api http://localhost:3334/api e2e:all"
+    "test": "nx test",
+    "test:all": "nx run-many -t test"
   },
   "dependencies": {
     "@angular/animations": "^16.2.1",
