@@ -20,6 +20,7 @@
     "lint": "nx lint",
     "lint:all": "nx run-many -t lint",
     "ng": "nx",
+    "nx": "nx",
     "prepare": "chmod +x ./node_modules/husky/lib/bin.js && husky install",
     "prettier": "prettier --config .prettierrc --write \"**/*.{css,html,js,jsx,json,md,scss,ts,tsx}\"",
     "prettier:test": "prettier --config .prettierrc --list-different \"**/*.{css,html,js,jsx,json,md,scss,ts,tsx}\"",
