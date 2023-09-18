@@ -1,4 +1,4 @@
-export function scoreGameTypeScript(game: number[]): number {
+export function scoreGameTs(game: number[]): number {
   // Create our list of 10 frames
   const frames: number[][] = [];
 
@@ -8,7 +8,7 @@ export function scoreGameTypeScript(game: number[]): number {
     const frameSum = game[i] + game[i + 1];
     if (i === 18 && (frameSum == 10 || frameSum == 20)) {
       newFrame = [frameSum, game[i + 2]];
-      i++;
+      i++; // Skip the next roll since we are in the 10th frame
     } else if (game[i] === 10) {
       newFrame = [frameSum, game[i + 2], game[i + 2] === 10 ? game[i + 4] : game[i + 3]];
     } else if (frameSum === 10) {
@@ -22,12 +22,13 @@ export function scoreGameTypeScript(game: number[]): number {
   }
 
   // Now calculate our total score over all frames
+  // We can use flat() if targeting ES2019+
   return frames.flat().reduce(function (score1, score2) {
     return score1 + score2;
   });
 }
 
-export function scoreGameTypeScript2(game: number[]): number {
+export function scoreGameTs2(game: number[]): number {
   // Create our list of 10 frames
   const frames: number[][] = [];
 
@@ -37,7 +38,7 @@ export function scoreGameTypeScript2(game: number[]): number {
     const frameSum = game[i] + game[i + 1];
     if (i === 18 && (frameSum == 10 || frameSum == 20)) {
       newFrame = [frameSum, game[i + 2]];
-      i++;
+      i++; // Skip the next roll since we are in the 10th frame
     } else if (game[i] === 10) {
       newFrame = [frameSum, game[i + 2], game[i + 2] === 10 ? game[i + 4] : game[i + 3]];
     } else if (frameSum === 10) {
@@ -60,7 +61,7 @@ export function scoreGameTypeScript2(game: number[]): number {
     });
 }
 
-export function scoreGameTypeScript3(game: number[]): number {
+export function scoreGameTs3(game: number[]): number {
   let score = 0;
   // Create our list of 10 frames
   const frames: number[][] = [];
@@ -72,7 +73,7 @@ export function scoreGameTypeScript3(game: number[]): number {
     if (i === 18) {
       if (frameSum == 10 || frameSum == 20) {
         newFrame = [frameSum, game[i + 2]];
-        i = i + 1;
+        i++; // Skip the next roll since we are in the 10th frame
       } else {
         newFrame = [frameSum];
       }
