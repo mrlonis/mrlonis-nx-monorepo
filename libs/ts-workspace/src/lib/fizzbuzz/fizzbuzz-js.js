@@ -6,14 +6,14 @@ export function fizzbuzzJs() {
     const multipleOf3 = i % 3 === 0;
     const multipleOf5 = i % 5 === 0;
     if (multipleOf3 && multipleOf5) {
-      console.log('FizzBuzz');
-      returnValue = returnValue.concat('FizzBuzz\n');
+      console.log('FIZZBUZZ');
+      returnValue = returnValue.concat('FIZZBUZZ\n');
     } else if (multipleOf5) {
-      console.log('Buzz');
-      returnValue = returnValue.concat('Buzz\n');
+      console.log('BUZZ');
+      returnValue = returnValue.concat('BUZZ\n');
     } else if (multipleOf3) {
-      console.log('Fizz');
-      returnValue = returnValue.concat('Fizz\n');
+      console.log('FIZZ');
+      returnValue = returnValue.concat('FIZZ\n');
     } else {
       console.log(i);
       returnValue = returnValue.concat(`${i}\n`);
@@ -32,11 +32,11 @@ export function fizzbuzz() {
     const multipleOf3 = i % 3 === 0;
     const multipleOf5 = i % 5 === 0;
     if (multipleOf3 && multipleOf5) {
-      console.log('FizzBuzz');
+      console.log('FIZZBUZZ');
     } else if (multipleOf5) {
-      console.log('Buzz');
+      console.log('BUZZ');
     } else if (multipleOf3) {
-      console.log('Fizz');
+      console.log('FIZZ');
     } else {
       console.log(i);
     }

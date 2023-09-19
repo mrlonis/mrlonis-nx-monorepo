@@ -55,3 +55,7 @@ function onLoad() {
 ```
 
 With this change, this inside handleNameChangedEvent will correctly refer to the view object, and there will be no error.
+
+## Solution Used
+
+2. this.setName is not a function
