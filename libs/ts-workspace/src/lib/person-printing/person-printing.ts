@@ -15,7 +15,6 @@ export function printHierarchyTs(persons: PersonTs[]): string {
   let returnValue = '';
 
   for (const person of persons) {
-    console.log(`-${person.name}`);
     returnValue += `-${person.name}\n`;
     for (const child of person.children) {
       returnValue += printHierarchyHelperTs(child, 2);
@@ -29,7 +28,6 @@ function printHierarchyHelperTs(person: PersonTs, depth: number): string {
   let returnValue = '';
 
   const indentation = '-'.repeat(depth);
-  console.log(`${indentation}${person.name}`);
   returnValue += `${indentation}${person.name}\n`;
 
   for (const child of person.children) {
