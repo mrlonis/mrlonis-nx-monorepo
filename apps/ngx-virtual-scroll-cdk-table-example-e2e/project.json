@@ -18,7 +18,7 @@
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["apps/ngx-virtual-scroll-cdk-table-example-e2e/**/*.{js,ts}"]
