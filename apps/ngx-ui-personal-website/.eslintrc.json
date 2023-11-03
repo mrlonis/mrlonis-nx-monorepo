@@ -1,6 +1,6 @@
 {
   "extends": ["../../.eslintrc.json"],
-  "ignorePatterns": ["!**/*", "./src/assets/old-git-repo/**/*"],
+  "ignorePatterns": ["!**/*", "apps/ngx-ui-personal-website/src/assets/old-git-repo/**/*"],
   "parserOptions": {
     "ecmaVersion": 2020
   },
@@ -67,23 +67,8 @@
     },
     {
       "files": ["*.html"],
-      "extends": ["plugin:@nx/angular-template"],
+      "extends": ["plugin:@nx/angular-template", "plugin:prettier/recommended"],
       "rules": {}
-    },
-    {
-      "files": ["*.html"],
-      "excludedFiles": ["*inline-template-*.component.html"],
-      "extends": ["plugin:prettier/recommended"],
-      "rules": {
-        "prettier/prettier": [
-          "error",
-          {
-            "parser": "angular",
-            "printWidth": 125,
-            "tabWidth": 2
-          }
-        ]
-      }
     }
   ]
 }

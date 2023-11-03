@@ -22,7 +22,10 @@ export class AppComponent implements OnInit {
 
   offset = 500;
 
-  constructor(private ngZone: NgZone, private changeDetectorRef: ChangeDetectorRef) {
+  constructor(
+    private ngZone: NgZone,
+    private changeDetectorRef: ChangeDetectorRef
+  ) {
     this.dataSource = new UserTableDataSource(this.ngZone);
   }
 

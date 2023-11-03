@@ -20,7 +20,10 @@ export interface IApiService<T extends { [key: string]: BaseResource }> {
 
 export abstract class ApiService<T extends { [key: string]: BaseResource }> implements IApiService<T> {
   defaultPageSize = 20;
-  constructor(private http: HttpClient, private config: ApiConfigProvider) {}
+  constructor(
+    private http: HttpClient,
+    private config: ApiConfigProvider
+  ) {}
 
   public get apiUrl(): string {
     const value = this.config.apiUrl;

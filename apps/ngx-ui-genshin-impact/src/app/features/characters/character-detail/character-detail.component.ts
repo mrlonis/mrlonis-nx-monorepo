@@ -12,7 +12,10 @@ import { GenshinImpactApiService } from '../../../shared';
 export class CharacterDetailComponent implements OnInit {
   character?: Character;
 
-  constructor(private route: ActivatedRoute, public genshinImpactApi: GenshinImpactApiService) {}
+  constructor(
+    private route: ActivatedRoute,
+    public genshinImpactApi: GenshinImpactApiService
+  ) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {

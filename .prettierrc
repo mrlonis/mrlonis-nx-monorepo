@@ -3,6 +3,7 @@
   "printWidth": 125,
   "tabWidth": 2,
   "trailingComma": "none",
+  "endOfLine": "auto",
   "overrides": [
     {
       "files": "*.html",

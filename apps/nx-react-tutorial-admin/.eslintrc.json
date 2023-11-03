@@ -41,6 +41,11 @@
     {
       "files": ["*.js", "*.jsx"],
       "rules": {}
+    },
+    {
+      "files": ["*.html"],
+      "plugins": ["html"],
+      "rules": {}
     }
   ]
 }
