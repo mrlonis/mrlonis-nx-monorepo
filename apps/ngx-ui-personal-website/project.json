@@ -62,10 +62,10 @@
       },
       "configurations": {
         "production": {
-          "browserTarget": "ngx-ui-personal-website:build:production"
+          "buildTarget": "ngx-ui-personal-website:build:production"
         },
         "development": {
-          "browserTarget": "ngx-ui-personal-website:build:development"
+          "buildTarget": "ngx-ui-personal-website:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -73,27 +73,17 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "ngx-ui-personal-website:build"
+        "buildTarget": "ngx-ui-personal-website:build"
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint",
-      "options": {
-        "lintFilePatterns": ["apps/ngx-ui-personal-website/**/*.ts", "apps/ngx-ui-personal-website/**/*.html"]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/test-reports/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/ngx-ui-personal-website/jest.config.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
+        "jestConfig": "apps/ngx-ui-personal-website/jest.config.ts"
       }
     }
   },

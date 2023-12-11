@@ -62,10 +62,10 @@
       },
       "configurations": {
         "production": {
-          "browserTarget": "ngx-test-application:build:production"
+          "buildTarget": "ngx-test-application:build:production"
         },
         "development": {
-          "browserTarget": "ngx-test-application:build:development"
+          "buildTarget": "ngx-test-application:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -73,14 +73,11 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "ngx-test-application:build"
+        "buildTarget": "ngx-test-application:build"
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint",
-      "options": {
-        "lintFilePatterns": ["apps/ngx-test-application/**/*.ts", "apps/ngx-test-application/**/*.html"]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "test": {
       "executor": "@angular-devkit/build-angular:karma",

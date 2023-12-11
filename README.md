@@ -36,6 +36,7 @@ This project was generated using [Nx](https://nx.dev).
     - [Distributed Computation Caching \& Distributed Task Execution](#distributed-computation-caching--distributed-task-execution)
   - [Project Ports](#project-ports)
   - [Running the gauntlet](#running-the-gauntlet)
+  - [Updating](#updating)
 
 ## Quick Start & Documentation
 
@@ -206,3 +207,10 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 ## Running the gauntlet
 
 As part of the gauntlet, we run the Cypress e2e tests. This requires some backend APIs running. In 2 other shells, run the following commands:
+
+## Updating
+
+```shell
+npx nx migrate latest
+npx nx migrate --run-migrations
+```

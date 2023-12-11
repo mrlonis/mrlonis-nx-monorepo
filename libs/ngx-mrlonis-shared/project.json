@@ -9,21 +9,11 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/test-reports/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/ngx-mrlonis-shared/jest.config.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
+        "jestConfig": "libs/ngx-mrlonis-shared/jest.config.ts"
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint",
-      "options": {
-        "lintFilePatterns": ["libs/ngx-mrlonis-shared/**/*.ts", "libs/ngx-mrlonis-shared/**/*.html"]
-      }
+      "executor": "@nx/eslint:lint"
     }
   },
   "tags": []

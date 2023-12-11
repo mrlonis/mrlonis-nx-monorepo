@@ -62,10 +62,10 @@
       },
       "configurations": {
         "production": {
-          "browserTarget": "ngx-virtual-scroll-cdk-table-example:build:production"
+          "buildTarget": "ngx-virtual-scroll-cdk-table-example:build:production"
         },
         "development": {
-          "browserTarget": "ngx-virtual-scroll-cdk-table-example:build:development"
+          "buildTarget": "ngx-virtual-scroll-cdk-table-example:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -73,30 +73,17 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "ngx-virtual-scroll-cdk-table-example:build"
+        "buildTarget": "ngx-virtual-scroll-cdk-table-example:build"
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint",
-      "options": {
-        "lintFilePatterns": [
-          "apps/ngx-virtual-scroll-cdk-table-example/**/*.ts",
-          "apps/ngx-virtual-scroll-cdk-table-example/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/test-reports/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/ngx-virtual-scroll-cdk-table-example/jest.config.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
+        "jestConfig": "apps/ngx-virtual-scroll-cdk-table-example/jest.config.ts"
       }
     }
   },
