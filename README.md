@@ -214,3 +214,5 @@ As part of the gauntlet, we run the Cypress e2e tests. This requires some backen
 npx nx migrate latest
 npx nx migrate --run-migrations
 ```
+
+Check [https://github.com/nrwl/ci/releases](https://github.com/nrwl/ci/releases) for GitHub Actions workflow updates.
