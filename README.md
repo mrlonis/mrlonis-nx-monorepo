@@ -1,4 +1,4 @@
-# Mrlonis - Nx Angular - Monorepo
+# Mrlonis - Nx - Monorepo
 
 This project was generated using [Nx](https://nx.dev).
 
@@ -8,7 +8,7 @@ This project was generated using [Nx](https://nx.dev).
 
 ## Table of Contents
 
-- [Mrlonis - Nx Angular - Monorepo](#mrlonis---nx-angular---monorepo)
+- [Mrlonis - Nx - Monorepo](#mrlonis---nx---monorepo)
   - [Table of Contents](#table-of-contents)
   - [Quick Start \& Documentation](#quick-start--documentation)
   - [Adding capabilities to your workspace](#adding-capabilities-to-your-workspace)
@@ -36,8 +36,6 @@ This project was generated using [Nx](https://nx.dev).
     - [Distributed Computation Caching \& Distributed Task Execution](#distributed-computation-caching--distributed-task-execution)
   - [Project Ports](#project-ports)
   - [Running the gauntlet](#running-the-gauntlet)
-    - [nx-angular-tutorial-api](#nx-angular-tutorial-api)
-    - [nx-express-tutorial-api](#nx-express-tutorial-api)
 
 ## Quick Start & Documentation
 
@@ -199,34 +197,12 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 
 ## Project Ports
 
-- 4211 - ngx-ui-afk-arena
-- 4201 - ngx-ui-genshin-impact
-- 4202 - ngx-ui-mythic-heroes
 - 4203 - ngx-ui-personal-website
 - 4207 - ngx-table-virtual-scroll-sticky-headers
 - 4208 - ngx-virtual-scroll-cdk-table-example
 - 4209 - ngx-table-virtual-scroll-example
 - 4210 - ngx-test-application
-- 4212 - nx-angular-tutorial-todos
-- 3333 - nx-angular-tutorial-api
-- 4213 - nx-react-tutorial-admin
-- 4214 - nx-react-tutorial-store
-- 3334 - nx-express-tutorial-api
-  - 3335 - Debug Port
-- 4215 - nx-express-tutorial-angular-ui
 
 ## Running the gauntlet
 
 As part of the gauntlet, we run the Cypress e2e tests. This requires some backend APIs running. In 2 other shells, run the following commands:
-
-### nx-angular-tutorial-api
-
-```shell
-npm run start nx-angular-tutorial-api
-```
-
-### nx-express-tutorial-api
-
-```shell
-npm run start nx-express-tutorial-api
-```
