@@ -5,6 +5,7 @@ on: [push, pull_request]
 jobs:
   main:
     name: Nx Cloud - Main Job
+    # https://github.com/nrwl/ci/releases
     uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.14.0
     with:
       number-of-agents: 3
@@ -15,6 +16,7 @@ jobs:
 
   agents:
     name: Nx Cloud - Agents
+    # https://github.com/nrwl/ci/releases
     uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.14.0
     with:
       number-of-agents: 3
