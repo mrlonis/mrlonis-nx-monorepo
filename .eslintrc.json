@@ -107,7 +107,9 @@
             "printWidth": 125,
             "tabWidth": 2
           }
-        ]
+        ],
+        "@typescript-eslint/no-extra-semi": "error",
+        "no-extra-semi": "off"
       }
     },
     {
@@ -138,7 +140,9 @@
             "printWidth": 125,
             "tabWidth": 2
           }
-        ]
+        ],
+        "@typescript-eslint/no-extra-semi": "error",
+        "no-extra-semi": "off"
       }
     },
     {
