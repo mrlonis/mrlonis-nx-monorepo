@@ -5,7 +5,7 @@ import { TestBed } from '@angular/core/testing';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterTestingModule } from '@angular/router/testing';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -18,7 +18,7 @@ describe('AppComponent', () => {
         ScrollingModule,
         MatSortModule,
         CdkTableModule,
-        RouterTestingModule
+        RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' })
       ],
       declarations: [AppComponent]
     }).compileComponents();

@@ -7,7 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterTestingModule } from '@angular/router/testing';
+import { RouterModule } from '@angular/router';
 import { TableVirtualScrollModule } from 'ng-table-virtual-scroll';
 import { NgxTableVirtualScrollModule } from '@mrlonis/ngx-table-virtual-scroll';
 import { AppComponent } from './app.component';
@@ -24,7 +24,7 @@ describe('AppComponent', () => {
         MatTableModule,
         NgxTableVirtualScrollModule,
         NoopAnimationsModule,
-        RouterTestingModule,
+        RouterModule.forRoot([]),
         ScrollingModule,
         TableVirtualScrollModule
       ],

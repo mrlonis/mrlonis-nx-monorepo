@@ -1,14 +1,19 @@
 import { TestBed } from '@angular/core/testing';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterTestingModule } from '@angular/router/testing';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { appRoutes } from './app.routes';
 import { BarChartComponent, LineChartComponent, PieChartComponent } from './features';
 import { SharedModule } from './shared';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NoopAnimationsModule, RouterTestingModule, SharedModule],
+      imports: [
+        NoopAnimationsModule,
+        RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
+        SharedModule
+      ],
       declarations: [AppComponent, LineChartComponent, PieChartComponent, BarChartComponent]
     }).compileComponents();
   });

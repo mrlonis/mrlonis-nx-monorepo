@@ -1,10 +1,10 @@
-import { HttpClient } from '@angular/common/http';
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { Inject, Injectable } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { Faction, SpringDataRestResponse } from '@mrlonis/types';
 import * as allFactions from '../../../assets/test-data/faction/All.json';
-import { ApiConfigProvider, ApiService, API_CONFIG_TOKEN } from './api.service';
+import { API_CONFIG_TOKEN, ApiConfigProvider, ApiService } from './api.service';
 
 const testApiUrl = 'http://fake-url.coms';
 
@@ -33,8 +33,11 @@ describe('ApiService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
-      providers: [{ provide: API_CONFIG_TOKEN, useValue: { apiUrl: testApiUrl } as ApiConfigProvider }]
+      providers: [
+        provideHttpClient(withInterceptorsFromDi()),
+        provideHttpClientTesting(),
+        { provide: API_CONFIG_TOKEN, useValue: { apiUrl: testApiUrl } as ApiConfigProvider }
+      ]
     });
 
     apiService = TestBed.inject(TestApiService);
