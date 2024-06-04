@@ -20,7 +20,7 @@
     "lint:all": "nx run-many -t lint",
     "ng": "nx",
     "nx": "nx",
-    "prepare": "husky install",
+    "prepare": "husky",
     "prettier": "prettier --config .prettierrc --write \"**/*.{css,html,js,jsx,json,md,scss,ts,tsx}\"",
     "prettier:test": "prettier --config .prettierrc --list-different \"**/*.{css,html,js,jsx,json,md,scss,ts,tsx}\"",
     "repair": "nx repair",
