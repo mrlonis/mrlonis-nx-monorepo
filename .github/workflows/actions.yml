@@ -8,6 +8,8 @@ jobs:
     # https://github.com/nrwl/ci/releases
     uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.14.0
     with:
+      node-version: 20.x
+      npm-version: 10.x
       number-of-agents: 3
       parallel-commands: |
         npx nx-cloud record -- npx nx format:check
@@ -19,4 +21,6 @@ jobs:
     # https://github.com/nrwl/ci/releases
     uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.14.0
     with:
+      node-version: 20.x
+      npm-version: 10.x
       number-of-agents: 3
