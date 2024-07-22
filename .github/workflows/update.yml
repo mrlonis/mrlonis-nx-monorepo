@@ -18,7 +18,7 @@ jobs:
           node-version: 20
           cache: 'npm'
       - run: npm ci
-      - uses: timonmasberg/nx-migration-gh-action@v1.0.0
+      - uses: timonmasberg/nx-migration-gh-action@v1.1.13
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           # Optional:
