@@ -9,3 +9,22 @@ updates:
     directory: '/'
     schedule:
       interval: 'daily'
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+    allow:
+      - dependency-type: 'all'
+    ignore:
+      - dependency-name: '@angular/*'
+      - dependency-name: '@angular-devkit/*'
+      - dependency-name: '@angular-eslint/*'
+      - dependency-name: '@nx/*'
+      - dependency-name: '@schematics/angular'
+      - dependency-name: '@typescript-eslint/*'
+      - dependency-name: 'angular-split'
+      - dependency-name: 'eslint'
+      - dependency-name: 'ng-packagr'
+      - dependency-name: 'nx'
+      - dependency-name: 'typescript'
+      - dependency-name: 'zone.js'
