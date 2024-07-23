@@ -12,8 +12,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/test-reports/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/ts-workspace/jest.config.ts",
-        "tsConfig": "libs/ts-workspace/tsconfig.spec.json"
+        "jestConfig": "libs/ts-workspace/jest.config.ts"
       }
     }
   },
