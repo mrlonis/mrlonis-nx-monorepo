@@ -212,6 +212,7 @@ As part of the gauntlet, we run the Cypress e2e tests. This requires some backen
 
 ```shell
 npx nx migrate latest
+npm install
 npx nx migrate --run-migrations
 ```
 
