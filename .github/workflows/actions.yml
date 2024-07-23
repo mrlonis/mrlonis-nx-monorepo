@@ -14,7 +14,7 @@ jobs:
       parallel-commands: |
         npx nx-cloud record -- npx nx format:check
       parallel-commands-on-agents: |
-        npx nx affected -t lint --parallel=3 & npx nx affected -t test --parallel=3 --configuration=ci & npx nx affected -t build --parallel=3
+        npx nx affected -t lint --parallel=2 & npx nx affected -t test --parallel=2 --configuration=ci & npx nx affected -t build --parallel=2
 
   agents:
     name: Nx Cloud - Agents
