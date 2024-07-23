@@ -19,6 +19,7 @@ updates:
       - dependency-name: '@angular/*'
       - dependency-name: '@angular-devkit/*'
       - dependency-name: '@angular-eslint/*'
+      - dependency-name: '@nrwl/*'
       - dependency-name: '@nx/*'
       - dependency-name: '@schematics/angular'
       - dependency-name: '@typescript-eslint/*'
