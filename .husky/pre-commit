@@ -1,2 +1,3 @@
+npm i -g npm@10
 npx sort-package-json
 npx lint-staged
