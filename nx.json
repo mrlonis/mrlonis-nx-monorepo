@@ -101,5 +101,6 @@
   },
   "defaultProject": "ngx-test-application",
   "nxCloudAccessToken": "MzAzZGZmNmYtM2NjYS00YmI0LTg1MDctMmI5NjIwMmU4MjI5fHJlYWQtd3JpdGU=",
-  "defaultBase": "main"
+  "defaultBase": "main",
+  "useInferencePlugins": false
 }
