@@ -3,9 +3,6 @@ name: Check for new NX version
 on:
   schedule:
     - cron: '0 0 * * *' # every day at midnight
-  push:
-    branches:
-      - main
 
 jobs:
   build:
