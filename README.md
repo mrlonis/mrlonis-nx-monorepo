@@ -37,6 +37,7 @@ This project was generated using [Nx](https://nx.dev).
   - [Project Ports](#project-ports)
   - [Running the gauntlet](#running-the-gauntlet)
   - [Updating](#updating)
+  - [pre-commitGitHub Desktop Fix](#pre-commitgithub-desktop-fix)
 
 ## Quick Start & Documentation
 
@@ -217,3 +218,17 @@ npx nx migrate --run-migrations
 ```
 
 Check [https://github.com/nrwl/ci/releases](https://github.com/nrwl/ci/releases) for GitHub Actions workflow updates.
+
+## pre-commitGitHub Desktop Fix
+
+The GitHub Desktop app uses a different env than the OS. To fix missing `npx` commands, we can edit the `pre-commit` file in the `.husky` directory:
+
+```shell
+#!/bin/bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+nvm install 20
+...
+```
