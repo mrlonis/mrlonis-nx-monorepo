@@ -15,18 +15,55 @@ updates:
       interval: 'daily'
     allow:
       - dependency-type: 'all'
+    groups:
+      angular:
+        applies-to: version-updates
+        patterns:
+          - '@angular*'
+        update-types:
+          - 'minor'
+          - 'patch'
+      minor-and-patch:
+        applies-to: security-updates
+        patterns:
+          - '@angular*'
+        update-types:
+          - 'patch'
+          - 'minor'
+      babel-version-updates:
+        applies-to: version-updates
+        patterns:
+          - '@babel*'
+        update-types:
+          - 'minor'
+          - 'patch'
+      babel-security-updates:
+        applies-to: security-updates
+        patterns:
+          - '@babel*'
+        update-types:
+          - 'patch'
+          - 'minor'
     ignore:
-      - dependency-name: '@angular/*'
-      - dependency-name: '@angular-devkit/*'
-      - dependency-name: '@angular-eslint/*'
+      - dependency-name: '@angular*'
+        update-types: ['version-update:semver-major']
       - dependency-name: '@nrwl/*'
       - dependency-name: '@nx/*'
       - dependency-name: '@schematics/angular'
+        update-types: ['version-update:semver-major']
       - dependency-name: '@typescript-eslint/*'
+        update-types: ['version-update:semver-major']
       - dependency-name: 'angular-split'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'cypress'
+        update-types: ['version-update:semver-major']
       - dependency-name: 'eslint'
+        update-types: ['version-update:semver-major']
       - dependency-name: 'ng-packagr'
+        update-types: ['version-update:semver-major']
       - dependency-name: 'nx'
       - dependency-name: 'typescript'
+        update-types: ['version-update:semver-major', 'version-update:semver-minor']
       - dependency-name: 'zone.js'
+        update-types: ['version-update:semver-major', 'version-update:semver-minor']
     open-pull-requests-limit: 99
