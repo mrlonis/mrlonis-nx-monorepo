@@ -9,9 +9,6 @@ on:
       - main
   workflow_dispatch:
 
-env:
-  AGENTS: 3
-
 jobs:
   main:
     name: Nx Cloud - Main Job
@@ -20,11 +17,11 @@ jobs:
     with:
       node-version: 20.x
       npm-version: 10.x
-      number-of-agents: ${{ env.AGENTS }}
+      number-of-agents: 3
       parallel-commands: |
         npx nx-cloud record -- npx nx format:check
       parallel-commands-on-agents: |
-        npx nx affected -t lint --parallel=$AGENTS & npx nx affected -t test --parallel=$AGENTS --configuration=ci & npx nx affected -t build --parallel=$AGENTS & npx nx affected -t e2e --parallel=$AGENTS
+        npx nx affected -t lint --parallel=3 & npx nx affected -t test --parallel=3 --configuration=ci & npx nx affected -t build --parallel=3 & npx nx affected -t e2e --parallel=3
 
   agents:
     name: Nx Cloud - Agents
@@ -33,4 +30,4 @@ jobs:
     with:
       node-version: 20.x
       npm-version: 10.x
-      number-of-agents: ${{ env.AGENTS }}
+      number-of-agents: 3
