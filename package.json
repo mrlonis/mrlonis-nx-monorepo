@@ -124,7 +124,7 @@
     "sort-json": "^2.0.1",
     "sort-package-json": "^2.7.0",
     "start-server-and-test": "^2.0.5",
-    "ts-jest": "^29.1.2",
+    "ts-jest": "^29.2.4",
     "ts-node": "^10.9.2",
     "typescript": "5.5.4",
     "webpack": "^5.90.1"
