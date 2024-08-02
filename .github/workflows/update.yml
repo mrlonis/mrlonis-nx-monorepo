@@ -2,6 +2,7 @@ name: Check for new NX version
 on:
   schedule:
     - cron: '0 0 * * *' # every day at midnight
+  workflow_dispatch:
 permissions: write-all
 jobs:
   update-nx:
@@ -13,10 +14,14 @@ jobs:
           node-version: 20
           cache: 'npm'
       - run: npm ci
+      - uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - uses: timonmasberg/nx-migration-gh-action@v1.1.13
         with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          # Optional:
+          repoToken: ${{ steps.generate-token.outputs.token }}
           prTitle: 'Migrates NX to $VERSION'
-          includeMigrationsFile: false # `migrations.json` will not be included in this PR.
+          includeMigrationsFile: false
           base: 'main'
