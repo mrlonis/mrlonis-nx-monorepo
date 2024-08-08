@@ -30,6 +30,18 @@ updates:
         update-types:
           - 'patch'
           - 'minor'
+      production-version-updates:
+        applies-to: version-updates
+        dependency-type: production
+        update-types:
+          - 'patch'
+          - 'minor'
+      production-security-updates:
+        applies-to: security-updates
+        dependency-type: production
+        update-types:
+          - 'patch'
+          - 'minor'
       development-version-updates:
         applies-to: version-updates
         dependency-type: development
