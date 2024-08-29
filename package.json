@@ -44,7 +44,7 @@
     "@angular/platform-browser-dynamic": "18.2.2",
     "@angular/platform-server": "~18.2.2",
     "@angular/router": "18.2.2",
-    "@angular/ssr": "18.2.1",
+    "@angular/ssr": "18.2.2",
     "@faker-js/faker": "^8.4.0",
     "@nx/angular": "19.6.2",
     "@popperjs/core": "^2.11.8",
@@ -61,9 +61,9 @@
     "zone.js": "0.14.10"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "18.2.1",
-    "@angular-devkit/core": "18.2.1",
-    "@angular-devkit/schematics": "18.2.1",
+    "@angular-devkit/build-angular": "18.2.2",
+    "@angular-devkit/core": "18.2.2",
+    "@angular-devkit/schematics": "18.2.2",
     "@angular-eslint/eslint-plugin": "18.3.0",
     "@angular-eslint/eslint-plugin-template": "18.3.0",
     "@angular-eslint/template-parser": "18.3.0",
