@@ -45,7 +45,7 @@
     "@angular/platform-server": "~18.2.5",
     "@angular/router": "18.2.5",
     "@angular/ssr": "18.2.5",
-    "@faker-js/faker": "^8.4.0",
+    "@faker-js/faker": "^9.0.1",
     "@nx/angular": "19.7.2",
     "@popperjs/core": "^2.11.8",
     "@swimlane/ngx-charts": "^20.5.0",
