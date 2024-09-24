@@ -123,9 +123,9 @@ export class UserTableDataSource extends DataSource<User> {
       map((page) =>
         Array.from(Array(this._pageSize).keys()).map((v, i) => {
           const id = page * this._pageSize + i;
-          const firstName = faker.name.firstName();
-          const lastName = faker.name.lastName();
-          const email = faker.internet.email(firstName, lastName);
+          const firstName = faker.person.firstName();
+          const lastName = faker.person.lastName();
+          const email = faker.internet.email({ firstName: firstName, lastName: lastName });
           return { id, firstName, lastName, email } as User;
         })
       ),
