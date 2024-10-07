@@ -118,7 +118,7 @@
     "ng-packagr": "18.2.1",
     "nx": "19.8.0",
     "prettier": "^3.2.5",
-    "puppeteer": "^23.5.0",
+    "puppeteer": "^23.5.1",
     "run-script-os": "^1.1.6",
     "sass": "^1.79.4",
     "sort-json": "^2.0.1",
