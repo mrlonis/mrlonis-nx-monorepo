@@ -21,7 +21,9 @@ updates:
         applies-to: version-updates
         patterns:
           - '@angular*'
-          - 'ngx*
+          - '@schematics/angular'
+          - 'angular-split'
+          - 'ngx*'
         update-types:
           - 'minor'
           - 'patch'
@@ -29,7 +31,9 @@ updates:
         applies-to: security-updates
         patterns:
           - '@angular*'
-          - 'ngx*
+          - '@schematics/angular'
+          - 'angular-split'
+          - 'ngx*'
         update-types:
           - 'patch'
           - 'minor'
@@ -69,6 +73,8 @@ updates:
       - dependency-name: 'angular-split'
         update-types: ['version-update:semver-major']
       - dependency-name: 'cypress'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '*express'
         update-types: ['version-update:semver-major']
       - dependency-name: 'eslint'
         update-types: ['version-update:semver-major']
