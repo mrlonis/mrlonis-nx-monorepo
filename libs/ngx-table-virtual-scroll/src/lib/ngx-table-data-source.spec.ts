@@ -35,7 +35,9 @@ describe('NgxTableVirtualScrollDataSource', () => {
 
   it('should have reaction on dataOfRange$ changes', () => {
     const testData: TestData[] = getTestData();
-    const dataSource: NgxTableVirtualScrollDataSource<TestData> = new NgxTableVirtualScrollDataSource<TestData>(testData);
+    const dataSource: NgxTableVirtualScrollDataSource<TestData> = new NgxTableVirtualScrollDataSource<TestData>(
+      testData
+    );
     const stream = new Subject<TestData[]>();
 
     stream.subscribe(dataSource.dataOfRange$);
@@ -56,7 +58,9 @@ describe('NgxTableVirtualScrollDataSource', () => {
 
   it('should provide correct data', () => {
     const testData: TestData[] = getTestData(10);
-    const dataSource: NgxTableVirtualScrollDataSource<TestData> = new NgxTableVirtualScrollDataSource<TestData>(testData);
+    const dataSource: NgxTableVirtualScrollDataSource<TestData> = new NgxTableVirtualScrollDataSource<TestData>(
+      testData
+    );
     const stream = new Subject<ListRange>();
 
     dataSource.dataToRender$

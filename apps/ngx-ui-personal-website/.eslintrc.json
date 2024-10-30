@@ -2,7 +2,7 @@
   "extends": ["../../.eslintrc.json"],
   "ignorePatterns": ["!**/*", "apps/ngx-ui-personal-website/src/assets/old-git-repo/**/*"],
   "parserOptions": {
-    "ecmaVersion": 2020
+    "ecmaVersion": 2022
   },
   "settings": {
     "import/parsers": {
@@ -59,7 +59,7 @@
           "error",
           {
             "singleQuote": true,
-            "printWidth": 125,
+            "printWidth": 120,
             "tabWidth": 2
           }
         ]
