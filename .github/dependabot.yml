@@ -68,6 +68,8 @@ updates:
       - dependency-name: '@nx/*'
       - dependency-name: '@schematics/angular'
         update-types: ['version-update:semver-major']
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
       - dependency-name: '@typescript-eslint/*'
         update-types: ['version-update:semver-major']
       - dependency-name: 'angular-split'
@@ -78,6 +80,14 @@ updates:
         update-types: ['version-update:semver-major']
       - dependency-name: 'eslint'
         update-types: ['version-update:semver-major']
+      - dependency-name: '*jasmine*'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '*jest*'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'jsdom'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'karma*'
+        update-types: ['version-update:semver-major']
       - dependency-name: 'ng-packagr'
         update-types: ['version-update:semver-major']
       - dependency-name: 'ngx*'
@@ -85,5 +95,7 @@ updates:
       - dependency-name: 'nx'
       - dependency-name: 'typescript'
         update-types: ['version-update:semver-major', 'version-update:semver-minor']
+      - dependency-name: 'webpack'
+        update-types: ['version-update:semver-major']
       - dependency-name: 'zone.js'
         update-types: ['version-update:semver-major', 'version-update:semver-minor']
