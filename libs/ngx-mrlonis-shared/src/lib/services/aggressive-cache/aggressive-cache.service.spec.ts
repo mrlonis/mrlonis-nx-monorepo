@@ -159,7 +159,9 @@ class AggressiveCacheExample extends AggressiveCache<{
               return [new HttpParams().set('imageUrl', entry.imageUrl), new HttpParams().set('version', entry.version)];
             },
             directRequest: (httpParams: HttpParams) => {
-              return service.getCollection('example', httpParams.set('size', 1)).pipe(map((x) => x.page.totalElements ?? 0));
+              return service
+                .getCollection('example', httpParams.set('size', 1))
+                .pipe(map((x) => x.page.totalElements ?? 0));
             }
           },
           collectBy: {
@@ -167,7 +169,9 @@ class AggressiveCacheExample extends AggressiveCache<{
               return [new HttpParams().set('imageUrl', entry.imageUrl), new HttpParams().set('version', entry.version)];
             },
             directRequest: (httpParams: HttpParams) =>
-              service.getCollection('example', httpParams.set('size', 100)).pipe(map((x) => x._embedded.data.map((y) => y)))
+              service
+                .getCollection('example', httpParams.set('size', 100))
+                .pipe(map((x) => x._embedded.data.map((y) => y)))
           }
         }
       },

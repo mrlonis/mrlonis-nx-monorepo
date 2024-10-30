@@ -171,7 +171,9 @@ describe('TableItemSizeDirective', () => {
 
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     expect(tbody.children.length)
-      .withContext('should render 8 10px row to fill 40px + 40px * 0.5 (buffer before) + 40px * 0.5 (buffer after) space')
+      .withContext(
+        'should render 8 10px row to fill 40px + 40px * 0.5 (buffer before) + 40px * 0.5 (buffer after) space'
+      )
       .toBe(8);
   }));
 
@@ -179,7 +181,9 @@ describe('TableItemSizeDirective', () => {
     finishInit(fixture);
 
     expect(viewport.getRenderedRange())
-      .withContext('should render 8 10px row to fill 40px + 40px * 0.5 (buffer before) + 40px * 0.5 (buffer after) space')
+      .withContext(
+        'should render 8 10px row to fill 40px + 40px * 0.5 (buffer before) + 40px * 0.5 (buffer after) space'
+      )
       .toEqual({ start: 0, end: 8 });
   }));
 
