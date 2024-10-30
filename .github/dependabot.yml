@@ -8,18 +8,22 @@ updates:
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
-      interval: 'daily'
+      interval: 'weekly'
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-      interval: 'daily'
+      interval: 'weekly'
     allow:
       - dependency-type: 'all'
+    open-pull-requests-limit: 99
     groups:
       angular-version-updates:
         applies-to: version-updates
         patterns:
           - '@angular*'
+          - '@schematics/angular'
+          - 'angular-split'
+          - 'ngx*'
         update-types:
           - 'minor'
           - 'patch'
@@ -27,6 +31,9 @@ updates:
         applies-to: security-updates
         patterns:
           - '@angular*'
+          - '@schematics/angular'
+          - 'angular-split'
+          - 'ngx*'
         update-types:
           - 'patch'
           - 'minor'
@@ -67,13 +74,16 @@ updates:
         update-types: ['version-update:semver-major']
       - dependency-name: 'cypress'
         update-types: ['version-update:semver-major']
+      - dependency-name: '*express'
+        update-types: ['version-update:semver-major']
       - dependency-name: 'eslint'
         update-types: ['version-update:semver-major']
       - dependency-name: 'ng-packagr'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'ngx*'
         update-types: ['version-update:semver-major']
       - dependency-name: 'nx'
       - dependency-name: 'typescript'
         update-types: ['version-update:semver-major', 'version-update:semver-minor']
       - dependency-name: 'zone.js'
         update-types: ['version-update:semver-major', 'version-update:semver-minor']
-    open-pull-requests-limit: 99

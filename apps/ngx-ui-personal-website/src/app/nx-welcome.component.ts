@@ -563,7 +563,12 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </a>
-            <a href="https://blog.nrwl.io/?utm_source=nx-project" target="_blank" rel="noreferrer" class="list-item-link">
+            <a
+              href="https://blog.nrwl.io/?utm_source=nx-project"
+              target="_blank"
+              rel="noreferrer"
+              class="list-item-link"
+            >
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   stroke-linecap="round"
@@ -622,7 +627,12 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </a>
-            <a href="https://nxplaybook.com/?utm_source=nx-project" target="_blank" rel="noreferrer" class="list-item-link">
+            <a
+              href="https://nxplaybook.com/?utm_source=nx-project"
+              target="_blank"
+              rel="noreferrer"
+              class="list-item-link"
+            >
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 14l9-5-9-5-9 5 9 5z" />
                 <path
