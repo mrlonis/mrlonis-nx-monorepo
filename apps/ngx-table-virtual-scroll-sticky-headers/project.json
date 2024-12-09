@@ -4,6 +4,7 @@
   "projectType": "application",
   "sourceRoot": "apps/ngx-table-virtual-scroll-sticky-headers/src",
   "prefix": "mrlonis",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -89,6 +90,5 @@
         "jestConfig": "apps/ngx-table-virtual-scroll-sticky-headers/jest.config.ts"
       }
     }
-  },
-  "tags": []
+  }
 }

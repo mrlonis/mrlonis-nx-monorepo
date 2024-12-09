@@ -4,6 +4,7 @@
   "projectType": "application",
   "sourceRoot": "apps/ngx-virtual-scroll-cdk-table-example/src",
   "prefix": "mrlonis",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -86,6 +87,5 @@
         "jestConfig": "apps/ngx-virtual-scroll-cdk-table-example/jest.config.ts"
       }
     }
-  },
-  "tags": []
+  }
 }
