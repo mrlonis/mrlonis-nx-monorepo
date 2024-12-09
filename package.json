@@ -104,7 +104,7 @@
     "eslint": "^9",
     "eslint-config-prettier": "^9",
     "eslint-import-resolver-typescript": "^3",
-    "eslint-plugin-cypress": "^3",
+    "eslint-plugin-cypress": "^4",
     "eslint-plugin-depend": "~0.12",
     "eslint-plugin-html": "^8",
     "eslint-plugin-import": "^2",
