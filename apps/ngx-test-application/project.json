@@ -4,6 +4,7 @@
   "projectType": "application",
   "sourceRoot": "apps/ngx-test-application/src",
   "prefix": "mrlonis",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -99,6 +100,5 @@
         }
       }
     }
-  },
-  "tags": []
+  }
 }

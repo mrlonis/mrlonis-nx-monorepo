@@ -1,4 +1,3 @@
-/* eslint-disable */
 export default {
   displayName: 'ts-workspace',
   preset: '../../jest.preset.js',

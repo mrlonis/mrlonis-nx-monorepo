@@ -3,6 +3,8 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/ngx-virtual-scroll-cdk-table-example-e2e/src",
   "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["ngx-virtual-scroll-cdk-table-example"],
   "targets": {
     "e2e": {
       "executor": "@nx/cypress:cypress",
@@ -22,7 +24,5 @@
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"]
     }
-  },
-  "tags": [],
-  "implicitDependencies": ["ngx-virtual-scroll-cdk-table-example"]
+  }
 }

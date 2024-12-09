@@ -4,6 +4,7 @@
   "projectType": "library",
   "sourceRoot": "libs/ngx-mrlonis-shared/src",
   "prefix": "mrlonis",
+  "tags": [],
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",
@@ -16,6 +17,5 @@
     "lint": {
       "executor": "@nx/eslint:lint"
     }
-  },
-  "tags": []
+  }
 }

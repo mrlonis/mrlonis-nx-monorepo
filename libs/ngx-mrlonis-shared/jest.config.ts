@@ -1,4 +1,3 @@
-/* eslint-disable */
 export default {
   displayName: 'ngx-mrlonis-shared',
   preset: '../../jest.preset.js',

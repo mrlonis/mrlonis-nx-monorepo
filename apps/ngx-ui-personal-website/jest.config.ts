@@ -1,4 +1,3 @@
-/* eslint-disable */
 export default {
   displayName: 'ngx-ui-personal-website',
   preset: '../../jest.preset.js',

@@ -16,3 +16,4 @@
 /.nx/cache
 /.nx/workspace-data
 .angular
+apps/ngx-ui-personal-website/src/assets/old-git-repo
