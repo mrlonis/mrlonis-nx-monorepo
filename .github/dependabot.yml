@@ -22,7 +22,9 @@ updates:
         patterns:
           - '@angular*'
           - '@schematics/angular'
+          - '@swimlane/ngx-charts'
           - 'angular-split'
+          - 'ng-table-virtual-scroll'
           - 'ngx*'
         update-types:
           - 'minor'
@@ -32,7 +34,9 @@ updates:
         patterns:
           - '@angular*'
           - '@schematics/angular'
+          - '@swimlane/ngx-charts'
           - 'angular-split'
+          - 'ng-table-virtual-scroll'
           - 'ngx*'
         update-types:
           - 'patch'
@@ -68,6 +72,8 @@ updates:
       - dependency-name: '@nx/*'
       - dependency-name: '@schematics/angular'
         update-types: ['version-update:semver-major']
+      - dependency-name: '@swimlane/ngx-charts'
+        update-types: ['version-update:semver-major']
       - dependency-name: '@types/node'
         update-types: ['version-update:semver-major']
       - dependency-name: '@typescript-eslint/*'
@@ -78,7 +84,7 @@ updates:
         update-types: ['version-update:semver-major']
       - dependency-name: '*express'
         update-types: ['version-update:semver-major']
-      - dependency-name: 'eslint'
+      - dependency-name: '*eslint*'
         update-types: ['version-update:semver-major']
       - dependency-name: '*jasmine*'
         update-types: ['version-update:semver-major']
