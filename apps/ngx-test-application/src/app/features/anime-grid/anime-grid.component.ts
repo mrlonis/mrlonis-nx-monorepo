@@ -13,7 +13,7 @@ export class AnimeGridComponent implements AfterViewInit {
   rows = 10;
   tiles: HTMLElement | null = null;
   tilesGradient: HTMLElement | null = null;
-  gridType: FormControl<'rainbow' | 'gradient'> = new FormControl('rainbow', { nonNullable: true });
+  gridType = new FormControl<'rainbow' | 'gradient'>('rainbow', { nonNullable: true });
   widthChop = 0.9;
   heightChop = 0.8;
   backgroundColor: string | null = null;

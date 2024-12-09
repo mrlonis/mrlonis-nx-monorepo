@@ -16,7 +16,10 @@ interface ExampleResource extends BaseResource {
   version: string;
 }
 
-type ExampleServiceIndex = { example: ExampleResource };
+interface ExampleServiceIndex {
+  [key: string]: ExampleResource;
+  example: ExampleResource;
+}
 
 @Injectable()
 class ExampleService implements IApiService<ExampleServiceIndex> {
@@ -24,6 +27,7 @@ class ExampleService implements IApiService<ExampleServiceIndex> {
   collectionRequests = 0;
   total = 5; //imageUrl happens in this order: A, B, A, B, A; expected counts are A:3, B:2.
 
+  // eslint-disable-next-line @typescript-eslint/class-literal-property-style
   public get apiUrl(): string {
     return 'http://fake-url.com';
   }

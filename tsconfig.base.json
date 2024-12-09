@@ -16,7 +16,6 @@
     "baseUrl": ".",
     "paths": {
       "@mrlonis/ngx-mrlonis-shared": ["libs/ngx-mrlonis-shared/src/index.ts"],
-      "@mrlonis/ngx-table-virtual-scroll": ["libs/ngx-table-virtual-scroll/src/index.ts"],
       "@mrlonis/ts-workspace": ["libs/ts-workspace/src/index.ts"],
       "@mrlonis/types": ["libs/types/src/index.ts"]
     },

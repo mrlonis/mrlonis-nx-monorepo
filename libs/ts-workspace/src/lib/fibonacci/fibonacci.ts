@@ -1,5 +1,5 @@
 export class Fibonacci {
-  cache: { [key: number]: number } = {};
+  cache: Record<number, number> = {};
   useCache: boolean;
 
   constructor(useCache = true) {

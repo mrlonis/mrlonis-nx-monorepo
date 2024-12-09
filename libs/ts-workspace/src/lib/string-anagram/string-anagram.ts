@@ -4,8 +4,8 @@ export function stringAnagram(input1: string, input2: string): boolean {
   }
 
   // Process input
-  const input1Metadata: { [index: string]: number } = {};
-  const input2Metadata: { [index: string]: number } = {};
+  const input1Metadata: Record<string, number> = {};
+  const input2Metadata: Record<string, number> = {};
 
   for (let i = 0; i < input1.length; i++) {
     const letter1 = input1[i];
@@ -33,9 +33,9 @@ export function stringAnagram(input1: string, input2: string): boolean {
     return false;
   }
 
-  for (let i = 0; i < keys.length; i++) {
-    const letterCount1 = input1Metadata[keys[i]];
-    const letterCount2 = input2Metadata[keys[i]];
+  for (const element of keys) {
+    const letterCount1 = input1Metadata[element];
+    const letterCount2 = input2Metadata[element];
 
     if (letterCount1 !== letterCount2) {
       return false;

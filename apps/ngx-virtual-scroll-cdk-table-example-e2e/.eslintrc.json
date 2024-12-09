@@ -18,6 +18,10 @@
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "parserOptions": {
+        "project": ["apps/ngx-virtual-scroll-cdk-table-example-e2e/tsconfig.json"],
+        "createDefaultProgram": true
+      },
       "rules": {}
     }
   ]

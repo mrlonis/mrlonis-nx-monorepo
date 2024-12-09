@@ -26,7 +26,6 @@
   "editor.formatOnSave": true,
   "eslint.options": {
     "cache": true,
-    "extensions": [".js", ".jsx", ".ts", ".tsx", ".html"],
     "fix": true
   },
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "json"],
