@@ -19,7 +19,7 @@ import { CacheSlot, CollectBySlot, GetBySlot } from './cache-slot';
  *
  * Uses typescript index-signatures: https://basarat.gitbook.io/typescript/type-system/index-signatures
  */
-export abstract class AggressiveCache<Types extends { [key: string]: BaseResource }> {
+export abstract class AggressiveCache<Types extends Record<string, BaseResource>> {
   readonly MAX_ENTRIES = 300;
 
   protected _cache: {
@@ -232,7 +232,7 @@ export abstract class AggressiveCache<Types extends { [key: string]: BaseResourc
     const params = new HttpParams();
 
     if (cacheSlot.service == undefined) {
-      throw 'Cannot get all of resources of this type.';
+      throw new Error('Cannot get all of resources of this type.');
     }
 
     cacheOccupant.all = cacheSlot.service(params.set('page', 0).set('size', this.MAX_ENTRIES)).pipe(
@@ -262,7 +262,7 @@ export abstract class AggressiveCache<Types extends { [key: string]: BaseResourc
 
     const cacheSlot = this.features[key];
     if (cacheSlot.getBy == undefined) {
-      throw 'Cannot Get By on this type of resource';
+      throw new Error('Cannot Get By on this type of resource');
     }
 
     const cacheOccupant = this.enforceEntry(key);
@@ -293,7 +293,7 @@ export abstract class AggressiveCache<Types extends { [key: string]: BaseResourc
 
     const cacheSlot = this.features[key];
     if (cacheSlot.collectBy == undefined) {
-      throw 'Cannot collect by on resources of this type';
+      throw new Error('Cannot collect by on resources of this type');
     }
 
     const cacheOccupant = this.enforceEntry(key);
@@ -329,7 +329,7 @@ export abstract class AggressiveCache<Types extends { [key: string]: BaseResourc
 
     const cacheSlot = this.features[key];
     if (cacheSlot.service == undefined) {
-      throw 'Cannot count all of resources of this type.';
+      throw new Error('Cannot count all of resources of this type.');
     }
 
     const cacheOccupant = this.enforceEntry(key);
@@ -354,7 +354,7 @@ export abstract class AggressiveCache<Types extends { [key: string]: BaseResourc
 
     const cacheSlot = this.features[key];
     if (cacheSlot.countBy == undefined || cacheSlot.service == undefined) {
-      throw 'Cannot count by on resources of this type';
+      throw new Error('Cannot count by on resources of this type');
     }
 
     const cacheOccupant = this.enforceEntry(key);
@@ -378,7 +378,7 @@ export abstract class AggressiveCache<Types extends { [key: string]: BaseResourc
       const params = new HttpParams();
 
       if (cacheSlot.service == undefined) {
-        throw 'Cannot count resources of this type.';
+        throw new Error('Cannot count resources of this type.');
       }
 
       const returnValue = cacheSlot.service(params.set('page', 0).set('size', this.MAX_ENTRIES)).pipe(

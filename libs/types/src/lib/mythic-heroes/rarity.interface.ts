@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
+/* eslint-disable @typescript-eslint/no-empty-object-type */
 import { BaseResource } from '../base';
 
-export interface Rarity extends BaseResource {}
+export type Rarity = BaseResource;

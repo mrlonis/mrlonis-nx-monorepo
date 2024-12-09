@@ -202,7 +202,6 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 - 4203 - ngx-ui-personal-website
 - 4207 - ngx-table-virtual-scroll-sticky-headers
 - 4208 - ngx-virtual-scroll-cdk-table-example
-- 4209 - ngx-table-virtual-scroll-example
 - 4210 - ngx-test-application
 
 ## Running the gauntlet

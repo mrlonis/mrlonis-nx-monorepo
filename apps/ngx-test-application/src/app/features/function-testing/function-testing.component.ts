@@ -23,8 +23,8 @@ export interface FunctionToTest {
 
 function _coreFibonacciRunTest(data: LineGraphData[], run: number, fibonacci: Fibonacci): LineGraphData[] {
   const newData: LineGraphData[] = [];
-  for (let i = 0; i < data.length; i++) {
-    newData.push(data[i]);
+  for (const element of data) {
+    newData.push(element);
   }
 
   const series: SeriesData[] = [];

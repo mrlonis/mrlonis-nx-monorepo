@@ -2,12 +2,12 @@
 import { ArrayDataSource, CollectionViewer, isDataSource, ListRange } from '@angular/cdk/collections';
 import { CdkVirtualScrollRepeater, CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
 import {
+  _COALESCED_STYLE_SCHEDULER,
+  _CoalescedStyleScheduler,
   CdkHeaderRowDef,
   CdkTable,
   DataSource,
-  STICKY_POSITIONING_LISTENER,
-  _CoalescedStyleScheduler,
-  _COALESCED_STYLE_SCHEDULER
+  STICKY_POSITIONING_LISTENER
 } from '@angular/cdk/table';
 import {
   ContentChildren,
@@ -42,7 +42,7 @@ export class VirtualTableDirective<T> implements CdkVirtualScrollRepeater<T>, Co
     if (isDataSource(value)) {
       this.dataSourceChanges.next(value);
     } else {
-      this.dataSourceChanges.next(new ArrayDataSource<T>(isObservable(value) ? value : Array.from(value || [])));
+      this.dataSourceChanges.next(new ArrayDataSource<T>(isObservable(value) ? value : Array.from(value ?? [])));
     }
   }
   get dataSource(): DataSource<T> | Observable<T[]> | NgIterable<T> | null | undefined {
@@ -53,12 +53,12 @@ export class VirtualTableDirective<T> implements CdkVirtualScrollRepeater<T>, Co
   @ContentChildren(CdkHeaderRowDef)
   headerRowDefs!: QueryList<CdkHeaderRowDef>;
 
-  private virtualizedDataStream = new Subject<T[] | ReadonlyArray<T>>();
+  private virtualizedDataStream = new Subject<T[] | readonly T[]>();
 
   private dataSourceChanges = new Subject<DataSource<T>>();
 
   /** The raw, unvirtualized data stream. Emits whenever the data in the current DataSource changes. */
-  dataStream: Observable<T[] | ReadonlyArray<T>> = this.dataSourceChanges.pipe(
+  dataStream: Observable<T[] | readonly T[]> = this.dataSourceChanges.pipe(
     // Start off with null data source.
     startWith(null),
     // Bundle up the previous and current data sources so we can work with both.
@@ -77,7 +77,7 @@ export class VirtualTableDirective<T> implements CdkVirtualScrollRepeater<T>, Co
 
   private destroyed$ = new Subject<void>();
 
-  private renderedItems: T[] | ReadonlyArray<T> = [];
+  private renderedItems: T[] | readonly T[] = [];
 
   private renderedRange: ListRange = { start: 0, end: 0 };
 
@@ -182,7 +182,7 @@ export class VirtualTableDirective<T> implements CdkVirtualScrollRepeater<T>, Co
   private changeDataSource(
     oldDataSource: DataSource<T> | null,
     newDs: DataSource<T> | null
-  ): Observable<T[] | ReadonlyArray<T>> {
+  ): Observable<T[] | readonly T[]> {
     oldDataSource?.disconnect(this);
     return newDs ? newDs.connect(this) : of();
   }

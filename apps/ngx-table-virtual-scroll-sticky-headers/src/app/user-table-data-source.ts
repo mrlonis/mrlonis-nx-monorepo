@@ -19,7 +19,7 @@ export class UserTableDataSource extends DataSource<User> {
   private _viewPort!: CdkVirtualScrollViewport;
 
   // Create MatTableDataSource so we can have all sort,filter bells and whistles
-  matTableDataSource: MatTableDataSource<User> = new MatTableDataSource();
+  matTableDataSource = new MatTableDataSource<User>();
 
   // Expose dataStream to simulate VirtualForOf.dataStream
   dataStream = this.matTableDataSource.connect().asObservable();

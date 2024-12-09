@@ -43,14 +43,7 @@
             ]
           }
         ],
-        "prettier/prettier": [
-          "error",
-          {
-            "singleQuote": true,
-            "printWidth": 120,
-            "tabWidth": 2
-          }
-        ]
+        "prettier/prettier": "error"
       }
     },
     {
@@ -60,8 +53,8 @@
         "createDefaultProgram": true
       },
       "extends": [
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@typescript-eslint/recommended-type-checked",
+        "plugin:@typescript-eslint/stylistic-type-checked",
         "plugin:@nx/typescript",
         "plugin:import/recommended",
         "plugin:import/typescript",
@@ -100,16 +93,7 @@
             }
           }
         ],
-        "prettier/prettier": [
-          "error",
-          {
-            "singleQuote": true,
-            "printWidth": 120,
-            "tabWidth": 2
-          }
-        ],
-        "@typescript-eslint/no-extra-semi": "error",
-        "no-extra-semi": "off"
+        "prettier/prettier": "error"
       }
     },
     {
@@ -133,16 +117,7 @@
             }
           }
         ],
-        "prettier/prettier": [
-          "error",
-          {
-            "singleQuote": true,
-            "printWidth": 120,
-            "tabWidth": 2
-          }
-        ],
-        "@typescript-eslint/no-extra-semi": "error",
-        "no-extra-semi": "off"
+        "prettier/prettier": "error"
       }
     },
     {
@@ -157,14 +132,7 @@
       "parser": "jsonc-eslint-parser",
       "extends": ["plugin:prettier/recommended"],
       "rules": {
-        "prettier/prettier": [
-          "error",
-          {
-            "singleQuote": true,
-            "printWidth": 120,
-            "tabWidth": 2
-          }
-        ]
+        "prettier/prettier": "error"
       }
     }
   ]

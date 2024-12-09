@@ -18,6 +18,10 @@
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "parserOptions": {
+        "project": ["apps/ngx-table-virtual-scroll-sticky-headers-e2e/tsconfig.json"],
+        "createDefaultProgram": true
+      },
       "rules": {}
     }
   ]

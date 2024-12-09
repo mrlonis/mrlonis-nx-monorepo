@@ -1,5 +1,0 @@
-{
-  "*.{css,html,js,jsx,json,md,ts,tsx,scss}": ["prettier --write"],
-  "apps/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint --fix --skip-nx-cache --"],
-  "libs/**/*.{html,js,jsx,ts,tsx}": ["prettier --write", "ng-lint-staged lint --fix --skip-nx-cache --"]
-}

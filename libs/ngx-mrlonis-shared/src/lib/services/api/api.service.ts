@@ -11,14 +11,14 @@ export interface ApiConfigProvider {
 
 export const API_CONFIG_TOKEN = new InjectionToken<ApiConfigProvider>('api.config');
 
-export interface IApiService<T extends { [key: string]: BaseResource }> {
+export interface IApiService<T extends Record<string, BaseResource>> {
   get apiUrl(): string;
   getCollection<ATTR extends keyof T>(route: ATTR, params: HttpParams): Observable<SpringDataRestResponse<T[ATTR]>>;
   getSingle<ATTR extends keyof T>(route: ATTR, httpParams: HttpParams): Observable<T[ATTR]>;
   getImageUrl(imageUrlSuffix: string): string;
 }
 
-export abstract class ApiService<T extends { [key: string]: BaseResource }> implements IApiService<T> {
+export abstract class ApiService<T extends Record<string, BaseResource>> implements IApiService<T> {
   defaultPageSize = 20;
   constructor(
     private http: HttpClient,
@@ -33,7 +33,7 @@ export abstract class ApiService<T extends { [key: string]: BaseResource }> impl
     return value;
   }
 
-  public onError: Subject<string> = new Subject();
+  public onError = new Subject<string>();
 
   _determineUrl(route: string | number | symbol, params: HttpParams): string {
     const baseUrl = `${this.apiUrl}/${String(route)}`;

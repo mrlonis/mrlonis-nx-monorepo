@@ -15,8 +15,8 @@ import {
   ExtendedScrollToOptions,
   ScrollDispatcher,
   ViewportRuler,
-  VirtualScrollStrategy,
-  VIRTUAL_SCROLL_STRATEGY
+  VIRTUAL_SCROLL_STRATEGY,
+  VirtualScrollStrategy
 } from '@angular/cdk/scrolling';
 import {
   ChangeDetectionStrategy,
@@ -101,7 +101,7 @@ export class TableVirtualScrollViewportComponent extends CdkScrollable implement
   // depending on how the strategy calculates the scrolled index, it may come at a cost to
   // performance.
   /** Emits when the index of the first element visible in the viewport changes. */
-  @Output() scrolledIndexChange: Observable<number> = new Observable((observer: Observer<number>) =>
+  @Output() scrolledIndexChange = new Observable<number>((observer: Observer<number>) =>
     // eslint-disable-next-line @typescript-eslint/no-misused-promises
     this._scrollStrategy.scrolledIndexChange.subscribe((index) =>
       Promise.resolve().then(() => this.ngZone.run(() => observer.next(index)))
@@ -158,7 +158,7 @@ export class TableVirtualScrollViewportComponent extends CdkScrollable implement
   private _isChangeDetectionPending = false;
 
   /** A list of functions to run after the next change detection cycle. */
-  // eslint-disable-next-line @typescript-eslint/ban-types
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
   private _runAfterChangeDetection: Function[] = [];
 
   /** Subscription to changes in the viewport size. */
@@ -388,7 +388,7 @@ export class TableVirtualScrollViewportComponent extends CdkScrollable implement
   }
 
   /** Queue up change detection to run. */
-  // eslint-disable-next-line @typescript-eslint/ban-types
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
   private _markChangeDetectionNeeded(runAfter?: Function) {
     if (runAfter) {
       this._runAfterChangeDetection.push(runAfter);
@@ -424,6 +424,7 @@ export class TableVirtualScrollViewportComponent extends CdkScrollable implement
     const runAfterChangeDetection = this._runAfterChangeDetection;
     this._runAfterChangeDetection = [];
     for (const fn of runAfterChangeDetection) {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
       fn();
     }
   }

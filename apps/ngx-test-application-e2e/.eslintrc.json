@@ -18,6 +18,10 @@
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "parserOptions": {
+        "project": ["apps/ngx-test-application-e2e/tsconfig.json"],
+        "createDefaultProgram": true
+      },
       "rules": {}
     }
   ]

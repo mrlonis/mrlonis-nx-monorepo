@@ -107,6 +107,5 @@
   "defaultProject": "ngx-test-application",
   "nxCloudAccessToken": "NjE3MTA1ZDgtODZjYi00YjA3LTgxODQtYmViYjk4NjhhOWU4fHJlYWQtd3JpdGU=",
   "defaultBase": "main",
-  "useInferencePlugins": false,
-  "useLegacyCache": true
+  "useInferencePlugins": false
 }
