@@ -4,7 +4,8 @@ import { ScaleType } from '@swimlane/ngx-charts';
 @Component({
   selector: 'mrlonis-bar-chart',
   templateUrl: './bar-chart.component.html',
-  styleUrls: ['./bar-chart.component.scss']
+  styleUrls: ['./bar-chart.component.scss'],
+  standalone: false
 })
 export class BarChartComponent implements OnInit {
   single = [

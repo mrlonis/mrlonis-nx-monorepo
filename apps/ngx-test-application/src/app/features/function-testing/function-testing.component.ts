@@ -61,7 +61,8 @@ function fibonacciRunCacheTest(data: LineGraphData[], run: number): LineGraphDat
 @Component({
   selector: 'mrlonis-function-testing',
   templateUrl: './function-testing.component.html',
-  styleUrls: ['./function-testing.component.scss']
+  styleUrls: ['./function-testing.component.scss'],
+  standalone: false
 })
 export class FunctionTestingComponent implements OnInit {
   data: LineGraphData[] = [];

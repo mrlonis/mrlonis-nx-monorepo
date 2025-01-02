@@ -32,7 +32,8 @@ import { TableVirtualScrollViewportComponent } from '../table-virtual-scroll-vie
  */
 @Directive({
   selector: '[mat-table][mrlonisVirtualDataSource], mat-table[mrlonisVirtualDataSource]',
-  providers: [{ provide: STICKY_POSITIONING_LISTENER, useExisting: VirtualTableDirective }]
+  providers: [{ provide: STICKY_POSITIONING_LISTENER, useExisting: VirtualTableDirective }],
+  standalone: false
 })
 export class VirtualTableDirective<T> implements CdkVirtualScrollRepeater<T>, CollectionViewer, OnInit, OnDestroy {
   // eslint-disable-next-line @angular-eslint/no-input-rename
