@@ -4,7 +4,8 @@ import { LegendPosition, ScaleType } from '@swimlane/ngx-charts';
 @Component({
   selector: 'mrlonis-pie-chart',
   templateUrl: './pie-chart.component.html',
-  styleUrls: ['./pie-chart.component.scss']
+  styleUrls: ['./pie-chart.component.scss'],
+  standalone: false
 })
 export class PieChartComponent implements OnInit {
   single = [

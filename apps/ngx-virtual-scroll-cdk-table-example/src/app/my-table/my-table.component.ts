@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'mrlonis-my-table',
   templateUrl: './my-table.component.html',
-  styleUrls: ['./my-table.component.scss']
+  styleUrls: ['./my-table.component.scss'],
+  standalone: false
 })
 export class MyTableComponent {
   columnsToDisplay = ['name', 'weight', 'symbol', 'position'];

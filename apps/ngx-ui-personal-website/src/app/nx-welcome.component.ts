@@ -788,7 +788,8 @@ nx affected:e2e</pre>
     </div>
   `,
   styles: [],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  standalone: false
 })
 export class NxWelcomeComponent implements OnInit {
   constructor() {}

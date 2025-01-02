@@ -74,7 +74,8 @@ const SCROLL_SCHEDULER = typeof requestAnimationFrame !== 'undefined' ? animatio
       provide: CdkVirtualScrollViewport,
       useExisting: TableVirtualScrollViewportComponent
     }
-  ]
+  ],
+  standalone: false
 })
 export class TableVirtualScrollViewportComponent extends CdkScrollable implements OnInit, OnDestroy {
   /** Emits when the viewport is detached from a CdkVirtualForOf. */

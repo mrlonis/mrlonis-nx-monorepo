@@ -145,7 +145,8 @@ export function fixedSizeVirtualScrollStrategyFactory(fixedSizeDir: FixedRowSize
       useFactory: fixedSizeVirtualScrollStrategyFactory,
       deps: [forwardRef(() => FixedRowSizeTableVirtualScrollStrategyDirective)]
     }
-  ]
+  ],
+  standalone: false
 })
 export class FixedRowSizeTableVirtualScrollStrategyDirective implements AfterContentInit, OnChanges {
   static ngAcceptInputType_rowHeight: NumberInput;

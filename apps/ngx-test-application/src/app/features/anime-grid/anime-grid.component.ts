@@ -6,7 +6,8 @@ import anime, { AnimeInstance } from 'animejs';
   selector: 'mrlonis-anime-grid',
   templateUrl: './anime-grid.component.html',
   styleUrls: ['./anime-grid.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  standalone: false
 })
 export class AnimeGridComponent implements AfterViewInit {
   columns = 10;
