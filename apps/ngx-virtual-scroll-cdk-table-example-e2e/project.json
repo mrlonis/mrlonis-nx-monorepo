@@ -11,8 +11,7 @@
       "options": {
         "cypressConfig": "apps/ngx-virtual-scroll-cdk-table-example-e2e/cypress.config.ts",
         "devServerTarget": "ngx-virtual-scroll-cdk-table-example:serve:development",
-        "testingType": "e2e",
-        "tsConfig": "apps/ngx-virtual-scroll-cdk-table-example-e2e/tsconfig.json"
+        "testingType": "e2e"
       },
       "configurations": {
         "production": {
