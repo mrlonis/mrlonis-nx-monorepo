@@ -10,8 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/test-reports/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/ngx-mrlonis-shared/jest.config.ts",
-        "tsConfig": "libs/ngx-mrlonis-shared/tsconfig.spec.json"
+        "jestConfig": "libs/ngx-mrlonis-shared/jest.config.ts"
       }
     },
     "lint": {
