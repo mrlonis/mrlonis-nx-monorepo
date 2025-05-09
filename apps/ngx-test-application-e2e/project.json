@@ -11,8 +11,7 @@
       "options": {
         "cypressConfig": "apps/ngx-test-application-e2e/cypress.config.ts",
         "devServerTarget": "ngx-test-application:serve:development",
-        "testingType": "e2e",
-        "tsConfig": "apps/ngx-test-application-e2e/tsconfig.json"
+        "testingType": "e2e"
       },
       "configurations": {
         "production": {
